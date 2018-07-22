@@ -17,7 +17,6 @@ import java.util.Map;
 import pt.evolute.dbtransfer.db.DBConnection;
 import pt.evolute.dbtransfer.db.beans.ColumnDefinition;
 import pt.evolute.dbtransfer.db.beans.Name;
-import pt.evolute.dbtransfer.db.beans.PrimaryKeyDefinition;
 import pt.evolute.dbtransfer.db.helper.Helper;
 import pt.evolute.dbtransfer.db.helper.HelperManager;
 import pt.evolute.utils.arrays.CursorResultSet2DArray;
@@ -244,37 +243,7 @@ public class JDBCConnection implements DBConnection
         return ret;
     }
 
-    public PrimaryKeyDefinition getPrimaryKey( Name table) throws Exception
-    {
-        PrimaryKeyDefinition pk = new PrimaryKeyDefinition();
-        pk.name = table + "_pk";
-        DatabaseMetaData rsmd = connection.getMetaData();
-        ResultSet rs = rsmd.getPrimaryKeys( catalog, dbSchema, helper.outputName( table.originalName ) );
-        while( rs.next() )
-        {
-            ColumnDefinition col = new ColumnDefinition();
-            col.name = new Name( rs.getString( 4 ) );
-            ResultSet rsC = rsmd.getColumns( catalog, dbSchema, helper.outputName( table.originalName ), col.name.originalName );
-            rsC.next();
-            col.sqlTypeName = rsC.getString( 6 );
-            if( rsC.getInt( 5 ) == Types.CHAR
-                            || rsC.getInt( 5 ) == Types.LONGVARCHAR
-                            || rsC.getInt( 5 ) == Types.VARCHAR
-                            || rsC.getInt( 5 ) == Types.NCHAR
-                            || rsC.getInt( 5 ) == Types.LONGNVARCHAR
-                            || rsC.getInt( 5 ) == Types.NVARCHAR )
-            {
-                col.sqlSize = rsC.getInt( 7 );
-            }
-            col.defaultValue = rsC.getString( 13 );
-            col.isNotNull = "NO".equals( rsC.getString( 18 ).trim() );
-            rsC.close();
-            pk.columns.add( col );
-        }
-        rs.close();
-        return pk;
-    }
-
+   
 
     public Virtual2DArray getFullTable( Name table ) throws Exception
     {

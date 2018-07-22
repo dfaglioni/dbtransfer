@@ -5,7 +5,6 @@ import java.sql.SQLException;
 import java.util.Date;
 import java.util.Properties;
 
-
 import pt.evolute.dbtransfer.db.beans.ConnectionDefinitionBean;
 import pt.evolute.dbtransfer.db.helper.HelperManager;
 import pt.evolute.dbtransfer.db.jdbc.JDBCConnection;
@@ -26,15 +25,13 @@ public class Main {
 		ConnectionDefinitionBean dstBean = ConnectionDefinitionBean.loadBean(props, Constants.DESTINATION_PROPS);
 
 		JDBCConnection.debug = "true".equalsIgnoreCase(props.getProperty(Constants.DEBUG));
-		
+
 		if ("true".equalsIgnoreCase(props.getProperty(Constants.TRANSFER))) {
-			if (!"true".equalsIgnoreCase(props.getProperty(Constants.TRANSFER_CHECK_DEPS))) {
-				String s = props.getProperty(Constants.TRANSFER_THREADS);
-				try {
-					int i = Integer.parseInt(s);
-					AsyncStatement.PARALLEL_THREADS = i;
-				} catch (Exception ex) {
-				}
+			String s = props.getProperty(Constants.TRANSFER_THREADS);
+			try {
+				int i = Integer.parseInt(s);
+				AsyncStatement.PARALLEL_THREADS = i;
+			} catch (Exception ex) {
 			}
 			System.out.println("Transfering");
 			Mover m = new Mover(props, srcBean, dstBean);
@@ -51,8 +48,7 @@ public class Main {
 
 			}
 		}
-		
-		
+
 		System.out.println("END: " + new Date());
 		System.out.println("Transfer took: " + (System.currentTimeMillis() - start) / 1000 + " seconds");
 	}
