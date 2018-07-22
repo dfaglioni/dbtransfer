@@ -7,7 +7,6 @@ import pt.evolute.dbtransfer.db.beans.ColumnDefinition;
 import pt.evolute.dbtransfer.db.beans.Name;
 import pt.evolute.dbtransfer.db.helper.Helper;
 import pt.evolute.utils.arrays.Virtual2DArray;
-import pt.evolute.utils.dbmodel.DBTable;
 
 /**
  *
@@ -30,9 +29,7 @@ public interface DBConnection
 	public PreparedStatement prepareStatement(String sql)
 			throws Exception;
 	
-	public List<DBTable> getSortedTables()
-		throws Exception;
-
+	
 	public int getRowCount(Name table)
 			throws Exception;
         

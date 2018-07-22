@@ -22,8 +22,6 @@ import pt.evolute.dbtransfer.db.helper.HelperManager;
 import pt.evolute.utils.arrays.CursorResultSet2DArray;
 import pt.evolute.utils.arrays.Virtual2DArray;
 import pt.evolute.utils.db.Connector;
-import pt.evolute.utils.dbmodel.DBTable;
-import pt.evolute.utils.dbmodel.ModelProvider;
 
 /**
  *
@@ -268,12 +266,7 @@ public class JDBCConnection implements DBConnection
             return connection.prepareStatement( sql );
     }
 
-    @Override
-    public List<DBTable> getSortedTables() throws Exception 
-    {
-            ModelProvider model = new ModelProvider( connection );
-            return model.getSortedTables();
-    }
+  
 
     
 
