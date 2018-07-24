@@ -36,6 +36,7 @@ public class Main {
 			System.out.println("Transfering");
 			Mover m = new Mover(props, srcBean, dstBean);
 			try {
+				//TODO Incluir tabelas que podem dar erro de inserção
 				m.moveDB();
 			} catch (SQLException ex) {
 				ex.printStackTrace(System.out);
@@ -48,7 +49,38 @@ public class Main {
 
 			}
 		}
-
+		
+		if ("true".equalsIgnoreCase(props.getProperty(Constants.MOVE_KEY))) {
+			
+			//TODO DISABLE POSTGRES CONSTRAINTS
+			//PEGAR O ARQUIVO DEFINIDO COM A TABELAS QUE SERIAM MOVIDAS 
+			// ESSE ARQUIVO VAI CONTER O NOME TABELA, A CHAVE PARA SER MOVIDA, QUANTO VAI MOVER
+			// E A DEPENDENCIAS E AS RESPECTIVAS CHAVES VINCULADAS
+			/*
+				
+				{ table : bairro, column : bairro, space  : 100 , dependencies : [  {table : cep, column : bairro}, { table : enderecopessoa, column : bairro} ] }
+				
+			*/
+			
+			//LIGAR CONSTRAINTS
+	
+		}
+		
+		if ("true".equalsIgnoreCase(props.getProperty(Constants.JOIN))) {
+			
+	
+			//TODO DISABLE POSTGRES CONSTRAINTS
+			
+			//PEGAR O ARQUIVO DEFINIDO COM A TABELAS QUE SERIAM JUNTADAS
+			//DEFINIR A COLUNAS DE DISTINCT
+			/*
+			{ table : bairro, columns : ['cidade','descricao'], pk_column : 'bairro' , dependencies : [  {table : cep, column : bairro}, { table : enderecopessoa, column : bairro} ] }
+			
+			*/
+			//LIGAR CONSTRAINTS
+		}
+			
+			
 		System.out.println("END: " + new Date());
 		System.out.println("Transfer took: " + (System.currentTimeMillis() - start) / 1000 + " seconds");
 	}

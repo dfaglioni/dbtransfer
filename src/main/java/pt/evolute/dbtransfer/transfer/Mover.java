@@ -241,7 +241,7 @@ public class Mover extends Connector implements Constants {
 				async.join();
 			}
 		}
-		validateRowCount();
+		validateRowCount(); //TODO não pode validar para algumas tabelas e não pode validar para tabelas que podem dar erro de pk
 	}
 
 	private void validateRowCount() throws Exception {
