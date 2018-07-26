@@ -1,6 +1,7 @@
 package pt.evolute.dbtransfer.db;
 
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
 
 import pt.evolute.dbtransfer.db.beans.ColumnDefinition;
@@ -33,5 +34,7 @@ public interface DBConnection
 	public int getRowCount(Name table)
 			throws Exception;
         
-        public Helper getHelper();
+    public Helper getHelper();
+    
+    public int executeUpdate(String sql) throws SQLException;
 }

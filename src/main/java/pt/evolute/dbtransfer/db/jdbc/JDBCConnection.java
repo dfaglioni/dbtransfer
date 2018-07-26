@@ -291,4 +291,19 @@ public class JDBCConnection implements DBConnection
     {
         return dbSchema;
     }
+
+	@Override
+	public int executeUpdate(String sql) throws SQLException {
+	
+		connection.setAutoCommit(true);
+		
+		 try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+		         
+				
+			 return stmt.executeUpdate();
+		        
+		    }
+	
+	}
+
 }
