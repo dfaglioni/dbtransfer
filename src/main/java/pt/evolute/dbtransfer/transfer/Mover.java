@@ -253,10 +253,10 @@ public class Mover extends Connector implements Constants {
 			int rowCountDest = CON_DEST.getRowCount(name);
 
 			System.out.println("Testing row count for table " + name);
-			if (rowCountSource != rowCountDest) {
+			if (rowCountSource > rowCountDest) {
 
 				throw new IllegalStateException(
-						String.format("Not equal rows count for table %s, %d, %d", name, rowCountDest, rowCountSource));
+						String.format("Not all rows was move for table %s, %d, %d", name, rowCountDest, rowCountSource));
 			}
 
 		}

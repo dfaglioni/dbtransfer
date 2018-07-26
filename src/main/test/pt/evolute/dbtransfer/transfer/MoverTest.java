@@ -116,7 +116,7 @@ public class MoverTest {
 
 		mover.moveDB();
 
-		assertThat(CON_DEST.getRowCount(new Name("TAB1")), equalTo(2));
+		assertThat(CON_DEST.getRowCount(new Name("TAB1")), equalTo(3));
 		assertThat(CON_DEST.getRowCount(new Name("TAB2")), equalTo(1));
 
 	}
