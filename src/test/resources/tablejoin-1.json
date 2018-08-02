@@ -1,0 +1,12 @@
+[{
+	"table": "bairro",
+	"column": "bairro",
+	"columns": ["cidade", "descricao"],
+	"dependencies": [{
+		"table": "cep",
+		"column": "bairro"
+	}, {
+		"table": "enderecopessoa",
+		"column": "bairro"
+	}]
+}]

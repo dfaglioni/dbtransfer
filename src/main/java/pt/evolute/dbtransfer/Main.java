@@ -16,6 +16,7 @@ import pt.evolute.dbtransfer.transfer.Mover;
  * @author lflores
  */
 public class Main {
+	
 	public Main(Properties props) throws Exception {
 		HelperManager.setProperties(props);
 		System.out.println("BEGIN: " + new Date());

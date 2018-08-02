@@ -28,7 +28,7 @@ import pt.evolute.utils.string.UnicodeChecker;
  *
  * @author lflores
  */
-public class Mover extends Connector implements Constants {
+public class Mover  implements Constants {
 	public final long MAX_READ_ROWS;
 	public final boolean IGNORE_BLOB;
 
