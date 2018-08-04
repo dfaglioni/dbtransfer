@@ -21,7 +21,6 @@ import pt.evolute.dbtransfer.db.helper.Helper;
 import pt.evolute.dbtransfer.db.helper.HelperManager;
 import pt.evolute.utils.arrays.Virtual2DArray;
 import pt.evolute.utils.arrays.exception.EndOfArrayException;
-import pt.evolute.utils.db.Connector;
 import pt.evolute.utils.string.UnicodeChecker;
 
 /**

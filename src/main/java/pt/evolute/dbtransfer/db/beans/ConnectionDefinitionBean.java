@@ -57,4 +57,12 @@ public class ConnectionDefinitionBean
                 props.getProperty( pro[ 1 ] ), props.getProperty( pro[ 2 ] ), 
                 props.getProperty( pro[ 3 ] ) );
     }
+
+	@Override
+	public String toString() {
+		return "ConnectionDefinitionBean [url=" + url + ", user=" + user + ", passwd=" + passwd + ", schema=" + schema
+				+ "]";
+	}
+    
+    
 }

@@ -274,12 +274,7 @@ public class JDBCConnection implements DBConnection
     @Override
     public int getRowCount( Name table) throws Exception 
     {
-        int count = ( ( Number )executeQuery( "SELECT COUNT(*) FROM " + helper.outputName( table.originalName ) ).get( 0, 0 ) ).intValue();
-        if( debug )
-        {
-                System.out.println( "COUNT: " + table.originalName + " " + count + " rows." );
-        }
-        return count;
+       return getRowCountWhere(table, null);
     }
 
     public Helper getHelper()
@@ -304,6 +299,35 @@ public class JDBCConnection implements DBConnection
 		        
 		    }
 	
+	}
+
+	@Override
+	public int getRowCountWhere(Name table, String where) throws Exception {
+		
+		return oneResultSqlFunction(table, where, "COUNT(*)");
+	}
+
+	private int oneResultSqlFunction(Name table, String where, String functionSql) throws Exception {
+		
+		String sql = "SELECT "+ functionSql + " FROM " + helper.outputName( table.originalName );
+		
+		if ( where != null) {
+			sql = sql + " " + where;
+		}
+		
+		
+		int count = ( ( Number )executeQuery( sql  ).get( 0, 0 ) ).intValue();
+	        if( debug )
+	        {
+	                System.out.println( "COUNT: " + table.originalName + " " + count + " rows." );
+	        }
+	        return count;
+	}
+
+	@Override
+	public int maxValue(Name table, String column) throws Exception {
+	
+		return oneResultSqlFunction(table, null, String.format("max(%s)", column));
 	}
 
 }

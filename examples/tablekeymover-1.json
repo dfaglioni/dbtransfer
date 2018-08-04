@@ -1,0 +1,12 @@
+[{
+	"table": "bairro",
+	"column": "bairro",
+	"space": 100,
+	"dependencies": [{
+		"table": "cep",
+		"column": "bairro"
+	}, {
+		"table": "enderecopessoa",
+		"column": "bairro"
+	}]
+}]

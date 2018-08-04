@@ -33,6 +33,13 @@ public interface DBConnection
 	
 	public int getRowCount(Name table)
 			throws Exception;
+
+	public int maxValue(Name table, String column)
+			throws Exception;
+
+	
+	public int getRowCountWhere(Name table, String where)
+			throws Exception;
         
     public Helper getHelper();
     
