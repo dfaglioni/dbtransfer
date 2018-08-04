@@ -4,9 +4,10 @@ import java.util.Properties;
 
 import org.junit.Before;
 import org.junit.Test;
-import static org.mockito.Mockito.*;
 
-import pt.evolute.dbtransfer.keymover.TableKeyMoverExecutor;
+import pt.evolute.dbtransfer.operations.TableKeyMoverExecutor;
+
+import static org.mockito.Mockito.*;
 
 public class MainTest {
 

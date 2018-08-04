@@ -17,7 +17,7 @@ import pt.evolute.dbtransfer.db.DBConnection;
 import pt.evolute.dbtransfer.db.DBConnector;
 import pt.evolute.dbtransfer.db.beans.ConnectionDefinitionBean;
 import pt.evolute.dbtransfer.db.beans.Name;
-import pt.evolute.dbtransfer.keymover.TableKeyMoverExecutor;
+import pt.evolute.dbtransfer.operations.TableKeyMoverExecutor;
 
 public class OperationsTest {
 
@@ -59,7 +59,9 @@ public class OperationsTest {
 		con.executeUpdate("CREATE TABLE TAB_C ( ID NUMERIC(10,0) PRIMARY KEY, ID_A NUMERIC(10,0), VALUE VARCHAR(30))");
 		con.executeUpdate("CREATE TABLE TAB_D ( ID NUMERIC(10,0) PRIMARY KEY, ID_C NUMERIC(10,0), VALUE VARCHAR(30))");
 		
-
+		con.executeUpdate("CREATE TABLE TAB_JOIN ( ID NUMERIC(10,0) PRIMARY KEY, VALUE VARCHAR(30), VALUE2 VARCHAR(30))");
+		con.executeUpdate("CREATE TABLE TAB_JOIN_DEP ( ID NUMERIC(10,0) PRIMARY KEY, ID_TAB_JOIN NUMERIC(10,0))");
+		
 	}
 
 	@Before
@@ -193,5 +195,18 @@ public class OperationsTest {
 		
 			
 	}
+	
+	@Test
+	public void joinSimple() throws Exception {
 
+		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN VALUES (100, 'XXX','1')");
+		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN VALUES (101, 'XXX','1')");
+		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN VALUES (102, 'XXX','1')");		
+		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN VALUES (103, 'XXX','2')");
+		
+	
+		assertThat("tab_join",CON_DEST.getRowCountWhere(new Name("TAB_JOIN")," WHERE VALUE = 'XXX' AND VALUE2 = 1"), equalTo(1));
+		
+
+	}
 }

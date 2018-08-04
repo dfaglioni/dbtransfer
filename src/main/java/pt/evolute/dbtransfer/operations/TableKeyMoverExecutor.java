@@ -1,4 +1,4 @@
-package pt.evolute.dbtransfer.keymover;
+package pt.evolute.dbtransfer.operations;
 
 import java.sql.SQLException;
 import java.util.List;

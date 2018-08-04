@@ -12,7 +12,7 @@ import pt.evolute.dbtransfer.db.DBConnector;
 import pt.evolute.dbtransfer.db.beans.ConnectionDefinitionBean;
 import pt.evolute.dbtransfer.db.helper.HelperManager;
 import pt.evolute.dbtransfer.db.jdbc.JDBCConnection;
-import pt.evolute.dbtransfer.keymover.TableKeyMoverExecutor;
+import pt.evolute.dbtransfer.operations.TableKeyMoverExecutor;
 import pt.evolute.dbtransfer.transfer.AsyncStatement;
 import pt.evolute.dbtransfer.transfer.Mover;
 
