@@ -101,4 +101,10 @@ public class CursorResultSet2DArray implements Virtual2DArray
     {
         throw new RuntimeException( "Not implemented yet" );
     }
+
+	@Override
+	public boolean hasValues() {
+		
+		return validRow;
+	}
 }

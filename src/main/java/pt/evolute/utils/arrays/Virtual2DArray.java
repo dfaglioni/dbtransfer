@@ -10,4 +10,7 @@ public interface Virtual2DArray
 	public int rowCount();
 	
 	public Object[][] getObjects();
+	
+	
+	public boolean hasValues();
 }
