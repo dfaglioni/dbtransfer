@@ -1,5 +1,6 @@
 package pt.evolute.dbtransfer.db;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
@@ -44,4 +45,6 @@ public interface DBConnection
     public Helper getHelper();
     
     public int executeUpdate(String sql) throws SQLException;
+    
+    public Connection getConnection();
 }

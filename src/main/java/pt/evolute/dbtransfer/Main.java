@@ -6,12 +6,14 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
+import br.loop.db.domain.TableJoin;
 import br.loop.db.domain.TableKeyMover;
 import br.loop.db.repository.TableRepository;
 import pt.evolute.dbtransfer.db.DBConnector;
 import pt.evolute.dbtransfer.db.beans.ConnectionDefinitionBean;
 import pt.evolute.dbtransfer.db.helper.HelperManager;
 import pt.evolute.dbtransfer.db.jdbc.JDBCConnection;
+import pt.evolute.dbtransfer.operations.TableJoinExecutor;
 import pt.evolute.dbtransfer.operations.TableKeyMoverExecutor;
 import pt.evolute.dbtransfer.transfer.AsyncStatement;
 import pt.evolute.dbtransfer.transfer.Mover;
@@ -26,12 +28,18 @@ public class Main {
 
 	private TableRepository tableRepository = new TableRepository();
 
+	private TableJoinExecutor tableJoinExecutor = new TableJoinExecutor();
+
 	public void setTableKeyMoverExecutor(TableKeyMoverExecutor tableKeyMoverExecutor) {
 		this.tableKeyMoverExecutor = tableKeyMoverExecutor;
 	}
 
+	public void setTableJoinExecutor(TableJoinExecutor tableJoinExecutor) {
+		this.tableJoinExecutor = tableJoinExecutor;
+	}
+
 	public void execute(Properties props) throws Exception, SQLException {
-		
+
 		HelperManager.setProperties(props);
 		System.out.println("BEGIN: " + new Date());
 		long start = System.currentTimeMillis();
@@ -43,55 +51,58 @@ public class Main {
 
 		if ("true".equalsIgnoreCase(props.getProperty(Constants.MOVE_KEY))) {
 
-			List<TableKeyMover> readListTableKeyMoverFromPathname = tableRepository.readListTableKeyMoverFromPathname(props.getProperty(Constants.MOVE_KEY_FILE, ""));
+			List<TableKeyMover> readListTableKeyMoverFromPathname = tableRepository
+					.readListTableKeyMoverFromPathname(props.getProperty(Constants.MOVE_KEY_FILE, ""));
 
-			System.out.println("Moving key using " + dstBean + " " + readListTableKeyMoverFromPathname );
-			
-			tableKeyMoverExecutor.execute(DBConnector.getConnection(dstBean, false),
-					readListTableKeyMoverFromPathname);
+			System.out.println("Moving key using " + dstBean + " " + readListTableKeyMoverFromPathname);
+
+			tableKeyMoverExecutor.execute(DBConnector.getConnection(dstBean, false), readListTableKeyMoverFromPathname);
 
 		}
 
 		if ("true".equalsIgnoreCase(props.getProperty(Constants.TRANSFER))) {
+			
 			String s = props.getProperty(Constants.TRANSFER_THREADS);
-			try {
-				int i = Integer.parseInt(s);
-				AsyncStatement.PARALLEL_THREADS = i;
-			} catch (Exception ex) {
-			}
-			System.out.println("Transfering");
-			Mover m = new Mover(props, srcBean, dstBean);
-			try {
-				m.moveDB();
-			} catch (SQLException ex) {
-				ex.printStackTrace(System.out);
-				ex.printStackTrace();
-				// ErrorLogger.logException( ex );
-				if (ex.getNextException() != null) {
-					throw ex.getNextException();
-				}
-				throw ex;
-
-			}
+			
+			executeTransfer(props, srcBean, dstBean, s);
 		}
 
 		if ("true".equalsIgnoreCase(props.getProperty(Constants.JOIN))) {
 
-			// TODO DISABLE POSTGRES CONSTRAINTS
+			List<TableJoin> joinList = tableRepository
+					.readListTableJoinFromPathname(props.getProperty(Constants.JOIN_FILE, ""));
 
-			// PEGAR O ARQUIVO DEFINIDO COM A TABELAS QUE SERIAM JUNTADAS
-			// DEFINIR A COLUNAS DE DISTINCT
-			/*
-			 * { table : bairro, columns : ['cidade','descricao'], pk_column : 'bairro' ,
-			 * dependencies : [ {table : cep, column : bairro}, { table : enderecopessoa,
-			 * column : bairro} ] }
-			 * 
-			 */
-			// LIGAR CONSTRAINTS
+			System.out.println("Join tables using " + dstBean + " " + joinList);
+
+			tableJoinExecutor.execute(DBConnector.getConnection(dstBean, false), joinList);
+
 		}
 
 		System.out.println("END: " + new Date());
 		System.out.println("Process took: " + (System.currentTimeMillis() - start) / 1000 + " seconds");
+	}
+
+	private void executeTransfer(Properties props, ConnectionDefinitionBean srcBean, ConnectionDefinitionBean dstBean,
+			String s) throws Exception, SQLException {
+		try {
+			int i = Integer.parseInt(s);
+			AsyncStatement.PARALLEL_THREADS = i;
+		} catch (Exception ex) {
+		}
+		System.out.println("Transfering");
+		Mover m = new Mover(props, srcBean, dstBean);
+		try {
+			m.moveDB();
+		} catch (SQLException ex) {
+			ex.printStackTrace(System.out);
+			ex.printStackTrace();
+			// ErrorLogger.logException( ex );
+			if (ex.getNextException() != null) {
+				throw ex.getNextException();
+			}
+			throw ex;
+
+		}
 	}
 
 	/**

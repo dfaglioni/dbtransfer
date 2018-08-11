@@ -330,4 +330,10 @@ public class JDBCConnection implements DBConnection
 		return oneResultSqlFunction(table, null, String.format("max(%s)", column));
 	}
 
+	@Override
+	public Connection getConnection() {
+
+		return connection;
+	}
+
 }

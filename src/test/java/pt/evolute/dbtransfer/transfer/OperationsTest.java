@@ -200,6 +200,12 @@ public class OperationsTest {
 		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN VALUES (103, 'XXX','2')");
 		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN VALUES (104, 'yyy','10')");
 		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN VALUES (105, 'yyy','10')");
+		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN_DEP VALUES (1000, 100)");
+		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN_DEP VALUES (1001, 101)");
+		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN_DEP VALUES (1002, 101)");
+		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN_DEP VALUES (1003, 102)");
+				
+		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN_DEP VALUES (1004, 105)");
 		
 
 		TableJoin tableJoin = new TableJoin();
@@ -209,11 +215,20 @@ public class OperationsTest {
 		tableJoin.getTable().setColumn("id");
 
 		tableJoin.getTable().setTable("tab_join");
+		
+	    Table tableDep = new Table();
+	    tableDep.setTable("TAB_JOIN_DEP");
+	    tableDep.setColumn("ID_TAB_JOIN");
+	    
+		tableJoin.getTable().getDependencies().add(tableDep );
 
 		tableJoinExecutor.execute(CON_DEST, Arrays.asList(tableJoin));
 
 		assertThat("tab_join", CON_DEST.getRowCountWhere(new Name("TAB_JOIN"), " WHERE VALUE = 'XXX' AND VALUE2 = 1"),
 				equalTo(1));
+
+		assertThat("TAB_JOIN_DEP", CON_DEST.getRowCountWhere(new Name("TAB_JOIN_DEP"), " WHERE ID_TAB_JOIN = 100"),
+				equalTo(4));
 
 	}
 }

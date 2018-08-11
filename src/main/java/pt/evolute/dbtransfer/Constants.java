@@ -43,5 +43,6 @@ public interface Constants
 	public static final String JOIN = "JOIN";
 	
 	public static final String MOVE_KEY_FILE = "MOVE_KEY_FILE";
+	public static final String JOIN_FILE = "JOIN_FILE";
 
 }
