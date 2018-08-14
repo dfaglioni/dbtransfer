@@ -1,0 +1,88 @@
+fkagencia_cidade	cidade	aise.agencia(cidade)	NO ACTION	NO ACTION	NOT DEFERRABLE
+r_33	cidade	aise.bairro(cidade)	NO ACTION	NO ACTION	NOT DEFERRABLE
+fkcep_cidade	cidade	aise.cep(cidade)	NO ACTION	NO ACTION	NOT DEFERRABLE
+fkenderecopessoa_cidade	cidade	aise.enderecopessoa(cidade)	NO ACTION	NO ACTION	NOT DEFERRABLE
+fkentidade_cidade	cidade	aise.entidade(cidade)	NO ACTION	NO ACTION	NOT DEFERRABLE
+fk_notafiscal_cidade	cidade	aise.issnotafiscal(localprestacaoidcidade)	RESTRICT	RESTRICT	NOT DEFERRABLE
+fk_notafiscalintermed_cidade	cidade	aise.issnotafiscal(intermediarioidcidade)	RESTRICT	RESTRICT	NOT DEFERRABLE
+fk_notafiscaltomador_cidade	cidade	aise.issnotafiscaltomador(idcidade)	RESTRICT	RESTRICT	NOT DEFERRABLE
+fk_issprecadbairro_cidade	cidade	aise.issprecadastrobairro(bai_cidade)	RESTRICT	RESTRICT	NOT DEFERRABLE
+fk_issprecadastrolog_cid	cidade	aise.issprecadastrologradouro(log_cidade)	RESTRICT	RESTRICT	NOT DEFERRABLE
+fk_cidade_rps	cidade	aise.issrps(intermediariocidade)	RESTRICT	RESTRICT	NOT DEFERRABLE
+fk_issrpscidadeservico	cidade	aise.issrps(idcidadeservico)	RESTRICT	RESTRICT	NOT DEFERRABLE
+fk_issrpsmunicipioincidencia	cidade	aise.issrps(idmunicipioincidencia)	RESTRICT	RESTRICT	NOT DEFERRABLE
+fk_issrpstomadorcidade	cidade	aise.issrps(tomadoridcidade)	RESTRICT	RESTRICT	NOT DEFERRABLE
+r_50	cidade	aise.localidade(cidade)	NO ACTION	NO ACTION	NOT DEFERRABLE
+r_30	cidade	aise.logradouro(cidade)	NO ACTION	NO ACTION	NOT DEFERRABLE
+fkcomarca_cidade	cidade	aise.pjcomarca(cidade)	RESTRICT	RESTRICT	NOT DEFERRABLE
+fkrhpessoa_cidadenascimento	cidade	aise.rhpessoa(cidadenascimento)	NO ACTION	NO ACTION	NOT DEFERRABLE
+fkrhpessoa_cidadetitulo	cidade	aise.rhpessoa(cidadetitulo)	NO ACTION	NO ACTION	NOT DEFERRABLE
+fkrhprocjud_cidade	cidade	aise.rhprocessojudicial(cidadesecaojudiciaria)	NO ACTION	NO ACTION	NOT DEFERRABLE
+fkcadgeralend_cidade	cidade	aise.tribcadastrogeralendereco(cidade)	RESTRICT	RESTRICT	NOT DEFERRABLE
+
+[{
+	"table": "cidade",
+	"column": "cidade",
+	"space": 6000,
+	"dependencies": [{
+		"table": "agencia",
+		"column": "cidade"
+	}, {
+		"table": "bairro"
+		"column": "cidade"
+	},{
+		"table": "cep"
+		"column": "cidade"
+	}, {
+		"table": "enderecopessoa"
+		"column": "cidade"
+	}, {
+		"table": "entidade"
+		"column": "cidade"
+	}, {
+		"table": "issnotafiscal"
+		"column": "localprestacaoidcidade"
+	},{
+		"table": "issnotafiscal"
+		"column": "intermediarioidcidade"
+	},{
+		"table": "issnotafiscaltomador"
+		"column": "idcidade"
+	},{
+		"table": "issprecadastrobairro"
+		"column": "bai_cidade"
+	},{
+		"table": "issprecadastrologradouro"
+		"column": "log_cidade"
+	},{
+		"table": "issrps"
+		"column": "idcidadeservico"
+	},{
+		"table": "issrps"
+		"column": "idmunicipioincidencia"
+	},{
+		"table": "issrps"
+		"column": "tomadoridcidade"
+	},{
+		"table": "localidade"
+		"column": "cidade"
+	},{
+		"table": "logradouro"
+		"column": "cidade"
+	},{
+		"table": "pjcomarca"
+		"column": "cidade"
+	},{
+		"table": "rhpessoa"
+		"column": "cidadenascimento"
+	},{
+		"table": "rhpessoa"
+		"column": "cidadetitulo"
+	},{
+		"table": "rhprocessojudicial"
+		"column": "cidadesecaojudiciaria"
+	},{
+		"table": "tribcadastrogeralendereco"
+		"column": "cidade"
+	}]
+}]
