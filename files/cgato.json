@@ -1,0 +1,211 @@
+[{
+	"table": "cgato",
+	"column": "idato",
+	"space": 2200,
+	"dependencies": [
+		{
+			"table": "cgato",
+			"column": "leiautorizativa"
+		}, 
+		{
+			"table": "cgatorevogado",
+			"column": "idato"
+		}, 
+		{
+			"table": "cgatorevogado",
+			"column": "idatorevogado"
+		}, 
+		{
+			"table": "cgatoveiculopublicacao",
+			"column": "idato"
+		}, 
+		{
+			"table": "contconvenio",
+			"column": "idato"
+		}, 
+		{
+			"table": "contconvenioaditivo",
+			"column": "idato"
+		}, 
+		{
+			"table": "contdecreto",
+			"column": "idato"
+		}, 
+		{
+			"table": "contdiaria",
+			"column": "idato"
+		}, 
+		{
+			"table": "issincentivofiscal",
+			"column": "idunicoatoiss"
+		}, 
+		{
+			"table": "issnotafiscal",
+			"column": "idleiincentivo"
+		},
+		{
+			"table": "logradourohistorico",
+			"column": "idato"
+		},
+		{
+			"table": "obraordemplanilhaorcamento",
+			"column": "idato"
+		},
+		{
+			"table": "rhavaliacaomodelo",
+			"column": "idato"
+		},
+		{
+			"table": "rhcomissao",
+			"column": "idato"
+		},
+		{
+			"table": "rhcomissaoato",
+			"column": "idato"
+		},
+		{
+			"table": "rhconsignadofuncionario",
+			"column": "idato"
+		},
+		{
+			"table": "rhcontratoprazodeterminado",
+			"column": "idato"
+		},
+		{
+			"table": "rhcontratoprazodeterminado",
+			"column": "idatorenovacao"
+		},
+		{
+			"table": "rhempregoanterior",
+			"column": "idato"
+		},
+		{
+			"table": "rhestagiario",
+			"column": "idato"
+		},
+		{
+			"table": "rheventocalculo",
+			"column": "idato"
+		},
+		{
+			"table": "rhmovimentacaocargo",
+			"column": "idato"
+		},
+		{
+			"table": "rhmovimentacaolegal",
+			"column": "idato"
+		},
+		{
+			"table": "rhmovimentacaolegal",
+			"column": "idatoparecer"
+		},
+		{
+			"table": "rhmovimentacaopessoal",
+			"column": "idato"
+		},
+		{
+			"table": "rhplantaocompetencia",
+			"column": "idato"
+		},
+		{
+			"table": "rhprevidencia",
+			"column": "idato"
+		},
+		{
+			"table": "rhprevidencia",
+			"column": "idatoextincao"
+		},
+		{
+			"table": "rhprodutividadecompetencia",
+			"column": "idato"
+		},
+		{
+			"table": "rhprogressaorotinafuncionario",
+			"column": "idato"
+		},
+		{
+			"table": "rhquadrosalarialato",
+			"column": "idato"
+		},
+		{
+			"table": "rhrotinacoletiva",
+			"column": "idato"
+		},
+		{
+			"table": "tribacaofiscalparecerato",
+			"column": "idato"
+		},
+		{
+			"table": "tribaprovacaoprocesso",
+			"column": "idato"
+		},
+		{
+			"table": "tribartigo",
+			"column": "idlei"
+		},
+		{
+			"table": "tribcadastroimobgeminada",
+			"column": "numerolei"
+		},
+		{
+			"table": "tribcancelamentodebito",
+			"column": "idato"
+		},
+		{
+			"table": "tribcaucao",
+			"column": "idato"
+		},
+		{
+			"table": "tribcondominio",
+			"column": "idato"
+		},
+		{
+			"table": "tribcontencioso",
+			"column": "fundamentolegal"
+		},
+		{
+			"table": "tribcreditocontribuinte",
+			"column": "idato"
+		},
+		{
+			"table": "tribdebito",
+			"column": "leiparcelamento"
+		},
+		{
+			"table": "tribdesapropriacao",
+			"column": "idato"
+		},
+		{
+			"table": "tribfiscalpenalidade",
+			"column": "idato"
+		},
+		{
+			"table": "tribfundamentolegal",
+			"column": "fundamentolegal"
+		},
+		{
+			"table": "tribguiarecolhimento",
+			"column": "fundamentolegal"
+		},
+		{
+			"table": "tribisencao",
+			"column": "idato"
+		},
+		{
+			"table": "triblivroregistro",
+			"column": "fundamentolegal"
+		},
+		{
+			"table": "tribloteamento",
+			"column": "idato"
+		},
+		{
+			"table": "tribmelhoriaedital",
+			"column": "numeroedital"
+		},
+		{
+			"table": "tribmotivodesconto",
+			"column": "idato"
+		}
+	]
+}]

@@ -1,16 +1,3 @@
-FK_NAME	COLUMN	REFERENCED BY	UPDATE_RULE	DELETE_RULE	DEFERRABLE
-r_49	cidade,bairro	aise.cep(cidade,bairro)	NO ACTION	SET NULL	NOT DEFERRABLE
-fk_endpessoa_bairro	bairro,cidade	aise.enderecopessoa(bairro,cidade)	NO ACTION	NO ACTION	NOT DEFERRABLE
-fkbairro_entidade	cidade,bairro	aise.entidade(cidade,bairro)	RESTRICT	RESTRICT	NOT DEFERRABLE
-fk_issprecadbairro	cidade,bairro	aise.issprecadastrobairro(bai_cidade,bai_idbairro)	RESTRICT	RESTRICT	NOT DEFERRABLE
-fkespacolograd_bairro	cidade,bairro	aise.rntespaco(cidade,bairro)	RESTRICT	RESTRICT	NOT DEFERRABLE
-fkbairro_cadgeral	cidade,bairro	aise.tribcadastrogeral(cidade,bairro)	RESTRICT	RESTRICT	NOT DEFERRABLE
-fkcadgeralend_bairro	cidade,bairro	aise.tribcadastrogeralendereco(cidade,bairro)	RESTRICT	RESTRICT	NOT DEFERRABLE
-fktribloteamento_bairro	cidade,bairro	aise.tribloteamento(cidade,bairro)	RESTRICT	RESTRICT	NOT DEFERRABLE
-fkbairrocontratopessoa	cidade,bairro	aise.tribsolicitacaocontratopessoa(cidade,bairro)	RESTRICT	RESTRICT	NOT DEFERRABLE
-fkbairro_vistoria	cidade,bairro	aise.tribvistoria(cidade,bairro)	RESTRICT	RESTRICT	NOT DEFERRABLE
-
-
 [{
 	"table": "bairro",
 	"column": "bairro",
