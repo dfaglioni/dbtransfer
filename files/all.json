@@ -107,12 +107,11 @@
 		}, {
 			"table": "logradouro",
 			"column": "tipologradouro"
-		},{
+		}, {
 			"table": "obrabem",
 			"column": "tipologradouro"
 		}]
-	}
-	{
+	}, {
 		"table": "logradouro",
 		"column": "logradouro",
 		"space": 1400,
