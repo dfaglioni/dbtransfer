@@ -1,7 +1,7 @@
 [{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 200,
+		"space": 1500,
 		"dependencies": [{
 			"table": "cep",
 			"column": "bairro"
@@ -34,7 +34,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 6000,
+		"space": 15000,
 		"dependencies": [{
 			"table": "agencia",
 			"column": "cidade"
@@ -100,7 +100,7 @@
 	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 20,
+		"space": 800,
 		"dependencies": [{
 			"table": "issprecadastrologradouro",
 			"column": "log_tipologradouro"
@@ -114,7 +114,7 @@
 	}, {
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 1400,
+		"space": 16000,
 		"dependencies": [{
 				"table": "cgato",
 				"column": "leiautorizativa"
@@ -128,7 +128,8 @@
 				"column": "logradouro"
 			},
 			{
-				"table": "issprecadastrologradouro(log_cidade,log_idlogradouro"
+				"table": "issprecadastrologradouro", 
+				"column": "log_idlogradouro"
 			},
 			{
 				"table": "logradourohistorico",
@@ -179,14 +180,15 @@
 				"column": "logradouro"
 			},
 			{
-				"table": "enderecopessoa(logradouro,cidade"
+				"table": "enderecopessoa",
+				"column": "logradouro"
 			}
 		]
 	},
 	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 13000,
+		"space": 120000,
 		"dependencies": [{
 				"table": "banco",
 				"column": "pessoa"
@@ -728,7 +730,7 @@
 	{
 		"table": "cgato",
 		"column": "idato",
-		"space": 2200,
+		"space": 5000,
 		"dependencies": [{
 				"table": "cgato",
 				"column": "leiautorizativa"

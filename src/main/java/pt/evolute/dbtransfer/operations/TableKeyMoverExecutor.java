@@ -21,18 +21,20 @@ public class TableKeyMoverExecutor {
 
 				String message = "Space less than max " + tableKeyMover.getTable() + " " + maxValue;
 				System.out.println(message);
-				throw new IllegalArgumentException(message);
+			
+			} else {
+				
+				updateToMove(con_dest, tableKeyMover.getTable(), tableKeyMover.getSpace());
+				
+				List<Table> dependencies = tableKeyMover.getTable().getDependencies();
+				
+				for (Table table : dependencies) {
+					
+					updateToMove(con_dest, table, tableKeyMover.getSpace());
+					
+				}
 			}
 
-			updateToMove(con_dest, tableKeyMover.getTable(), tableKeyMover.getSpace());
-
-			List<Table> dependencies = tableKeyMover.getTable().getDependencies();
-
-			for (Table table : dependencies) {
-
-				updateToMove(con_dest, table, tableKeyMover.getSpace());
-
-			}
 
 		}
 

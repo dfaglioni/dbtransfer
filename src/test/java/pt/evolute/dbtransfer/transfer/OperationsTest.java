@@ -175,7 +175,7 @@ public class OperationsTest {
 
 	}
 
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void moveLessThenMax() throws Exception {
 
 		CON_DEST.executeUpdate("INSERT INTO TAB_A VALUES (100, 'XXX')");
@@ -188,6 +188,10 @@ public class OperationsTest {
 		tableAMover.getTable().setTable("tab_a");
 
 		tableKeyMoverExecutor.execute(CON_DEST, Arrays.asList(tableAMover));
+		
+		assertThat("TAB_MOV", CON_DEST.getRowCountWhere(new Name("TAB_A"), " WHERE ID =  100"),
+				equalTo(1));
+
 
 	}
 
