@@ -186,8 +186,8 @@ public class AsyncStatement extends Thread {
 				conn.executeQuery("COMMIT;");
 				pStm.close();
 			}
-			System.out.println("Done writing table: " +  id.toUpperCase() + " (" + rows + " rows written)");
-			FileUtils.writeStringToFile(new File(Mover.DONE_FILE), id+'\n', Charset.defaultCharset(),true);
+			System.out.println("Done writing table: " +  id + " (" + rows + " rows written)");
+			FileUtils.writeStringToFile(new File(Mover.DONE_FILE), id.toUpperCase()+'\n', Charset.defaultCharset(),true);
 			if (postSetup != null) {
 				// System.out.println( "Setup query: " + postSetup );
 				conn.executeQuery(postSetup);

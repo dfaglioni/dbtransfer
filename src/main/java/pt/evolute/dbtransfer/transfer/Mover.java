@@ -1,8 +1,9 @@
 package pt.evolute.dbtransfer.transfer;
 
+import java.io.File;
+import java.nio.charset.Charset;
 import java.sql.Clob;
 import java.sql.Types;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -10,6 +11,8 @@ import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 
 import javax.sql.rowset.serial.SerialBlob;
+
+import org.apache.commons.io.FileUtils;
 
 import br.loop.string.utils.StringUtils;
 import pt.evolute.dbtransfer.Constants;
@@ -46,6 +49,7 @@ public class Mover  implements Constants {
 
 	private static final long MAX_MEM = Runtime.getRuntime().maxMemory();
 	public static final String DONE_FILE = "tables-done.txt";
+	private static final String FAIL_FILE = "tables-fail.txt";;
 
 	private boolean sleeping = false;
 	private int readRows = 0;
@@ -260,6 +264,8 @@ public class Mover  implements Constants {
 	private void validateRowCount() throws Exception {
 
 
+		boolean hasInvalidCount  = false;
+		
 		for (Name name : CON_SRC.getTableList()) {
 
 			int rowCountSource = CON_SRC.getRowCount(name);
@@ -268,10 +274,18 @@ public class Mover  implements Constants {
 			System.out.println("Testing row count for table " + name);
 			if (rowCountSource > rowCountDest) {
 
-				throw new IllegalStateException(
-						String.format("Not all rows was move for table %s, %d, %d", name, rowCountDest, rowCountSource));
+				hasInvalidCount = true;
+				
+				FileUtils.writeStringToFile(new File(Mover.FAIL_FILE), String.format("Not all rows was move for table %s, %d, %d\n", name, rowCountDest, rowCountSource), Charset.defaultCharset(),true);
+				
 			}
 
+		}
+		
+		if (hasInvalidCount) {
+			throw new IllegalStateException(
+					String.format("Not all rows was move, verify :" + Mover.FAIL_FILE));
+	
 		}
 
 	}

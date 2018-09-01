@@ -3,10 +3,14 @@ package pt.evolute.dbtransfer.transfer;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -67,7 +71,10 @@ public class OperationsTest {
 	}
 
 	@Before
-	public void setup() throws SQLException {
+	public void setup() throws SQLException, IOException {
+		
+		FileUtils.writeStringToFile(new File(Mover.DONE_FILE), "emp", Charset.defaultCharset());
+		
 		props = new Properties();
 		intDeleteAll(CON_SRC);
 		intDeleteAll(CON_DEST);
