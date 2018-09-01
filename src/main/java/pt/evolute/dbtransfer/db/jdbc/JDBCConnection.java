@@ -113,7 +113,7 @@ public class JDBCConnection implements DBConnection {
 				if (helper.isTableValid(n)) {
 					if ("elo_log".equalsIgnoreCase(table) || "iri_sessao".equalsIgnoreCase(table)
 							|| "iri_ses_output".equalsIgnoreCase(table) || "iri_transaccao".equalsIgnoreCase(table)
-							|| tables.contains(table)) {
+							|| tables.contains(table.toUpperCase())) {
 						continue;
 					}
 					if (ignoreEmpty && getRowCount(n) == 0) {
