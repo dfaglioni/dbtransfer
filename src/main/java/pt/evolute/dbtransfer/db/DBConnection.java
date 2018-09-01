@@ -47,4 +47,8 @@ public interface DBConnection
     public int executeUpdate(String sql) throws SQLException;
     
     public Connection getConnection();
+    
+    public DBConnection cloneConnection();
+
+	public void close();
 }

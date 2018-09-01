@@ -336,4 +336,29 @@ public class JDBCConnection implements DBConnection
 		return connection;
 	}
 
+	@Override
+	public DBConnection cloneConnection() {
+		
+		try {
+			return new JDBCConnection(dbUrl, dbUser, dbPasswd, ignoreEmpty, dbSchema);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("EX in cloneConnection");
+			
+			throw new RuntimeException(e);
+		}
+	}
+
+	@Override
+	public void close() {
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			System.out.println("EX in close");
+			throw new RuntimeException(e);
+		}
+		
+	}
+
 }

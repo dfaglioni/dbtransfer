@@ -167,7 +167,7 @@ public class Mover  implements Constants {
 				String pre = tr.preLoadSetup(TABLES[i].saneName);
 				String post = tr.postLoadSetup(TABLES[i].saneName);
 				AsyncStatement astm = new AsyncStatement(typesCache, CON_DEST, insert, TABLES[i].saneName, pre, post,
-						IGNORE_BLOB);
+						IGNORE_BLOB, getMaxBatchRows(TABLES[i]));
 				threads.add(astm);
 				int rows = 0;
 
@@ -242,6 +242,18 @@ public class Mover  implements Constants {
 		}
 		validateRowCount(); //TODO não pode validar para algumas tabelas e não pode validar para tabelas que podem dar erro de pk
 	}
+
+	private int getMaxBatchRows(Name name) throws Exception {
+		
+		  if ( !onlyNotEmpty && CON_DEST.getRowCount(name) > 0 ) {
+        	
+        	return 1;
+        }
+		
+		return MAX_BATCH_ROWS;
+	}
+
+
 
 	private void validateRowCount() throws Exception {
 
