@@ -13,7 +13,7 @@ import pt.evolute.dbtransfer.db.beans.Name;
 
 public class NullHelper implements Helper
 {
-    private static final int FETCH_SIZE = 500000;
+    private static final int FETCH_SIZE = 50000;
 	private static NullHelper translator = null;
 
     protected NullHelper()

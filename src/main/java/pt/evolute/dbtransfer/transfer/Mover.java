@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.ConcurrentHashMap;
 
 import javax.sql.rowset.serial.SerialBlob;
 
@@ -41,7 +42,7 @@ public class Mover  implements Constants {
 	private final DBConnection CON_SRC;
 	private final DBConnection CON_DEST;
 	private final boolean ESCAPE_UNICODE;
-	private final Map<Name, Integer> destRowsCount = new HashMap<>();
+	private final Map<Name, Integer> destRowsCount = new ConcurrentHashMap<>();
 
 	private static final long MAX_MEM = Runtime.getRuntime().maxMemory();
 
@@ -108,7 +109,7 @@ public class Mover  implements Constants {
 		ReportThread rt = new ReportThread(this, AsyncStatement.getRunningThreads());
 		rt.start();
 
-		if (onlyNotEmpty && destRowsCount.isEmpty()) {
+		if (destRowsCount.isEmpty()) {
 
 			for (int i = 0; i < TABLES.length; ++i) {
 
@@ -126,7 +127,7 @@ public class Mover  implements Constants {
 			if (hasData) {
 				hasData = testRow(rs, 0);
 			}
-			if (hasData && destRowsCount.getOrDefault(TABLES[i], 0) == 0) {
+			if (hasData && ( destRowsCount.getOrDefault(TABLES[i], 0) == 0  || !onlyNotEmpty)) {
 				StringBuilder buff = new StringBuilder("INSERT INTO ");
 				StringBuilder args = new StringBuilder();
 				buff.append(TABLES[i].saneName);
@@ -245,7 +246,7 @@ public class Mover  implements Constants {
 
 	private int getMaxBatchRows(Name name) throws Exception {
 		
-		  if ( !onlyNotEmpty && CON_DEST.getRowCount(name) > 0 ) {
+		  if ( !onlyNotEmpty &&  destRowsCount.get(name) > 0 ) {
         	
         	return 1;
         }

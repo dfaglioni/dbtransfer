@@ -110,16 +110,23 @@ public class AsyncStatement extends Thread {
 
 		DBConnection conn_clone = CONN_TARGET.cloneConnection();
 		try {
-			executeInsert(conn_clone);
+			try {
+				executeInsert(conn_clone);
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.out.println("EX on exception: " + id + " " + e.getMessage());
+				
+			}
 
 		} finally {
 			conn_clone.close();
 		}
 	}
 
-	private void executeInsert(DBConnection conn) {
+	private void executeInsert(DBConnection conn) throws Exception {
 
-		System.out.println("\nStarting " + getName());
+		System.out.println("\nStarting " + getName() + " batch size "+ max_batch_rows);
+		PreparedStatement pStm = null;
 		try {
 			if (preSetup != null) {
 				System.out.println("Setup query: " + preSetup);
@@ -127,7 +134,7 @@ public class AsyncStatement extends Thread {
 			}
 			int rows = 0;
 
-			PreparedStatement pStm = conn.prepareStatement(INSERT);
+			pStm = conn.prepareStatement(INSERT);
 			conn.executeQuery("BEGIN;");
 			// enquanto a thread nao for parada
 			// ou tiver dados locais
@@ -157,6 +164,7 @@ public class AsyncStatement extends Thread {
 							pStm.executeBatch();
 							conn.executeQuery("COMMIT;");
 						} catch (Exception e) {
+							System.out.print("Error on insert "+ e.getMessage() + " batch "+ max_batch_rows);
 							conn.executeQuery("rollback;");
 						}
 						conn.executeQuery("BEGIN;");
@@ -179,6 +187,8 @@ public class AsyncStatement extends Thread {
 		} catch (Exception ex) {
 
 			System.out.println("EX in: " + id + " " + INSERT.substring(0, 30));
+			conn.executeQuery("rollback;");
+			pStm.close();			
 			ex.printStackTrace(System.out);
 			ex.printStackTrace(System.err);
 			if (ex instanceof SQLException) {
