@@ -1,5 +1,7 @@
 package pt.evolute.dbtransfer.transfer;
 
+import java.io.File;
+import java.nio.charset.Charset;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Types;
@@ -7,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+
+import org.apache.commons.io.FileUtils;
 
 import pt.evolute.dbtransfer.db.DBConnection;
 import pt.evolute.dbtransfer.db.helper.Helper;
@@ -47,6 +51,8 @@ public class AsyncStatement extends Thread {
 	private int writeRows = 0;
 
 	private final Integer max_batch_rows;
+
+	private int insertErrors;
 	// private int count = 0;
 
 	/**
@@ -164,7 +170,9 @@ public class AsyncStatement extends Thread {
 							pStm.executeBatch();
 							conn.executeQuery("COMMIT;");
 						} catch (Exception e) {
-							System.out.print("Error on insert "+ e.getMessage() + " batch "+ max_batch_rows);
+							
+							insertErrors++;
+							
 							conn.executeQuery("rollback;");
 						}
 						conn.executeQuery("BEGIN;");
@@ -179,6 +187,7 @@ public class AsyncStatement extends Thread {
 				pStm.close();
 			}
 			System.out.println("Done writing table: " + id + " (" + rows + " rows written)");
+			FileUtils.writeStringToFile(new File(Mover.DONE_FILE), id+'\n', Charset.defaultCharset(),true);
 			if (postSetup != null) {
 				// System.out.println( "Setup query: " + postSetup );
 				conn.executeQuery(postSetup);
@@ -293,5 +302,9 @@ public class AsyncStatement extends Thread {
 
 	public int getPrivateRowsSize() {
 		return PRIVATE_DATA.size() / EFFECTIVE_COLUMNS;
+	}
+
+	public int getInsertErrors() {
+		return insertErrors;
 	}
 }

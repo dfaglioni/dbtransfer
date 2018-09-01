@@ -74,12 +74,14 @@ public class ReportThread extends Thread
                 int writeRows = as.getAndResetWriteRows();
                 int privateRows = as.getPrivateRowsSize();
                 int sharedRows = as.getSharedRowsSize();
+                int insertErrors = as.getInsertErrors();
                 last = System.currentTimeMillis();
                 System.out.println( "WRITE: " + as.getName() + " rows: " 
                         + format( writeRows ) + " in " + ( last - lastReport ) + "ms " 
                         + ( as.isSleeping()? "sleeping!": "" )
                         + " shared rows: " + sharedRows
-                        + " private rows: " + privateRows );
+                        + " private rows: " + privateRows
+                        + " insert errors: " + insertErrors);
                 long totalMem = Runtime.getRuntime().totalMemory();
                 long freeMem = Runtime.getRuntime().freeMemory();
                 System.out.println( "free/allocated JVM memory: " + freeMem / (1024*1024) 

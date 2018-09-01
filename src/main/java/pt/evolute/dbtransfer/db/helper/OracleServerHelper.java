@@ -1,5 +1,7 @@
 package pt.evolute.dbtransfer.db.helper;
 
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -165,5 +167,10 @@ public class OracleServerHelper extends NullHelper
     public boolean isTableValid( Name name )
     {
         return !name.saneName.contains( "==" );
+    }
+    
+    @Override
+    public void setupStatement(Statement stm) throws SQLException {
+    	
     }
 }

@@ -45,6 +45,7 @@ public class Mover  implements Constants {
 	private final Map<Name, Integer> destRowsCount = new ConcurrentHashMap<>();
 
 	private static final long MAX_MEM = Runtime.getRuntime().maxMemory();
+	public static final String DONE_FILE = "tables-done.txt";
 
 	private boolean sleeping = false;
 	private int readRows = 0;
