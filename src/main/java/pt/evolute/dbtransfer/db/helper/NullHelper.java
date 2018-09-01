@@ -13,7 +13,8 @@ import pt.evolute.dbtransfer.db.beans.Name;
 
 public class NullHelper implements Helper
 {
-    private static NullHelper translator = null;
+    private static final int FETCH_SIZE = 500000;
+	private static NullHelper translator = null;
 
     protected NullHelper()
     {
@@ -187,8 +188,10 @@ public class NullHelper implements Helper
 
     @Override
     public void setupStatement(Statement stm) 
-            throws SQLException
-    {
+            throws SQLException {
+            
+            stm.setFetchSize(FETCH_SIZE);
+    
     }
 
     public void initConnection( DBConnection con) throws Exception 
