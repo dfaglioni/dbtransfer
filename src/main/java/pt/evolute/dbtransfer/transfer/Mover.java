@@ -49,7 +49,8 @@ public class Mover  implements Constants {
 
 	private static final long MAX_MEM = Runtime.getRuntime().maxMemory();
 	public static final String DONE_FILE = "tables-done.txt";
-	private static final String FAIL_FILE = "tables-fail.txt";;
+	private static final String FAIL_FILE = "tables-fail.txt";
+	private static final String DIFF_FILE = "tables-diff.txt";;
 
 	private boolean sleeping = false;
 	private int readRows = 0;
@@ -264,9 +265,15 @@ public class Mover  implements Constants {
 	private void validateRowCount() throws Exception {
 
 
+		FileUtils.writeStringToFile(new File(Mover.FAIL_FILE),"", Charset.defaultCharset());
+		FileUtils.writeStringToFile(new File(Mover.DIFF_FILE),"", Charset.defaultCharset());
+
+		
 		boolean hasInvalidCount  = false;
 		
-		for (Name name : CON_SRC.getTableList()) {
+		CON_SRC.resetAllTables();
+		
+		for (Name name : CON_SRC.getTableList(true)) {
 
 			int rowCountSource = CON_SRC.getRowCount(name);
 			int rowCountDest = CON_DEST.getRowCount(name);
@@ -276,8 +283,12 @@ public class Mover  implements Constants {
 
 				hasInvalidCount = true;
 				
-				FileUtils.writeStringToFile(new File(Mover.FAIL_FILE), String.format("Not all rows was move for table %s, %d, %d\n", name, rowCountDest, rowCountSource), Charset.defaultCharset(),true);
+				FileUtils.writeStringToFile(new File(Mover.FAIL_FILE), String.format("%s  %d < %d\n", name, rowCountDest, rowCountSource), Charset.defaultCharset(),true);
 				
+			} else if ( rowCountSource != rowCountDest) {
+				
+				FileUtils.writeStringToFile(new File(Mover.DIFF_FILE), String.format("%s  %d != %d\n", name, rowCountDest, rowCountSource), Charset.defaultCharset(),true);
+							
 			}
 
 		}

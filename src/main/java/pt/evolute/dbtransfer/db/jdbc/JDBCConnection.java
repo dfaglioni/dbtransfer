@@ -101,30 +101,7 @@ public class JDBCConnection implements DBConnection {
 	}
 
 	public List<Name> getTableList() throws Exception {
-		if (LIST_TABLES.isEmpty()) {
-
-			List<String> tables = FileUtils.readLines(new File(Mover.DONE_FILE), Charset.defaultCharset());
-
-			DatabaseMetaData rsmd = connection.getMetaData();
-			ResultSet rs = rsmd.getTables(catalog, dbSchema, null, new String[] { "TABLE" });
-			while (rs.next()) {
-				String table = rs.getString(3);
-				Name n = new Name(table);
-				if (helper.isTableValid(n)) {
-					if ("elo_log".equalsIgnoreCase(table) || "iri_sessao".equalsIgnoreCase(table)
-							|| "iri_ses_output".equalsIgnoreCase(table) || "iri_transaccao".equalsIgnoreCase(table)
-							|| tables.contains(table.toUpperCase())) {
-						continue;
-					}
-					if (ignoreEmpty && getRowCount(n) == 0) {
-						continue;
-					}
-					LIST_TABLES.add(n);
-				}
-			}
-			rs.close();
-		}
-		return LIST_TABLES;
+	  return getTableList(false);
 	}
 
 	public List<ColumnDefinition> getColumnList(Name table) throws Exception {
@@ -301,6 +278,40 @@ public class JDBCConnection implements DBConnection {
 			throw new RuntimeException(e);
 		}
 
+	}
+
+	@Override
+	public List<Name> getTableList(boolean ignoreDone) throws Exception {
+	
+		if (LIST_TABLES.isEmpty()) {
+
+			List<String> tables = FileUtils.readLines(new File(Mover.DONE_FILE), Charset.defaultCharset());
+
+			DatabaseMetaData rsmd = connection.getMetaData();
+			ResultSet rs = rsmd.getTables(catalog, dbSchema, null, new String[] { "TABLE" });
+			while (rs.next()) {
+				String table = rs.getString(3);
+				Name n = new Name(table);
+				if (helper.isTableValid(n)) {
+					if ("elo_log".equalsIgnoreCase(table) || "iri_sessao".equalsIgnoreCase(table)
+							|| "iri_ses_output".equalsIgnoreCase(table) || "iri_transaccao".equalsIgnoreCase(table)
+							|| ( tables.contains(table.toUpperCase()) && !ignoreDone )) {
+						continue;
+					}
+					if (ignoreEmpty && getRowCount(n) == 0) {
+						continue;
+					}
+					LIST_TABLES.add(n);
+				}
+			}
+			rs.close();
+		}
+		return LIST_TABLES;
+	}
+
+	@Override
+	public void resetAllTables() {
+		LIST_TABLES.clear();
 	}
 
 }

@@ -19,6 +19,9 @@ public interface DBConnection
 	public List<Name> getTableList()
 			throws Exception;
 
+	public List<Name> getTableList(boolean ignoreDone)
+			throws Exception;
+
 	public List<ColumnDefinition> getColumnList(Name table)
 			throws Exception;
 	
@@ -51,4 +54,6 @@ public interface DBConnection
     public DBConnection cloneConnection();
 
 	public void close();
+	
+	public void resetAllTables();
 }

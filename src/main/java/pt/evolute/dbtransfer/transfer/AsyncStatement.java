@@ -171,7 +171,17 @@ public class AsyncStatement extends Thread {
 							conn.executeQuery("COMMIT;");
 						} catch (Exception e) {
 							
+							if ( max_batch_rows  == Mover.MAX_BATCH_ROWS) {
+								
+								e.printStackTrace(System.out);
+								
+								
+								System.out.println("EX in: " + id + " " + INSERT.substring(0, 30) + " " + e.getMessage());
+								
+							}
+							
 							insertErrors++;
+							
 							
 							conn.executeQuery("rollback;");
 						}
