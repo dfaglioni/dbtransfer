@@ -35,6 +35,8 @@ public class Connector
 	public static Connection getConnection( String url, String user, String passwd )
 		throws SQLException
 	{
+		
+		
 		if( DriverProvider.loadDriverForURL( url ) )
 		{
 //			System.out.println( "Driver recognized - " 

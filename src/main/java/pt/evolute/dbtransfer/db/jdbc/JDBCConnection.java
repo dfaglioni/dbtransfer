@@ -51,6 +51,8 @@ public class JDBCConnection implements DBConnection {
 	private final List<Name> LIST_TABLES = new ArrayList<Name>();
 
 	private final Helper helper;
+	
+
 
 	public JDBCConnection(String url, String user, String pass, boolean onlyNotEmpty, String schema) throws Exception {
 		dbUrl = url;
@@ -63,6 +65,7 @@ public class JDBCConnection implements DBConnection {
 		} else {
 			dbSchema = schema;
 		}
+		
 
 		ignoreEmpty = onlyNotEmpty;
 		helper = HelperManager.getTranslator(url);
@@ -149,10 +152,17 @@ public class JDBCConnection implements DBConnection {
 				}
 			}
 			rs.close();
-			list = Collections.unmodifiableList(list);
+			list = Collections.unmodifiableList(listSort(list));
 			MAP_TABLE_COLUMNS.put(table.originalName, list);
 		}
 		// System.out.println( "COLSS size: " + list.size() );
+		return list;
+	}
+
+	public static List<ColumnDefinition> listSort(List<ColumnDefinition> list) {
+		
+		list.sort( (e1, e2) ->  e1.sqlType == Types.LONGVARBINARY ? -1 : 0 );
+
 		return list;
 	}
 
