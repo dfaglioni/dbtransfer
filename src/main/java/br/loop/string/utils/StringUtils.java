@@ -8,7 +8,7 @@ import com.google.common.base.CharMatcher;
 public class StringUtils {
 
 	private static CharMatcher desired = CharMatcher.ascii()
-			  .or(CharMatcher.anyOf("ÁáÂâÀàÅåÃãÄäÆæ;ÉéÊêÈèËëÐðÍíÎîÌìÏïÓóÔôÒòØøÕõÖöÚúÛûÙùÜüÇçÑñ<>&\"®©ÝýÞþß"))
+			  .or(CharMatcher.anyOf("ÁáÂâÀàÅåÃãÄäÆæ;ÉéÊêÈèËëÐðÍíÎîÌìÏïÓóÔôÒòØøÕõÖöÚúÛûÙùÜüÇçÑñ<>&\"®©ÝýÞþßM²M³m²m³"))
 			  .precomputed(); // optional, may improve performance, YMMV
 
 	

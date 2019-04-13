@@ -21,9 +21,9 @@ public class StringUtilsTest {
 	@Test
 	public void allAlpha() throws Exception {
 
-		String str = "ÁáÂâÀàÅåÃãÄäÆæ;ÉéÊêÈèËëÐðÍíÎîÌìÏïÓóÔôÒòØøÕõÖöÚúÛûÙùÜüÇçÑñ<>&\"®©ÝýÞþß";
+		String str = "ÁáÂâÀàÅåÃãÄäÆæ;ÉéÊêÈèËëÐðÍíÎîÌìÏïÓóÔôÒòØøÕõÖöÚúÛûÙùÜüÇçÑñ<>&\"®©ÝýÞþßM²M³m²m³";
 
-		assertEquals("ÁáÂâÀàÅåÃãÄäÆæ;ÉéÊêÈèËëÐðÍíÎîÌìÏïÓóÔôÒòØøÕõÖöÚúÛûÙùÜüÇçÑñ<>&\"®©ÝýÞþß",
+		assertEquals("ÁáÂâÀàÅåÃãÄäÆæ;ÉéÊêÈèËëÐðÍíÎîÌìÏïÓóÔôÒòØøÕõÖöÚúÛûÙùÜüÇçÑñ<>&\"®©ÝýÞþßM²M³m²m³",
 				StringUtils.removeInvalidUTF8(str));
 
 	}
