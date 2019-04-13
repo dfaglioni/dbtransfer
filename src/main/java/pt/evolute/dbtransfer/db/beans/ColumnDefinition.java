@@ -18,8 +18,7 @@ public class ColumnDefinition {
 
 	@Override
 	public String toString() {
-		return "ColumnDefinition [name=" + name + ",  sqlType=" + sqlType + ", sqlSize="
-				+ sqlSize + "]";
+		return "[name=" + name + ",  sqlType=" + sqlType + "]";
 	}
 
 }

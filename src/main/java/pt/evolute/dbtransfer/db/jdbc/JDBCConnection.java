@@ -144,7 +144,7 @@ public class JDBCConnection implements DBConnection {
 					col.isNotNull = "NO".equals(rs.getString(18).trim());
 					cols.put(col.name.saneName, col);
 					list.add(col);
-					// System.out.println( "Adding col: " + table.originalName + " - " + name );
+					System.out.println( "Adding col: " + table.originalName + " - " + col );
 				} else {
 					System.out.println("Ignoring duplicate: " + table.originalName + " - " + name);
 					new Exception("Ignoring duplicate: " + table.originalName + " - " + name).printStackTrace();
