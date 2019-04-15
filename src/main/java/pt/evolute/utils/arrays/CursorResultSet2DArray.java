@@ -2,8 +2,8 @@ package pt.evolute.utils.arrays;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import pt.evolute.utils.arrays.exception.EndOfArrayException;
 
+import pt.evolute.utils.arrays.exception.EndOfArrayException;
 import pt.evolute.utils.error.ErrorLogger;
 
 public class CursorResultSet2DArray implements Virtual2DArray
@@ -48,7 +48,7 @@ public class CursorResultSet2DArray implements Virtual2DArray
                     {
                         for( int i = 0; i < columns; ++i )
                         {
-                                currentRowData[ i ] = results.getObject( i + 1 );					
+                            currentRowData[i] = results.getObject(i + 1);
                         }
                         obj = (RETURN_TYPE)currentRowData[ col ];
                         if( !results.next() )

@@ -152,8 +152,7 @@ public class Mover  implements Constants {
 					}
 				}
 				for (int j = 0; j < columns.size(); ++j) {
-					if (!IGNORE_BLOB || (typesCache[j] != Types.BLOB && typesCache[j] != Types.LONGVARBINARY
-							&& typesCache[j] != Types.VARBINARY)) {
+                    if (!IGNORE_BLOB || (typesCache[j] != Types.LONGVARBINARY)) {
 						if (j != 0) {
 							buff.append(", ");
 							args.append(", ");
