@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.sql.Types;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import org.junit.Test;
@@ -16,21 +17,20 @@ public class JDBCConnectionTest {
 	public void sort() {
 
 		ColumnDefinition col1 = new ColumnDefinition();
-		col1.sqlType = 1;
+		col1.sqlType = 3;
 
 		ColumnDefinition col2 = new ColumnDefinition();
-		col2.sqlType = -8;
+		col2.sqlType = 3;
 
 		ColumnDefinition col3 = new ColumnDefinition();
 		col3.sqlType = Types.LONGVARBINARY;
 
 		ColumnDefinition col4 = new ColumnDefinition();
-		col4.sqlType = -5;
+		col4.sqlType = 93;
 
-		
 	
-		List<ColumnDefinition> list = JDBCConnection.listSort(Arrays.asList(col1, col2, col3, col4));
-
+		List<ColumnDefinition> list = Collections.unmodifiableList(JDBCConnection.listSort(Arrays.asList(col1, col2, col3, col4)));
+	
 		
 		System.out.println(list);
 		
