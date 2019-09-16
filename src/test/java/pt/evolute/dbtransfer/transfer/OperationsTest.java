@@ -13,6 +13,7 @@ import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import br.loop.db.domain.Table;
@@ -104,6 +105,22 @@ public class OperationsTest {
 		assertThat(CON_DEST.getRowCount(new Name("TAB1")), equalTo(3));
 		assertThat(CON_DEST.getRowCount(new Name("TAB2")), equalTo(1));
 		assertThat(CON_DEST.getRowCount(new Name("TAB3")), equalTo(0));
+
+	}
+	
+	@Test
+	@Ignore
+	public void simpleChangeKey() throws Exception {
+
+		CON_SRC.executeUpdate("INSERT INTO TAB1 VALUES (1, 'XXX')");
+		
+		mover = new Mover(props, SRC, DEST);
+
+		mover.moveDB();
+		
+		assertThat("TAB1", CON_DEST.getRowCountWhere(new Name("TAB1"), " WHERE ID = 10"),
+				equalTo(1));
+
 
 	}
 
