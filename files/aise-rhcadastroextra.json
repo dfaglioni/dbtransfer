@@ -1,0 +1,6 @@
+{
+	"table": "rhcadastroextra",
+	"column": "idfolha",
+	"space": 20,
+	"dependencies": [ { "table": "contcadastroextra",	"column": "idfolha" }]
+},
