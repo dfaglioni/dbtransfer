@@ -1,0 +1,74 @@
+{
+	"table": "logradouro",
+	"column": "logradouro",
+	"space": 1400,
+	"dependencies": [{
+			"table": "cgato",
+			"column": "leiautorizativa"
+		},
+		{
+			"table": "cep",
+			"column": "logradouro"
+		},
+		{
+			"table": "entidade",
+			"column": "logradouro"
+		},
+		{
+			"table": "issprecadastrologradouro(log_cidade,log_idlogradouro"
+		},
+		{
+			"table": "logradourohistorico",
+			"column": "logradouro"
+		},
+		{
+			"table": "rntespaco",
+			"column": "logradouro"
+		},
+		{
+			"table": "tribcadastrogeral",
+			"column": "logradouro"
+		},
+		{
+			"table": "tribcadastrogeralendereco",
+			"column": "logradouro"
+		},
+		{
+			"table": "tribimobiliariotestadagenerica",
+			"column": "logradouro"
+		},
+		{
+			"table": "triblogradourotestada",
+			"column": "delimitacaofinal"
+		},
+		{
+			"table": "triblogradourotestada",
+			"column": "delimitacaoinicial"
+		},
+		{
+			"table": "triblogradourotestada",
+			"column": "logradouro"
+		},
+		{
+			"table": "triblogradourotrecho",
+			"column": "logradouro"
+		},
+		{
+			"table": "tribsolicitacaocontratopessoa",
+			"column": "logradouro"
+		},
+		{
+			"table": "tribtrecho",
+			"column": "logradouro"
+		},
+		{
+			"table": "tribvistoria",
+			"column": "logradouro"
+		},
+		{
+			"table": "enderecopessoa",
+	 		"column": "logradouro"
+	
+		}
+	]
+},

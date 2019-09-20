@@ -1,0 +1,33 @@
+{
+	"table": "bairro",
+	"column": "bairro",
+	"space": 200,
+	"dependencies": [{
+		"table": "cep",
+		"column": "bairro"
+	}, {
+		"table": "enderecopessoa",
+		"column": "bairro"
+	},{
+		"table": "issprecadastrobairro",
+		"column": "bai_idbairro"
+	}, {
+		"table": "rntespaco",
+		"column": "bairro"
+	}, {
+		"table": "tribcadastrogeral",
+		"column": "bairro"
+	}, {
+		"table": "tribcadastrogeralendereco",
+		"column": "bairro"
+	},{
+		"table": "tribloteamento",
+		"column": "bairro"
+	},{
+		"table": "tribsolicitacaocontratopessoa",
+		"column": "bairro"
+	},{
+		"table": "tribvistoria",
+		"column": "bairro"
+	}]
+},

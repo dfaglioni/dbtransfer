@@ -1,0 +1,15 @@
+{
+	"table": "tipologradouro",
+	"column": "tipologradouro",
+	"space": 20,
+	"dependencies": [{
+		"table": "issprecadastrologradouro",
+		"column": "log_tipologradouro"
+	}, {
+		"table": "logradouro",
+		"column": "tipologradouro"
+	},{
+		"table": "obrabem",
+		"column": "tipologradouro"
+	}]
+},
