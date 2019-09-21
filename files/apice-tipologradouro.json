@@ -1,0 +1,14 @@
+{
+	"table": "tipologradouro",
+	"column": "tipologradouro",
+	"space": 200,
+	"dependencies": [{
+			"table": "clmembro",
+			"column": "tipologradouro"
+		},
+		{
+			"table": "logradouro",
+			"column": "tipologradouro"
+		}
+	]
+},

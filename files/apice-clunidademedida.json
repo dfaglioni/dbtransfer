@@ -1,0 +1,10 @@
+{
+	"table": "clunidademedida",
+	"column": "unidademedida",
+	"space": 200,
+	"dependencies": [{
+			"table": "clitem",
+			"column": "unidademedida"
+		}
+	]
+},

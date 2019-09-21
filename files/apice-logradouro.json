@@ -1,0 +1,22 @@
+{
+	"table": "logradouro",
+	"column": "logradouro",
+	"space": 20,
+	"dependencies": [{
+			"table": "cep",
+			"column": "logradouro"
+		},
+		{
+			"table": "clmembro",
+			"column": "logradouro"
+		},
+		{
+			"table": "enderecopessoa",
+			"column": "logradouro"
+		},
+		{
+			"table": "entidade",
+			"column": "logradouro"
+		}
+	]
+},

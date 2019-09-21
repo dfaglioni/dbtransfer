@@ -1,0 +1,6 @@
+{
+	"table": "log_tabelas",
+	"column": "codigo",
+	"space": 20,
+	"dependencies": []
+},

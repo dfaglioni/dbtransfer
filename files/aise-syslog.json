@@ -1,0 +1,6 @@
+{
+	"table": "syslog",
+	"column": "idlog",
+	"space": 20,
+	"dependencies": []
+},

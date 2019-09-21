@@ -1,0 +1,6 @@
+{
+	"table": "syslogseletor",
+	"column": "idlog",
+	"space": 20,
+	"dependencies": []
+},

@@ -1,0 +1,38 @@
+{
+	"table": "clmembro",
+	"column": "membro",
+	"space": 200,
+	"dependencies": [{
+			"table": "clcomissaoleilao",
+			"column": "membro"
+		},
+		{
+			"table": "clcomissaomembro",
+			"column": "membro"
+		},
+		{
+			"table": "clcomissaopregao",
+			"column": "membro"
+		},
+		{
+			"table": "cllicitacaocomissaomembro",
+			"column": "membro"
+		},
+		{
+			"table": "clmembropresente",
+			"column": "membro"
+		},
+		{
+			"table": "clminuta",
+			"column": "membroaprovacao"
+		},
+		{
+			"table": "clparecer",
+			"column": "membro"
+		},
+		{
+			"table": "clrealinhamento",
+			"column": "membro"
+		}
+	]
+},
