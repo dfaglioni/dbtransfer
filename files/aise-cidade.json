@@ -8,7 +8,7 @@
 	}, {
 		"table": "bairro",
 		"column": "cidade"
-	},{
+	}, {
 		"table": "cep",
 		"column": "cidade"
 	}, {
@@ -20,46 +20,46 @@
 	}, {
 		"table": "issnotafiscal",
 		"column": "localprestacaoidcidade"
-	},{
+	}, {
 		"table": "issnotafiscal",
 		"column": "intermediarioidcidade"
-	},{
+	}, {
 		"table": "issnotafiscaltomador",
 		"column": "idcidade"
-	},{
+	}, {
 		"table": "issprecadastrobairro",
 		"column": "bai_cidade"
-	},{
+	}, {
 		"table": "issprecadastrologradouro",
 		"column": "log_cidade"
-	},{
+	}, {
 		"table": "issrps",
 		"column": "idcidadeservico"
-	},{
+	}, {
 		"table": "issrps",
 		"column": "idmunicipioincidencia"
-	},{
+	}, {
 		"table": "issrps",
 		"column": "tomadoridcidade"
-	},{
+	}, {
 		"table": "localidade",
 		"column": "cidade"
-	},{
+	}, {
 		"table": "logradouro",
 		"column": "cidade"
-	},{
+	}, {
 		"table": "pjcomarca",
 		"column": "cidade"
-	},{
+	}, {
 		"table": "rhpessoa",
 		"column": "cidadenascimento"
-	},{
+	}, {
 		"table": "rhpessoa",
 		"column": "cidadetitulo"
-	},{
+	}, {
 		"table": "rhprocessojudicial",
 		"column": "cidadesecaojudiciaria"
-	},{
+	}, {
 		"table": "tribcadastrogeralendereco",
 		"column": "cidade"
 	}]

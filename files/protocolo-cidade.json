@@ -1,0 +1,27 @@
+{
+	"table": "cidade",
+	"column": "cidade",
+	"space": 20,
+	"dependencies": [{
+			"table": "bairro",
+			"column": "cidade"
+		},
+		{
+			"table": "enderecopessoa",
+			"column": "cidade"
+		},
+		{
+			"table": "entidade",
+			"column": "cidade"
+		},
+		{
+			"table": "logradouro",
+			"column": "cidade"
+		},
+		{
+			"table": "processos",
+			"column": "cidade"
+		}
+
+	]
+},

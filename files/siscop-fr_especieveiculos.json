@@ -1,0 +1,9 @@
+{
+	"table": "fr_especieveiculos",
+	"column": "codigo",
+	"space": 20,
+	"dependencies": [{
+		"table": "pat_veiculo",
+		"column": "especie"
+	}]
+},

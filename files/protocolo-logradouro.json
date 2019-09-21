@@ -1,0 +1,26 @@
+{
+	"table": "logradouro",
+	"column": "logradouro",
+	"space": 10,
+	"dependencies": [
+
+		{
+			"table": "entidade",
+			"column": "logradouro"
+		},
+		{
+			"table": "processos",
+			"column": "endcorrespondencia"
+		},
+		{
+			"table": "processos",
+			"column": "logradouro"
+		},
+		{
+			"table": "enderecopessoa",
+			"column": "logradouro"
+		}
+
+
+	]
+},

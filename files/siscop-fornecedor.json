@@ -1,0 +1,394 @@
+{
+	"table": "fornecedor",
+	"column": "fornecedor",
+	"space": 20,
+	"dependencies": [
+
+		{
+			"table": "acordos",
+			"column": "fornecedor"
+		},
+		{
+			"table": "aditivoconvenio",
+			"column": "fornecedordiario"
+		},
+		{
+			"table": "cadastroconvenio",
+			"column": "fornecedordiario"
+		},
+		{
+			"table": "cadastroconvenio",
+			"column": "fornecedororigemdestino"
+		},
+		{
+			"table": "cadastroextra",
+			"column": "fornecedor"
+		},
+		{
+			"table": "cargo",
+			"column": "fornecedor"
+		},
+		{
+			"table": "contabancariaresponsavel",
+			"column": "responsavel"
+		},
+		{
+			"table": "contacorrente",
+			"column": "fornecedor"
+		},
+		{
+			"table": "contacorrente",
+			"column": "idfornecedorcompetencia"
+		},
+		{
+			"table": "contrato",
+			"column": "tipofornecedor"
+		},
+		{
+			"table": "divida",
+			"column": "fornecedor"
+		},
+		{
+			"table": "empenho",
+			"column": "fornecedor"
+		},
+		{
+			"table": "empenho_rateio",
+			"column": "consorciado"
+		},
+		{
+			"table": "est_movimentacao",
+			"column": "fornecedor"
+		},
+		{
+			"table": "eventoslancadosconta",
+			"column": "fornecedor"
+		},
+		{
+			"table": "extraorcamentario",
+			"column": "fornecedor"
+		},
+		
+		{
+			"table": "fornecedor_competencia",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fornecedoralterarazao",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fornecedorbanco",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fornecedorbancoentidade",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fornecedorcontafonte",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fornecedordotacao",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fornecedornegativa",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fornecedorsocio",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fornecedorsubvencao",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_bateria",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_bombacombustivel",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_doacaocombustivel",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_entradacombustivel",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_gastosfrota",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_ordemservico",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_perdacombustivel",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_pneu",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_requisicao",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_requisicaopneu",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_saidacombustivel",
+			"column": "fornecedor"
+		},
+		{
+			"table": "fr_usuxfornecedor",
+			"column": "fornecedor"
+		},
+		{
+			"table": "importacaofolha",
+			"column": "responsavel"
+		},
+		{
+			"table": "importacaofolha",
+			"column": "responsavelatesto"
+		},
+		{
+			"table": "importacaofolhaempenho",
+			"column": "fornecedor"
+		},
+		{
+			"table": "importacaofolharetencao",
+			"column": "fornecedor"
+		},
+		{
+			"table": "integracaoclcontrato",
+			"column": "pessoa"
+		},
+		{
+			"table": "integracaofolha",
+			"column": "fornecedor"
+		},
+		{
+			"table": "integracaofolhaconfig",
+			"column": "fornecedor"
+		},
+		{
+			"table": "integracaolotelancamento",
+			"column": "fornecedor"
+		},
+		{
+			"table": "item_loteremessa",
+			"column": "fornecedor"
+		},
+		{
+			"table": "lancamentoplanoitem",
+			"column": "fornecedor"
+		},
+		{
+			"table": "liquidacao",
+			"column": "responsavel"
+		},
+		{
+			"table": "liquidacao",
+			"column": "responsavelatesto"
+		},
+		{
+			"table": "manad_empenho",
+			"column": "fornecedor"
+		},
+		{
+			"table": "manad_fornecedor",
+			"column": "fornecedor"
+		},
+		{
+			"table": "orcacao",
+			"column": "responsavel"
+		},
+		{
+			"table": "orcparametrodespesa",
+			"column": "codresponsavelfornecedor"
+		},
+		{
+			"table": "orcprograma",
+			"column": "responsavel"
+		},
+		{
+			"table": "orcreceita",
+			"column": "fornecedor"
+		},
+		{
+			"table": "ordempagamento",
+			"column": "fornecedor"
+		},
+		{
+			"table": "ordempagamento_liquidacao",
+			"column": "idcontafornecedor"
+		},
+		{
+			"table": "ordenadordespesa",
+			"column": "fornecedor"
+		},
+		{
+			"table": "orgaooficial",
+			"column": "fornecedor"
+		},
+		{
+			"table": "pagamentoextra",
+			"column": "idcontafornecedor"
+		},
+		{
+			"table": "partconv",
+			"column": "fornecedor"
+		},
+		{
+			"table": "participacaoconsorcio",
+			"column": "fornecedor"
+		},
+		{
+			"table": "pat_bem",
+			"column": "fornecedor"
+		},
+		{
+			"table": "pat_bemimovelpeca",
+			"column": "fornecedor"
+		},
+		{
+			"table": "pat_bemmanutencao",
+			"column": "fornecedor"
+		},
+		{
+			"table": "pat_bemmovelbaixa",
+			"column": "fornecedor"
+		},
+		{
+			"table": "pat_bemmovelpeca",
+			"column": "fornecedor"
+		},
+		{
+			"table": "pat_bemveiculobaixa",
+			"column": "fornecedor"
+		},
+		{
+			"table": "pat_bemveiculopeca",
+			"column": "fornecedor"
+		},
+		{
+			"table": "pat_comodato",
+			"column": "respconcedido"
+		},
+		{
+			"table": "pat_imovel",
+			"column": "cartorio"
+		},
+		{
+			"table": "pat_imoveldominio",
+			"column": "pessoadominio"
+		},
+		{
+			"table": "pat_veiculo",
+			"column": "fornecedor"
+		},
+		{
+			"table": "programacaotransferenciafinanc",
+			"column": "fornecedor"
+		},
+		{
+			"table": "rateioconsorcioitem",
+			"column": "consorciado"
+		},
+		{
+			"table": "realizacaoreceita",
+			"column": "codigocontribuinte"
+		},
+		{
+			"table": "receita",
+			"column": "codigocontribuinte"
+		},
+		{
+			"table": "receitaressarcimento",
+			"column": "fornecedor"
+		},
+		{
+			"table": "reservadotacao",
+			"column": "fornecedor"
+		},
+		{
+			"table": "responsavelmodulo",
+			"column": "codigofornecedor"
+		},
+		{
+			"table": "restituicaotributaria",
+			"column": "fornecedor"
+		},
+		{
+			"table": "rppsinvestimento",
+			"column": "fornecedor_administradora"
+		},
+		{
+			"table": "rppsinvestimento",
+			"column": "fornecedor_fundofinan"
+		},
+		{
+			"table": "rppsresponsavelinvest",
+			"column": "fornecedor"
+		},
+		{
+			"table": "rppstitulopublcustodiante",
+			"column": "fornecedor"
+		},
+		{
+			"table": "rppstitulopublico",
+			"column": "fornecedor"
+		},
+		{
+			"table": "sclnad",
+			"column": "fornecedor"
+		},
+		{
+			"table": "sclsolicitacaodespesa",
+			"column": "fornecedor"
+		},
+		{
+			"table": "secretario",
+			"column": "fornecedor"
+		},
+		{
+			"table": "subvencaoaditivo",
+			"column": "fornecedordiario"
+		},
+		{
+			"table": "subvencaosocial",
+			"column": "gestorparceria"
+		},
+		{
+			"table": "subvencaosocial",
+			"column": "repassador"
+		},
+		{
+			"table": "tcerodecisao02",
+			"column": "fornecedor"
+		},
+		{
+			"table": "temp_empenhossaldoapagar",
+			"column": "fornecedor"
+		},
+		{
+			"table": "temp_extratoconciliacao",
+			"column": "fornecedor"
+		},
+		{
+			"table": "temp_liquidacao",
+			"column": "fornecedor"
+		}
+
+	]
+},

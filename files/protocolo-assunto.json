@@ -1,0 +1,28 @@
+{
+	"table": "assunto",
+	"column": "codigo",
+	"space": 20,
+	"dependencies": [
+
+		{
+			"table": "documento_assunto",
+			"column": "assunto"
+		},
+		{
+			"table": "processos",
+			"column": "codassunto"
+		},
+		{
+			"table": "roteiro_protocolo",
+			"column": "assunto"
+		},
+		{
+			"table": "taxasassunto",
+			"column": "codigoassunto"
+		},
+		{
+			"table": "usuario_assunto",
+			"column": "assunto"
+		}
+	]
+},

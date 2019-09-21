@@ -1,0 +1,39 @@
+{
+	"table": "versaoppa",
+	"column": "codigoversao",
+	"space": 20,
+	"dependencies": [{
+			"table": "orcppa",
+			"column": "versao"
+		},
+		{
+			"table": "orcppaavaliacao",
+			"column": "versao"
+		},
+		{
+			"table": "orcppareceita",
+			"column": "versao"
+		},
+		{
+			"table": "orcppareceita_fontetce",
+			"column": "versao"
+		},
+		{
+			"table": "orcppareceitadeparatmp",
+			"column": "versao"
+		},
+		{
+			"table": "orcppareceitafontetcedeparatmp",
+			"column": "versao"
+		},
+		{
+			"table": "situacaoversaoppa",
+			"column": "codigoversao"
+		},
+		{
+			"table": "versaoppa",
+			"column": "versaoanterior"
+		}
+
+	]
+},

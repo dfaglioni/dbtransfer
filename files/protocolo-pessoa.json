@@ -1,0 +1,18 @@
+{
+	"table": "pessoa",
+	"column": "codpessoa",
+	"space": 10,
+	"dependencies": [{
+			"table": "enderecopessoa",
+			"column": "codpessoa"
+		},
+		{
+			"table": "oficio",
+			"column": "codpessoa"
+		},
+		{
+			"table": "processos",
+			"column": "codpessoa"
+		}
+	]
+},

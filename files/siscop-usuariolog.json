@@ -1,0 +1,6 @@
+{
+	"table": "usuariolog",
+	"column": "codigo",
+	"space": 20,
+	"dependencies": []
+},
