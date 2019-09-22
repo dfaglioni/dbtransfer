@@ -2,6 +2,7 @@ package br.loop.db.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Table {
 
@@ -31,7 +32,8 @@ public class Table {
 	
 	@Override
 	public String toString() {
-		return "Table [table=" + table + ", column=" + column + ", dependencies=" + dependencies + "]";
+		return "Table [table=" + table + ", column=" + column + ", "
+				+ "dependencies=" + dependencies.stream().map( d -> d.getTable()).collect(Collectors.toList()) + "]";
 	}
 
 	public List<Table> getDependencies() {

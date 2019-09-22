@@ -15,7 +15,7 @@ public class TableKeyMover {
 
 	@Override
 	public String toString() {
-		return "TableKeyMover [table=" + table + ", space=" + space + "]";
+		return "\nTableKeyMover [table=" + table + ", space=" + space + "]";
 	}
 
 	public Integer getSpace() {

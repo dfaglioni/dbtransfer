@@ -12,38 +12,56 @@ public class TableKeyMoverExecutor {
 
 	public void execute(DBConnection con_dest, List<TableKeyMover> listTableKeyMover) throws Exception {
 
+		List<Name> listTables = con_dest.getTableList();
+
 		for (TableKeyMover tableKeyMover : listTableKeyMover) {
 
-			int maxValue = con_dest.maxValue(new Name(tableKeyMover.getTable().getTable()),
-					tableKeyMover.getTable().getColumn());
+			Name tableName = new Name(tableKeyMover.getTable().getTable());
 
-			if (maxValue > tableKeyMover.getSpace()) {
+			if (listTables.contains(tableName)) {
 
-				String message = "Space less than max " + tableKeyMover.getTable() + " " + maxValue;
-				System.out.println(message);
-			
-			} else {
-				
-				updateToMove(con_dest, tableKeyMover.getTable(), tableKeyMover.getSpace());
-				
-				List<Table> dependencies = tableKeyMover.getTable().getDependencies();
-				
-				for (Table table : dependencies) {
-					
-					updateToMove(con_dest, table, tableKeyMover.getSpace());
-					
+				int maxValue = con_dest.maxValue(tableName, tableKeyMover.getTable().getColumn());
+
+				if (maxValue > tableKeyMover.getSpace()) {
+
+					String message = "Space less than max " + tableKeyMover.getTable().getTable() + " " + maxValue;
+					System.out.println(message);
+
+				} else {
+
+					updateToMove(con_dest, tableKeyMover.getTable(), tableKeyMover.getSpace());
+
+					List<Table> dependencies = tableKeyMover.getTable().getDependencies();
+
+					for (Table table : dependencies) {
+
+						Name tableNameDep = new Name(table.getTable());
+
+						if (listTables.contains(tableNameDep)) {
+
+							updateToMove(con_dest, table, tableKeyMover.getSpace());
+
+						}
+					}
 				}
+
 			}
-
-
 		}
 
 	}
 
 	private void updateToMove(DBConnection con_dest, Table table, int space) throws SQLException {
-		System.out.println("Move " + table + " " + space);
-		con_dest.executeUpdate(String.format("update %s set %s = %s + %d", table.getTable(), table.getColumn(),
-				table.getColumn(), space));
+		System.out.println("Move " + table.getTable() + " " + space);
+	
+		try {
+			con_dest.executeUpdate(String.format("update %s set %s = %s + %d", table.getTable(), table.getColumn(),
+					table.getColumn(), space));
+			
+		} catch (Exception e) {
+
+			System.out.println("Error Moving " + table + " " + e.getMessage());
+		
+		}
 	}
 
 }

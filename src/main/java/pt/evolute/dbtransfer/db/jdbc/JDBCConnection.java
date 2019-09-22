@@ -255,7 +255,10 @@ public class JDBCConnection implements DBConnection {
     @Override
     public int maxValue(Name table, String column) throws Exception {
 
-        return oneResultSqlFunction(table, null, String.format("max(%s)", column));
+    	
+        System.out.println("max: " + table.originalName + " " + column);
+        
+        return oneResultSqlFunction(table, null, String.format("coalesce(max(%s),0)", column));
     }
 
     @Override
@@ -294,6 +297,7 @@ public class JDBCConnection implements DBConnection {
 
         if (LIST_TABLES.isEmpty()) {
 
+             	
             List<String> tables = FileUtils.readLines(new File(Mover.DONE_FILE), Charset.defaultCharset());
 
             DatabaseMetaData rsmd = connection.getMetaData();

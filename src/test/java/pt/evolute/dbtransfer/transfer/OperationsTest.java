@@ -179,6 +179,12 @@ public class OperationsTest {
 		tableCMover.getTable().setColumn("id");
 		tableCMover.getTable().setTable("tab_c");
 
+	
+		TableKeyMover tableNotExists = new TableKeyMover();
+		tableNotExists.setSpace(10);
+		tableNotExists.getTable().setColumn("id");
+		tableNotExists.getTable().setTable("tab_x");
+
 		Table table_b = new Table();
 		table_b.setColumn("id_a");
 		table_b.setTable("tab_b");
@@ -187,9 +193,14 @@ public class OperationsTest {
 		table_c.setColumn("id_a");
 		table_c.setTable("tab_c");
 
-		tableAMover.getTable().getDependencies().addAll(Arrays.asList(table_b, table_c));
+		Table table_notExists = new Table();
+		table_notExists.setColumn("id_x");
+		table_notExists.setTable("tab_x");
 
-		tableKeyMoverExecutor.execute(CON_DEST, Arrays.asList(tableAMover, tableCMover));
+		
+		tableAMover.getTable().getDependencies().addAll(Arrays.asList(table_b, table_c, table_notExists));
+
+		tableKeyMoverExecutor.execute(CON_DEST, Arrays.asList(tableAMover, tableCMover, tableNotExists));
 
 		assertThat("tab_a", CON_DEST.getRowCountWhere(new Name("TAB_A"), " WHERE ID = 1"), equalTo(0));
 		assertThat("tab_b", CON_DEST.getRowCountWhere(new Name("TAB_B"), " WHERE ID_A = 1"), equalTo(0));
