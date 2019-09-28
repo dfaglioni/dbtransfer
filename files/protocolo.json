@@ -90,10 +90,6 @@
 		},
 		{
 			"table": "entidade",
-			"column": "entidade"
-		},
-		{
-			"table": "entidade",
 			"column": "entidadeorcamento"
 		},
 		{

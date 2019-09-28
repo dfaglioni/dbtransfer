@@ -26,4 +26,11 @@ public class TableKeyMover {
 		this.space = space;
 	}
 
+	public void validate() {
+		
+
+		table.validate();
+		
+	}
+
 }

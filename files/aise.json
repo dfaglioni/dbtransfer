@@ -2106,10 +2106,6 @@
 				"column": "entidade"
 			},
 			{
-				"table": "entidade",
-				"column": "entidade"
-			},
-			{
 				"table": "cvvinculacaoquadrosalarial",
 				"column": "entidade"
 			},

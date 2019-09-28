@@ -17,6 +17,8 @@ public class TableKeyMoverExecutor {
 
 	public void execute(DBConnection con_dest, List<TableKeyMover> listTableKeyMover) throws Exception {
 
+		listTableKeyMover.forEach( t -> t.validate());
+		
 		List<Name> listTables = con_dest.getTableList();
 
 		for (TableKeyMover tableKeyMover : listTableKeyMover) {
