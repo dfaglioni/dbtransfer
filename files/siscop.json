@@ -1,0 +1,1739 @@
+[{
+		"table": "eloportalrepasses",
+		"column": "id",
+		"space": 200,
+		"dependencies": []
+	}, {
+		"table": "eloportalsubgrupoexercicio",
+		"column": "id",
+		"space": 6000,
+		"dependencies": [{
+			"table": "eloportalpublicacao",
+			"column": "idsubgrupoexercicio"
+		}]
+	}, {
+		"table": "eloportalsubgrupopublicacao",
+		"column": "id",
+		"space": 1000,
+		"dependencies": [{
+				"table": "eloportalclassrelatorio",
+				"column": "idsubgrupopublicacao"
+			},
+			{
+				"table": "eloportalsubgrupoexercicio",
+				"column": "idsubgrupopublicacao"
+			}
+		]
+	}, {
+		"table": "entidade",
+		"column": "entidade",
+		"space": 7,
+		"dependencies": [{
+				"table": "abertura",
+				"column": "entidade"
+			},
+			{
+				"table": "anulacaoempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "cadastroextra",
+				"column": "entidade"
+			},
+			{
+				"table": "cadastroextraconta",
+				"column": "entidade"
+			},
+			{
+				"table": "cadastroimobilizado",
+				"column": "entidade"
+			},
+			{
+				"table": "cancelamentorestos",
+				"column": "entidade"
+			},
+			{
+				"table": "cargo",
+				"column": "entidade"
+			},
+			{
+				"table": "centralpagamentos",
+				"column": "entidade"
+			},
+			{
+				"table": "cheque",
+				"column": "entidade"
+			},
+			{
+				"table": "ci_exercicio",
+				"column": "entidade"
+			},
+			{
+				"table": "ci_exercicio_mes",
+				"column": "entidade"
+			},
+			{
+				"table": "ci_modeloassunto",
+				"column": "entidade"
+			},
+			{
+				"table": "ci_modelosetor",
+				"column": "entidade"
+			},
+			{
+				"table": "ci_nivelmodeloassunto",
+				"column": "entidade"
+			},
+			{
+				"table": "ci_nivelmodelosetor",
+				"column": "entidade"
+			},
+			{
+				"table": "conciliacao",
+				"column": "entidade"
+			},
+			{
+				"table": "conciliacaodoc",
+				"column": "entidade"
+			},
+			{
+				"table": "configrelatorio",
+				"column": "entidade"
+			},
+			{
+				"table": "contabancaria",
+				"column": "entidade"
+			},
+			{
+				"table": "contabancaria",
+				"column": "entidadelote"
+			},
+			{
+				"table": "contabancariafonte",
+				"column": "entidade"
+			},
+			{
+				"table": "contabancariafontesaldo",
+				"column": "entidade"
+			},
+			{
+				"table": "contabancariaresponsavel",
+				"column": "entidade"
+			},
+			{
+				"table": "contabancariavinculo",
+				"column": "entidade"
+			},
+			{
+				"table": "contabilcontabanco",
+				"column": "entidade"
+			},
+			{
+				"table": "contacorrente",
+				"column": "entidade"
+			},
+			{
+				"table": "contacorrente_chave",
+				"column": "entidade"
+			},
+			{
+				"table": "controlefinanceiro",
+				"column": "entidade"
+			},
+			{
+				"table": "controlefinanceirodiario",
+				"column": "entidade"
+			},
+			{
+				"table": "converteplanocontas",
+				"column": "entidade"
+			},
+			{
+				"table": "cotafinanceira",
+				"column": "entidade"
+			},
+			{
+				"table": "decreto",
+				"column": "entidade"
+			},
+			{
+				"table": "decretoobservacao",
+				"column": "entidade"
+			},
+			{
+				"table": "descontosretencoes",
+				"column": "entidade"
+			},
+			{
+				"table": "descontosretencoescontas",
+				"column": "entidade"
+			},
+			{
+				"table": "desdobradesp",
+				"column": "entidade"
+			},
+			{
+				"table": "desdobradespvinculo",
+				"column": "entidade"
+			},
+			{
+				"table": "despesa",
+				"column": "entidade"
+			},
+			{
+				"table": "despesa_fontetce",
+				"column": "entidade"
+			},
+			{
+				"table": "despesadiaria",
+				"column": "entidade"
+			},
+			{
+				"table": "despesamensal",
+				"column": "entidade"
+			},
+			{
+				"table": "despesatrimestral",
+				"column": "entidade"
+			},
+			{
+				"table": "diaria",
+				"column": "entidade"
+			},
+			{
+				"table": "eloportalgrupopublentidade",
+				"column": "entidade"
+			},
+			{
+				"table": "eloportalpublicacaoparametro",
+				"column": "entidade"
+			},
+			{
+				"table": "eloportalrepasses",
+				"column": "entidade"
+			},
+			{
+				"table": "eloportalsubgrupoexercicio",
+				"column": "entidade"
+			},
+			{
+				"table": "emliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "empenho",
+				"column": "entidade"
+			},
+			{
+				"table": "empenhopatrimonial",
+				"column": "entidade"
+			},
+			{
+				"table": "entidade",
+				"column": "entidade"
+			},
+			{
+				"table": "entidade",
+				"column": "entidadeorcamento"
+			},
+			{
+				"table": "entidade",
+				"column": "entidadeprincipal"
+			},
+			{
+				"table": "est_centrocusto",
+				"column": "entidade"
+			},
+			{
+				"table": "est_classificacaoplano",
+				"column": "entidade"
+			},
+			{
+				"table": "est_contabilizacaomensal",
+				"column": "entidade"
+			},
+			{
+				"table": "est_contabilizacaomensalitem",
+				"column": "entidade"
+			},
+			{
+				"table": "est_doca",
+				"column": "entidade"
+			},
+			{
+				"table": "est_exercicio",
+				"column": "entidade"
+			},
+			{
+				"table": "est_exercicio_mes",
+				"column": "entidade"
+			},
+			{
+				"table": "est_movimentacao",
+				"column": "entidade"
+			},
+			{
+				"table": "est_movimentacao_itens",
+				"column": "entidade"
+			},
+			{
+				"table": "est_movimentacaodiaria",
+				"column": "entidade"
+			},
+			{
+				"table": "est_orgao",
+				"column": "entidade"
+			},
+			{
+				"table": "est_unidade",
+				"column": "entidade"
+			},
+			{
+				"table": "estornoextraorcamentario",
+				"column": "entidade"
+			},
+			{
+				"table": "estornoliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "estornoliquidacaodocumentos",
+				"column": "entidade"
+			},
+			{
+				"table": "estornopagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "estornopagamentoextra",
+				"column": "entidade"
+			},
+			{
+				"table": "eventoslancados",
+				"column": "entidade"
+			},
+			{
+				"table": "eventoslancadosconta",
+				"column": "entidade"
+			},
+			{
+				"table": "excluitabelaexportacao",
+				"column": "entidade"
+			},
+			{
+				"table": "exercicio",
+				"column": "entidade"
+			},
+			{
+				"table": "exercicio_mes",
+				"column": "entidade"
+			},
+			{
+				"table": "extraorcamentario",
+				"column": "entidade"
+			},
+			{
+				"table": "fichaempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "formacalculo",
+				"column": "entidade"
+			},
+			{
+				"table": "formacalculolayout",
+				"column": "entidade"
+			},
+			{
+				"table": "formageralayout",
+				"column": "entidade"
+			},
+			{
+				"table": "formagrupolayout",
+				"column": "entidade"
+			},
+			{
+				"table": "formalayout",
+				"column": "entidade"
+			},
+			{
+				"table": "formatipolayout",
+				"column": "entidade"
+			},
+			{
+				"table": "fornecedordotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "fr_exercicio",
+				"column": "entidade"
+			},
+			{
+				"table": "fr_exercicio_mes",
+				"column": "entidade"
+			},
+			{
+				"table": "fr_gastosfrota",
+				"column": "entidade"
+			},
+			{
+				"table": "fr_gastosfrota",
+				"column": "entidade_bem"
+			},
+			{
+				"table": "fr_gastosfrotadespesas",
+				"column": "entidade"
+			},
+			{
+				"table": "fr_itensrequisicao",
+				"column": "entidade"
+			},
+			{
+				"table": "fr_motoristas",
+				"column": "entidade"
+			},
+			{
+				"table": "fr_requisicao",
+				"column": "entidade"
+			},
+			{
+				"table": "fr_requisicao",
+				"column": "entidade_bem"
+			},
+			{
+				"table": "fr_usuxcc",
+				"column": "entidade"
+			},
+			{
+				"table": "gastopessoal_ano_movel",
+				"column": "entidade"
+			},
+			{
+				"table": "grupoanexos",
+				"column": "entidade"
+			},
+			{
+				"table": "integracaopatrimonial",
+				"column": "entidade"
+			},
+			{
+				"table": "integracaopatrimonialcontas",
+				"column": "entidade"
+			},
+			{
+				"table": "itemanulacaoempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "itemcancelamentorestosempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "itemcentralpagamentos",
+				"column": "entidade"
+			},
+			{
+				"table": "itemdecreto",
+				"column": "entidade"
+			},
+			{
+				"table": "itemempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "itemestornoliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "itemextraorcamentario",
+				"column": "entidade"
+			},
+			{
+				"table": "itemliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "lancamentoscontabeis",
+				"column": "entidade"
+			},
+			{
+				"table": "lancamentoscontabeis_bkp",
+				"column": "entidade"
+			},
+			{
+				"table": "lancamentosequencia",
+				"column": "entidade"
+			},
+			{
+				"table": "ldodespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "ldodividapublica",
+				"column": "entidade"
+			},
+			{
+				"table": "ldoliquidada",
+				"column": "entidade"
+			},
+			{
+				"table": "ldometasanuais",
+				"column": "entidade"
+			},
+			{
+				"table": "ldoprev",
+				"column": "entidade"
+			},
+			{
+				"table": "ldorealizada",
+				"column": "entidade"
+			},
+			{
+				"table": "ldoreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "ldovariaveis",
+				"column": "entidade"
+			},
+			{
+				"table": "lei",
+				"column": "entidade"
+			},
+			{
+				"table": "leis_atos",
+				"column": "entidade"
+			},
+			{
+				"table": "leis_atos",
+				"column": "entidadeorigem"
+			},
+			{
+				"table": "liquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "liquidacaodocumentos",
+				"column": "entidade"
+			},
+			{
+				"table": "liquidacaopatrimonial",
+				"column": "entidade"
+			},
+			{
+				"table": "lrf_parametros",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_anulacaoempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_decreto",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_despesa",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_empenho",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_estornoliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_estornopagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_liquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_orcparametrodespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_pagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "manad_receita",
+				"column": "entidade"
+			},
+			{
+				"table": "notaexplicativabalancolei",
+				"column": "entidadedocorigem"
+			},
+			{
+				"table": "notasexplicativasbensmoveis",
+				"column": "entidade"
+			},
+			{
+				"table": "notasexplicativasdividaativa",
+				"column": "entidade"
+			},
+			{
+				"table": "notasexplicativasdividafundada",
+				"column": "entidade"
+			},
+			{
+				"table": "notasexplicativasmovbens",
+				"column": "entidade"
+			},
+			{
+				"table": "notasexplicativasmovdivativa",
+				"column": "entidade"
+			},
+			{
+				"table": "notasexplicativasmovdivfun",
+				"column": "entidade"
+			},
+			{
+				"table": "nroultimoempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "orcacao",
+				"column": "entidade"
+			},
+			{
+				"table": "orcdespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "orcparametrodespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "orcparametroreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "orcppa",
+				"column": "entidade"
+			},
+			{
+				"table": "orcppadespesas",
+				"column": "entidade"
+			},
+			{
+				"table": "orcppareceita",
+				"column": "entidade"
+			},
+			{
+				"table": "orcppavalor",
+				"column": "entidade"
+			},
+			{
+				"table": "orcprograma",
+				"column": "entidade"
+			},
+			{
+				"table": "orcreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "orcreceita_fontetce",
+				"column": "entidade"
+			},
+			{
+				"table": "orcversaoorcamento",
+				"column": "entidade"
+			},
+			{
+				"table": "ordempagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "ordempagamento_liquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "pagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "pagamentoespecificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "pagamentoextra",
+				"column": "entidade"
+			},
+			{
+				"table": "pagamentoitensfinanceiro",
+				"column": "entidade"
+			},
+			{
+				"table": "parametros",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_bem",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_bemmovelcorrecao",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_bemmoveltransferencia",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_bemveiculocorrecao",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_bemxempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_bemxempenho",
+				"column": "entidade_empenho"
+			},
+			{
+				"table": "pat_categoriaclassificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_categoriamodclaf",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_categoriamovimento",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_categorianiveismodclaf",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_comodato",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_contabilizacaomensal",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_contabilizacaomensalitem",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_depreciacao",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_depreciacaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_estadoconservacao",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_exercicio",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_exercicio_mes",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_formacorrecao",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_localclassificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_localmodclaf",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_localniveismodclaf",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_montalacto",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_montalactoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_planoxagrupamento",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_responsavel",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_tabelacorrecao",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_usuxlocal",
+				"column": "entidade"
+			},
+			{
+				"table": "pat_veiculo",
+				"column": "entidade"
+			},
+			{
+				"table": "plano",
+				"column": "entidade"
+			},
+			{
+				"table": "planocontacorrente",
+				"column": "entidade"
+			},
+			{
+				"table": "planodiario",
+				"column": "entidade"
+			},
+			{
+				"table": "planoencerramentosaldo",
+				"column": "entidade"
+			},
+			{
+				"table": "planomensal",
+				"column": "entidade"
+			},
+			{
+				"table": "planopadraotc",
+				"column": "entidade"
+			},
+			{
+				"table": "planotcreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "prestacaocontas",
+				"column": "entidade"
+			},
+			{
+				"table": "prestacaocontasdocumento",
+				"column": "entidade"
+			},
+			{
+				"table": "previsaopagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "previsaopagamentoliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "realizacaoreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "realizacaoreceitafonte",
+				"column": "entidade"
+			},
+			{
+				"table": "realizacaoreceitaitem",
+				"column": "entidade"
+			},
+			{
+				"table": "receita",
+				"column": "entidade"
+			},
+			{
+				"table": "receita_fontetce",
+				"column": "entidade"
+			},
+			{
+				"table": "receitadiaria",
+				"column": "entidade"
+			},
+			{
+				"table": "receitamensal",
+				"column": "entidade"
+			},
+			{
+				"table": "registro",
+				"column": "entidade"
+			},
+			{
+				"table": "relatoriocomentario",
+				"column": "entidade"
+			},
+			{
+				"table": "relatorios_configuracao",
+				"column": "entidade"
+			},
+			{
+				"table": "retencoesempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "retencoesliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "situacaorestos",
+				"column": "entidade"
+			},
+			{
+				"table": "tabelaevento",
+				"column": "entidade"
+			},
+			{
+				"table": "temp_empenhossaldoapagar",
+				"column": "entidade"
+			},
+			{
+				"table": "tempdecretotc18",
+				"column": "entidade"
+			},
+			{
+				"table": "tipodocfiscal",
+				"column": "entidade"
+			},
+			{
+				"table": "tipovinculo",
+				"column": "entidade"
+			},
+			{
+				"table": "transferencias",
+				"column": "entidade"
+			},
+			{
+				"table": "usuario_entidade",
+				"column": "entidade"
+			},
+			{
+				"table": "usuarioformconfig",
+				"column": "entidade"
+			},
+			{
+				"table": "usuariolog",
+				"column": "entidade"
+			},
+			{
+				"table": "variavel",
+				"column": "entidade"
+			},
+			{
+				"table": "versaoarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "vinculodespesaplanoconta",
+				"column": "entidade"
+			},
+			{
+				"table": "vinculoreceitaplanoconta",
+				"column": "entidade"
+			}
+
+		]
+	}, {
+		"table": "est_item",
+		"column": "item",
+		"space": 100000,
+		"dependencies": [
+
+			{
+				"table": "est_balancete",
+				"column": "item"
+			},
+			{
+				"table": "est_classificacaolocal",
+				"column": "item"
+			},
+			{
+				"table": "est_classificacaolocallote",
+				"column": "item"
+			},
+			{
+				"table": "est_estoque",
+				"column": "item"
+			},
+			{
+				"table": "est_fichaprateleira",
+				"column": "item"
+			},
+			{
+				"table": "est_inventariocc_itens",
+				"column": "item"
+			},
+			{
+				"table": "est_inventariocc_lote",
+				"column": "item"
+			},
+			{
+				"table": "est_inventarioitem",
+				"column": "item"
+			},
+			{
+				"table": "est_item",
+				"column": "item_distribuicao"
+			},
+			{
+				"table": "est_item",
+				"column": "item_geral"
+			},
+			{
+				"table": "est_item",
+				"column": "itemantigo"
+			},
+			{
+				"table": "est_item_atributo",
+				"column": "item"
+			},
+			{
+				"table": "est_item_localizacao",
+				"column": "item"
+			},
+			{
+				"table": "est_itemnovo",
+				"column": "item"
+			},
+			{
+				"table": "est_itemnovo",
+				"column": "item_geral"
+			},
+			{
+				"table": "est_itemproducao",
+				"column": "item"
+			},
+			{
+				"table": "est_itemproducao",
+				"column": "item2"
+			},
+			{
+				"table": "est_itemrealacao",
+				"column": "item1"
+			},
+			{
+				"table": "est_itemrealacao",
+				"column": "item2"
+			},
+			{
+				"table": "est_itemxcc",
+				"column": "item"
+			},
+			{
+				"table": "est_itemxcentroconsumo",
+				"column": "item"
+			},
+			{
+				"table": "est_itemxcodigobarras",
+				"column": "item"
+			},
+			{
+				"table": "est_itemxdescricao",
+				"column": "item1"
+			},
+			{
+				"table": "est_itemxitem",
+				"column": "item1"
+			},
+			{
+				"table": "est_itemxitem",
+				"column": "item2"
+			},
+			{
+				"table": "est_loginativadoitens",
+				"column": "item"
+			},
+			{
+				"table": "est_lote",
+				"column": "item"
+			},
+			{
+				"table": "est_movimentacao_itens",
+				"column": "item"
+			},
+			{
+				"table": "est_movimentacao_itens",
+				"column": "itemreq"
+			},
+			{
+				"table": "est_movimentacao_lote",
+				"column": "item"
+			},
+			{
+				"table": "est_movimentacaodiaria",
+				"column": "item"
+			},
+			{
+				"table": "est_movlocal",
+				"column": "item"
+			},
+			{
+				"table": "est_movlocal_afericaosaida",
+				"column": "item"
+			},
+			{
+				"table": "est_palete",
+				"column": "item"
+			},
+			{
+				"table": "est_requisicao_itens",
+				"column": "item"
+			},
+			{
+				"table": "fr_bateria",
+				"column": "item"
+			},
+			{
+				"table": "fr_bombacombustivel",
+				"column": "item"
+			},
+			{
+				"table": "fr_doacaocombustivel",
+				"column": "item"
+			},
+			{
+				"table": "fr_entradacombustivelitem",
+				"column": "item"
+			},
+			{
+				"table": "fr_gastosfrotadespesas",
+				"column": "item"
+			},
+			{
+				"table": "fr_itensordemservico",
+				"column": "item"
+			},
+			{
+				"table": "fr_itensrequisicao",
+				"column": "item"
+			},
+			{
+				"table": "fr_itensveiculo",
+				"column": "item"
+			},
+			{
+				"table": "fr_itensveiculo",
+				"column": "itemgasto"
+			},
+			{
+				"table": "fr_ocorrenciaitem",
+				"column": "item"
+			},
+			{
+				"table": "fr_pneu",
+				"column": "item"
+			},
+			{
+				"table": "fr_ressolagem",
+				"column": "item"
+			},
+			{
+				"table": "fr_ressolagem",
+				"column": "itemanterior"
+			},
+			{
+				"table": "fr_saidacombustivelitem",
+				"column": "item"
+			},
+			{
+				"table": "fr_tpservitemref",
+				"column": "item"
+			},
+			{
+				"table": "pat_bem",
+				"column": "item"
+			},
+			{
+				"table": "pat_tipocombustivel",
+				"column": "item"
+			},
+			{
+				"table": "sclitensnad",
+				"column": "est_item"
+			}
+		]
+	}, {
+		"table": "est_tipomovimentacao",
+		"column": "codmovimentacao",
+		"space": 50,
+		"dependencies": [{
+				"table": "est_contabilizacaomensalitem",
+				"column": "operacao"
+			},
+			{
+				"table": "est_montalactoitem",
+				"column": "operacao"
+			},
+			{
+				"table": "est_tipomovimentacao",
+				"column": "codmovimentacaosaida"
+			},
+			{
+				"table": "est_movimentacao",
+				"column": "codmovimentacao"
+			}
+
+		]
+	}, {
+		"table": "fornecedor",
+		"column": "fornecedor",
+		"space": 7000,
+		"dependencies": [
+
+			{
+				"table": "acordos",
+				"column": "fornecedor"
+			},
+			{
+				"table": "aditivoconvenio",
+				"column": "fornecedordiario"
+			},
+			{
+				"table": "cadastroconvenio",
+				"column": "fornecedordiario"
+			},
+			{
+				"table": "cadastroconvenio",
+				"column": "fornecedororigemdestino"
+			},
+			{
+				"table": "cadastroextra",
+				"column": "fornecedor"
+			},
+			{
+				"table": "cargo",
+				"column": "fornecedor"
+			},
+			{
+				"table": "contabancariaresponsavel",
+				"column": "responsavel"
+			},
+			{
+				"table": "contacorrente",
+				"column": "fornecedor"
+			},
+			{
+				"table": "contacorrente",
+				"column": "idfornecedorcompetencia"
+			},
+			{
+				"table": "contrato",
+				"column": "tipofornecedor"
+			},
+			{
+				"table": "divida",
+				"column": "fornecedor"
+			},
+			{
+				"table": "empenho",
+				"column": "fornecedor"
+			},
+			{
+				"table": "empenho_rateio",
+				"column": "consorciado"
+			},
+			{
+				"table": "est_movimentacao",
+				"column": "fornecedor"
+			},
+			{
+				"table": "eventoslancadosconta",
+				"column": "fornecedor"
+			},
+			{
+				"table": "extraorcamentario",
+				"column": "fornecedor"
+			},
+
+			{
+				"table": "fornecedor_competencia",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fornecedoralterarazao",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fornecedorbanco",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fornecedorbancoentidade",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fornecedorcontafonte",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fornecedordotacao",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fornecedornegativa",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fornecedorsocio",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fornecedorsubvencao",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_bateria",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_bombacombustivel",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_doacaocombustivel",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_entradacombustivel",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_gastosfrota",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_ordemservico",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_perdacombustivel",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_pneu",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_requisicao",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_requisicaopneu",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_saidacombustivel",
+				"column": "fornecedor"
+			},
+			{
+				"table": "fr_usuxfornecedor",
+				"column": "fornecedor"
+			},
+			{
+				"table": "importacaofolha",
+				"column": "responsavel"
+			},
+			{
+				"table": "importacaofolha",
+				"column": "responsavelatesto"
+			},
+			{
+				"table": "importacaofolhaempenho",
+				"column": "fornecedor"
+			},
+			{
+				"table": "importacaofolharetencao",
+				"column": "fornecedor"
+			},
+			{
+				"table": "integracaoclcontrato",
+				"column": "pessoa"
+			},
+			{
+				"table": "integracaofolha",
+				"column": "fornecedor"
+			},
+			{
+				"table": "integracaofolhaconfig",
+				"column": "fornecedor"
+			},
+			{
+				"table": "integracaolotelancamento",
+				"column": "fornecedor"
+			},
+			{
+				"table": "item_loteremessa",
+				"column": "fornecedor"
+			},
+			{
+				"table": "lancamentoplanoitem",
+				"column": "fornecedor"
+			},
+			{
+				"table": "liquidacao",
+				"column": "responsavel"
+			},
+			{
+				"table": "liquidacao",
+				"column": "responsavelatesto"
+			},
+			{
+				"table": "manad_empenho",
+				"column": "fornecedor"
+			},
+			{
+				"table": "manad_fornecedor",
+				"column": "fornecedor"
+			},
+			{
+				"table": "orcacao",
+				"column": "responsavel"
+			},
+			{
+				"table": "orcparametrodespesa",
+				"column": "codresponsavelfornecedor"
+			},
+			{
+				"table": "orcprograma",
+				"column": "responsavel"
+			},
+			{
+				"table": "orcreceita",
+				"column": "fornecedor"
+			},
+			{
+				"table": "ordempagamento",
+				"column": "fornecedor"
+			},
+			{
+				"table": "ordempagamento_liquidacao",
+				"column": "idcontafornecedor"
+			},
+			{
+				"table": "ordenadordespesa",
+				"column": "fornecedor"
+			},
+			{
+				"table": "orgaooficial",
+				"column": "fornecedor"
+			},
+			{
+				"table": "pagamentoextra",
+				"column": "idcontafornecedor"
+			},
+			{
+				"table": "partconv",
+				"column": "fornecedor"
+			},
+			{
+				"table": "participacaoconsorcio",
+				"column": "fornecedor"
+			},
+			{
+				"table": "pat_bem",
+				"column": "fornecedor"
+			},
+			{
+				"table": "pat_bemimovelpeca",
+				"column": "fornecedor"
+			},
+			{
+				"table": "pat_bemmanutencao",
+				"column": "fornecedor"
+			},
+			{
+				"table": "pat_bemmovelbaixa",
+				"column": "fornecedor"
+			},
+			{
+				"table": "pat_bemmovelpeca",
+				"column": "fornecedor"
+			},
+			{
+				"table": "pat_bemveiculobaixa",
+				"column": "fornecedor"
+			},
+			{
+				"table": "pat_bemveiculopeca",
+				"column": "fornecedor"
+			},
+			{
+				"table": "pat_comodato",
+				"column": "respconcedido"
+			},
+			{
+				"table": "pat_imovel",
+				"column": "cartorio"
+			},
+			{
+				"table": "pat_imoveldominio",
+				"column": "pessoadominio"
+			},
+			{
+				"table": "pat_veiculo",
+				"column": "fornecedor"
+			},
+			{
+				"table": "programacaotransferenciafinanc",
+				"column": "fornecedor"
+			},
+			{
+				"table": "rateioconsorcioitem",
+				"column": "consorciado"
+			},
+			{
+				"table": "realizacaoreceita",
+				"column": "codigocontribuinte"
+			},
+			{
+				"table": "receita",
+				"column": "codigocontribuinte"
+			},
+			{
+				"table": "receitaressarcimento",
+				"column": "fornecedor"
+			},
+			{
+				"table": "reservadotacao",
+				"column": "fornecedor"
+			},
+			{
+				"table": "responsavelmodulo",
+				"column": "codigofornecedor"
+			},
+			{
+				"table": "restituicaotributaria",
+				"column": "fornecedor"
+			},
+			{
+				"table": "rppsinvestimento",
+				"column": "fornecedor_administradora"
+			},
+			{
+				"table": "rppsinvestimento",
+				"column": "fornecedor_fundofinan"
+			},
+			{
+				"table": "rppsresponsavelinvest",
+				"column": "fornecedor"
+			},
+			{
+				"table": "rppstitulopublcustodiante",
+				"column": "fornecedor"
+			},
+			{
+				"table": "rppstitulopublico",
+				"column": "fornecedor"
+			},
+			{
+				"table": "sclnad",
+				"column": "fornecedor"
+			},
+			{
+				"table": "sclsolicitacaodespesa",
+				"column": "fornecedor"
+			},
+			{
+				"table": "secretario",
+				"column": "fornecedor"
+			},
+			{
+				"table": "subvencaoaditivo",
+				"column": "fornecedordiario"
+			},
+			{
+				"table": "subvencaosocial",
+				"column": "gestorparceria"
+			},
+			{
+				"table": "subvencaosocial",
+				"column": "repassador"
+			},
+			{
+				"table": "tcerodecisao02",
+				"column": "fornecedor"
+			},
+			{
+				"table": "temp_empenhossaldoapagar",
+				"column": "fornecedor"
+			},
+			{
+				"table": "temp_extratoconciliacao",
+				"column": "fornecedor"
+			},
+			{
+				"table": "temp_liquidacao",
+				"column": "fornecedor"
+			}
+
+		]
+	}, {
+		"table": "fr_especieveiculos",
+		"column": "codigo",
+		"space": 50,
+		"dependencies": [{
+			"table": "pat_veiculo",
+			"column": "especie"
+		}]
+	}, {
+		"table": "syslog",
+		"column": "codigo",
+		"space": 5000000,
+		"dependencies": []
+	}, {
+		"table": "usuariolog",
+		"column": "codigo",
+		"space": 300000,
+		"dependencies": []
+	}, {
+		"table": "versaoppa",
+		"column": "codigoversao",
+		"space": 3000,
+		"dependencies": [{
+				"table": "orcppa",
+				"column": "versao"
+			},
+			{
+				"table": "orcppaavaliacao",
+				"column": "versao"
+			},
+			{
+				"table": "orcppareceita",
+				"column": "versao"
+			},
+			{
+				"table": "orcppareceita_fontetce",
+				"column": "versao"
+			},
+			{
+				"table": "orcppareceitadeparatmp",
+				"column": "versao"
+			},
+			{
+				"table": "orcppareceitafontetcedeparatmp",
+				"column": "versao"
+			},
+			{
+				"table": "situacaoversaoppa",
+				"column": "codigoversao"
+			},
+			{
+				"table": "versaoppa",
+				"column": "versaoanterior"
+			}
+
+		]
+	}, {
+		"table": "est_classificacaoplano",
+		"column": "id",
+		"space": 20000,
+		"dependencies": []
+	}, {
+		"table": "leis_atos",
+		"column": "id",
+		"space": 15000,
+		"dependencies": [{
+				"table": "artigo_exclusao",
+				"column": "idleiatos"
+			},
+			{
+				"table": "diaria",
+				"column": "idlei"
+			},
+			{
+				"table": "lei",
+				"column": "id_leis_atos"
+			},
+			{
+				"table": "leis_atosarquivo",
+				"column": "idleisatos"
+			},
+			{
+				"table": "leisvinculadas",
+				"column": "idleivinculada"
+			},
+			{
+				"table": "orcacao",
+				"column": "idleiatos"
+			},
+			{
+				"table": "orcacao",
+				"column": "idleiatoscancelamento"
+			},
+			{
+				"table": "orcparametrodespesa",
+				"column": "idleiatos"
+			},
+			{
+				"table": "orcppaindicadores",
+				"column": "cdcontroleleiato"
+			},
+			{
+				"table": "orcppaindicadores",
+				"column": "idleiatoscancelamento"
+			},
+			{
+				"table": "orcprograma",
+				"column": "idleiatos"
+			},
+			{
+				"table": "orcversaoorcamento",
+				"column": "idleiatosldo"
+			},
+			{
+				"table": "orcversaoorcamento",
+				"column": "idleiatosppa"
+			},
+			{
+				"table": "participacaoconsorcio",
+				"column": "idleiatos"
+			},
+			{
+				"table": "pat_bemimovelbaixa",
+				"column": "idleiato"
+			},
+			{
+				"table": "pat_bemmovelbaixa",
+				"column": "idleiato"
+			},
+			{
+				"table": "pat_bemveiculobaixa",
+				"column": "idleiato"
+			},
+			{
+				"table": "pat_imovel",
+				"column": "idleiato"
+			},
+			{
+				"table": "pat_inventario_bens_moveis",
+				"column": "idleiato"
+			},
+			{
+				"table": "pat_movimento",
+				"column": "idleiato"
+			},
+			{
+				"table": "versaoppa",
+				"column": "idleiatos"
+			},
+			{
+				"table": "versaoppa",
+				"column": "idleiatos_eca"
+			},
+			{
+				"table": "versaoppa",
+				"column": "idleiatos_ldo"
+			},
+			{
+				"table": "versaoppa",
+				"column": "idleiatos_pms"
+			}
+		]
+	}
+
+]

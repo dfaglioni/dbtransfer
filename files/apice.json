@@ -1,586 +1,593 @@
 [{
-	"table": "bairro",
-	"column": "bairro",
-	"space": 500,
-	"dependencies": [{
-			"table": "cep",
-			"column": "bairro"
-		},
-		{
-			"table": "clmembro",
-			"column": "bairro"
-		},
-		{
-			"table": "enderecopessoa",
-			"column": "bairro"
-		},
-		{
-			"table": "entidade",
-			"column": "bairro"
-		}
-	]
-}, {
-	"table": "cidade",
-	"column": "cidade",
-	"space": 10000,
-	"dependencies": [{
-			"table": "bairro",
-			"column": "cidade"
-		},
-		{
-			"table": "bancopessoa",
-			"column": "cidade"
-		},
-		{
-			"table": "cep",
-			"column": "cidade"
-		},
-		{
-			"table": "clmembro",
-			"column": "cidade"
-		},
-		{
-			"table": "clsolicitacaodiaria",
-			"column": "cidade"
-		},
-		{
-			"table": "enderecopessoa",
-			"column": "cidade"
-		},
-		{
-			"table": "entidade",
-			"column": "cidade"
-		},
-		{
-			"table": "localidade",
-			"column": "cidade"
-		},
-		{
-			"table": "logradouro",
-			"column": "cidade"
-		}
-	]
-}, {
-	"table": "clmembro",
-	"column": "membro",
-	"space": 500,
-	"dependencies": [{
-			"table": "clcomissaoleilao",
-			"column": "membro"
-		},
-		{
-			"table": "clcomissaomembro",
-			"column": "membro"
-		},
-		{
-			"table": "clcomissaopregao",
-			"column": "membro"
-		},
-		{
-			"table": "cllicitacaocomissaomembro",
-			"column": "membro"
-		},
-		{
-			"table": "clmembropresente",
-			"column": "membro"
-		},
-		{
-			"table": "clminuta",
-			"column": "membroaprovacao"
-		},
-		{
-			"table": "clparecer",
-			"column": "membro"
-		},
-		{
-			"table": "clrealinhamento",
-			"column": "membro"
-		}
-	]
-}, {
-	"table": "clunidademedida",
-	"column": "unidademedida",
-	"space": 100,
-	"dependencies": [{
-		"table": "clitem",
-		"column": "unidademedida"
-	}]
-}, {
-	"table": "entidade",
-	"column": "entidade",
-	"space": 7,
-	"dependencies": [
+		"table": "bairro",
+		"column": "bairro",
+		"space": 500,
+		"dependencies": [{
+				"table": "cep",
+				"column": "bairro"
+			},
+			{
+				"table": "clmembro",
+				"column": "bairro"
+			},
+			{
+				"table": "enderecopessoa",
+				"column": "bairro"
+			},
+			{
+				"table": "entidade",
+				"column": "bairro"
+			}
+		]
+	}, {
+		"table": "cidade",
+		"column": "cidade",
+		"space": 10000,
+		"dependencies": [{
+				"table": "bairro",
+				"column": "cidade"
+			},
+			{
+				"table": "bancopessoa",
+				"column": "cidade"
+			},
+			{
+				"table": "cep",
+				"column": "cidade"
+			},
+			{
+				"table": "clmembro",
+				"column": "cidade"
+			},
+			{
+				"table": "clsolicitacaodiaria",
+				"column": "cidade"
+			},
+			{
+				"table": "enderecopessoa",
+				"column": "cidade"
+			},
+			{
+				"table": "entidade",
+				"column": "cidade"
+			},
+			{
+				"table": "localidade",
+				"column": "cidade"
+			},
+			{
+				"table": "logradouro",
+				"column": "cidade"
+			}
+		]
+	}, {
+		"table": "clmembro",
+		"column": "membro",
+		"space": 500,
+		"dependencies": [{
+				"table": "clcomissaoleilao",
+				"column": "membro"
+			},
+			{
+				"table": "clcomissaomembro",
+				"column": "membro"
+			},
+			{
+				"table": "clcomissaopregao",
+				"column": "membro"
+			},
+			{
+				"table": "cllicitacaocomissaomembro",
+				"column": "membro"
+			},
+			{
+				"table": "clmembropresente",
+				"column": "membro"
+			},
+			{
+				"table": "clminuta",
+				"column": "membroaprovacao"
+			},
+			{
+				"table": "clparecer",
+				"column": "membro"
+			},
+			{
+				"table": "clrealinhamento",
+				"column": "membro"
+			}
+		]
+	}, {
+		"table": "clunidademedida",
+		"column": "unidademedida",
+		"space": 100,
+		"dependencies": [{
+			"table": "clitem",
+			"column": "unidademedida"
+		}]
+	}, {
+		"table": "entidade",
+		"column": "entidade",
+		"space": 7,
+		"dependencies": [
 
-		{
-			"table": "clacompanhamento",
-			"column": "entidade"
-		},
-		{
-			"table": "cladjudicacao",
-			"column": "entidade"
-		},
-		{
-			"table": "clanalisevencedor",
-			"column": "entidade"
-		},
-		{
-			"table": "clcargo",
-			"column": "entidade"
-		},
-		{
-			"table": "clcomissao",
-			"column": "entidade"
-		},
-		{
-			"table": "clcomissaomembro",
-			"column": "entidade"
-		},
-		{
-			"table": "clcotacao",
-			"column": "entidade"
-		},
-		{
-			"table": "clcotacaoitem",
-			"column": "entidade"
-		},
-		{
-			"table": "clcotacaoitem",
-			"column": "entidadesolicitacao"
-		},
-		{
-			"table": "clcredenciamentopregao",
-			"column": "entidade"
-		},
-		{
-			"table": "clfornecedordocumentacao",
-			"column": "entidade"
-		},
-		{
-			"table": "clhomologacao",
-			"column": "entidade"
-		},
-		{
-			"table": "cllicitacao",
-			"column": "entidade"
-		},
-		{
-			"table": "cllicitacao",
-			"column": "entidadecotacao"
-		},
-		{
-			"table": "cllicitacaocomissaomembro",
-			"column": "entidade"
-		},
-		{
-			"table": "cllicitacaodespesa",
-			"column": "entidade"
-		},
-		{
-			"table": "cllicitacaodespesa",
-			"column": "entidadedotacao"
-		},
-		{
-			"table": "cllicitacaodocumentacao",
-			"column": "entidade"
-		},
-		{
-			"table": "cllicitacaofornecedor",
-			"column": "entidade"
-		},
-		{
-			"table": "cllicitacaoitem",
-			"column": "entidade"
-		},
-		{
-			"table": "cllicitacaolote",
-			"column": "entidade"
-		},
-		{
-			"table": "cllicitacaopregao",
-			"column": "entidade"
-		},
-		{
-			"table": "clnad",
-			"column": "entidade"
-		},
-		{
-			"table": "clnad",
-			"column": "entidadeaditivo"
-		},
-		{
-			"table": "clnad",
-			"column": "entidadecontrato"
-		},
-		{
-			"table": "clnad",
-			"column": "entidadelicitacao"
-		},
-		{
-			"table": "clnad",
-			"column": "entidadesolicitacao"
-		},
-		{
-			"table": "clnaditem",
-			"column": "entidade"
-		},
-		{
-			"table": "clnaditem",
-			"column": "entidadelicitacao"
-		},
-		{
-			"table": "clpropostacomercial",
-			"column": "entidade"
-		},
-		{
-			"table": "clsolicitacao",
-			"column": "entidade"
-		},
-		{
-			"table": "clsolicitacao",
-			"column": "entidadeaditivo"
-		},
-		{
-			"table": "clsolicitacao",
-			"column": "entidadecontrato"
-		},
-		{
-			"table": "clsolicitacao",
-			"column": "entidadelicitacao"
-		},
-		{
-			"table": "clsolicitacaoanulacao",
-			"column": "entidade"
-		},
-		{
-			"table": "clsolicitacaodiaria",
-			"column": "entidade"
-		},
-		{
-			"table": "clsolicitacaoitem",
-			"column": "entidade"
-		},
-		{
-			"table": "clsolicitacaoitem",
-			"column": "entidadelicitacao"
-		},
-		{
-			"table": "clsolicitacaoitem_aux",
-			"column": "entidade"
-		},
-		{
-			"table": "clsolicitacaoitem_aux",
-			"column": "entidadelicitacao"
-		},
-		{
-			"table": "clusuariocentrocusto",
-			"column": "entidade"
-		},
-		{
-			"table": "clusuariounidade",
-			"column": "entidade"
-		},
-		{
-			"table": "entidade",
-			"column": "entidade"
-		},
-		{
-			"table": "entidade",
-			"column": "entidadeorcamento"
-		},
-		{
-			"table": "exercicio",
-			"column": "entidade"
-		},
-		{
-			"table": "exercicio_mes",
-			"column": "entidade"
-		},
-		{
-			"table": "log_tabelas",
-			"column": "entidade"
-		},
-		{
-			"table": "parametro",
-			"column": "entidade"
-		},
-		{
-			"table": "registro",
-			"column": "entidade"
-		},
-		{
-			"table": "usuarioentidade",
-			"column": "entidade"
-		}
+			{
+				"table": "clacompanhamento",
+				"column": "entidade"
+			},
+			{
+				"table": "cladjudicacao",
+				"column": "entidade"
+			},
+			{
+				"table": "clanalisevencedor",
+				"column": "entidade"
+			},
+			{
+				"table": "clcargo",
+				"column": "entidade"
+			},
+			{
+				"table": "clcomissao",
+				"column": "entidade"
+			},
+			{
+				"table": "clcomissaomembro",
+				"column": "entidade"
+			},
+			{
+				"table": "clcotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "clcotacaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "clcotacaoitem",
+				"column": "entidadesolicitacao"
+			},
+			{
+				"table": "clcredenciamentopregao",
+				"column": "entidade"
+			},
+			{
+				"table": "clfornecedordocumentacao",
+				"column": "entidade"
+			},
+			{
+				"table": "clhomologacao",
+				"column": "entidade"
+			},
+			{
+				"table": "cllicitacao",
+				"column": "entidade"
+			},
+			{
+				"table": "cllicitacao",
+				"column": "entidadecotacao"
+			},
+			{
+				"table": "cllicitacaocomissaomembro",
+				"column": "entidade"
+			},
+			{
+				"table": "cllicitacaodespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "cllicitacaodespesa",
+				"column": "entidadedotacao"
+			},
+			{
+				"table": "cllicitacaodocumentacao",
+				"column": "entidade"
+			},
+			{
+				"table": "cllicitacaofornecedor",
+				"column": "entidade"
+			},
+			{
+				"table": "cllicitacaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "cllicitacaolote",
+				"column": "entidade"
+			},
+			{
+				"table": "cllicitacaopregao",
+				"column": "entidade"
+			},
+			{
+				"table": "clnad",
+				"column": "entidade"
+			},
+			{
+				"table": "clnad",
+				"column": "entidadeaditivo"
+			},
+			{
+				"table": "clnad",
+				"column": "entidadecontrato"
+			},
+			{
+				"table": "clnad",
+				"column": "entidadelicitacao"
+			},
+			{
+				"table": "clnad",
+				"column": "entidadesolicitacao"
+			},
+			{
+				"table": "clnaditem",
+				"column": "entidade"
+			},
+			{
+				"table": "clnaditem",
+				"column": "entidadelicitacao"
+			},
+			{
+				"table": "clpropostacomercial",
+				"column": "entidade"
+			},
+			{
+				"table": "clsolicitacao",
+				"column": "entidade"
+			},
+			{
+				"table": "clsolicitacao",
+				"column": "entidadeaditivo"
+			},
+			{
+				"table": "clsolicitacao",
+				"column": "entidadecontrato"
+			},
+			{
+				"table": "clsolicitacao",
+				"column": "entidadelicitacao"
+			},
+			{
+				"table": "clsolicitacaoanulacao",
+				"column": "entidade"
+			},
+			{
+				"table": "clsolicitacaodiaria",
+				"column": "entidade"
+			},
+			{
+				"table": "clsolicitacaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "clsolicitacaoitem",
+				"column": "entidadelicitacao"
+			},
+			{
+				"table": "clsolicitacaoitem_aux",
+				"column": "entidade"
+			},
+			{
+				"table": "clsolicitacaoitem_aux",
+				"column": "entidadelicitacao"
+			},
+			{
+				"table": "clusuariocentrocusto",
+				"column": "entidade"
+			},
+			{
+				"table": "clusuariounidade",
+				"column": "entidade"
+			},
+			{
+				"table": "entidade",
+				"column": "entidade"
+			},
+			{
+				"table": "entidade",
+				"column": "entidadeorcamento"
+			},
+			{
+				"table": "exercicio",
+				"column": "entidade"
+			},
+			{
+				"table": "exercicio_mes",
+				"column": "entidade"
+			},
+			{
+				"table": "log_tabelas",
+				"column": "entidade"
+			},
+			{
+				"table": "parametro",
+				"column": "entidade"
+			},
+			{
+				"table": "registro",
+				"column": "entidade"
+			},
+			{
+				"table": "usuarioentidade",
+				"column": "entidade"
+			}
 
-	]
-}, {
-	"table": "logpre",
-	"column": "id",
-	"space": 7000,
-	"dependencies": []
-}, {
-	"table": "logradouro",
-	"column": "logradouro",
-	"space": 1000,
-	"dependencies": [{
-			"table": "cep",
-			"column": "logradouro"
-		},
-		{
-			"table": "clmembro",
-			"column": "logradouro"
-		},
-		{
-			"table": "enderecopessoa",
-			"column": "logradouro"
-		},
-		{
-			"table": "entidade",
-			"column": "logradouro"
-		}
-	]
-}, {
-	"table": "log_tabelas",
-	"column": "codigo",
-	"space": 6000,
-	"dependencies": []
-}, {
-	"table": "pessoaam",
-	"column": "id",
-	"space": 2000,
-	"dependencies": []
-}, {
-	"table": "pessoa",
-	"column": "pessoa",
-	"space": 7000,
-	"dependencies": [{
-			"table": "assinatura",
-			"column": "pessoa"
-		},
-		{
-			"table": "bancopessoa",
-			"column": "pessoa"
-		},
-		{
-			"table": "claditivoitem",
-			"column": "pessoa"
-		},
-		{
-			"table": "cladjudicacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clanalisevencedor",
-			"column": "pessoa"
-		},
-		{
-			"table": "clataleilaoassinante",
-			"column": "pessoa"
-		},
-		{
-			"table": "clatapregaoassinante",
-			"column": "pessoa"
-		},
-		{
-			"table": "clcargo",
-			"column": "pessoa"
-		},
-		{
-			"table": "clcertidao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clcertidaodocumentacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clcontrato",
-			"column": "pessoa"
-		},
-		{
-			"table": "clcontratoassinatura",
-			"column": "pessoa"
-		},
-		{
-			"table": "clcontratoatocontratual",
-			"column": "pessoa"
-		},
-		{
-			"table": "clcontratoatocontratual",
-			"column": "representante"
-		},
-		{
-			"table": "clcotacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clcotacaoitem",
-			"column": "pessoa"
-		},
-		{
-			"table": "clcredenciamentopregao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clfornecedordocumentacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clfornecedorpontuacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clhistoricovencedor",
-			"column": "pessoa"
-		},
-		{
-			"table": "clhomologacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "cllicitacao",
-			"column": "responsavel"
-		},
-		{
-			"table": "cllicitacaofornecedor",
-			"column": "pessoa"
-		},
-		{
-			"table": "cllicitacaoleilao",
-			"column": "pessoa"
-		},
-		{
-			"table": "cllicitacaopregao",
-			"column": "pessoa"
-		},
-		{
-			"table": "cllicitacaoprotoc",
-			"column": "pessoa"
-		},
-		{
-			"table": "cllicitacaorecurso",
-			"column": "pessoa"
-		},
-		{
-			"table": "clmembro",
-			"column": "pessoa"
-		},
-		{
-			"table": "clnad",
-			"column": "pessoa"
-		},
-		{
-			"table": "clorgaopublicacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clpregaoperc",
-			"column": "pessoa"
-		},
-		{
-			"table": "clpropostaajustada",
-			"column": "pessoa"
-		},
-		{
-			"table": "clpropostacomercial",
-			"column": "pessoa"
-		},
-		{
-			"table": "clrealinhamento",
-			"column": "pessoa"
-		},
-		{
-			"table": "clreqlicitacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clrequisicaonad",
-			"column": "pessoa"
-		},
-		{
-			"table": "clsolicitacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "clsolicitacaopessoa",
-			"column": "pessoa"
-		},
-		{
-			"table": "contatopessoa",
-			"column": "pessoa"
-		},
-		{
-			"table": "contatopessoa",
-			"column": "representante"
-		},
-		{
-			"table": "elocontrato",
-			"column": "cliente"
-		},
-		{
-			"table": "elocontrato",
-			"column": "empresa"
-		},
-		{
-			"table": "enderecopessoa",
-			"column": "pessoa"
-		},
-		{
-			"table": "liberacaopessoa",
-			"column": "pessoa"
-		},
-		{
-			"table": "pessoaalterarazao",
-			"column": "pessoa"
-		},
-		{
-			"table": "pessoaam",
-			"column": "codpessoa"
-		},
-		{
-			"table": "pessoadocumentacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "pessoalicitacao",
-			"column": "pessoa"
-		},
-		{
-			"table": "pessoaramoatividade",
-			"column": "pessoa"
-		},
-		{
-			"table": "pessoasocios",
-			"column": "pessoa"
-		},
-		{
-			"table": "temp_pessoa",
-			"column": "pessoa"
-		},
-		{
-			"table": "unifornec_inativado",
-			"column": "pessoa"
-		},
-		{
-			"table": "unifornec_inativado",
-			"column": "pessoa_pai"
-		},
-		{
-			"table": "unifornec_unificado",
-			"column": "pessoa"
-		}
-	]
-}, {
-	"table": "tipologradouro",
-	"column": "tipologradouro",
-	"space": 200,
-	"dependencies": [{
-			"table": "clmembro",
-			"column": "tipologradouro"
-		},
-		{
-			"table": "logradouro",
-			"column": "tipologradouro"
-		}
-	]
-}]
+		]
+	}, {
+		"table": "logpre",
+		"column": "id",
+		"space": 7000,
+		"dependencies": []
+	}, {
+		"table": "logradouro",
+		"column": "logradouro",
+		"space": 1000,
+		"dependencies": [{
+				"table": "cep",
+				"column": "logradouro"
+			},
+			{
+				"table": "clmembro",
+				"column": "logradouro"
+			},
+			{
+				"table": "enderecopessoa",
+				"column": "logradouro"
+			},
+			{
+				"table": "entidade",
+				"column": "logradouro"
+			}
+		]
+	}, {
+		"table": "log_tabelas",
+		"column": "codigo",
+		"space": 6000,
+		"dependencies": []
+	}, {
+		"table": "pessoaam",
+		"column": "id",
+		"space": 2000,
+		"dependencies": []
+	}, {
+		"table": "pessoa",
+		"column": "pessoa",
+		"space": 7000,
+		"dependencies": [{
+				"table": "assinatura",
+				"column": "pessoa"
+			},
+			{
+				"table": "bancopessoa",
+				"column": "pessoa"
+			},
+			{
+				"table": "claditivoitem",
+				"column": "pessoa"
+			},
+			{
+				"table": "cladjudicacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clanalisevencedor",
+				"column": "pessoa"
+			},
+			{
+				"table": "clataleilaoassinante",
+				"column": "pessoa"
+			},
+			{
+				"table": "clatapregaoassinante",
+				"column": "pessoa"
+			},
+			{
+				"table": "clcargo",
+				"column": "pessoa"
+			},
+			{
+				"table": "clcertidao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clcertidaodocumentacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clcontrato",
+				"column": "pessoa"
+			},
+			{
+				"table": "clcontratoassinatura",
+				"column": "pessoa"
+			},
+			{
+				"table": "clcontratoatocontratual",
+				"column": "pessoa"
+			},
+			{
+				"table": "clcontratoatocontratual",
+				"column": "representante"
+			},
+			{
+				"table": "clcotacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clcotacaoitem",
+				"column": "pessoa"
+			},
+			{
+				"table": "clcredenciamentopregao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clfornecedordocumentacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clfornecedorpontuacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clhistoricovencedor",
+				"column": "pessoa"
+			},
+			{
+				"table": "clhomologacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "cllicitacao",
+				"column": "responsavel"
+			},
+			{
+				"table": "cllicitacaofornecedor",
+				"column": "pessoa"
+			},
+			{
+				"table": "cllicitacaoleilao",
+				"column": "pessoa"
+			},
+			{
+				"table": "cllicitacaopregao",
+				"column": "pessoa"
+			},
+			{
+				"table": "cllicitacaoprotoc",
+				"column": "pessoa"
+			},
+			{
+				"table": "cllicitacaorecurso",
+				"column": "pessoa"
+			},
+			{
+				"table": "clmembro",
+				"column": "pessoa"
+			},
+			{
+				"table": "clnad",
+				"column": "pessoa"
+			},
+			{
+				"table": "clorgaopublicacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clpregaoperc",
+				"column": "pessoa"
+			},
+			{
+				"table": "clpropostaajustada",
+				"column": "pessoa"
+			},
+			{
+				"table": "clpropostacomercial",
+				"column": "pessoa"
+			},
+			{
+				"table": "clrealinhamento",
+				"column": "pessoa"
+			},
+			{
+				"table": "clreqlicitacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clrequisicaonad",
+				"column": "pessoa"
+			},
+			{
+				"table": "clsolicitacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "clsolicitacaopessoa",
+				"column": "pessoa"
+			},
+			{
+				"table": "contatopessoa",
+				"column": "pessoa"
+			},
+			{
+				"table": "contatopessoa",
+				"column": "representante"
+			},
+			{
+				"table": "elocontrato",
+				"column": "cliente"
+			},
+			{
+				"table": "elocontrato",
+				"column": "empresa"
+			},
+			{
+				"table": "enderecopessoa",
+				"column": "pessoa"
+			},
+			{
+				"table": "liberacaopessoa",
+				"column": "pessoa"
+			},
+			{
+				"table": "pessoaalterarazao",
+				"column": "pessoa"
+			},
+			{
+				"table": "pessoaam",
+				"column": "codpessoa"
+			},
+			{
+				"table": "pessoadocumentacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "pessoalicitacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "pessoaramoatividade",
+				"column": "pessoa"
+			},
+			{
+				"table": "pessoasocios",
+				"column": "pessoa"
+			},
+			{
+				"table": "temp_pessoa",
+				"column": "pessoa"
+			},
+			{
+				"table": "unifornec_inativado",
+				"column": "pessoa"
+			},
+			{
+				"table": "unifornec_inativado",
+				"column": "pessoa_pai"
+			},
+			{
+				"table": "unifornec_unificado",
+				"column": "pessoa"
+			}
+		]
+	}, {
+		"table": "tipologradouro",
+		"column": "tipologradouro",
+		"space": 100,
+		"dependencies": [{
+				"table": "clmembro",
+				"column": "tipologradouro"
+			},
+			{
+				"table": "logradouro",
+				"column": "tipologradouro"
+			}
+		]
+	},
+	{
+		"table": "clsolicitacaoanulacao",
+		"column": "id",
+		"space": 5000,
+		"dependencies": []
+	}
+]

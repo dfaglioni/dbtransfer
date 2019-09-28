@@ -208,4 +208,9 @@
 	"column": "codigo",
 	"space": 1000000,
 	"dependencies": []
+}, {
+	"table": "proc_correcaofluxo",
+	"column": "id",
+	"space": 5000,
+	"dependencies": []
 }]
