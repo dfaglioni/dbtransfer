@@ -1,12 +1,17 @@
 package pt.evolute.dbtransfer.operations;
 
+import java.io.File;
+import java.nio.charset.Charset;
 import java.sql.SQLException;
 import java.util.List;
+
+import org.apache.commons.io.FileUtils;
 
 import br.loop.db.domain.Table;
 import br.loop.db.domain.TableKeyMover;
 import pt.evolute.dbtransfer.db.DBConnection;
 import pt.evolute.dbtransfer.db.beans.Name;
+import pt.evolute.dbtransfer.transfer.Mover;
 
 public class TableKeyMoverExecutor {
 
@@ -43,6 +48,9 @@ public class TableKeyMoverExecutor {
 
 						}
 					}
+					FileUtils.writeStringToFile(new File(Mover.DONE_FILE),
+							tableKeyMover.getTable().getTable().toUpperCase() + '\n', Charset.defaultCharset(), true);
+
 				}
 
 			}
@@ -52,15 +60,15 @@ public class TableKeyMoverExecutor {
 
 	private void updateToMove(DBConnection con_dest, Table table, int space) throws SQLException {
 		System.out.println("Move " + table.getTable() + " " + space);
-	
+
 		try {
-			con_dest.executeUpdate(String.format("update %s set %s = %s + %d", table.getTable(), table.getColumn(),
+			con_dest.executeUpdate(String.format("update %s set %s = cast( %s as integer) + %d", table.getTable(), table.getColumn(),
 					table.getColumn(), space));
-			
+
 		} catch (Exception e) {
 
 			System.out.println("Error Moving " + table + " " + e.getMessage());
-		
+
 		}
 	}
 

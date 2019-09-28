@@ -258,7 +258,7 @@ public class JDBCConnection implements DBConnection {
     	
         System.out.println("max: " + table.originalName + " " + column);
         
-        return oneResultSqlFunction(table, null, String.format("coalesce(max(%s),0)", column));
+        return oneResultSqlFunction(table, null, String.format("coalesce(max(cast( %s as integer)),0)", column));
     }
 
     @Override
