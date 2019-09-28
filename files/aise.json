@@ -1,7 +1,7 @@
 [{
 	"table": "bairro",
 	"column": "bairro",
-	"space": 20000,
+	"space": 1000,
 	"dependencies": [{
 		"table": "cep",
 		"column": "bairro"
@@ -33,7 +33,7 @@
 }, {
 	"table": "cgato",
 	"column": "idato",
-	"space": 22000,
+	"space": 0,
 	"dependencies": [{
 			"table": "cgato",
 			"column": "leiautorizativa"
@@ -308,7 +308,7 @@
 }, {
 	"table": "entidade",
 	"column": "entidade",
-	"space": 1000,
+	"space": 7,
 	"dependencies": [{
 			"table": "cgato",
 			"column": "entidade"
@@ -657,7 +657,7 @@
 }, {
 	"table": "logradouro",
 	"column": "logradouro",
-	"space": 14000,
+	"space": 6000,
 	"dependencies": [{
 			"table": "cgato",
 			"column": "leiautorizativa"
@@ -730,7 +730,7 @@
 }, {
 	"table": "pessoa",
 	"column": "pessoa",
-	"space": 130000,
+	"space": 60000,
 	"dependencies": [{
 			"table": "banco",
 			"column": "pessoa"
@@ -1271,7 +1271,7 @@
 }, {
 	"table": "rhcadastroextra",
 	"column": "idfolha",
-	"space": 20000,
+	"space": 600,
 	"dependencies": [{
 		"table": "contcadastroextra",
 		"column": "idfolha"
@@ -1279,7 +1279,7 @@
 }, {
 	"table": "rhcbo",
 	"column": "sequenciacbo",
-	"space": 200000,
+	"space": 12000,
 	"dependencies": [{
 			"table": "rhautonomo",
 			"column": "sequenciacbo"
@@ -1312,7 +1312,7 @@
 }, {
 	"table": "rhlocaldetrabalho",
 	"column": "localdetrabalho",
-	"space": 20000,
+	"space": 1500,
 	"dependencies": [
 
 		{
@@ -1369,12 +1369,12 @@
 }, {
 	"table": "syslogseletor",
 	"column": "idlog",
-	"space": 20000000,
+	"space": 2700000,
 	"dependencies": []
 }, {
 	"table": "tipologradouro",
 	"column": "tipologradouro",
-	"space": 20000,
+	"space": 200,
 	"dependencies": [{
 		"table": "issprecadastrologradouro",
 		"column": "log_tipologradouro"
