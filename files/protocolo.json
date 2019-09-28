@@ -1,0 +1,211 @@
+[{
+	"table": "assunto",
+	"column": "codigo",
+	"space": 11000,
+	"dependencies": [
+
+		{
+			"table": "documento_assunto",
+			"column": "assunto"
+		},
+		{
+			"table": "processos",
+			"column": "codassunto"
+		},
+		{
+			"table": "roteiro_protocolo",
+			"column": "assunto"
+		},
+		{
+			"table": "taxasassunto",
+			"column": "codigoassunto"
+		},
+		{
+			"table": "usuario_assunto",
+			"column": "assunto"
+		}
+	]
+}, {
+	"table": "bairro",
+	"column": "bairro",
+	"space": 300,
+	"dependencies": [
+
+		{
+			"table": "enderecopessoa",
+			"column": "bairro"
+		},
+		{
+			"table": "entidade",
+			"column": "bairro"
+		},
+		{
+			"table": "logradouro",
+			"column": "bairro"
+		},
+		{
+			"table": "processos",
+			"column": "bairro"
+		}
+	]
+}, {
+	"table": "cidade",
+	"column": "cidade",
+	"space": 100,
+	"dependencies": [{
+			"table": "bairro",
+			"column": "cidade"
+		},
+		{
+			"table": "enderecopessoa",
+			"column": "cidade"
+		},
+		{
+			"table": "entidade",
+			"column": "cidade"
+		},
+		{
+			"table": "logradouro",
+			"column": "cidade"
+		},
+		{
+			"table": "processos",
+			"column": "cidade"
+		}
+
+	]
+}, {
+	"table": "entidade",
+	"column": "entidade",
+	"space": 7,
+	"dependencies": [
+
+		{
+			"table": "coordenadoria",
+			"column": "entidade"
+		},
+		{
+			"table": "diretoria",
+			"column": "entidade"
+		},
+		{
+			"table": "entidade",
+			"column": "entidade"
+		},
+		{
+			"table": "entidade",
+			"column": "entidadeorcamento"
+		},
+		{
+			"table": "entidade",
+			"column": "entidadeprincipal"
+		},
+		{
+			"table": "exercicio",
+			"column": "entidade"
+		},
+		{
+			"table": "exercicio_mes",
+			"column": "entidade"
+		},
+		{
+			"table": "locais",
+			"column": "entidade"
+		},
+		{
+			"table": "origem",
+			"column": "entidade"
+		},
+		{
+			"table": "parametros",
+			"column": "entidade"
+		},
+		{
+			"table": "proc_correcaofluxo",
+			"column": "entidade"
+		},
+		{
+			"table": "processos",
+			"column": "entidade"
+		},
+		{
+			"table": "registro",
+			"column": "entidade"
+		},
+		{
+			"table": "registro",
+			"column": "qtdentidades"
+		},
+		{
+			"table": "tramitacao",
+			"column": "entidade"
+		},
+		{
+			"table": "unidade",
+			"column": "entidade"
+		},
+		{
+			"table": "unidadeorcamentaria",
+			"column": "entidade"
+		},
+		{
+			"table": "usuario_entidade",
+			"column": "entidade"
+		},
+		{
+			"table": "usuario_local",
+			"column": "entidade"
+		},
+		{
+			"table": "usuariolog",
+			"column": "entidade"
+		}
+	]
+}, {
+	"table": "logradouro",
+	"column": "logradouro",
+	"space": 1000,
+	"dependencies": [
+
+		{
+			"table": "entidade",
+			"column": "logradouro"
+		},
+		{
+			"table": "processos",
+			"column": "endcorrespondencia"
+		},
+		{
+			"table": "processos",
+			"column": "logradouro"
+		},
+		{
+			"table": "enderecopessoa",
+			"column": "logradouro"
+		}
+
+
+	]
+}, {
+	"table": "pessoa",
+	"column": "codpessoa",
+	"space": 30000,
+	"dependencies": [{
+			"table": "enderecopessoa",
+			"column": "codpessoa"
+		},
+		{
+			"table": "oficio",
+			"column": "codpessoa"
+		},
+		{
+			"table": "processos",
+			"column": "codpessoa"
+		}
+	]
+}, {
+	"table": "usuariolog",
+	"column": "codigo",
+	"space": 1000000,
+	"dependencies": []
+}]
