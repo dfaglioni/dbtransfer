@@ -262,8 +262,7 @@ public class Mover  implements Constants {
 
 
 	private void validateRowCount() throws Exception {
-
-
+		
 		FileUtils.writeStringToFile(new File(Mover.FAIL_FILE),"", Charset.defaultCharset());
 		FileUtils.writeStringToFile(new File(Mover.DIFF_FILE),"", Charset.defaultCharset());
 

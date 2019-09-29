@@ -338,7 +338,7 @@
 	}, {
 		"table": "log_tabelas",
 		"column": "codigo",
-		"space": 6000,
+		"space": 7000,
 		"dependencies": []
 	}, {
 		"table": "pessoaam",
