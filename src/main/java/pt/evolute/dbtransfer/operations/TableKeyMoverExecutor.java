@@ -25,7 +25,7 @@ public class TableKeyMoverExecutor {
 
 			Name tableName = new Name(tableKeyMover.getTable().getTable());
 
-			if (listTables.contains(tableName)) {
+			if (listTables.contains(tableName) && tableKeyMover.getSpace() != 0) {
 
 				int maxValue = con_dest.maxValue(tableName, tableKeyMover.getTable().getColumn());
 

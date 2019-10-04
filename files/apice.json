@@ -585,5 +585,12 @@
 		"column": "id",
 		"space": 5000,
 		"dependencies": []
+	},
+	{
+		"table": "pessoadocumentacao",
+		"column": "id",
+		"space": 10000,
+		"dependencies": []
 	}
+
 ]

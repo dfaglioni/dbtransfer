@@ -15,6 +15,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import br.loop.db.domain.Table;
 import br.loop.db.domain.TableJoin;
@@ -210,6 +211,23 @@ public class OperationsTest {
 
 	}
 
+	@Test
+	public void moveKeySimpleZeroSpace() throws Exception {
+
+		TableKeyMover tableAMover = new TableKeyMover();
+		tableAMover.setSpace(0);
+		tableAMover.getTable().setColumn("id");
+		tableAMover.getTable().setTable("tab_xxx");
+
+		DBConnection dbConnection = Mockito.mock(DBConnection.class);
+		Mockito.when(dbConnection.getTableList()).thenReturn(Arrays.asList(new Name(tableAMover.getTable().getTable())));
+
+		tableKeyMoverExecutor.execute(dbConnection, Arrays.asList(tableAMover));
+		
+		
+		Mockito.verify(dbConnection, Mockito.times(0)).executeUpdate(Mockito.anyString());
+
+	}	
 	@Test
 	public void moveLessThenMax() throws Exception {
 
