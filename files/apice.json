@@ -1,7 +1,15 @@
 [{
+		"table": "assinatura",
+		"column": "id",
+		"space": 50,
+		"dependencies": [
+
+		]
+	},
+	{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 500,
+		"space": 600,
 		"dependencies": [{
 				"table": "cep",
 				"column": "bairro"
@@ -19,10 +27,11 @@
 				"column": "bairro"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 10000,
+		"space": 20000,
 		"dependencies": [{
 				"table": "bairro",
 				"column": "cidade"
@@ -60,10 +69,127 @@
 				"column": "cidade"
 			}
 		]
-	}, {
+	},
+	{
+		"table": "clitem",
+		"column": "item",
+		"space": 1000,
+		"dependencies": [
+
+			{
+				"table": "claditivoitem",
+				"column": "item"
+			},
+			{
+				"table": "clalteracoesitempedido",
+				"column": "itemantigo"
+			},
+			{
+				"table": "clalteracoesitempedido",
+				"column": "itemnovo"
+			},
+			{
+				"table": "clanexoitem",
+				"column": "item"
+			},
+			{
+				"table": "clcotacaoitem",
+				"column": "item"
+			},
+			{
+				"table": "clitembps",
+				"column": "item"
+			},
+			{
+				"table": "cllicitacaoitem",
+				"column": "item"
+			},
+			{
+				"table": "cllicitacaoitemcentrocusto",
+				"column": "item"
+			},
+			{
+				"table": "clminutaitem",
+				"column": "item"
+			},
+			{
+				"table": "clminutaitem_aux",
+				"column": "item"
+			},
+			{
+				"table": "clnad",
+				"column": "item"
+			},
+			{
+				"table": "clnaditem",
+				"column": "item"
+			},
+			{
+				"table": "clpedidoanexoitem",
+				"column": "item"
+			},
+			{
+				"table": "clpedidoitem",
+				"column": "item"
+			},
+			{
+				"table": "clpropostaajustada",
+				"column": "item"
+			},
+			{
+				"table": "clpropostacomercial",
+				"column": "item"
+			},
+			{
+				"table": "clpropostacomercial",
+				"column": "itemoriginal"
+			},
+			{
+				"table": "clrequisicaonaditem",
+				"column": "item"
+			},
+			{
+				"table": "clsaldoitemandamento",
+				"column": "item"
+			},
+			{
+				"table": "clsaldoitemvigente",
+				"column": "item"
+			},
+			{
+				"table": "cltermoreferenciaitem",
+				"column": "item"
+			},
+			{
+				"table": "cltransferenciaitem",
+				"column": "item"
+			},
+			{
+				"table": "eloaditivoitem",
+				"column": "item"
+			},
+			{
+				"table": "elocontratoitem",
+				"column": "item"
+			}
+
+
+		]
+	},
+	{
+		"table": "clorgaopublicacao",
+		"column": "orgaopublicacao",
+		"space": 20,
+		"dependencies": [
+			{ "table": "clcontratopublicacao",	"column": "orgaopublicacao" },
+{ "table": "cllicitacaopublicacao",	"column": "orgaopublicacao" }
+
+		]
+	},
+	{
 		"table": "clmembro",
 		"column": "membro",
-		"space": 500,
+		"space": 600,
 		"dependencies": [{
 				"table": "clcomissaoleilao",
 				"column": "membro"
@@ -97,21 +223,21 @@
 				"column": "membro"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "clunidademedida",
 		"column": "unidademedida",
-		"space": 100,
+		"space": 150,
 		"dependencies": [{
 			"table": "clitem",
 			"column": "unidademedida"
 		}]
-	}, {
+	},
+	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 7,
-		"dependencies": [
-
-			{
+		"space": 0,
+		"dependencies": [{
 				"table": "clacompanhamento",
 				"column": "entidade"
 			},
@@ -307,17 +433,20 @@
 				"table": "usuarioentidade",
 				"column": "entidade"
 			}
-
 		]
-	}, {
+	},
+	{
 		"table": "logpre",
 		"column": "id",
-		"space": 7000,
-		"dependencies": []
-	}, {
+		"space": 0,
+		"dependencies": [
+
+		]
+	},
+	{
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 1000,
+		"space": 1200,
 		"dependencies": [{
 				"table": "cep",
 				"column": "logradouro"
@@ -335,20 +464,27 @@
 				"column": "logradouro"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "log_tabelas",
 		"column": "codigo",
-		"space": 7000,
-		"dependencies": []
-	}, {
+		"space": 620000,
+		"dependencies": [
+
+		]
+	},
+	{
 		"table": "pessoaam",
 		"column": "id",
-		"space": 2000,
-		"dependencies": []
-	}, {
+		"space": 2100,
+		"dependencies": [
+
+		]
+	},
+	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 7000,
+		"space": 7500,
 		"dependencies": [{
 				"table": "assinatura",
 				"column": "pessoa"
@@ -566,10 +702,11 @@
 				"column": "pessoa"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 100,
+		"space": 120,
 		"dependencies": [{
 				"table": "clmembro",
 				"column": "tipologradouro"
@@ -583,14 +720,17 @@
 	{
 		"table": "clsolicitacaoanulacao",
 		"column": "id",
-		"space": 5000,
-		"dependencies": []
+		"space": 5500,
+		"dependencies": [
+
+		]
 	},
 	{
 		"table": "pessoadocumentacao",
 		"column": "id",
-		"space": 10000,
-		"dependencies": []
-	}
+		"space": 1200,
+		"dependencies": [
 
+		]
+	}
 ]

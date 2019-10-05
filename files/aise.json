@@ -1,7 +1,7 @@
 [{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 1000,
+		"space": 1200,
 		"dependencies": [{
 			"table": "cep",
 			"column": "bairro"
@@ -33,7 +33,7 @@
 	}, {
 		"table": "cgato",
 		"column": "idato",
-		"space": 0,
+		"space": 500,
 		"dependencies": [{
 				"table": "cgato",
 				"column": "leiautorizativa"
@@ -242,7 +242,7 @@
 	}, {
 		"table": "cidade",
 		"column": "cidade",
-		"space": 60000,
+		"space": 10000,
 
 		"dependencies": [{
 			"table": "agencia",
@@ -308,7 +308,7 @@
 	}, {
 		"table": "entidade",
 		"column": "entidade",
-		"space": 7,
+		"space": 6,
 		"dependencies": [{
 				"table": "veiculopublicacao",
 				"column": "entidade"
@@ -2561,7 +2561,7 @@
 	}, {
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 6000,
+		"space": 6500,
 		"dependencies": [{
 				"table": "cgato",
 				"column": "leiautorizativa"
@@ -2634,7 +2634,7 @@
 	}, {
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 60000,
+		"space": 61000,
 		"dependencies": [{
 				"table": "banco",
 				"column": "pessoa"
@@ -3175,7 +3175,7 @@
 	}, {
 		"table": "rhcadastroextra",
 		"column": "idfolha",
-		"space": 600,
+		"space": 800,
 		"dependencies": [{
 			"table": "contcadastroextra",
 			"column": "idfolha"
@@ -3183,7 +3183,7 @@
 	}, {
 		"table": "rhcbo",
 		"column": "sequenciacbo",
-		"space": 12000,
+		"space": 23000,
 		"dependencies": [{
 				"table": "rhautonomo",
 				"column": "sequenciacbo"
@@ -3216,7 +3216,7 @@
 	}, {
 		"table": "rhlocaldetrabalho",
 		"column": "localdetrabalho",
-		"space": 1500,
+		"space": 0,
 		"dependencies": [
 
 			{
@@ -3263,22 +3263,22 @@
 	}, {
 		"table": "syslogautenticausuario",
 		"column": "idlog",
-		"space": 20000000,
+		"space": 21000000,
 		"dependencies": []
 	}, {
 		"table": "syslog",
 		"column": "idlog",
-		"space": 20000000,
+		"space": 21000000,
 		"dependencies": []
 	}, {
 		"table": "syslogseletor",
 		"column": "idlog",
-		"space": 2700000,
+		"space": 21000000,
 		"dependencies": []
 	}, {
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 200,
+		"space": 300,
 		"dependencies": [{
 			"table": "issprecadastrologradouro",
 			"column": "log_tipologradouro"
@@ -3293,7 +3293,7 @@
 	{
 		"table": "rellog",
 		"column": "idlog",
-		"space": 70000,
+		"space": 80000,
 		"dependencies": []
 	},
 	{
@@ -3305,7 +3305,7 @@
 	{
 		"table": "rotinaarquivo",
 		"column": "rotinaarquivo",
-		"space": 2000,
+		"space": 3000,
 		"dependencies": [{
 				"table": "filtrorotinaarquivo",
 				"column": "rotinaarquivo"

@@ -1,12 +1,17 @@
 [{
+		"table": "cronograma",
+		"column": "id",
+		"space": 8000,
+		"dependencies": []
+	},{
 		"table": "eloportalrepasses",
 		"column": "id",
-		"space": 200,
+		"space": 250,
 		"dependencies": []
 	}, {
 		"table": "eloportalsubgrupoexercicio",
 		"column": "id",
-		"space": 6000,
+		"space": 6500,
 		"dependencies": [{
 			"table": "eloportalpublicacao",
 			"column": "idsubgrupoexercicio"
@@ -14,7 +19,7 @@
 	}, {
 		"table": "eloportalsubgrupopublicacao",
 		"column": "id",
-		"space": 1000,
+		"space": 1500,
 		"dependencies": [{
 				"table": "eloportalclassrelatorio",
 				"column": "idsubgrupopublicacao"
@@ -27,7 +32,7 @@
 	}, {
 		"table": "entidade",
 		"column": "entidade",
-		"space": 7,
+		"space": 0,
 		"dependencies": [{
 				"table": "abertura",
 				"column": "entidade"
@@ -937,7 +942,7 @@
 	}, {
 		"table": "est_item",
 		"column": "item",
-		"space": 100000,
+		"space": 200000,
 		"dependencies": [
 
 			{
@@ -1156,7 +1161,7 @@
 	}, {
 		"table": "est_tipomovimentacao",
 		"column": "codmovimentacao",
-		"space": 50,
+		"space": 500,
 		"dependencies": [{
 				"table": "est_contabilizacaomensalitem",
 				"column": "operacao"
@@ -1178,7 +1183,7 @@
 	}, {
 		"table": "fornecedor",
 		"column": "fornecedor",
-		"space": 7000,
+		"space": 7500,
 		"dependencies": [
 
 			{
@@ -1571,7 +1576,7 @@
 	}, {
 		"table": "fr_especieveiculos",
 		"column": "codigo",
-		"space": 50,
+		"space": 70,
 		"dependencies": [{
 			"table": "pat_veiculo",
 			"column": "especie"
@@ -1579,17 +1584,17 @@
 	}, {
 		"table": "syslog",
 		"column": "codigo",
-		"space": 5000000,
+		"space": 5100000,
 		"dependencies": []
 	}, {
 		"table": "usuariolog",
 		"column": "codigo",
-		"space": 300000,
+		"space": 310000,
 		"dependencies": []
 	}, {
 		"table": "versaoppa",
 		"column": "codigoversao",
-		"space": 3000,
+		"space": 3500,
 		"dependencies": [{
 				"table": "orcppa",
 				"column": "versao"
@@ -1627,12 +1632,12 @@
 	}, {
 		"table": "est_classificacaoplano",
 		"column": "id",
-		"space": 20000,
+		"space": 24000,
 		"dependencies": []
 	}, {
 		"table": "leis_atos",
 		"column": "id",
-		"space": 15000,
+		"space": 16000,
 		"dependencies": [{
 				"table": "artigo_exclusao",
 				"column": "idleiatos"
