@@ -242,7 +242,7 @@
 	}, {
 		"table": "cidade",
 		"column": "cidade",
-		"space": 10000,
+		"space": 70000,
 
 		"dependencies": [{
 			"table": "agencia",
@@ -311,6 +311,14 @@
 		"space": 6,
 		"dependencies": [{
 				"table": "veiculopublicacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentomanutencao",
+				"column": "entidade"
+			},
+			{
+				"table": "tribfundamentolegal",
 				"column": "entidade"
 			},
 			{
@@ -3175,7 +3183,7 @@
 	}, {
 		"table": "rhcadastroextra",
 		"column": "idfolha",
-		"space": 800,
+		"space": 700,
 		"dependencies": [{
 			"table": "contcadastroextra",
 			"column": "idfolha"
@@ -3278,7 +3286,7 @@
 	}, {
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 300,
+		"space": 250,
 		"dependencies": [{
 			"table": "issprecadastrologradouro",
 			"column": "log_tipologradouro"
@@ -3300,6 +3308,12 @@
 		"table": "rhfuncionarioweb",
 		"column": "idfuncionarioweb",
 		"space": 10000,
+		"dependencies": []
+	},
+	{
+		"table": "rhhistcalcfolha",
+		"column": "id",
+		"space": 2000,
 		"dependencies": []
 	},
 	{

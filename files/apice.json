@@ -74,8 +74,58 @@
 		"table": "clitem",
 		"column": "item",
 		"space": 1000,
-		"dependencies": [
-
+		"dependencies": [{
+				"table": "clfornecedorpontuacao",
+				"column": "item"
+			},
+			{
+				"table": "clitembps",
+				"column": "itemgenerico"
+			},
+			{
+				"table": "clitemtecnica",
+				"column": "item"
+			},
+			{
+				"table": "cllicitacao",
+				"column": "itemeditalamostra"
+			},
+			{
+				"table": "clnaditemperc",
+				"column": "item"
+			},
+			{
+				"table": "clpontuacaotecnica",
+				"column": "item"
+			},
+			{
+				"table": "clreqlicitacaoitem",
+				"column": "item"
+			},
+			{
+				"table": "clrequisicaonaditemperc",
+				"column": "item"
+			},
+			{
+				"table": "clsolicitacaoitem",
+				"column": "item"
+			},
+			{
+				"table": "clsolicitacaoitem_aux",
+				"column": "item"
+			},
+			{
+				"table": "clsolicitacaoitem_desdobsecao",
+				"column": "item"
+			},
+			{
+				"table": "clsolicitacaoitemperc",
+				"column": "item"
+			},
+			{
+				"table": "clfornecedoritem",
+				"column": "item"
+			},
 			{
 				"table": "claditivoitem",
 				"column": "item"
@@ -174,15 +224,22 @@
 			}
 
 
+
+
 		]
 	},
 	{
 		"table": "clorgaopublicacao",
 		"column": "orgaopublicacao",
 		"space": 20,
-		"dependencies": [
-			{ "table": "clcontratopublicacao",	"column": "orgaopublicacao" },
-{ "table": "cllicitacaopublicacao",	"column": "orgaopublicacao" }
+		"dependencies": [{
+				"table": "clcontratopublicacao",
+				"column": "orgaopublicacao"
+			},
+			{
+				"table": "cllicitacaopublicacao",
+				"column": "orgaopublicacao"
+			}
 
 		]
 	},

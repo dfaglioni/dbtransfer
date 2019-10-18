@@ -1,9 +1,9 @@
 [{
 		"table": "cronograma",
 		"column": "id",
-		"space": 8000,
+		"space": 72000,
 		"dependencies": []
-	},{
+	}, {
 		"table": "eloportalrepasses",
 		"column": "id",
 		"space": 250,
@@ -1594,7 +1594,7 @@
 	}, {
 		"table": "versaoppa",
 		"column": "codigoversao",
-		"space": 3500,
+		"space": 3100,
 		"dependencies": [{
 				"table": "orcppa",
 				"column": "versao"
@@ -1637,7 +1637,7 @@
 	}, {
 		"table": "leis_atos",
 		"column": "id",
-		"space": 16000,
+		"space": 15500,
 		"dependencies": [{
 				"table": "artigo_exclusao",
 				"column": "idleiatos"
