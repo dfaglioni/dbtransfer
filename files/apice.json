@@ -1,7 +1,7 @@
 [{
 		"table": "assinatura",
 		"column": "id",
-		"space": 50,
+		"space": 0,
 		"dependencies": [
 
 		]
@@ -9,7 +9,7 @@
 	{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 600,
+		"space": 610,
 		"dependencies": [{
 				"table": "cep",
 				"column": "bairro"
@@ -73,7 +73,7 @@
 	{
 		"table": "clitem",
 		"column": "item",
-		"space": 1000,
+		"space": 0,
 		"dependencies": [{
 				"table": "clfornecedorpontuacao",
 				"column": "item"
@@ -231,7 +231,7 @@
 	{
 		"table": "clorgaopublicacao",
 		"column": "orgaopublicacao",
-		"space": 20,
+		"space": 0,
 		"dependencies": [{
 				"table": "clcontratopublicacao",
 				"column": "orgaopublicacao"
@@ -246,7 +246,7 @@
 	{
 		"table": "clmembro",
 		"column": "membro",
-		"space": 600,
+		"space": 610,
 		"dependencies": [{
 				"table": "clcomissaoleilao",
 				"column": "membro"
@@ -284,7 +284,7 @@
 	{
 		"table": "clunidademedida",
 		"column": "unidademedida",
-		"space": 150,
+		"space": 0,
 		"dependencies": [{
 			"table": "clitem",
 			"column": "unidademedida"
@@ -293,7 +293,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 0,
+		"space": 10,
 		"dependencies": [{
 				"table": "clacompanhamento",
 				"column": "entidade"
@@ -503,7 +503,7 @@
 	{
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 1200,
+		"space": 1210,
 		"dependencies": [{
 				"table": "cep",
 				"column": "logradouro"
@@ -525,7 +525,7 @@
 	{
 		"table": "log_tabelas",
 		"column": "codigo",
-		"space": 620000,
+		"space": 627000,
 		"dependencies": [
 
 		]
@@ -533,7 +533,7 @@
 	{
 		"table": "pessoaam",
 		"column": "id",
-		"space": 2100,
+		"space": 2200,
 		"dependencies": [
 
 		]
@@ -541,7 +541,7 @@
 	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 7500,
+		"space": 8000,
 		"dependencies": [{
 				"table": "assinatura",
 				"column": "pessoa"
@@ -763,7 +763,7 @@
 	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 120,
+		"space": 150,
 		"dependencies": [{
 				"table": "clmembro",
 				"column": "tipologradouro"
@@ -777,7 +777,7 @@
 	{
 		"table": "clsolicitacaoanulacao",
 		"column": "id",
-		"space": 5500,
+		"space": 5700,
 		"dependencies": [
 
 		]
@@ -785,7 +785,7 @@
 	{
 		"table": "pessoadocumentacao",
 		"column": "id",
-		"space": 1200,
+		"space": 1250,
 		"dependencies": [
 
 		]

@@ -1,17 +1,17 @@
 [{
 		"table": "cronograma",
 		"column": "id",
-		"space": 72000,
+		"space": 0,
 		"dependencies": []
 	}, {
 		"table": "eloportalrepasses",
 		"column": "id",
-		"space": 250,
+		"space": 260,
 		"dependencies": []
 	}, {
 		"table": "eloportalsubgrupoexercicio",
 		"column": "id",
-		"space": 6500,
+		"space": 6700,
 		"dependencies": [{
 			"table": "eloportalpublicacao",
 			"column": "idsubgrupoexercicio"
@@ -19,7 +19,7 @@
 	}, {
 		"table": "eloportalsubgrupopublicacao",
 		"column": "id",
-		"space": 1500,
+		"space": 2000,
 		"dependencies": [{
 				"table": "eloportalclassrelatorio",
 				"column": "idsubgrupopublicacao"
@@ -32,13 +32,17 @@
 	}, {
 		"table": "entidade",
 		"column": "entidade",
-		"space": 0,
+		"space": 10,
 		"dependencies": [{
 				"table": "abertura",
 				"column": "entidade"
 			},
 			{
 				"table": "anulacaoempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "est_usuxcc",
 				"column": "entidade"
 			},
 			{
@@ -914,6 +918,10 @@
 				"column": "entidade"
 			},
 			{
+				"table": "usuarioentidade",
+				"column": "entidade"
+			},
+			{
 				"table": "usuarioformconfig",
 				"column": "entidade"
 			},
@@ -942,7 +950,7 @@
 	}, {
 		"table": "est_item",
 		"column": "item",
-		"space": 200000,
+		"space": 300000,
 		"dependencies": [
 
 			{
@@ -1161,7 +1169,7 @@
 	}, {
 		"table": "est_tipomovimentacao",
 		"column": "codmovimentacao",
-		"space": 500,
+		"space": 530,
 		"dependencies": [{
 				"table": "est_contabilizacaomensalitem",
 				"column": "operacao"
@@ -1183,7 +1191,7 @@
 	}, {
 		"table": "fornecedor",
 		"column": "fornecedor",
-		"space": 7500,
+		"space": 8000,
 		"dependencies": [
 
 			{
@@ -1576,7 +1584,7 @@
 	}, {
 		"table": "fr_especieveiculos",
 		"column": "codigo",
-		"space": 70,
+		"space": 0,
 		"dependencies": [{
 			"table": "pat_veiculo",
 			"column": "especie"
@@ -1584,17 +1592,17 @@
 	}, {
 		"table": "syslog",
 		"column": "codigo",
-		"space": 5100000,
+		"space": 5200000,
 		"dependencies": []
 	}, {
 		"table": "usuariolog",
 		"column": "codigo",
-		"space": 310000,
+		"space": 1100000,
 		"dependencies": []
 	}, {
 		"table": "versaoppa",
 		"column": "codigoversao",
-		"space": 3100,
+		"space": 5200,
 		"dependencies": [{
 				"table": "orcppa",
 				"column": "versao"
@@ -1632,12 +1640,12 @@
 	}, {
 		"table": "est_classificacaoplano",
 		"column": "id",
-		"space": 24000,
+		"space": 27000,
 		"dependencies": []
 	}, {
 		"table": "leis_atos",
 		"column": "id",
-		"space": 15500,
+		"space": 15600,
 		"dependencies": [{
 				"table": "artigo_exclusao",
 				"column": "idleiatos"
