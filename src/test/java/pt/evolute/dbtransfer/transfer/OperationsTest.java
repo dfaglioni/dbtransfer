@@ -249,6 +249,27 @@ public class OperationsTest {
 	}
 
 	@Test
+	public void moveLessThenMaxIgnore() throws Exception {
+
+		CON_DEST.executeUpdate("INSERT INTO TAB_A VALUES (1000000, 'XXX')");
+		CON_DEST.executeUpdate("INSERT INTO TAB_A VALUES (1010000, 'XXX')");
+		CON_DEST.executeUpdate("INSERT INTO TAB_A VALUES (1020000, 'XXX')");
+
+		TableKeyMover tableAMover = new TableKeyMover();
+		tableAMover.setSpace(1);
+		tableAMover.setIgnoreMax(true);
+		tableAMover.getTable().setColumn("id");
+		tableAMover.getTable().setTable("tab_a");
+
+		tableKeyMoverExecutor.execute(CON_DEST, Arrays.asList(tableAMover));
+		
+		assertThat("TAB_MOV", CON_DEST.getRowCountWhere(new Name("TAB_A"), " WHERE ID =  1000001"),
+				equalTo(1));
+
+
+	}
+	
+	@Test
 	public void joinSimple() throws Exception {
 
 		CON_DEST.executeUpdate("INSERT INTO TAB_JOIN VALUES (100, 'XXX','1')");

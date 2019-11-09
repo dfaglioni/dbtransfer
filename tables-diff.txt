@@ -1,5 +1,5 @@
 tab1  3 != 2
-tab_a  4 != 0
+tab_a  7 != 0
 tab_b  1 != 0
 tab_c  1 != 0
 tab_d  1 != 0

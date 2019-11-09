@@ -3335,5 +3335,50 @@
 				"column": "rotinaarquivo"
 			}
 		]
+	},
+	{
+		"table": "veiculopublicacao",
+		"column": "veiculopublicacao",
+		"space": 3050,
+		"dependencies": [{
+				"table": "cgato",
+				"column": "veiculopublicacao"
+			},
+			{
+				"table": "cgatoveiculopublicacao",
+				"column": "veiculopublicacao"
+			},
+			{
+				"table": "rhconcurso",
+				"column": "veiculopublicacao"
+			},
+			{
+				"table": "rhconcursoedital",
+				"column": "veiculopublicacao"
+			}
+
+		]
+	},
+	{
+		"table": "carteiraprofissional",
+		"column": "carteiraprofissional",
+		"space": 3050,
+		"dependencies": [
+
+
+			{
+				"table": "profissao",
+				"column": "carteiraprofissional"
+			},
+			{
+				"table": "profissionalprofissao",
+				"column": "carteiraprofissional"
+			},
+			{
+				"table": "rhcbocarteiraprofissional",
+				"column": "carteiraprofissional"
+			}
+
+		]
 	}
 ]

@@ -8,6 +8,8 @@ public class TableKeyMover {
 	private final Table table = new Table();
 
 	private Integer space;
+	
+	private Boolean ignoreMax = false;
 
 	public Table getTable() {
 		return table;
@@ -33,4 +35,11 @@ public class TableKeyMover {
 		
 	}
 
+	public void setIgnoreMax(Boolean ignoreMax) {
+		this.ignoreMax = ignoreMax;
+	}
+	
+	public Boolean getIgnoreMax() {
+		return ignoreMax;
+	}
 }

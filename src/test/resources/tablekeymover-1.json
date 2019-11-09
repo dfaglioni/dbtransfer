@@ -2,6 +2,7 @@
 	"table": "bairro",
 	"column": "bairro",
 	"space": 100,
+	"ignoreMax": true,
 	"dependencies": [{
 		"table": "cep",
 		"column": "bairro"

@@ -49,6 +49,7 @@ public class TableRepositoryTest {
 		assertThat(tableKeyMover.getTable().getColumn(), equalTo("bairro"));
 		assertThat(tableKeyMover.getTable().getTable(), equalTo("bairro"));
 		assertThat(tableKeyMover.getSpace(), equalTo(100));
+		assertThat(tableKeyMover.getIgnoreMax(), equalTo(true));
 
 		assertThat(tableKeyMover.getTable().getDependencies().size(), equalTo(2));
 

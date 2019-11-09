@@ -17,8 +17,8 @@ public class TableKeyMoverExecutor {
 
 	public void execute(DBConnection con_dest, List<TableKeyMover> listTableKeyMover) throws Exception {
 
-		listTableKeyMover.forEach( t -> t.validate());
-		
+		listTableKeyMover.forEach(t -> t.validate());
+
 		List<Name> listTables = con_dest.getTableList();
 
 		for (TableKeyMover tableKeyMover : listTableKeyMover) {
@@ -29,7 +29,7 @@ public class TableKeyMoverExecutor {
 
 				int maxValue = con_dest.maxValue(tableName, tableKeyMover.getTable().getColumn());
 
-				if (maxValue > tableKeyMover.getSpace()) {
+				if (maxValue > tableKeyMover.getSpace() && !tableKeyMover.getIgnoreMax()) {
 
 					String message = "Space less than max " + tableKeyMover.getTable().getTable() + " " + maxValue;
 					System.out.println(message);
@@ -64,8 +64,8 @@ public class TableKeyMoverExecutor {
 		System.out.println("Move " + table.getTable() + " " + space);
 
 		try {
-			con_dest.executeUpdate(String.format("update %s set %s = cast( %s as integer) + %d", table.getTable(), table.getColumn(),
-					table.getColumn(), space));
+			con_dest.executeUpdate(String.format("update %s set %s = cast( %s as integer) + %d", table.getTable(),
+					table.getColumn(), table.getColumn(), space));
 
 		} catch (Exception e) {
 
