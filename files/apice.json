@@ -1,16 +1,17 @@
-[{
+[
+	{
 		"table": "assinatura",
 		"column": "id",
 		"space": 0,
 		"dependencies": [
-
 		]
 	},
 	{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 610,
-		"dependencies": [{
+		"space": 0,
+		"dependencies": [
+			{
 				"table": "cep",
 				"column": "bairro"
 			},
@@ -32,7 +33,8 @@
 		"table": "cidade",
 		"column": "cidade",
 		"space": 20000,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "bairro",
 				"column": "cidade"
 			},
@@ -74,7 +76,8 @@
 		"table": "clitem",
 		"column": "item",
 		"space": 0,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "clfornecedorpontuacao",
 				"column": "item"
 			},
@@ -222,17 +225,14 @@
 				"table": "elocontratoitem",
 				"column": "item"
 			}
-
-
-
-
 		]
 	},
 	{
 		"table": "clorgaopublicacao",
 		"column": "orgaopublicacao",
 		"space": 0,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "clcontratopublicacao",
 				"column": "orgaopublicacao"
 			},
@@ -240,14 +240,14 @@
 				"table": "cllicitacaopublicacao",
 				"column": "orgaopublicacao"
 			}
-
 		]
 	},
 	{
 		"table": "clmembro",
 		"column": "membro",
 		"space": 610,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "clcomissaoleilao",
 				"column": "membro"
 			},
@@ -285,16 +285,19 @@
 		"table": "clunidademedida",
 		"column": "unidademedida",
 		"space": 0,
-		"dependencies": [{
-			"table": "clitem",
-			"column": "unidademedida"
-		}]
+		"dependencies": [
+			{
+				"table": "clitem",
+				"column": "unidademedida"
+			}
+		]
 	},
 	{
 		"table": "entidade",
 		"column": "entidade",
 		"space": 10,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "clacompanhamento",
 				"column": "entidade"
 			},
@@ -497,14 +500,14 @@
 		"column": "id",
 		"space": 0,
 		"dependencies": [
-
 		]
 	},
 	{
 		"table": "logradouro",
 		"column": "logradouro",
 		"space": 1210,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "cep",
 				"column": "logradouro"
 			},
@@ -527,7 +530,6 @@
 		"column": "codigo",
 		"space": 627000,
 		"dependencies": [
-
 		]
 	},
 	{
@@ -535,14 +537,14 @@
 		"column": "id",
 		"space": 2200,
 		"dependencies": [
-
 		]
 	},
 	{
 		"table": "pessoa",
 		"column": "pessoa",
 		"space": 8000,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "assinatura",
 				"column": "pessoa"
 			},
@@ -764,7 +766,8 @@
 		"table": "tipologradouro",
 		"column": "tipologradouro",
 		"space": 150,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "clmembro",
 				"column": "tipologradouro"
 			},
@@ -779,7 +782,6 @@
 		"column": "id",
 		"space": 5700,
 		"dependencies": [
-
 		]
 	},
 	{
@@ -787,7 +789,6 @@
 		"column": "id",
 		"space": 1250,
 		"dependencies": [
-
 		]
 	}
 ]

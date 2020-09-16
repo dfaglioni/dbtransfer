@@ -1,40 +1,53 @@
-[{
+[
+	{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 1250,
-		"dependencies": [{
-			"table": "cep",
-			"column": "bairro"
-		}, {
-			"table": "enderecopessoa",
-			"column": "bairro"
-		}, {
-			"table": "issprecadastrobairro",
-			"column": "bai_idbairro"
-		}, {
-			"table": "rntespaco",
-			"column": "bairro"
-		}, {
-			"table": "tribcadastrogeral",
-			"column": "bairro"
-		}, {
-			"table": "tribcadastrogeralendereco",
-			"column": "bairro"
-		}, {
-			"table": "tribloteamento",
-			"column": "bairro"
-		}, {
-			"table": "tribsolicitacaocontratopessoa",
-			"column": "bairro"
-		}, {
-			"table": "tribvistoria",
-			"column": "bairro"
-		}]
-	}, {
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "cep",
+				"column": "bairro"
+			},
+			{
+				"table": "enderecopessoa",
+				"column": "bairro"
+			},
+			{
+				"table": "issprecadastrobairro",
+				"column": "bai_idbairro"
+			},
+			{
+				"table": "rntespaco",
+				"column": "bairro"
+			},
+			{
+				"table": "tribcadastrogeral",
+				"column": "bairro"
+			},
+			{
+				"table": "tribcadastrogeralendereco",
+				"column": "bairro"
+			},
+			{
+				"table": "tribloteamento",
+				"column": "bairro"
+			},
+			{
+				"table": "tribsolicitacaocontratopessoa",
+				"column": "bairro"
+			},
+			{
+				"table": "tribvistoria",
+				"column": "bairro"
+			}
+		]
+	},
+	{
 		"table": "cgato",
 		"column": "idato",
 		"space": 550,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "cgato",
 				"column": "leiautorizativa"
 			},
@@ -239,68 +252,89 @@
 				"column": "idato"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "cidade",
 		"column": "cidade",
 		"space": 81000,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "agencia",
 				"column": "cidade"
-			}, {
+			},
+			{
 				"table": "bairro",
 				"column": "cidade"
-			}, {
+			},
+			{
 				"table": "cep",
 				"column": "cidade"
-			}, {
+			},
+			{
 				"table": "enderecopessoa",
 				"column": "cidade"
-			}, {
+			},
+			{
 				"table": "entidade",
 				"column": "cidade"
-			}, {
+			},
+			{
 				"table": "issnotafiscal",
 				"column": "localprestacaoidcidade"
-			}, {
+			},
+			{
 				"table": "issnotafiscal",
 				"column": "intermediarioidcidade"
-			}, {
+			},
+			{
 				"table": "issnotafiscaltomador",
 				"column": "idcidade"
-			}, {
+			},
+			{
 				"table": "issprecadastrobairro",
 				"column": "bai_cidade"
-			}, {
+			},
+			{
 				"table": "issprecadastrologradouro",
 				"column": "log_cidade"
-			}, {
+			},
+			{
 				"table": "issrps",
 				"column": "idcidadeservico"
-			}, {
+			},
+			{
 				"table": "issrps",
 				"column": "idmunicipioincidencia"
-			}, {
+			},
+			{
 				"table": "issrps",
 				"column": "tomadoridcidade"
-			}, {
+			},
+			{
 				"table": "localidade",
 				"column": "cidade"
-			}, {
+			},
+			{
 				"table": "logradouro",
 				"column": "cidade"
-			}, {
+			},
+			{
 				"table": "pjcomarca",
 				"column": "cidade"
-			}, {
+			},
+			{
 				"table": "rhpessoa",
 				"column": "cidadenascimento"
-			}, {
+			},
+			{
 				"table": "rhpessoa",
 				"column": "cidadetitulo"
-			}, {
+			},
+			{
 				"table": "rhprocessojudicial",
 				"column": "cidadesecaojudiciaria"
-			}, {
+			},
+			{
 				"table": "tribcadastrogeralendereco",
 				"column": "cidade"
 			},
@@ -309,11 +343,13 @@
 				"column": "cidade"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "entidade",
 		"column": "entidade",
 		"space": 10,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "veiculopublicacao",
 				"column": "entidade"
 			},
@@ -2566,11 +2602,13 @@
 				"column": "entidade"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "logradouro",
 		"column": "logradouro",
 		"space": 6700,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "cgato",
 				"column": "leiautorizativa"
 			},
@@ -2636,14 +2674,15 @@
 			{
 				"table": "enderecopessoa",
 				"column": "logradouro"
-
 			}
 		]
-	}, {
+	},
+	{
 		"table": "pessoa",
 		"column": "pessoa",
 		"space": 10000000,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "banco",
 				"column": "pessoa"
 			},
@@ -3180,19 +3219,24 @@
 				"column": "pessoa"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "rhcadastroextra",
 		"column": "idfolha",
 		"space": 750,
-		"dependencies": [{
-			"table": "contcadastroextra",
-			"column": "idfolha"
-		}]
-	}, {
+		"dependencies": [
+			{
+				"table": "contcadastroextra",
+				"column": "idfolha"
+			}
+		]
+	},
+	{
 		"table": "rhcbo",
 		"column": "sequenciacbo",
 		"space": 34000,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "rhautonomo",
 				"column": "sequenciacbo"
 			},
@@ -3221,12 +3265,12 @@
 				"column": "sequenciacbo"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "rhlocaldetrabalho",
 		"column": "localdetrabalho",
 		"space": 0,
 		"dependencies": [
-
 			{
 				"table": "rhestagiario",
 				"column": "localdetrabalho"
@@ -3268,65 +3312,81 @@
 				"column": "localdetrabalho"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "syslogautenticausuario",
 		"column": "idlog",
 		"space": 22000000,
-		"dependencies": []
-	}, {
+		"dependencies": [
+		]
+	},
+	{
 		"table": "syslog",
 		"column": "idlog",
 		"space": 22000000,
-		"dependencies": []
-	}, {
+		"dependencies": [
+		]
+	},
+	{
 		"table": "syslogseletor",
 		"column": "idlog",
 		"space": 22000000,
-		"dependencies": []
-	}, {
+		"dependencies": [
+		]
+	},
+	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
 		"space": 260,
-		"dependencies": [{
-			"table": "issprecadastrologradouro",
-			"column": "log_tipologradouro"
-		}, {
-			"table": "logradouro",
-			"column": "tipologradouro"
-		}, {
-			"table": "obrabem",
-			"column": "tipologradouro"
-		}]
+		"dependencies": [
+			{
+				"table": "issprecadastrologradouro",
+				"column": "log_tipologradouro"
+			},
+			{
+				"table": "logradouro",
+				"column": "tipologradouro"
+			},
+			{
+				"table": "obrabem",
+				"column": "tipologradouro"
+			}
+		]
 	},
 	{
 		"table": "rellog",
 		"column": "idlog",
 		"space": 81000,
-		"dependencies": []
+		"dependencies": [
+		]
 	},
 	{
 		"table": "rhfuncionarioweb",
 		"column": "idfuncionarioweb",
 		"space": 0,
-		"dependencies": []
+		"dependencies": [
+		]
 	},
 	{
 		"table": "rhgrupoocupacional",
 		"column": "idesocial",
 		"space": 70,
-		"dependencies": []
+		"dependencies": [
+		]
 	},
 	{
 		"table": "rhhistcalcfolha",
 		"column": "id",
 		"space": 2100,
-		"dependencies": []
+		"dependencies": [
+		]
 	},
 	{
 		"table": "rotinaarquivo",
 		"column": "rotinaarquivo",
 		"space": 3050,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "filtrorotinaarquivo",
 				"column": "rotinaarquivo"
 			},
@@ -3340,7 +3400,8 @@
 		"table": "veiculopublicacao",
 		"column": "veiculopublicacao",
 		"space": 3050,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "cgato",
 				"column": "veiculopublicacao"
 			},
@@ -3356,7 +3417,6 @@
 				"table": "rhconcursoedital",
 				"column": "veiculopublicacao"
 			}
-
 		]
 	},
 	{
@@ -3364,8 +3424,6 @@
 		"column": "carteiraprofissional",
 		"space": 3050,
 		"dependencies": [
-
-
 			{
 				"table": "profissao",
 				"column": "carteiraprofissional"
@@ -3378,7 +3436,6 @@
 				"table": "rhcbocarteiraprofissional",
 				"column": "carteiraprofissional"
 			}
-
 		]
 	}
 ]

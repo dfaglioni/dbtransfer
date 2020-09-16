@@ -1,9 +1,0 @@
-{
-	"table": "eloportalsubgrupoexercicio",
-	"column": "id",
-	"space": 20,
-	"dependencies": [{
-		"table": "eloportalpublicacao",
-		"column": "idsubgrupoexercicio"
-	}]
-},

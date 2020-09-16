@@ -1,26 +1,35 @@
-[{
+[
+	{
 		"table": "cronograma",
 		"column": "id",
 		"space": 0,
-		"dependencies": []
-	}, {
+		"dependencies": [
+		]
+	},
+	{
 		"table": "eloportalrepasses",
 		"column": "id",
 		"space": 260,
-		"dependencies": []
-	}, {
+		"dependencies": [
+		]
+	},
+	{
 		"table": "eloportalsubgrupoexercicio",
 		"column": "id",
 		"space": 6700,
-		"dependencies": [{
-			"table": "eloportalpublicacao",
-			"column": "idsubgrupoexercicio"
-		}]
-	}, {
+		"dependencies": [
+			{
+				"table": "eloportalpublicacao",
+				"column": "idsubgrupoexercicio"
+			}
+		]
+	},
+	{
 		"table": "eloportalsubgrupopublicacao",
 		"column": "id",
 		"space": 2000,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "eloportalclassrelatorio",
 				"column": "idsubgrupopublicacao"
 			},
@@ -29,11 +38,13 @@
 				"column": "idsubgrupopublicacao"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "entidade",
 		"column": "entidade",
 		"space": 10,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "abertura",
 				"column": "entidade"
 			},
@@ -945,14 +956,13 @@
 				"table": "vinculoreceitaplanoconta",
 				"column": "entidade"
 			}
-
 		]
-	}, {
+	},
+	{
 		"table": "est_item",
 		"column": "item",
 		"space": 300000,
 		"dependencies": [
-
 			{
 				"table": "est_balancete",
 				"column": "item"
@@ -1166,11 +1176,13 @@
 				"column": "est_item"
 			}
 		]
-	}, {
+	},
+	{
 		"table": "est_tipomovimentacao",
 		"column": "codmovimentacao",
 		"space": 530,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "est_contabilizacaomensalitem",
 				"column": "operacao"
 			},
@@ -1186,14 +1198,13 @@
 				"table": "est_movimentacao",
 				"column": "codmovimentacao"
 			}
-
 		]
-	}, {
+	},
+	{
 		"table": "fornecedor",
 		"column": "fornecedor",
 		"space": 8000,
 		"dependencies": [
-
 			{
 				"table": "acordos",
 				"column": "fornecedor"
@@ -1258,7 +1269,6 @@
 				"table": "extraorcamentario",
 				"column": "fornecedor"
 			},
-
 			{
 				"table": "fornecedor_competencia",
 				"column": "fornecedor"
@@ -1579,31 +1589,39 @@
 				"table": "temp_liquidacao",
 				"column": "fornecedor"
 			}
-
 		]
-	}, {
+	},
+	{
 		"table": "fr_especieveiculos",
 		"column": "codigo",
 		"space": 0,
-		"dependencies": [{
-			"table": "pat_veiculo",
-			"column": "especie"
-		}]
-	}, {
+		"dependencies": [
+			{
+				"table": "pat_veiculo",
+				"column": "especie"
+			}
+		]
+	},
+	{
 		"table": "syslog",
 		"column": "codigo",
 		"space": 5200000,
-		"dependencies": []
-	}, {
+		"dependencies": [
+		]
+	},
+	{
 		"table": "usuariolog",
 		"column": "codigo",
 		"space": 1100000,
-		"dependencies": []
-	}, {
+		"dependencies": [
+		]
+	},
+	{
 		"table": "versaoppa",
 		"column": "codigoversao",
 		"space": 5200,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "orcppa",
 				"column": "versao"
 			},
@@ -1635,18 +1653,21 @@
 				"table": "versaoppa",
 				"column": "versaoanterior"
 			}
-
 		]
-	}, {
+	},
+	{
 		"table": "est_classificacaoplano",
 		"column": "id",
 		"space": 27000,
-		"dependencies": []
-	}, {
+		"dependencies": [
+		]
+	},
+	{
 		"table": "leis_atos",
 		"column": "id",
 		"space": 15600,
-		"dependencies": [{
+		"dependencies": [
+			{
 				"table": "artigo_exclusao",
 				"column": "idleiatos"
 			},
@@ -1744,5 +1765,4 @@
 			}
 		]
 	}
-
 ]

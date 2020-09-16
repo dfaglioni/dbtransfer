@@ -3,6 +3,9 @@
 	"column": "id",
 	"space": 20,
 	"dependencies": [
-     	{ "table": "arquivo_content",	"column": "id" }
+		{
+			"table": "arquivo_content",
+			"column": "id"
+		}
 	]
 },

@@ -1,6 +1,0 @@
-{
-	"table": "syslog",
-	"column": "codigo",
-	"space": 20,
-	"dependencies": []
-},
