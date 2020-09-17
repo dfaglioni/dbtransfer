@@ -1387,7 +1387,15 @@
 				"column": "fornecedor"
 			},
 			{
-				"table": "cargo",
+				"table": "cargo_bkp",
+				"column": "fornecedor"
+			},
+			{
+				"table": "cargos_ocupantevigencia",
+				"column": "fornecedor"
+			},
+			{
+				"table": "contacorrente_chave",
 				"column": "fornecedor"
 			},
 			{
