@@ -2,7 +2,7 @@
 	{
 		"table": "arquivo",
 		"column": "id",
-		"space": 0,
+		"space": 30000,
 		"dependencies": [
 			{
 				"table": "arquivo",
@@ -45,7 +45,7 @@
 	{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 0,
+		"space": 10,
 		"dependencies": [
 			{
 				"table": "est_centrocusto",
@@ -60,84 +60,84 @@
 	{
 		"table": "cronograma",
 		"column": "id",
-		"space": 0,
+		"space": 90000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "contaaplicacao",
 		"column": "id",
-		"space": 0,
+		"space": 200,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "eloportallinksuteis",
 		"column": "id",
-		"space": 0,
+		"space": 100,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "eloportalorcamento",
 		"column": "id",
-		"space": 0,
+		"space": 500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "eloportalorganograma",
 		"column": "id",
-		"space": 0,
+		"space": 500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "eloportalpublicacao",
 		"column": "id",
-		"space": 0,
+		"space": 10000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "eloportalrepasses",
 		"column": "id",
-		"space": 260,
+		"space": 500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "fr_destino",
 		"column": "codigo",
-		"space": 260,
+		"space": 100,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "fr_motivo",
 		"column": "codigo",
-		"space": 260,
+		"space": 20,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "leis_atosarquivo",
 		"column": "id",
-		"space": 260,
+		"space": 20000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "leisvinculadas",
 		"column": "id",
-		"space": 260,
+		"space": 700,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 260,
+		"space": 10,
 		"dependencies": [
 			{
 				"table": "est_centrocusto",
@@ -152,14 +152,14 @@
 	{
 		"table": "pat_bem_justificativa",
 		"column": "id",
-		"space": 260,
+		"space": 300,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "pat_loteamento",
 		"column": "codigo",
-		"space": 260,
+		"space": 10,
 		"dependencies": [
 			{
 				"table": "pat_imovel",
@@ -170,14 +170,14 @@
 	{
 		"table": "usuariogridvisao",
 		"column": "id",
-		"space": 260,
+		"space": 50,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "eloportalsubgrupoexercicio",
 		"column": "id",
-		"space": 6700,
+		"space": 18000,
 		"dependencies": [
 			{
 				"table": "eloportalpublicacao",
@@ -188,7 +188,7 @@
 	{
 		"table": "eloportalsubgrupopublicacao",
 		"column": "id",
-		"space": 2000,
+		"space": 4000,
 		"dependencies": [
 			{
 				"table": "eloportalclassrelatorio",
@@ -203,7 +203,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 10,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "abertura",
@@ -1122,7 +1122,7 @@
 	{
 		"table": "est_item",
 		"column": "item",
-		"space": 300000,
+		"space": 11000,
 		"dependencies": [
 			{
 				"table": "est_balancete",
@@ -1341,7 +1341,7 @@
 	{
 		"table": "est_tipomovimentacao",
 		"column": "codmovimentacao",
-		"space": 530,
+		"space": 700,
 		"dependencies": [
 			{
 				"table": "est_contabilizacaomensalitem",
@@ -1364,7 +1364,7 @@
 	{
 		"table": "fornecedor",
 		"column": "fornecedor",
-		"space": 8000,
+		"space": 12000,
 		"dependencies": [
 			{
 				"table": "acordos",
@@ -1763,7 +1763,7 @@
 	{
 		"table": "fr_especieveiculos",
 		"column": "codigo",
-		"space": 0,
+		"space": 150,
 		"dependencies": [
 			{
 				"table": "pat_veiculo",
@@ -1774,21 +1774,21 @@
 	{
 		"table": "syslog",
 		"column": "codigo",
-		"space": 5200000,
+		"space": 8000000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "usuariolog",
 		"column": "codigo",
-		"space": 1100000,
+		"space": 3000000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "versaoppa",
 		"column": "codigoversao",
-		"space": 5200,
+		"space": 10000,
 		"dependencies": [
 			{
 				"table": "orcppa",
@@ -1827,14 +1827,14 @@
 	{
 		"table": "est_classificacaoplano",
 		"column": "id",
-		"space": 27000,
+		"space": 40000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "leis_atos",
 		"column": "id",
-		"space": 15600,
+		"space": 20000,
 		"dependencies": [
 			{
 				"table": "artigo_exclusao",

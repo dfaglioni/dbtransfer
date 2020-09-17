@@ -2,7 +2,7 @@
 	{
 		"table": "assunto",
 		"column": "codigo",
-		"space": 0,
+		"space": 25000,
 		"dependencies": [
 			{
 				"table": "documento_assunto",
@@ -29,7 +29,7 @@
 	{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 310,
+		"space": 400,
 		"dependencies": [
 			{
 				"table": "enderecopessoa",
@@ -52,7 +52,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 120,
+		"space": 200,
 		"dependencies": [
 			{
 				"table": "bairro",
@@ -79,7 +79,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 10,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "coordenadoria",
@@ -162,7 +162,7 @@
 	{
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 1100,
+		"space": 1500,
 		"dependencies": [
 			{
 				"table": "entidade",
@@ -185,7 +185,7 @@
 	{
 		"table": "pessoa",
 		"column": "codpessoa",
-		"space": 30300,
+		"space": 32000,
 		"dependencies": [
 			{
 				"table": "enderecopessoa",
@@ -204,14 +204,14 @@
 	{
 		"table": "usuariolog",
 		"column": "codigo",
-		"space": 1100000,
+		"space": 1200000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "proc_correcaofluxo",
 		"column": "id",
-		"space": 0,
+		"space": 6000,
 		"dependencies": [
 		]
 	}

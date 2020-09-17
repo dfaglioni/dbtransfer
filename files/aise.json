@@ -2,7 +2,7 @@
 	{
 		"table": "cgagenda",
 		"column": "id",
-		"space": 0,
+		"space": 10,
 		"dependencies": [
 			{
 				"table": "cgagendavinculo",
@@ -13,7 +13,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 81000,
+		"space": 100000,
 		"dependencies": [
 			{
 				"table": "agencia",
@@ -132,7 +132,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 10,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "veiculopublicacao",
@@ -2391,7 +2391,7 @@
 	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 10000000,
+		"space": 20010000,
 		"dependencies": [
 			{
 				"table": "banco",
@@ -2938,14 +2938,14 @@
 	{
 		"table": "rellog",
 		"column": "idlog",
-		"space": 81000,
+		"space": 120000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhabaprojaposentadoria",
 		"column": "abaprojaposentadoria",
-		"space": 0,
+		"space": 50,
 		"dependencies": [
 			{
 				"table": "rhclasseprojaposentadoria",
@@ -2956,7 +2956,7 @@
 	{
 		"table": "rhcadastroextra",
 		"column": "idfolha",
-		"space": 750,
+		"space": 200,
 		"dependencies": [
 			{
 				"table": "contcadastroextra",
@@ -2967,7 +2967,7 @@
 	{
 		"table": "rhcbo",
 		"column": "sequenciacbo",
-		"space": 34000,
+		"space": 50000,
 		"dependencies": [
 			{
 				"table": "rhautonomo",
@@ -3002,21 +3002,21 @@
 	{
 		"table": "rhfuncionarioweb",
 		"column": "idfuncionarioweb",
-		"space": 0,
+		"space": 15000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhhistcalcfolha",
 		"column": "id",
-		"space": 2100,
+		"space": 10000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhlocaldetrabalho",
 		"column": "localdetrabalho",
-		"space": 0,
+		"space": 2000,
 		"dependencies": [
 			{
 				"table": "rhestagiario",
@@ -3063,28 +3063,28 @@
 	{
 		"table": "rhrecadastro",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastrocontatopessoa",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastroenderecopessoa",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoa",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 			{
 				"table": "rhrecadastrocontatopessoa",
@@ -3151,84 +3151,84 @@
 	{
 		"table": "rhrecadastropessoabanco",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoacnh",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoacomplemento",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastroenderecopessoa",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoactps",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoainss",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoanacional",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoapis",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoaregistroprof",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoaric",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastropessoatiteleitor",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "rhrecadastrorhpessoa",
 		"column": "id",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 			{
 				"table": "rhrecadastro",
@@ -3248,7 +3248,7 @@
 	{
 		"table": "rotinaarquivo",
 		"column": "rotinaarquivo",
-		"space": 3050,
+		"space": 5000,
 		"dependencies": [
 			{
 				"table": "filtrorotinaarquivo",
@@ -3263,28 +3263,28 @@
 	{
 		"table": "syslog",
 		"column": "idlog",
-		"space": 22000000,
+		"space": 30000000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "syslogautenticausuario",
 		"column": "idlog",
-		"space": 22000000,
+		"space": 30000000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "syslogseletor",
 		"column": "idlog",
-		"space": 22000000,
+		"space": 30000000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 260,
+		"space": 300,
 		"dependencies": [
 			{
 				"table": "issprecadastrologradouro",
@@ -3346,7 +3346,7 @@
 	{
 		"table": "cgato",
 		"column": "idato",
-		"space": 550,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "cgato",
@@ -3557,7 +3557,7 @@
 	{
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 6700,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "cgato",
@@ -3631,14 +3631,14 @@
 	{
 		"table": "rhgrupoocupacional",
 		"column": "idesocial",
-		"space": 70,
+		"space": 0,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "veiculopublicacao",
 		"column": "veiculopublicacao",
-		"space": 3050,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "cgato",
@@ -3661,7 +3661,7 @@
 	{
 		"table": "carteiraprofissional",
 		"column": "carteiraprofissional",
-		"space": 3050,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "profissao",

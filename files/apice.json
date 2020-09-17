@@ -2,7 +2,7 @@
 	{
 		"table": "arquivo",
 		"column": "id",
-		"space": 0,
+		"space": 30000,
 		"dependencies": [
 			{
 				"table": "arquivo",
@@ -83,7 +83,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 20000,
+		"space": 90000000,
 		"dependencies": [
 			{
 				"table": "bairro",
@@ -126,7 +126,7 @@
 	{
 		"table": "clitem",
 		"column": "item",
-		"space": 0,
+		"space": 3000,
 		"dependencies": [
 			{
 				"table": "clfornecedorpontuacao",
@@ -281,7 +281,7 @@
 	{
 		"table": "clorgaopublicacao",
 		"column": "orgaopublicacao",
-		"space": 0,
+		"space": 50,
 		"dependencies": [
 			{
 				"table": "clcontratopublicacao",
@@ -296,7 +296,7 @@
 	{
 		"table": "clmembro",
 		"column": "membro",
-		"space": 610,
+		"space": 800,
 		"dependencies": [
 			{
 				"table": "clcomissaoleilao",
@@ -335,7 +335,7 @@
 	{
 		"table": "clunidademedida",
 		"column": "unidademedida",
-		"space": 0,
+		"space": 250,
 		"dependencies": [
 			{
 				"table": "clitem",
@@ -346,7 +346,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 10,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "clacompanhamento",
@@ -549,14 +549,14 @@
 	{
 		"table": "logpre",
 		"column": "id",
-		"space": 0,
+		"space": 11000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 1210,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "cep",
@@ -579,21 +579,21 @@
 	{
 		"table": "log_tabelas",
 		"column": "codigo",
-		"space": 627000,
+		"space": 800000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "pessoaam",
 		"column": "id",
-		"space": 2200,
+		"space": 3000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 8000,
+		"space": 11000,
 		"dependencies": [
 			{
 				"table": "assinatura",
@@ -816,7 +816,7 @@
 	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 150,
+		"space": 300,
 		"dependencies": [
 			{
 				"table": "clmembro",
@@ -831,28 +831,28 @@
 	{
 		"table": "clsolicitacaoanulacao",
 		"column": "id",
-		"space": 5700,
+		"space": 10000000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "pessoadocumentacao",
 		"column": "id",
-		"space": 1250,
+		"space": 2000,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "claditivopublicacao",
 		"column": "id",
-		"space": 1250,
+		"space": 50,
 		"dependencies": [
 		]
 	},
 	{
 		"table": "cllistaarquivos",
 		"column": "id",
-		"space": 1250,
+		"space": 4000,
 		"dependencies": [
 		]
 	}
