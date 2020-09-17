@@ -98,6 +98,10 @@
 			{
 				"table": "logradourohistorico",
 				"column": "cidade"
+			},
+			{
+				"table": "rhrecadastroenderecopessoa",
+				"column": "cidade"
 			}
 		]
 	},
@@ -2900,6 +2904,10 @@
 			{
 				"table": "usuario",
 				"column": "pessoa"
+			},
+			{
+				"table": "rhrecadastrorhpessoa",
+				"column": "pessoa"
 			}
 		]
 	},
@@ -3035,7 +3043,20 @@
 		"dependencies": [
 		]
 	},
-	
+	{
+		"table": "rhrecadastrocontatopessoa",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastroenderecopessoa",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
 	{
 		"table": "rhrecadastropessoa",
 		"column": "id",
@@ -3100,6 +3121,149 @@
 			{
 				"table": "rhrecadastrorhpessoa",
 				"column": "recadastropessoa_id"
+			}
+		]
+	},
+	{
+		"table": "rhrecadastropessoabanco",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastropessoacnh",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastropessoacomplemento",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastroenderecopessoa",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastropessoactps",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastropessoainss",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastropessoanacional",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastropessoapis",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastropessoaregistroprof",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastropessoaric",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastropessoatiteleitor",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhrecadastrorhpessoa",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "rhrecadastro",
+				"column": "recadastropessoa_id"
+			}
+		]
+	},
+	{
+		"table": "rotinaarquivo",
+		"column": "rotinaarquivo",
+		"space": 3050,
+		"dependencies": [
+			{
+				"table": "filtrorotinaarquivo",
+				"column": "rotinaarquivo"
+			},
+			{
+				"table": "rhbbpasep",
+				"column": "rotinaarquivo"
+			}
+		]
+	},
+	{
+		"table": "syslog",
+		"column": "idlog",
+		"space": 22000000,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "syslogautenticausuario",
+		"column": "idlog",
+		"space": 22000000,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "syslogseletor",
+		"column": "idlog",
+		"space": 22000000,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "tipologradouro",
+		"column": "tipologradouro",
+		"space": 260,
+		"dependencies": [
+			{
+				"table": "issprecadastrologradouro",
+				"column": "log_tipologradouro"
+			},
+			{
+				"table": "logradouro",
+				"column": "tipologradouro"
+			},
+			{
+				"table": "obrabem",
+				"column": "tipologradouro"
 			}
 		]
 	},
@@ -3432,65 +3596,10 @@
 		]
 	},
 	{
-		"table": "syslogautenticausuario",
-		"column": "idlog",
-		"space": 22000000,
-		"dependencies": [
-		]
-	},
-	{
-		"table": "syslog",
-		"column": "idlog",
-		"space": 22000000,
-		"dependencies": [
-		]
-	},
-	{
-		"table": "syslogseletor",
-		"column": "idlog",
-		"space": 22000000,
-		"dependencies": [
-		]
-	},
-	{
-		"table": "tipologradouro",
-		"column": "tipologradouro",
-		"space": 260,
-		"dependencies": [
-			{
-				"table": "issprecadastrologradouro",
-				"column": "log_tipologradouro"
-			},
-			{
-				"table": "logradouro",
-				"column": "tipologradouro"
-			},
-			{
-				"table": "obrabem",
-				"column": "tipologradouro"
-			}
-		]
-	},
-	{
 		"table": "rhgrupoocupacional",
 		"column": "idesocial",
 		"space": 70,
 		"dependencies": [
-		]
-	},
-	{
-		"table": "rotinaarquivo",
-		"column": "rotinaarquivo",
-		"space": 3050,
-		"dependencies": [
-			{
-				"table": "filtrorotinaarquivo",
-				"column": "rotinaarquivo"
-			},
-			{
-				"table": "rhbbpasep",
-				"column": "rotinaarquivo"
-			}
 		]
 	},
 	{

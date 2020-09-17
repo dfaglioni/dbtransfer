@@ -1,5 +1,56 @@
 [
 	{
+		"table": "arquivo",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "arquivo",
+				"column": "idarquivo"
+			},
+			{
+				"table": "cladjudicacao",
+				"column": "idarquivo"
+			},
+			{
+				"table": "clcotacao",
+				"column": "idarquivo"
+			},
+			{
+				"table": "clhomologacao",
+				"column": "idarquivo"
+			},
+			{
+				"table": "cllicitacaoarquivo_aux",
+				"column": "idarquivo"
+			},
+			{
+				"table": "cllicitacaofornecedor",
+				"column": "idarquivo"
+			},
+			{
+				"table": "cllicitacaopublicacao",
+				"column": "idarquivo"
+			},
+			{
+				"table": "clparecer",
+				"column": "idarquivo"
+			},
+			{
+				"table": "clrealinhamento",
+				"column": "idarquivo"
+			},
+			{
+				"table": "pessoadocumentacao",
+				"column": "idarquivo"
+			},
+			{
+				"table": "cllistaarquivos",
+				"column": "idarquivo"
+			}
+		]
+	},
+	{
 		"table": "assinatura",
 		"column": "id",
 		"space": 0,
@@ -786,6 +837,20 @@
 	},
 	{
 		"table": "pessoadocumentacao",
+		"column": "id",
+		"space": 1250,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "claditivopublicacao",
+		"column": "id",
+		"space": 1250,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "cllistaarquivos",
 		"column": "id",
 		"space": 1250,
 		"dependencies": [
