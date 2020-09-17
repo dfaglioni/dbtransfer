@@ -1,255 +1,12 @@
 [
 	{
-		"table": "bairro",
-		"column": "bairro",
+		"table": "cgagenda",
+		"column": "id",
 		"space": 0,
 		"dependencies": [
 			{
-				"table": "cep",
-				"column": "bairro"
-			},
-			{
-				"table": "enderecopessoa",
-				"column": "bairro"
-			},
-			{
-				"table": "issprecadastrobairro",
-				"column": "bai_idbairro"
-			},
-			{
-				"table": "rntespaco",
-				"column": "bairro"
-			},
-			{
-				"table": "tribcadastrogeral",
-				"column": "bairro"
-			},
-			{
-				"table": "tribcadastrogeralendereco",
-				"column": "bairro"
-			},
-			{
-				"table": "tribloteamento",
-				"column": "bairro"
-			},
-			{
-				"table": "tribsolicitacaocontratopessoa",
-				"column": "bairro"
-			},
-			{
-				"table": "tribvistoria",
-				"column": "bairro"
-			}
-		]
-	},
-	{
-		"table": "cgato",
-		"column": "idato",
-		"space": 550,
-		"dependencies": [
-			{
-				"table": "cgato",
-				"column": "leiautorizativa"
-			},
-			{
-				"table": "cgatorevogado",
-				"column": "idato"
-			},
-			{
-				"table": "cgatorevogado",
-				"column": "idatorevogado"
-			},
-			{
-				"table": "cgatoveiculopublicacao",
-				"column": "idato"
-			},
-			{
-				"table": "contconvenio",
-				"column": "idato"
-			},
-			{
-				"table": "contconvenioaditivo",
-				"column": "idato"
-			},
-			{
-				"table": "contdecreto",
-				"column": "idato"
-			},
-			{
-				"table": "contdiaria",
-				"column": "idato"
-			},
-			{
-				"table": "issincentivofiscal",
-				"column": "idunicoatoiss"
-			},
-			{
-				"table": "issnotafiscal",
-				"column": "idleiincentivo"
-			},
-			{
-				"table": "logradourohistorico",
-				"column": "idato"
-			},
-			{
-				"table": "obraordemplanilhaorcamento",
-				"column": "idato"
-			},
-			{
-				"table": "rhavaliacaomodelo",
-				"column": "idato"
-			},
-			{
-				"table": "rhcomissao",
-				"column": "idato"
-			},
-			{
-				"table": "rhcomissaoato",
-				"column": "idato"
-			},
-			{
-				"table": "rhconsignadofuncionario",
-				"column": "idato"
-			},
-			{
-				"table": "rhcontratoprazodeterminado",
-				"column": "idato"
-			},
-			{
-				"table": "rhcontratoprazodeterminado",
-				"column": "idatorenovacao"
-			},
-			{
-				"table": "rhempregoanterior",
-				"column": "idato"
-			},
-			{
-				"table": "rhestagiario",
-				"column": "idato"
-			},
-			{
-				"table": "rheventocalculo",
-				"column": "idato"
-			},
-			{
-				"table": "rhmovimentacaocargo",
-				"column": "idato"
-			},
-			{
-				"table": "rhmovimentacaolegal",
-				"column": "idato"
-			},
-			{
-				"table": "rhmovimentacaolegal",
-				"column": "idatoparecer"
-			},
-			{
-				"table": "rhmovimentacaopessoal",
-				"column": "idato"
-			},
-			{
-				"table": "rhplantaocompetencia",
-				"column": "idato"
-			},
-			{
-				"table": "rhprevidencia",
-				"column": "idato"
-			},
-			{
-				"table": "rhprevidencia",
-				"column": "idatoextincao"
-			},
-			{
-				"table": "rhprodutividadecompetencia",
-				"column": "idato"
-			},
-			{
-				"table": "rhprogressaorotinafuncionario",
-				"column": "idato"
-			},
-			{
-				"table": "rhquadrosalarialato",
-				"column": "idato"
-			},
-			{
-				"table": "rhrotinacoletiva",
-				"column": "idato"
-			},
-			{
-				"table": "tribacaofiscalparecerato",
-				"column": "idato"
-			},
-			{
-				"table": "tribaprovacaoprocesso",
-				"column": "idato"
-			},
-			{
-				"table": "tribartigo",
-				"column": "idlei"
-			},
-			{
-				"table": "tribcadastroimobgeminada",
-				"column": "numerolei"
-			},
-			{
-				"table": "tribcancelamentodebito",
-				"column": "idato"
-			},
-			{
-				"table": "tribcaucao",
-				"column": "idato"
-			},
-			{
-				"table": "tribcondominio",
-				"column": "idato"
-			},
-			{
-				"table": "tribcontencioso",
-				"column": "fundamentolegal"
-			},
-			{
-				"table": "tribcreditocontribuinte",
-				"column": "idato"
-			},
-			{
-				"table": "tribdebito",
-				"column": "leiparcelamento"
-			},
-			{
-				"table": "tribdesapropriacao",
-				"column": "idato"
-			},
-			{
-				"table": "tribfiscalpenalidade",
-				"column": "idato"
-			},
-			{
-				"table": "tribfundamentolegal",
-				"column": "fundamentolegal"
-			},
-			{
-				"table": "tribguiarecolhimento",
-				"column": "fundamentolegal"
-			},
-			{
-				"table": "tribisencao",
-				"column": "idato"
-			},
-			{
-				"table": "triblivroregistro",
-				"column": "fundamentolegal"
-			},
-			{
-				"table": "tribloteamento",
-				"column": "idato"
-			},
-			{
-				"table": "tribmelhoriaedital",
-				"column": "numeroedital"
-			},
-			{
-				"table": "tribmotivodesconto",
-				"column": "idato"
+				"table": "cgagendavinculo",
+				"column": "agenda"
 			}
 		]
 	},
@@ -2604,80 +2361,6 @@
 		]
 	},
 	{
-		"table": "logradouro",
-		"column": "logradouro",
-		"space": 6700,
-		"dependencies": [
-			{
-				"table": "cgato",
-				"column": "leiautorizativa"
-			},
-			{
-				"table": "cep",
-				"column": "logradouro"
-			},
-			{
-				"table": "entidade",
-				"column": "logradouro"
-			},
-			{
-				"table": "issprecadastrologradouro(log_cidade,log_idlogradouro"
-			},
-			{
-				"table": "logradourohistorico",
-				"column": "logradouro"
-			},
-			{
-				"table": "rntespaco",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribcadastrogeral",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribcadastrogeralendereco",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribimobiliariotestadagenerica",
-				"column": "logradouro"
-			},
-			{
-				"table": "triblogradourotestada",
-				"column": "delimitacaofinal"
-			},
-			{
-				"table": "triblogradourotestada",
-				"column": "delimitacaoinicial"
-			},
-			{
-				"table": "triblogradourotestada",
-				"column": "logradouro"
-			},
-			{
-				"table": "triblogradourotrecho",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribsolicitacaocontratopessoa",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribtrecho",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribvistoria",
-				"column": "logradouro"
-			},
-			{
-				"table": "enderecopessoa",
-				"column": "logradouro"
-			}
-		]
-	},
-	{
 		"table": "pessoa",
 		"column": "pessoa",
 		"space": 10000000,
@@ -3221,6 +2904,24 @@
 		]
 	},
 	{
+		"table": "rellog",
+		"column": "idlog",
+		"space": 81000,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhabaprojaposentadoria",
+		"column": "abaprojaposentadoria",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "rhclasseprojaposentadoria",
+				"column": "abaprojaposentadoria"
+			}
+		]
+	},
+	{
 		"table": "rhcadastroextra",
 		"column": "idfolha",
 		"space": 750,
@@ -3264,6 +2965,20 @@
 				"table": "rhmovimentacaocargo",
 				"column": "sequenciacbo"
 			}
+		]
+	},
+	{
+		"table": "rhfuncionarioweb",
+		"column": "idfuncionarioweb",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "rhhistcalcfolha",
+		"column": "id",
+		"space": 2100,
+		"dependencies": [
 		]
 	},
 	{
@@ -3314,6 +3029,409 @@
 		]
 	},
 	{
+		"table": "rhrecadastro",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	
+	{
+		"table": "rhrecadastropessoa",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "rhrecadastrocontatopessoa",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastroenderecopessoa",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastroimagempessoa",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoabanco",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoacnh",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoacomplemento",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoactps",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoainss",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoanacional",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoapis",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoaregistroprof",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoareservista",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoaric",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastropessoatiteleitor",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastrorhpessoa",
+				"column": "recadastropessoa_id"
+			}
+		]
+	},
+	{
+		"table": "bairro",
+		"column": "bairro",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "cep",
+				"column": "bairro"
+			},
+			{
+				"table": "enderecopessoa",
+				"column": "bairro"
+			},
+			{
+				"table": "issprecadastrobairro",
+				"column": "bai_idbairro"
+			},
+			{
+				"table": "rntespaco",
+				"column": "bairro"
+			},
+			{
+				"table": "tribcadastrogeral",
+				"column": "bairro"
+			},
+			{
+				"table": "tribcadastrogeralendereco",
+				"column": "bairro"
+			},
+			{
+				"table": "tribloteamento",
+				"column": "bairro"
+			},
+			{
+				"table": "tribsolicitacaocontratopessoa",
+				"column": "bairro"
+			},
+			{
+				"table": "tribvistoria",
+				"column": "bairro"
+			}
+		]
+	},
+	{
+		"table": "cgato",
+		"column": "idato",
+		"space": 550,
+		"dependencies": [
+			{
+				"table": "cgato",
+				"column": "leiautorizativa"
+			},
+			{
+				"table": "cgatorevogado",
+				"column": "idato"
+			},
+			{
+				"table": "cgatorevogado",
+				"column": "idatorevogado"
+			},
+			{
+				"table": "cgatoveiculopublicacao",
+				"column": "idato"
+			},
+			{
+				"table": "contconvenio",
+				"column": "idato"
+			},
+			{
+				"table": "contconvenioaditivo",
+				"column": "idato"
+			},
+			{
+				"table": "contdecreto",
+				"column": "idato"
+			},
+			{
+				"table": "contdiaria",
+				"column": "idato"
+			},
+			{
+				"table": "issincentivofiscal",
+				"column": "idunicoatoiss"
+			},
+			{
+				"table": "issnotafiscal",
+				"column": "idleiincentivo"
+			},
+			{
+				"table": "logradourohistorico",
+				"column": "idato"
+			},
+			{
+				"table": "obraordemplanilhaorcamento",
+				"column": "idato"
+			},
+			{
+				"table": "rhavaliacaomodelo",
+				"column": "idato"
+			},
+			{
+				"table": "rhcomissao",
+				"column": "idato"
+			},
+			{
+				"table": "rhcomissaoato",
+				"column": "idato"
+			},
+			{
+				"table": "rhconsignadofuncionario",
+				"column": "idato"
+			},
+			{
+				"table": "rhcontratoprazodeterminado",
+				"column": "idato"
+			},
+			{
+				"table": "rhcontratoprazodeterminado",
+				"column": "idatorenovacao"
+			},
+			{
+				"table": "rhempregoanterior",
+				"column": "idato"
+			},
+			{
+				"table": "rhestagiario",
+				"column": "idato"
+			},
+			{
+				"table": "rheventocalculo",
+				"column": "idato"
+			},
+			{
+				"table": "rhmovimentacaocargo",
+				"column": "idato"
+			},
+			{
+				"table": "rhmovimentacaolegal",
+				"column": "idato"
+			},
+			{
+				"table": "rhmovimentacaolegal",
+				"column": "idatoparecer"
+			},
+			{
+				"table": "rhmovimentacaopessoal",
+				"column": "idato"
+			},
+			{
+				"table": "rhplantaocompetencia",
+				"column": "idato"
+			},
+			{
+				"table": "rhprevidencia",
+				"column": "idato"
+			},
+			{
+				"table": "rhprevidencia",
+				"column": "idatoextincao"
+			},
+			{
+				"table": "rhprodutividadecompetencia",
+				"column": "idato"
+			},
+			{
+				"table": "rhprogressaorotinafuncionario",
+				"column": "idato"
+			},
+			{
+				"table": "rhquadrosalarialato",
+				"column": "idato"
+			},
+			{
+				"table": "rhrotinacoletiva",
+				"column": "idato"
+			},
+			{
+				"table": "tribacaofiscalparecerato",
+				"column": "idato"
+			},
+			{
+				"table": "tribaprovacaoprocesso",
+				"column": "idato"
+			},
+			{
+				"table": "tribartigo",
+				"column": "idlei"
+			},
+			{
+				"table": "tribcadastroimobgeminada",
+				"column": "numerolei"
+			},
+			{
+				"table": "tribcancelamentodebito",
+				"column": "idato"
+			},
+			{
+				"table": "tribcaucao",
+				"column": "idato"
+			},
+			{
+				"table": "tribcondominio",
+				"column": "idato"
+			},
+			{
+				"table": "tribcontencioso",
+				"column": "fundamentolegal"
+			},
+			{
+				"table": "tribcreditocontribuinte",
+				"column": "idato"
+			},
+			{
+				"table": "tribdebito",
+				"column": "leiparcelamento"
+			},
+			{
+				"table": "tribdesapropriacao",
+				"column": "idato"
+			},
+			{
+				"table": "tribfiscalpenalidade",
+				"column": "idato"
+			},
+			{
+				"table": "tribfundamentolegal",
+				"column": "fundamentolegal"
+			},
+			{
+				"table": "tribguiarecolhimento",
+				"column": "fundamentolegal"
+			},
+			{
+				"table": "tribisencao",
+				"column": "idato"
+			},
+			{
+				"table": "triblivroregistro",
+				"column": "fundamentolegal"
+			},
+			{
+				"table": "tribloteamento",
+				"column": "idato"
+			},
+			{
+				"table": "tribmelhoriaedital",
+				"column": "numeroedital"
+			},
+			{
+				"table": "tribmotivodesconto",
+				"column": "idato"
+			}
+		]
+	},
+	{
+		"table": "logradouro",
+		"column": "logradouro",
+		"space": 6700,
+		"dependencies": [
+			{
+				"table": "cgato",
+				"column": "leiautorizativa"
+			},
+			{
+				"table": "cep",
+				"column": "logradouro"
+			},
+			{
+				"table": "entidade",
+				"column": "logradouro"
+			},
+			{
+				"table": "issprecadastrologradouro(log_cidade,log_idlogradouro"
+			},
+			{
+				"table": "logradourohistorico",
+				"column": "logradouro"
+			},
+			{
+				"table": "rntespaco",
+				"column": "logradouro"
+			},
+			{
+				"table": "tribcadastrogeral",
+				"column": "logradouro"
+			},
+			{
+				"table": "tribcadastrogeralendereco",
+				"column": "logradouro"
+			},
+			{
+				"table": "tribimobiliariotestadagenerica",
+				"column": "logradouro"
+			},
+			{
+				"table": "triblogradourotestada",
+				"column": "delimitacaofinal"
+			},
+			{
+				"table": "triblogradourotestada",
+				"column": "delimitacaoinicial"
+			},
+			{
+				"table": "triblogradourotestada",
+				"column": "logradouro"
+			},
+			{
+				"table": "triblogradourotrecho",
+				"column": "logradouro"
+			},
+			{
+				"table": "tribsolicitacaocontratopessoa",
+				"column": "logradouro"
+			},
+			{
+				"table": "tribtrecho",
+				"column": "logradouro"
+			},
+			{
+				"table": "tribvistoria",
+				"column": "logradouro"
+			},
+			{
+				"table": "enderecopessoa",
+				"column": "logradouro"
+			}
+		]
+	},
+	{
 		"table": "syslogautenticausuario",
 		"column": "idlog",
 		"space": 22000000,
@@ -3354,30 +3472,9 @@
 		]
 	},
 	{
-		"table": "rellog",
-		"column": "idlog",
-		"space": 81000,
-		"dependencies": [
-		]
-	},
-	{
-		"table": "rhfuncionarioweb",
-		"column": "idfuncionarioweb",
-		"space": 0,
-		"dependencies": [
-		]
-	},
-	{
 		"table": "rhgrupoocupacional",
 		"column": "idesocial",
 		"space": 70,
-		"dependencies": [
-		]
-	},
-	{
-		"table": "rhhistcalcfolha",
-		"column": "id",
-		"space": 2100,
 		"dependencies": [
 		]
 	},
