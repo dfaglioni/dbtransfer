@@ -1,5 +1,63 @@
 [
 	{
+		"table": "arquivo",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "arquivo",
+				"column": "idarquivo"
+			},
+			{
+				"table": "exercicio",
+				"column": "idarquivoorganograma"
+			},
+			{
+				"table": "orcobjetivoestrategicoarq",
+				"column": "idarquivo"
+			},
+			{
+				"table": "diariaarquivo",
+				"column": "idarquivo"
+			},
+			{
+				"table": "eloportalpublicacao",
+				"column": "idarquivo"
+			},
+			{
+				"table": "eloportalorcamento",
+				"column": "idarquivo"
+			},
+			{
+				"table": "eloportalorganograma",
+				"column": "idarquivo"
+			},
+			{
+				"table": "lancamentoscontabeisarquivo",
+				"column": "idarquivo"
+			},
+			{
+				"table": "leis_atosarquivo",
+				"column": "idarquivo"
+			}
+		]
+	},
+	{
+		"table": "bairro",
+		"column": "bairro",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "est_centrocusto",
+				"column": "bairro"
+			},
+			{
+				"table": "est_centrocusto_secao",
+				"column": "bairro"
+			}
+		]
+	},
+	{
 		"table": "cronograma",
 		"column": "id",
 		"space": 0,
@@ -7,7 +65,110 @@
 		]
 	},
 	{
+		"table": "contaaplicacao",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "eloportallinksuteis",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "eloportalorcamento",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "eloportalorganograma",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "eloportalpublicacao",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+		]
+	},
+	{
 		"table": "eloportalrepasses",
+		"column": "id",
+		"space": 260,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "fr_destino",
+		"column": "codigo",
+		"space": 260,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "fr_motivo",
+		"column": "codigo",
+		"space": 260,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "leis_atosarquivo",
+		"column": "id",
+		"space": 260,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "leisvinculadas",
+		"column": "id",
+		"space": 260,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "logradouro",
+		"column": "logradouro",
+		"space": 260,
+		"dependencies": [
+			{
+				"table": "est_centrocusto",
+				"column": "logradouro"
+			},
+			{
+				"table": "est_centrocusto_secao",
+				"column": "logradouro"
+			}
+		]
+	},
+	{
+		"table": "pat_bem_justificativa",
+		"column": "id",
+		"space": 260,
+		"dependencies": [
+		]
+	},
+	{
+		"table": "pat_loteamento",
+		"column": "codigo",
+		"space": 260,
+		"dependencies": [
+			{
+				"table": "pat_imovel",
+				"column": "codloteamento"
+			}
+		]
+	},
+	{
+		"table": "usuariogridvisao",
 		"column": "id",
 		"space": 260,
 		"dependencies": [
@@ -1686,6 +1847,10 @@
 			{
 				"table": "leisvinculadas",
 				"column": "idleivinculada"
+			},
+			{
+				"table": "leisvinculadas",
+				"column": "idleivinculadora"
 			},
 			{
 				"table": "orcacao",

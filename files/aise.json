@@ -102,6 +102,30 @@
 			{
 				"table": "rhrecadastroenderecopessoa",
 				"column": "cidade"
+			},
+			{
+				"table": "rhenderecolocaldetrabalho",
+				"column": "cidade"
+			},
+			{
+				"table": ".rhrecadastropessoacomplemento",
+				"column": "cidadenascimento"
+			},
+			{
+				"table": ".rhrecadastropessoacomplemento",
+				"column": "cidadenascimento"
+			},
+			{
+				"table": "rhrecadastropessoatiteleitor",
+				"column": "cidade"
+			},
+			{
+				"table": "rhrecadastrorhpessoadependente",
+				"column": "cidade"
+			},
+			{
+				"table": "smvisitatecnica",
+				"column": "cidade"
 			}
 		]
 	},
@@ -3209,7 +3233,16 @@
 			{
 				"table": "rhrecadastro",
 				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastrodependenterhpessoa",
+				"column": "recadastropessoa_id"
+			},
+			{
+				"table": "rhrecadastrorhpessoadependente",
+				"column": "recadastropessoa_id"
 			}
+			
 		]
 	},
 	{
