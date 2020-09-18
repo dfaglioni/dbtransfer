@@ -118,6 +118,10 @@
 		"column": "codigo",
 		"space": 20,
 		"dependencies": [
+			{
+				"table": "fr_garagem",
+				"column": "motivo"
+			}
 		]
 	},
 	{

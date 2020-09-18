@@ -108,11 +108,7 @@
 				"column": "cidade"
 			},
 			{
-				"table": ".rhrecadastropessoacomplemento",
-				"column": "cidadenascimento"
-			},
-			{
-				"table": ".rhrecadastropessoacomplemento",
+				"table": "rhrecadastropessoacomplemento",
 				"column": "cidadenascimento"
 			},
 			{
@@ -3232,15 +3228,15 @@
 		"dependencies": [
 			{
 				"table": "rhrecadastro",
-				"column": "recadastropessoa_id"
+				"column": "recadastrorhpessoa_id"
 			},
 			{
 				"table": "rhrecadastrodependenterhpessoa",
-				"column": "recadastropessoa_id"
+				"column": "recadastrorhpessoa_id"
 			},
 			{
 				"table": "rhrecadastrorhpessoadependente",
-				"column": "recadastropessoa_id"
+				"column": "recadastrorhpessoa_id"
 			}
 			
 		]
