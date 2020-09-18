@@ -3201,6 +3201,13 @@
 		]
 	},
 	{
+		"table": "rhrecadastropessoareservista",
+		"column": "id",
+		"space": 1500,
+		"dependencies": [
+		]
+	},
+	{
 		"table": "rhrecadastropessoaregistroprof",
 		"column": "id",
 		"space": 1500,

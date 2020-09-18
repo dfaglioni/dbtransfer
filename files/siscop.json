@@ -1783,6 +1783,13 @@
 		]
 	},
 	{
+		"table": "fornecedornegativa",
+		"column": "id",
+		"space": 800,
+		"dependencies": [
+		]
+	},
+	{
 		"table": "usuariolog",
 		"column": "codigo",
 		"space": 3000000,
