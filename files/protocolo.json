@@ -79,7 +79,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 0,
+		"space": 11,
 		"dependencies": [
 			{
 				"table": "coordenadoria",
@@ -155,6 +155,18 @@
 			},
 			{
 				"table": "usuariolog",
+				"column": "entidade"
+			},
+			{
+				"table": "gerencia",
+				"column": "entidade"
+			},
+			{
+				"table": "secretaria",
+				"column": "entidade"
+			},
+			{
+				"table": "oficio",
 				"column": "entidade"
 			}
 		]

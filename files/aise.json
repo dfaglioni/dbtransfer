@@ -128,7 +128,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 0,
+		"space": 11,
 		"dependencies": [
 			{
 				"table": "veiculopublicacao",
