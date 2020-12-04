@@ -2,7 +2,7 @@
 	{
 		"table": "arquivo",
 		"column": "id",
-		"space": 0,
+		"space": 40000,
 		"dependencies": [
 			{
 				"table": "arquivo",
@@ -82,7 +82,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 0,
+		"space": 90000000,
 		"dependencies": [
 			{
 				"table": "bairro",
@@ -125,7 +125,7 @@
 	{
 		"table": "clitem",
 		"column": "item",
-		"space": 0,
+		"space": 1500,
 		"dependencies": [
 			{
 				"table": "clfornecedorpontuacao",
@@ -280,7 +280,7 @@
 	{
 		"table": "clorgaopublicacao",
 		"column": "orgaopublicacao",
-		"space": 0,
+		"space": 10,
 		"dependencies": [
 			{
 				"table": "clcontratopublicacao",
@@ -295,7 +295,7 @@
 	{
 		"table": "clmembro",
 		"column": "membro",
-		"space": 0,
+		"space": 5000,
 		"dependencies": [
 			{
 				"table": "clcomissaoleilao",
@@ -334,7 +334,7 @@
 	{
 		"table": "clunidademedida",
 		"column": "unidademedida",
-		"space": 0,
+		"space": 50,
 		"dependencies": [
 			{
 				"table": "clitem",
@@ -345,7 +345,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 0,
+		"space": 9,
 		"dependencies": [
 			{
 				"table": "contratosuspenso",
@@ -552,7 +552,7 @@
 	{
 		"table": "logpre",
 		"column": "id",
-		"space": 0,
+		"space": 90000,
 		"dependencies": []
 	},
 	{
@@ -581,19 +581,19 @@
 	{
 		"table": "log_tabelas",
 		"column": "codigo",
-		"space": 0,
+		"space": 500000,
 		"dependencies": []
 	},
 	{
 		"table": "pessoaam",
 		"column": "id",
-		"space": 0,
+		"space": 5000,
 		"dependencies": []
 	},
 	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 0,
+		"space": 110000,
 		"dependencies": [
 			{
 				"table": "assinatura",
@@ -816,7 +816,7 @@
 	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 0,
+		"space": 200,
 		"dependencies": [
 			{
 				"table": "clmembro",
@@ -831,37 +831,37 @@
 	{
 		"table": "clsolicitacaoanulacao",
 		"column": "id",
-		"space": 0,
+		"space": 8500,
 		"dependencies": []
 	},
 	{
 		"table": "pessoadocumentacao",
 		"column": "id",
-		"space": 0,
+		"space": 2000,
 		"dependencies": []
 	},
 	{
 		"table": "claditivopublicacao",
 		"column": "id",
-		"space": 0,
+		"space": 400,
 		"dependencies": []
 	},
 	{
 		"table": "cllistaarquivos",
 		"column": "id",
-		"space": 0,
+		"space": 7000,
 		"dependencies": []
 	},
 	{
 		"table": "clnaditemperc",
 		"column": "codigo",
-		"space": 0,
+		"space": 7000,
 		"dependencies": []
 	},
 	{
 		"table": "clsolicitacaoitemperc",
 		"column": "codigo",
-		"space": 0,
+		"space": 7000,
 		"dependencies": []
 	}
 ]
