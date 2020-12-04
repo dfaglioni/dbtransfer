@@ -2,7 +2,7 @@
 	{
 		"table": "arquivo",
 		"column": "id",
-		"space": 30000,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "arquivo",
@@ -54,8 +54,7 @@
 		"table": "assinatura",
 		"column": "id",
 		"space": 0,
-		"dependencies": [
-		]
+		"dependencies": []
 	},
 	{
 		"table": "bairro",
@@ -83,7 +82,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 90000000,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "bairro",
@@ -126,7 +125,7 @@
 	{
 		"table": "clitem",
 		"column": "item",
-		"space": 3000,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "clfornecedorpontuacao",
@@ -281,7 +280,7 @@
 	{
 		"table": "clorgaopublicacao",
 		"column": "orgaopublicacao",
-		"space": 50,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "clcontratopublicacao",
@@ -296,7 +295,7 @@
 	{
 		"table": "clmembro",
 		"column": "membro",
-		"space": 800,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "clcomissaoleilao",
@@ -335,7 +334,7 @@
 	{
 		"table": "clunidademedida",
 		"column": "unidademedida",
-		"space": 250,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "clitem",
@@ -348,6 +347,10 @@
 		"column": "entidade",
 		"space": 0,
 		"dependencies": [
+			{
+				"table": "contratosuspenso",
+				"column": "entidade"
+			},
 			{
 				"table": "clacompanhamento",
 				"column": "entidade"
@@ -549,9 +552,8 @@
 	{
 		"table": "logpre",
 		"column": "id",
-		"space": 11000,
-		"dependencies": [
-		]
+		"space": 0,
+		"dependencies": []
 	},
 	{
 		"table": "logradouro",
@@ -579,21 +581,19 @@
 	{
 		"table": "log_tabelas",
 		"column": "codigo",
-		"space": 800000,
-		"dependencies": [
-		]
+		"space": 0,
+		"dependencies": []
 	},
 	{
 		"table": "pessoaam",
 		"column": "id",
-		"space": 3000,
-		"dependencies": [
-		]
+		"space": 0,
+		"dependencies": []
 	},
 	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 11000,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "assinatura",
@@ -816,7 +816,7 @@
 	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 300,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "clmembro",
@@ -831,29 +831,37 @@
 	{
 		"table": "clsolicitacaoanulacao",
 		"column": "id",
-		"space": 10000000,
-		"dependencies": [
-		]
+		"space": 0,
+		"dependencies": []
 	},
 	{
 		"table": "pessoadocumentacao",
 		"column": "id",
-		"space": 2000,
-		"dependencies": [
-		]
+		"space": 0,
+		"dependencies": []
 	},
 	{
 		"table": "claditivopublicacao",
 		"column": "id",
-		"space": 50,
-		"dependencies": [
-		]
+		"space": 0,
+		"dependencies": []
 	},
 	{
 		"table": "cllistaarquivos",
 		"column": "id",
-		"space": 4000,
-		"dependencies": [
-		]
+		"space": 0,
+		"dependencies": []
+	},
+	{
+		"table": "clnaditemperc",
+		"column": "codigo",
+		"space": 0,
+		"dependencies": []
+	},
+	{
+		"table": "clsolicitacaoitemperc",
+		"column": "codigo",
+		"space": 0,
+		"dependencies": []
 	}
 ]
