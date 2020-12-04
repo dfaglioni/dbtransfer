@@ -13,7 +13,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 0,
+		"space": 40000,
 		"dependencies": [
 			{
 				"table": "agencia",
@@ -128,7 +128,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 0,
+		"space": 9,
 		"dependencies": [
 			{
 				"table": "veiculopublicacao",
@@ -2387,7 +2387,7 @@
 	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 0,
+		"space": 150000,
 		"dependencies": [
 			{
 				"table": "banco",
@@ -2934,13 +2934,13 @@
 	{
 		"table": "rellog",
 		"column": "idlog",
-		"space": 0,
+		"space": 90000,
 		"dependencies": []
 	},
 	{
 		"table": "rhabaprojaposentadoria",
 		"column": "abaprojaposentadoria",
-		"space": 0,
+		"space": 20,
 		"dependencies": [
 			{
 				"table": "rhclasseprojaposentadoria",
@@ -2951,7 +2951,7 @@
 	{
 		"table": "rhcadastroextra",
 		"column": "idfolha",
-		"space": 0,
+		"space": 600,
 		"dependencies": [
 			{
 				"table": "contcadastroextra",
@@ -2962,7 +2962,7 @@
 	{
 		"table": "rhcbo",
 		"column": "sequenciacbo",
-		"space": 0,
+		"space": 25000,
 		"dependencies": [
 			{
 				"table": "rhautonomo",
@@ -2997,19 +2997,19 @@
 	{
 		"table": "rhfuncionarioweb",
 		"column": "idfuncionarioweb",
-		"space": 0,
+		"space": 4000,
 		"dependencies": []
 	},
 	{
 		"table": "rhhistcalcfolha",
 		"column": "id",
-		"space": 0,
+		"space": 30000,
 		"dependencies": []
 	},
 	{
 		"table": "rhlocaldetrabalho",
 		"column": "localdetrabalho",
-		"space": 0,
+		"space": 60000,
 		"dependencies": [
 			{
 				"table": "rhestagiario",
@@ -3232,7 +3232,7 @@
 	{
 		"table": "rotinaarquivo",
 		"column": "rotinaarquivo",
-		"space": 0,
+		"space": 500,
 		"dependencies": [
 			{
 				"table": "filtrorotinaarquivo",
@@ -3247,25 +3247,25 @@
 	{
 		"table": "syslog",
 		"column": "idlog",
-		"space": 0,
+		"space": 50000000,
 		"dependencies": []
 	},
 	{
 		"table": "syslogautenticausuario",
 		"column": "idlog",
-		"space": 0,
+		"space": 50000000,
 		"dependencies": []
 	},
 	{
 		"table": "syslogseletor",
 		"column": "idlog",
-		"space": 0,
+		"space": 30000000,
 		"dependencies": []
 	},
 	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 0,
+		"space": 900,
 		"dependencies": [
 			{
 				"table": "issprecadastrologradouro",
@@ -3618,7 +3618,7 @@
 	{
 		"table": "veiculopublicacao",
 		"column": "veiculopublicacao",
-		"space": 0,
+		"space": 10,
 		"dependencies": [
 			{
 				"table": "cgato",
