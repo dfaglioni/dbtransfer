@@ -2,7 +2,7 @@
 	{
 		"table": "arquivo",
 		"column": "id",
-		"space": 0,
+		"space": 40000,
 		"dependencies": [
 			{
 				"table": "arquivo",
@@ -60,7 +60,7 @@
 	{
 		"table": "cronograma",
 		"column": "id",
-		"space": 0,
+		"space": 3500,
 		"dependencies": []
 	},
 	{
@@ -84,31 +84,31 @@
 	{
 		"table": "eloportalorganograma",
 		"column": "id",
-		"space": 0,
+		"space": 80,
 		"dependencies": []
 	},
 	{
 		"table": "eloportalpublicacao",
 		"column": "id",
-		"space": 0,
+		"space": 10000,
 		"dependencies": []
 	},
 	{
 		"table": "eloportalrepasses",
 		"column": "id",
-		"space": 0,
+		"space": 200,
 		"dependencies": []
 	},
 	{
 		"table": "fr_destino",
 		"column": "codigo",
-		"space": 0,
+		"space": 50,
 		"dependencies": []
 	},
 	{
 		"table": "fr_motivo",
 		"column": "codigo",
-		"space": 0,
+		"space": 10,
 		"dependencies": [
 			{
 				"table": "fr_garagem",
@@ -119,7 +119,7 @@
 	{
 		"table": "leis_atosarquivo",
 		"column": "id",
-		"space": 0,
+		"space": 15000,
 		"dependencies": []
 	},
 	{
@@ -146,7 +146,7 @@
 	{
 		"table": "pat_bem_justificativa",
 		"column": "id",
-		"space": 0,
+		"space": 500,
 		"dependencies": []
 	},
 	{
@@ -169,7 +169,7 @@
 	{
 		"table": "eloportalsubgrupoexercicio",
 		"column": "id",
-		"space": 0,
+		"space": 10000,
 		"dependencies": [
 			{
 				"table": "eloportalpublicacao",
@@ -180,7 +180,7 @@
 	{
 		"table": "eloportalsubgrupopublicacao",
 		"column": "id",
-		"space": 0,
+		"space": 800,
 		"dependencies": [
 			{
 				"table": "eloportalclassrelatorio",
@@ -195,7 +195,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 0,
+		"space": 9,
 		"dependencies": [
 			{
 				"table": "pat_bemgrupo",
@@ -1138,7 +1138,7 @@
 	{
 		"table": "est_item",
 		"column": "item",
-		"space": 0,
+		"space": 15000,
 		"dependencies": [
 			{
 				"table": "est_balancete",
@@ -1357,7 +1357,7 @@
 	{
 		"table": "est_tipomovimentacao",
 		"column": "codmovimentacao",
-		"space": 0,
+		"space": 100,
 		"dependencies": [
 			{
 				"table": "est_contabilizacaomensalitem",
@@ -1380,7 +1380,7 @@
 	{
 		"table": "fornecedor",
 		"column": "fornecedor",
-		"space": 0,
+		"space": 110000,
 		"dependencies": [
 			{
 				"table": "acordos",
@@ -1779,7 +1779,7 @@
 	{
 		"table": "fr_especieveiculos",
 		"column": "codigo",
-		"space": 0,
+		"space": 50,
 		"dependencies": [
 			{
 				"table": "pat_veiculo",
@@ -1790,25 +1790,25 @@
 	{
 		"table": "syslog",
 		"column": "codigo",
-		"space": 0,
+		"space": 4000000,
 		"dependencies": []
 	},
 	{
 		"table": "fornecedornegativa",
 		"column": "id",
-		"space": 0,
+		"space": 800,
 		"dependencies": []
 	},
 	{
 		"table": "usuariolog",
 		"column": "codigo",
-		"space": 0,
+		"space": 2000000,
 		"dependencies": []
 	},
 	{
 		"table": "versaoppa",
 		"column": "codigoversao",
-		"space": 0,
+		"space": 20,
 		"dependencies": [
 			{
 				"table": "orcppa",
@@ -1847,13 +1847,13 @@
 	{
 		"table": "est_classificacaoplano",
 		"column": "id",
-		"space": 0,
+		"space": 30000,
 		"dependencies": []
 	},
 	{
 		"table": "leis_atos",
 		"column": "id",
-		"space": 0,
+		"space": 15000,
 		"dependencies": [
 			{
 				"table": "artigo_exclusao",
@@ -1960,25 +1960,25 @@
 	{
 		"table": "eloportalcontatoresponsaveis",
 		"column": "id",
-		"space": 0,
+		"space": 5,
 		"dependencies": []
 	},
 	{
 		"table": "eloportalidentificafolha",
 		"column": "id",
-		"space": 0,
+		"space": 80,
 		"dependencies": []
 	},
 	{
 		"table": "integracaofolha",
 		"column": "id",
-		"space": 0,
+		"space": 5000,
 		"dependencies": []
 	},
 	{
 		"table": "integracaofolhaconfig",
 		"column": "id",
-		"space": 0,
+		"space": 5000,
 		"dependencies": []
 	}
 ]
