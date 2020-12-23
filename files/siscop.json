@@ -41,7 +41,30 @@
 				"column": "idarquivo"
 			}
 		]
+	},	
+	{
+		"table": "est_fabricante",
+		"column": "fabricante",
+		"space": 1000,
+		"dependencies": [
+			{
+				"table": "est_marca",
+				"column": "fabricante"
+			}
+		]
 	},
+	{
+		"table": "est_marca",
+		"column": "marca",
+		"space": 1000,
+		"dependencies": []
+	},
+	{
+		"table": "historico_diario_geral",
+		"column": "id",
+		"space": 1000,
+		"dependencies": []
+	},	
 	{
 		"table": "bairro",
 		"column": "bairro",
@@ -201,6 +224,10 @@
 				"table": "pat_bemgrupo",
 				"column": "entidade"
 			},
+			{
+				"table": "historico_diario_geral",
+				"column": "entidade"
+			},			
 			{
 				"table": "integracaofolha",
 				"column": "entidade"
