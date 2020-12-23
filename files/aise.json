@@ -11,6 +11,45 @@
 		]
 	},
 	{
+		"table": "carteiraprofissional",
+		"column": "carteiraprofissional",
+		"space": 100,
+		"dependencies": [
+			{
+				"table": "profissao",
+				"column": "carteiraprofissional"
+			}
+		]
+	},
+	{
+		"table": "profissao",
+		"column": "profissao",
+		"space": 100,
+		"dependencies": [
+			{
+				"table": "profissionalprofissao",
+				"column": "profissao"
+			}
+		]
+	},	
+	{
+		"table": "profissaoareaatuacao",
+		"column": "areaatuacao",
+		"space": 100,
+		"dependencies": [			
+			{
+				"table": "profissao",
+				"column": "areaatuacao"
+			}
+		]
+	},	
+	{
+		"table": "rhinstituicaoensino",
+		"column": "instituicao",
+		"space": 100,
+		"dependencies": []
+	},	
+	{
 		"table": "cidade",
 		"column": "cidade",
 		"space": 40000,
@@ -23,6 +62,10 @@
 				"table": "bairro",
 				"column": "cidade"
 			},
+			{
+				"table": "rhinstituicaoensino",
+				"column": "cidade"
+			},			
 			{
 				"table": "cep",
 				"column": "cidade"
@@ -2433,6 +2476,14 @@
 				"table": "estestoque",
 				"column": "pessoa"
 			},
+			{
+				"table": "profissional",
+				"column": "pessoa"
+			},			
+			{
+				"table": "profissionalprofissao",
+				"column": "pessoa"
+			},				
 			{
 				"table": "estmovimentacao",
 				"column": "pessoa"
