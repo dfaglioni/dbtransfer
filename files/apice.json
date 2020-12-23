@@ -343,6 +343,23 @@
 		]
 	},
 	{
+		"table": "cltransferenciacc",
+		"column": "transferencia",
+		"space": 10000,
+		"dependencies": [
+			{
+				"table": "cltransferenciaitem",
+				"column": "transferencia"
+			}
+		]
+	},	
+	{
+		"table": "clcentrocusto",
+		"column": "centrocusto",
+		"space": 1000,
+		"dependencies": []
+	},	
+	{
 		"table": "entidade",
 		"column": "entidade",
 		"space": 9,
@@ -351,6 +368,14 @@
 				"table": "contratosuspenso",
 				"column": "entidade"
 			},
+			{
+				"table": "cltransferenciaitem",
+				"column": "entidade"
+			},
+			{
+				"table": "acessodotacao",
+				"column": "entidade"
+			},			
 			{
 				"table": "clacompanhamento",
 				"column": "entidade"
