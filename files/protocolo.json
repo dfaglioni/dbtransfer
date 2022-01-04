@@ -2,26 +2,18 @@
 	{
 		"table": "assunto",
 		"column": "codigo",
-		"space": 60000000,
+		"space": 0,
 		"dependencies": [
+			{
+				"table": "assunto_tipoprocesso",
+				"column": "assunto_id"
+			},
 			{
 				"table": "documento_assunto",
 				"column": "assunto"
 			},
 			{
-				"table": "processos",
-				"column": "codassunto"
-			},
-			{
 				"table": "roteiro_protocolo",
-				"column": "assunto"
-			},
-			{
-				"table": "taxasassunto",
-				"column": "codigoassunto"
-			},
-			{
-				"table": "usuario_assunto",
 				"column": "assunto"
 			}
 		]
@@ -29,7 +21,7 @@
 	{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 150,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "enderecopessoa",
@@ -52,7 +44,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 50,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "bairro",
@@ -79,8 +71,12 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 9,
+		"space": 0,
 		"dependencies": [
+			{
+				"table": "comprovante_entrega",
+				"column": "entidade"
+			},
 			{
 				"table": "coordenadoria",
 				"column": "entidade"
@@ -88,14 +84,6 @@
 			{
 				"table": "diretoria",
 				"column": "entidade"
-			},
-			{
-				"table": "entidade",
-				"column": "entidadeorcamento"
-			},
-			{
-				"table": "entidade",
-				"column": "entidadeprincipal"
 			},
 			{
 				"table": "exercicio",
@@ -106,7 +94,23 @@
 				"column": "entidade"
 			},
 			{
+				"table": "gerencia",
+				"column": "entidade"
+			},
+			{
 				"table": "locais",
+				"column": "entidade"
+			},
+			{
+				"table": "log_tabelas",
+				"column": "entidade"
+			},
+			{
+				"table": "oficio",
+				"column": "entidade"
+			},
+			{
+				"table": "oficio_arquivo",
 				"column": "entidade"
 			},
 			{
@@ -126,12 +130,40 @@
 				"column": "entidade"
 			},
 			{
+				"table": "processosanexos",
+				"column": "entidade"
+			},
+			{
+				"table": "processosanexos",
+				"column": "entidadeanexo"
+			},
+			{
+				"table": "protocolo_arquivos",
+				"column": "entidade"
+			},
+			{
 				"table": "registro",
 				"column": "entidade"
 			},
 			{
 				"table": "registro",
 				"column": "qtdentidades"
+			},
+			{
+				"table": "roteiro",
+				"column": "entidade"
+			},
+			{
+				"table": "roteiro_protocolo",
+				"column": "entidade"
+			},
+			{
+				"table": "roteirolocal",
+				"column": "entidade"
+			},
+			{
+				"table": "secretaria",
+				"column": "entidade"
 			},
 			{
 				"table": "tramitacao",
@@ -154,19 +186,11 @@
 				"column": "entidade"
 			},
 			{
+				"table": "usuario_secretaria",
+				"column": "entidade"
+			},
+			{
 				"table": "usuariolog",
-				"column": "entidade"
-			},
-			{
-				"table": "gerencia",
-				"column": "entidade"
-			},
-			{
-				"table": "secretaria",
-				"column": "entidade"
-			},
-			{
-				"table": "oficio",
 				"column": "entidade"
 			}
 		]
@@ -174,8 +198,12 @@
 	{
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 500,
+		"space": 0,
 		"dependencies": [
+			{
+				"table": "enderecopessoa",
+				"column": "logradouro"
+			},
 			{
 				"table": "entidade",
 				"column": "logradouro"
@@ -187,18 +215,18 @@
 			{
 				"table": "processos",
 				"column": "logradouro"
-			},
-			{
-				"table": "enderecopessoa",
-				"column": "logradouro"
 			}
 		]
 	},
 	{
 		"table": "pessoa",
 		"column": "codpessoa",
-		"space": 110000,
+		"space": 0,
 		"dependencies": [
+			{
+				"table": "comprovante_entrega",
+				"column": "pessoa"
+			},
 			{
 				"table": "enderecopessoa",
 				"column": "codpessoa"
@@ -208,15 +236,27 @@
 				"column": "codpessoa"
 			},
 			{
+				"table": "oficio",
+				"column": "responsavel"
+			},
+			{
+				"table": "processo_interessado",
+				"column": "pessoa_id"
+			},
+			{
 				"table": "processos",
 				"column": "codpessoa"
+			},
+			{
+				"table": "secretaria",
+				"column": "responsavel"
 			}
 		]
 	},
 	{
 		"table": "usuariolog",
 		"column": "codigo",
-		"space": 790000,
+		"space": 0,
 		"dependencies": []
 	},
 	{
