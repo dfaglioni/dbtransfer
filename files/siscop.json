@@ -4554,5 +4554,76 @@
         "column": "versaoanterior"
       }
     ]
+  },
+  {
+    "table": "cidade",
+    "column": "cidade",
+    "space": 0,
+    "dependencies": [
+      {
+        "table": "adiantamento",
+        "column": "idcidadedestino"
+      },
+      {
+        "table": "bairro",
+        "column": "cidade"
+      },
+      {
+        "table": "contabancaria",
+        "column": "cidadeagencia"
+      },
+      {
+        "table": "diaria",
+        "column": "idcidadedestino"
+      },
+      {
+        "table": "est_centrocusto",
+        "column": "cidade"
+      },
+      {
+        "table": "est_centrocusto_secao",
+        "column": "cidade"
+      },
+      {
+        "table": "est_localentrega",
+        "column": "cidade"
+      },
+      {
+        "table": "fornecedor",
+        "column": "idcidade"
+      },
+      {
+        "table": "fornecedorbanco",
+        "column": "cidade"
+      },
+      {
+        "table": "fr_destino",
+        "column": "cidade"
+      },
+      {
+        "table": "logradouro",
+        "column": "cidade"
+      },
+      {
+        "table": "pat_imovel",
+        "column": "cidade"
+      },
+      {
+        "table": "pat_loteamento",
+        "column": "cidade"
+      },
+      {
+        "table": "pat_responsavel",
+        "column": "codigocidade"
+      },
+      {
+        "table": "pat_veiculo",
+        "column": "capacidade"
+      },
+      {
+        "table": "rateioconsorciado",
+        "column": "idcidade"
+      }
+    ]
   }
 ]
