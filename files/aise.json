@@ -1,19 +1,8 @@
 [
 	{
-		"table": "cgagenda",
-		"column": "id",
-		"space": 0,
-		"dependencies": [
-			{
-				"table": "cgagendavinculo",
-				"column": "agenda"
-			}
-		]
-	},
-	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 40000,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "agencia",
@@ -24,11 +13,35 @@
 				"column": "cidade"
 			},
 			{
+				"table": "bairrovinculo",
+				"column": "cidadecorreta"
+			},
+			{
+				"table": "bairrovinculo",
+				"column": "cidadeerrada"
+			},
+			{
 				"table": "cep",
 				"column": "cidade"
 			},
 			{
+				"table": "cidaderep",
+				"column": "cidade"
+			},
+			{
+				"table": "distanciacidade",
+				"column": "cidadedestino"
+			},
+			{
+				"table": "distanciacidade",
+				"column": "cidadeorigem"
+			},
+			{
 				"table": "enderecopessoa",
+				"column": "cidade"
+			},
+			{
+				"table": "enderecopessoahistorico",
 				"column": "cidade"
 			},
 			{
@@ -36,36 +49,8 @@
 				"column": "cidade"
 			},
 			{
-				"table": "issnotafiscal",
-				"column": "localprestacaoidcidade"
-			},
-			{
-				"table": "issnotafiscal",
-				"column": "intermediarioidcidade"
-			},
-			{
-				"table": "issnotafiscaltomador",
-				"column": "idcidade"
-			},
-			{
-				"table": "issprecadastrobairro",
-				"column": "bai_cidade"
-			},
-			{
-				"table": "issprecadastrologradouro",
-				"column": "log_cidade"
-			},
-			{
-				"table": "issrps",
-				"column": "idcidadeservico"
-			},
-			{
-				"table": "issrps",
-				"column": "idmunicipioincidencia"
-			},
-			{
-				"table": "issrps",
-				"column": "tomadoridcidade"
+				"table": "estestoque",
+				"column": "cidade"
 			},
 			{
 				"table": "localidade",
@@ -76,7 +61,71 @@
 				"column": "cidade"
 			},
 			{
-				"table": "pjcomarca",
+				"table": "logradourohistorico",
+				"column": "cidade"
+			},
+			{
+				"table": "logradourovinculo",
+				"column": "cidadecorreta"
+			},
+			{
+				"table": "logradourovinculo",
+				"column": "cidadeerrada"
+			},
+			{
+				"table": "obrabem",
+				"column": "cidade"
+			},
+			{
+				"table": "obraocorrencia",
+				"column": "cidade"
+			},
+			{
+				"table": "patimovel",
+				"column": "cidade"
+			},
+			{
+				"table": "rhacidentedetrabalho",
+				"column": "cidade"
+			},
+			{
+				"table": "rhcomarcamunicipio",
+				"column": "cidade"
+			},
+			{
+				"table": "rhcomarcamunicipiorep",
+				"column": "cidade"
+			},
+			{
+				"table": "rhdependente",
+				"column": "cidadenascimento"
+			},
+			{
+				"table": "rhempregoanterior",
+				"column": "cidade"
+			},
+			{
+				"table": "rhenderecolocaldetrabalho",
+				"column": "cidade"
+			},
+			{
+				"table": "rhinstituicaoensino",
+				"column": "cidade"
+			},
+			{
+				"table": "rhlicencapremio",
+				"column": "periodicidade"
+			},
+			{
+				"table": "rhlicencapremiorep",
+				"column": "periodicidade"
+			},
+			{
+				"table": "rhlotacao",
+				"column": "cidade"
+			},
+			{
+				"table": "rhlotacaorep",
 				"column": "cidade"
 			},
 			{
@@ -88,23 +137,27 @@
 				"column": "cidadetitulo"
 			},
 			{
+				"table": "rhpessoa_backup",
+				"column": "cidadenascimento"
+			},
+			{
+				"table": "rhpessoa_backup",
+				"column": "cidadetitulo"
+			},
+			{
+				"table": "rhpessoahistorico",
+				"column": "cidadenascimento"
+			},
+			{
+				"table": "rhpessoahistorico",
+				"column": "cidadetitulo"
+			},
+			{
 				"table": "rhprocessojudicial",
 				"column": "cidadesecaojudiciaria"
 			},
 			{
-				"table": "tribcadastrogeralendereco",
-				"column": "cidade"
-			},
-			{
-				"table": "logradourohistorico",
-				"column": "cidade"
-			},
-			{
 				"table": "rhrecadastroenderecopessoa",
-				"column": "cidade"
-			},
-			{
-				"table": "rhenderecolocaldetrabalho",
 				"column": "cidade"
 			},
 			{
@@ -122,2256 +175,64 @@
 			{
 				"table": "smvisitatecnica",
 				"column": "cidade"
+			},
+			{
+				"table": "tribboletimlogradouro",
+				"column": "cidade"
+			},
+			{
+				"table": "tribcadastrogeral",
+				"column": "cidade"
+			},
+			{
+				"table": "tribcadastroimobiliario",
+				"column": "cidade"
+			},
+			{
+				"table": "tribcobrancaavulsaos",
+				"column": "cidade"
+			},
+			{
+				"table": "tribimobiliariotestada",
+				"column": "cidade"
+			},
+			{
+				"table": "triblogradourotestada",
+				"column": "cidade"
+			},
+			{
+				"table": "tribmelhoriatestada",
+				"column": "cidade"
 			}
 		]
 	},
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 9,
+		"space": 0,
 		"dependencies": [
 			{
-				"table": "veiculopublicacao",
+				"table": "affluxoavaliacao",
 				"column": "entidade"
 			},
 			{
-				"table": "rhmovimentomanutencao",
+				"table": "affluxoavaliacaosequencia",
 				"column": "entidade"
 			},
 			{
-				"table": "usuarioseletorcampo",
+				"table": "afgeracaomanualavaliacao",
 				"column": "entidade"
 			},
 			{
-				"table": "usuarioseletor",
+				"table": "afgeracaomanualavaliacaofluxo",
 				"column": "entidade"
 			},
 			{
-				"table": "usuarioentidade",
+				"table": "bancopessoa",
 				"column": "entidade"
 			},
 			{
-				"table": "tribpagamento",
-				"column": "entidade"
-			},
-			{
-				"table": "tribfundamentolegal",
-				"column": "entidade"
-			},
-			{
-				"table": "tribentidadetributacao",
-				"column": "entidade"
-			},
-			{
-				"table": "tribentidadecorrecaoguia",
-				"column": "entidade"
-			},
-			{
-				"table": "tribentidadecorrecao",
-				"column": "entidade"
-			},
-			{
-				"table": "tribentcorrmultaespecial",
-				"column": "entidade"
-			},
-			{
-				"table": "tribentcorrmulta",
-				"column": "entidade"
-			},
-			{
-				"table": "tribdocumento",
-				"column": "entidade"
-			},
-			{
-				"table": "tempregistro",
-				"column": "qtdentidades"
-			},
-			{
-				"table": "tempregistro",
-				"column": "entidade"
-			},
-			{
-				"table": "smpericia",
-				"column": "entidade"
-			},
-			{
-				"table": "smcontroleexamefaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "smcontroleexamecargo",
-				"column": "entidade"
-			},
-			{
-				"table": "smcontroleexame",
-				"column": "entidade"
-			},
-			{
-				"table": "smatestadorisco",
-				"column": "entidade"
-			},
-			{
-				"table": "smatestadoexame",
-				"column": "entidade"
-			},
-			{
-				"table": "smatestadoaso",
-				"column": "entidade"
-			},
-			{
-				"table": "smatestadoanexo",
-				"column": "entidade"
-			},
-			{
-				"table": "smanexos",
-				"column": "entidade"
-			},
-			{
-				"table": "sequenciamovimento",
-				"column": "entidade"
-			},
-			{
-				"table": "rotinadocumento",
-				"column": "entidade"
-			},
-			{
-				"table": "rotinaarquivo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvinculosubordinado",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvincsubordinadofunc",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvalorprevidenciacomplementar",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvalorprevidenciaaporte",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvalorprevidencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvaletransportefuncionario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvaletransportecargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvaletransporte",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvalealimentacaoclasse",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvalealimentacaocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhvalealimentacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhusuariovaletransporte",
-				"column": "entidade"
-			},
-			{
-				"table": "rhtiporequisicaoportalrhfluxo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhtiporequisicaoportalrh",
-				"column": "entidade"
-			},
-			{
-				"table": "rhtiporequisicaoclasse",
-				"column": "entidade"
-			},
-			{
-				"table": "rhtipofolha",
-				"column": "entidade"
-			},
-			{
-				"table": "rhsttipoavaliacaocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhstprofissionalsesmt",
-				"column": "entidade"
-			},
-			{
-				"table": "rhstlevantamentoriscomedida",
-				"column": "entidade"
-			},
-			{
-				"table": "rhstlevantamentorisco",
-				"column": "entidade"
-			},
-			{
-				"table": "rhsalariofamilia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrpa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinalancamentolog",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinalancamento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinaestagioprobatoriofunc",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinaestagioprobatorio",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinacoletivarescisao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinacoletivalotacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinacoletivaferias",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinacoletivaanotacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinacoletiva",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrotinaarquivobancario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhresponsavelrelatorio",
-				"column": "entidade"
-			},
-			{
-				"table": "rhresponsavel",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrescisao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrequisitocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrequisicaoportalrhtramite",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrequisicaoportalrharquivo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhrequisicaoportalrh",
-				"column": "entidade"
-			},
-			{
-				"table": "rhquadrosalarialprovisao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhquadrosalarialato",
-				"column": "entidade"
-			},
-			{
-				"table": "rhquadrosalarial",
-				"column": "entidade"
-			},
-			{
-				"table": "rhqrcodeholerite",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprotecaocargolotacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprogressaorotinafuncionario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprogressaofaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprogressaoclasse",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprogressaocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprogressao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprogramacaorescisao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprogramacaopremio",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprogramacaoferias",
-				"column": "entidadeorigem"
-			},
-			{
-				"table": "rhprogramacaoferias",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprogramacaofalta",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprodutividadefaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprodutividadecompetencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprodutividade",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprocessojudicialsuspensao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprocessojudicial",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprocessamentoats",
-				"column": "entidade"
-			},
-			{
-				"table": "rhprevidencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhppra",
-				"column": "entidade"
-			},
-			{
-				"table": "rhppp",
-				"column": "entidade"
-			},
-			{
-				"table": "rhplantonista",
-				"column": "entidade"
-			},
-			{
-				"table": "rhplantaofaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhplantaocompetencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhplantao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpensaobeneficiario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpensao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpdvfaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpdvevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpdv",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpcmso",
-				"column": "entidade"
-			},
-			{
-				"table": "rhparamrecadportalrh",
-				"column": "entidade"
-			},
-			{
-				"table": "rhparametroportalrh",
-				"column": "entidade"
-			},
-			{
-				"table": "rhparametrointegracaocontabil",
-				"column": "entidade"
-			},
-			{
-				"table": "rhparametrocalculocompetencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhparametrocalculo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpagamentoparcialfuncionario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpagamentoparcial",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpagamentobancariofuncionario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhpagamentobancario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhnomeacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhnivelhistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhnaturezacargolotacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentoestagiario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaosaude",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaopessoalmovimenta",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaopessoal",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaooutros",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaonomeacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaolegalevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaolegal",
-				"column": "entidadeorigem"
-			},
-			{
-				"table": "rhmovimentacaolegal",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaofalta",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaoeventos",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaoanexos",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmovimentacaoafastamento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmensagem",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmembroscipa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmediavariavel",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmediaeventohistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmediaevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhmanutencaoremuneracao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlotacaoresponsavel",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlotacaopermissao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlotacaointegracaocontab",
-				"column": "entidadecontabil"
-			},
-			{
-				"table": "rhlotacaointegracaocontab",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlotacaoinciso",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlotacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlinhavaletransporteevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlicencapremiofalta",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlicencapremio",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlicencaevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhlancamentomovimentacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhitemadicional",
-				"column": "entidade"
-			},
-			{
-				"table": "rhinconsistencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhincisocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhinciso",
-				"column": "entidade"
-			},
-			{
-				"table": "rhincidenciaeventohistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhincidenciaevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhhorariotrabalhojornada",
-				"column": "entidade"
-			},
-			{
-				"table": "rhhorariotrabalho",
-				"column": "entidade"
-			},
-			{
-				"table": "rhhistoricofuncionario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhhistoricoestagiario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhhistcalcfolha",
-				"column": "entidade"
-			},
-			{
-				"table": "rhgruporesponsavelrelitem",
-				"column": "entidade"
-			},
-			{
-				"table": "rhgruporesponsavelrel",
-				"column": "entidade"
-			},
-			{
-				"table": "rhgrupoocupacionalnivel",
-				"column": "entidade"
-			},
-			{
-				"table": "rhgrupoocupacionalfaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhgrupoocupacionalcompetencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhgrupoocupacional",
-				"column": "entidade"
-			},
-			{
-				"table": "rhgrupodocumentodocumento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhgrupodocumentocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhgrupodocumento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfuncionarioweb",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfuncionariovaletransporte",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfuncionarioplanosaude",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfuncionariointegracaocontab",
-				"column": "entidadecontabil"
-			},
-			{
-				"table": "rhfuncionariointegracaocontab",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfuncionarioincidenciaevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfuncionariohistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfuncionarioatividade",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfuncionario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfuncao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfornecedorvalefalta",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfornecedorsindicato",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfornecedorplanosaudecompet",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfornecedorplanodesaudetipo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfornecedorplanodesaudefaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfornecedorfaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfornecedor",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfiltrotela",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfichafinanceiraprovisao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfichafinanceira",
-				"column": "entidade"
-			},
-			{
-				"table": "rhferiasprocessadas",
-				"column": "entidade"
-			},
-			{
-				"table": "rhferias",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfechamentocontabil",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfaixasalariofamilia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfaixaprevidencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhfaixahistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhexerciciomesdata",
-				"column": "entidade"
-			},
-			{
-				"table": "rhexerciciomes",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventotce",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventolotacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventohistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventofuncionario",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventoeventoregra",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventoeventoautomatico",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventodefinicaointegracontab",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventoclasseintegracaocontab",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventoclasse",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventocargoregra",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventocargomedia",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventocalculohistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rheventocalculo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhestagioprobatoriocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhestagioprobatorioavaliacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhestagioprobatorio",
-				"column": "entidade"
-			},
-			{
-				"table": "rhestagiariovaletransporte",
-				"column": "entidade"
-			},
-			{
-				"table": "rhestagiariorecesso",
-				"column": "entidade"
-			},
-			{
-				"table": "rhestagiarioperiodo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhestagiariopagamento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhestagiario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhescalacompetencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhescala",
-				"column": "entidade"
-			},
-			{
-				"table": "rhenvioalocadorcusto",
-				"column": "entidade"
-			},
-			{
-				"table": "rhemprestimo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhempregoanteriorremuneracao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhempregoanteriorafastamento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhempregoanterior",
-				"column": "entidade"
-			},
-			{
-				"table": "rhemissaorecibo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhdesignafuncaoprocessada",
-				"column": "entidade"
-			},
-			{
-				"table": "rhdependente",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcurriculumcandidato",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcriterioitem",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcriterio",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcorrelacaoevento",
-				"column": "entidade2"
-			},
-			{
-				"table": "rhcorrelacaoevento",
-				"column": "entidade1"
-			},
-			{
-				"table": "rhcorrelacaoevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconvencaocoletiva",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcontroleholeriteportalrh",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcontratoprazodeterminado",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcontratacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconsignadosaldovale",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconsignadofuncionario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursosubstituicao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursoinscritos",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursoeditalarquivo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursoedital",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursodocumento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursodata",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursocriteriodesempate",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursoconvocacaoitemexame",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursoconvocacaoitemdoc",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursoconvocacaoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursoconvocacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursocomissao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursocandidatorecurso",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursocandidatorecarquivo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursocandidato",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcursoarquivo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcurso",
-				"column": "entidade"
-			},
-			{
-				"table": "rhconcmembroorganizador",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcomposicaobasecalculo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcomissionado",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcomissaomembro",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcomissaoato",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcomissao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhclassificacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhclassenomeacaointegcontab",
-				"column": "entidade"
-			},
-			{
-				"table": "rhclassehistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhclassefalta",
-				"column": "entidade"
-			},
-			{
-				"table": "rhclasseafastamentofaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhclasseafastamento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhclasse",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcipa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcestabasicalotacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcestabasicaevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcestabasica",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcertificado",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcertidaotemposervico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcertidaoaposentadoria",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcargopiso",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcargolotacao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcargohistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcargofaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcargoatividade",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhcadastroextra",
-				"column": "entidadecadastro"
-			},
-			{
-				"table": "rhbeneficiariolancamento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhbeneficiario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhbbpasep",
-				"column": "entidade"
-			},
-			{
-				"table": "rhbaseeventohistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhbasecalculofaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhbasecalculoevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhbasecalculocompetencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhbasecalculo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhbancohoras",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaotreinamentoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaotreinamento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaomodelofaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaomodelocriterioitem",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaomodelocriterio2",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaomodelocriterio",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaomodelocargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaomodelo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaoinstrutoritem",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaoinstrutor",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaofuncionalitem",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaofuncional",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaodesempenhomov",
-				"column": "entidadesuperior"
-			},
-			{
-				"table": "rhavaliacaodesempenhomov",
-				"column": "entidadeimediato"
-			},
-			{
-				"table": "rhavaliacaodesempenhomov",
-				"column": "entidadechefiasuperior"
-			},
-			{
-				"table": "rhavaliacaodesempenhomov",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaoconcursoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "rhavaliacaoconcurso",
-				"column": "entidade"
-			},
-			{
-				"table": "rhautonomoprevidencia",
-				"column": "entidade"
-			},
-			{
-				"table": "rhautonomointegracaocontab",
-				"column": "entidade"
-			},
-			{
-				"table": "rhautonomo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhatsperiodo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhatsfalta",
-				"column": "entidade"
-			},
-			{
-				"table": "rhatseventofuncionario",
-				"column": "entidade"
-			},
-			{
-				"table": "rhatsevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhatscargo",
-				"column": "entidade"
-			},
-			{
-				"table": "rhats",
-				"column": "entidade"
-			},
-			{
-				"table": "rhanexos",
-				"column": "entidade"
-			},
-			{
-				"table": "rhambientetrabalho",
-				"column": "entidade"
-			},
-			{
-				"table": "rhagenteintegracao",
-				"column": "entidade"
-			},
-			{
-				"table": "rhagenteintegracao",
-				"column": "codigoentidadeagente"
-			},
-			{
-				"table": "rhafastamentograuparentesco",
-				"column": "entidade"
-			},
-			{
-				"table": "rhafastamentoevento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhafastamento",
-				"column": "entidade"
-			},
-			{
-				"table": "rhadmissaopreliminar",
-				"column": "entidade"
-			},
-			{
-				"table": "rhadicionalhistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "rhadicional",
-				"column": "entidade"
-			},
-			{
-				"table": "rhacidentedetrabalho",
-				"column": "entidade"
-			},
-			{
-				"table": "rellog",
-				"column": "entidade"
-			},
-			{
-				"table": "registro",
-				"column": "qtdentidades"
-			},
-			{
-				"table": "registro",
-				"column": "entidade"
-			},
-			{
-				"table": "patveiculo",
-				"column": "entidade"
-			},
-			{
-				"table": "pattransferencia",
-				"column": "entidade"
-			},
-			{
-				"table": "pattabcorrecao",
-				"column": "entidade"
-			},
-			{
-				"table": "patseguro",
-				"column": "entidade"
-			},
-			{
-				"table": "patmudancaresponsavel",
-				"column": "entidade"
-			},
-			{
-				"table": "patlocalizacao",
-				"column": "entidade"
-			},
-			{
-				"table": "patimovel",
-				"column": "entidade"
-			},
-			{
-				"table": "patcorrecao",
-				"column": "entidade"
-			},
-			{
-				"table": "patcategoria",
-				"column": "entidade"
-			},
-			{
-				"table": "patbem",
-				"column": "entidade"
-			},
-			{
-				"table": "patbaixa",
-				"column": "entidade"
-			},
-			{
-				"table": "parametroentidadeexercicio",
-				"column": "entidade"
-			},
-			{
-				"table": "parametroentidade",
-				"column": "entidade"
-			},
-			{
-				"table": "orcversaoorcamento",
-				"column": "entidade"
-			},
-			{
-				"table": "orcter",
-				"column": "entidade"
-			},
-			{
-				"table": "orcted",
-				"column": "entidade"
-			},
-			{
-				"table": "orcreceitafontetce",
-				"column": "entidade"
-			},
-			{
-				"table": "orcreceita",
-				"column": "entidade"
-			},
-			{
-				"table": "orcppavalor",
-				"column": "entidade"
-			},
-			{
-				"table": "orcppa",
-				"column": "entidade"
-			},
-			{
-				"table": "orcparametroreceita",
-				"column": "entidade"
-			},
-			{
-				"table": "orcparametrodespesa",
-				"column": "entidade"
-			},
-			{
-				"table": "orcdespesa",
-				"column": "entidade"
-			},
-			{
-				"table": "orccotatrimestral",
-				"column": "entidade"
-			},
-			{
-				"table": "obrasecretaria",
-				"column": "entidade"
-			},
-			{
-				"table": "obrarecebimentoprovisorio",
-				"column": "entidade"
-			},
-			{
-				"table": "obraordemservicomembros",
-				"column": "entidade"
-			},
-			{
-				"table": "obraordemservicoacao",
-				"column": "entidade"
-			},
-			{
-				"table": "obraordemservico",
-				"column": "entidade"
-			},
-			{
-				"table": "obraordemplanilhaorcamento",
-				"column": "entidade"
-			},
-			{
-				"table": "obraordembempatrimonial",
-				"column": "entidade"
-			},
-			{
-				"table": "obraordemassinatura",
-				"column": "entidade"
-			},
-			{
-				"table": "obraoperacaocredito",
-				"column": "entidade"
-			},
-			{
-				"table": "obranotificacaoassinatura",
-				"column": "entidade"
-			},
-			{
-				"table": "obranotificacao",
-				"column": "entidade"
-			},
-			{
-				"table": "obralicitacao",
-				"column": "entidade"
-			},
-			{
-				"table": "obralaudomedicao",
-				"column": "entidade"
-			},
-			{
-				"table": "obrainss",
-				"column": "entidade"
-			},
-			{
-				"table": "obracoordenadas",
-				"column": "entidade"
-			},
-			{
-				"table": "obraconvenio",
-				"column": "entidade"
-			},
-			{
-				"table": "obracontroleconvenio",
-				"column": "entidade"
-			},
-			{
-				"table": "obrabempatrimonial",
-				"column": "entidade"
-			},
-			{
-				"table": "obrabem",
-				"column": "entidade"
-			},
-			{
-				"table": "obraassinatura",
-				"column": "entidade"
-			},
-			{
-				"table": "obraart",
-				"column": "entidade"
-			},
-			{
-				"table": "obraandamentoempresa",
-				"column": "entidade"
-			},
-			{
-				"table": "obraacompanhamentoimagem",
-				"column": "entidade"
-			},
-			{
-				"table": "obraacompanhamento",
-				"column": "entidade"
-			},
-			{
-				"table": "modeloimpressaoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "modeloimpressao",
-				"column": "entidade"
-			},
-			{
-				"table": "modeloarquivogrupomodelo",
-				"column": "entidade"
-			},
-			{
-				"table": "modeloarquivogrupo",
-				"column": "entidade"
-			},
-			{
-				"table": "modeloarquivo",
-				"column": "entidade"
-			},
-			{
-				"table": "lrfreceitaclassificacao_aux",
-				"column": "entidade"
-			},
-			{
-				"table": "lrfplanoclassificacao_aux",
-				"column": "entidade"
-			},
-			{
-				"table": "lrfdespesaclassificacao_aux",
-				"column": "entidade"
-			},
-			{
-				"table": "lrfcomandosql_aux",
-				"column": "entidade"
-			},
-			{
-				"table": "lrfanomovelmes",
-				"column": "entidade"
-			},
-			{
-				"table": "lrfanomovelcomando",
-				"column": "entidade"
-			},
-			{
-				"table": "lrfanomovelclassificacao_aux",
-				"column": "entidademovel"
-			},
-			{
-				"table": "lrfanomovelclassificacao_aux",
-				"column": "entidade"
-			},
-			{
-				"table": "lrfanomovelclassificacao",
-				"column": "modeloentidademovel"
-			},
-			{
-				"table": "lrfanomovelclassificacao",
-				"column": "entidade"
-			},
-			{
-				"table": "lrfanomovelclassificacao",
-				"column": "classentidademovel"
-			},
-			{
-				"table": "logradourohistorico",
-				"column": "entidade"
-			},
-			{
-				"table": "frtsetor",
-				"column": "entidade"
-			},
-			{
-				"table": "frtressolagempneu",
-				"column": "entidade"
-			},
-			{
-				"table": "frtrequisicao",
-				"column": "entidade"
-			},
-			{
-				"table": "frtpneu",
-				"column": "entidade"
-			},
-			{
-				"table": "frtordemservico",
-				"column": "entidade"
-			},
-			{
-				"table": "frtocorrenciamotorista",
-				"column": "entidade"
-			},
-			{
-				"table": "frtmovimentacaopneuitem",
-				"column": "entidade"
-			},
-			{
-				"table": "frtmovimentacaopneu",
-				"column": "entidade"
-			},
-			{
-				"table": "frtmovimentacaoespecial",
-				"column": "entidade"
-			},
-			{
-				"table": "frtmovimentacaobateriaitem",
-				"column": "entidade"
-			},
-			{
-				"table": "frtmovimentacaobateria",
-				"column": "entidade"
-			},
-			{
-				"table": "frtitemveiculo",
-				"column": "entidade"
-			},
-			{
-				"table": "frtitemrequisicao",
-				"column": "entidade"
-			},
-			{
-				"table": "frtitemordemservico",
-				"column": "entidade"
-			},
-			{
-				"table": "frtgastoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "frtgasto",
-				"column": "entidade"
-			},
-			{
-				"table": "frtgaragem",
-				"column": "entidade"
-			},
-			{
-				"table": "frtentradacombitem",
-				"column": "entidade"
-			},
-			{
-				"table": "frtentradacomb",
-				"column": "entidade"
-			},
-			{
-				"table": "frtdebitoveiculo",
-				"column": "entidade"
-			},
-			{
-				"table": "frtbombacombustivel",
-				"column": "entidade"
-			},
-			{
-				"table": "frtbateria",
-				"column": "entidade"
-			},
-			{
-				"table": "frtagendamento",
-				"column": "entidade"
-			},
-			{
-				"table": "frtabastecimentoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "frtabastecimento",
-				"column": "entidade"
-			},
-			{
-				"table": "fintransferencia",
-				"column": "entidade"
-			},
-			{
-				"table": "finpagamentotrib",
-				"column": "entidade"
-			},
-			{
-				"table": "finmovimentacaodia",
-				"column": "entidade"
-			},
-			{
-				"table": "finintegracaosmt2000",
-				"column": "entidade"
-			},
-			{
-				"table": "finguichepagamento",
-				"column": "entidade"
-			},
-			{
-				"table": "finguicheaberturaitem",
-				"column": "entidade"
-			},
-			{
-				"table": "finguicheabertura",
-				"column": "entidade"
-			},
-			{
-				"table": "finconciliacaoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "finconciliacao",
-				"column": "entidade"
-			},
-			{
-				"table": "filtrorotinaarquivo",
-				"column": "entidade"
-			},
-			{
-				"table": "filtrorelatorio",
-				"column": "entidade"
-			},
-			{
-				"table": "exercicio",
-				"column": "entidade"
-			},
-			{
-				"table": "esttransferenciaitem",
-				"column": "entidade"
-			},
-			{
-				"table": "esttransferencia",
-				"column": "entidade"
-			},
-			{
-				"table": "estposicaoestoque",
-				"column": "entidade"
-			},
-			{
-				"table": "estmovimentacaolote",
-				"column": "entidade"
-			},
-			{
-				"table": "estmovimentacaoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "estmovimentacaodiaria",
-				"column": "entidade"
-			},
-			{
-				"table": "estmovimentacao",
-				"column": "entidade"
-			},
-			{
-				"table": "estlote",
-				"column": "entidade"
-			},
-			{
-				"table": "estlocalizacaoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "estlocalizacao",
-				"column": "entidade"
-			},
-			{
-				"table": "estexerciciomes",
-				"column": "entidade"
-			},
-			{
-				"table": "estestoque",
-				"column": "entidade"
-			},
-			{
-				"table": "estclassificacaocc",
-				"column": "entidade"
-			},
-			{
-				"table": "esprocessosuspensaoterceiros",
-				"column": "entidade"
-			},
-			{
-				"table": "espendencia",
-				"column": "entidade"
-			},
-			{
-				"table": "escrrubricaevento",
-				"column": "entidade"
-			},
-			{
-				"table": "entidadeexerciciosistema",
-				"column": "entidade"
-			},
-			{
-				"table": "cvvinculacaoquadrosalarial",
-				"column": "entidade"
-			},
-			{
-				"table": "conttipodocumentofiscal",
-				"column": "entidade"
-			},
-			{
-				"table": "conttabelaeventoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "conttabelaevento",
-				"column": "entidade"
-			},
-			{
-				"table": "contretencaoliquidacao",
-				"column": "entidade"
-			},
-			{
-				"table": "contretencaoempenho",
-				"column": "entidade"
-			},
-			{
-				"table": "contretencaoconta",
-				"column": "entidade"
-			},
-			{
-				"table": "contretencao",
-				"column": "entidade"
-			},
-			{
-				"table": "contreservatecnica",
-				"column": "entidade"
-			},
-			{
-				"table": "contreservaliberadespesa",
-				"column": "entidade"
-			},
-			{
-				"table": "contreservadespesa",
-				"column": "entidade"
-			},
-			{
-				"table": "contreceitalrf",
-				"column": "entidade"
-			},
-			{
-				"table": "contreceitafonterecurso",
-				"column": "entidade"
-			},
-			{
-				"table": "contreceita",
-				"column": "entidade"
-			},
-			{
-				"table": "contrealizacaoreceita",
-				"column": "entidade"
-			},
-			{
-				"table": "contprevisaoreceita",
-				"column": "entidade"
-			},
-			{
-				"table": "contplanoclassificacao",
-				"column": "entidade"
-			},
-			{
-				"table": "contplano",
-				"column": "entidade"
-			},
-			{
-				"table": "contpagamentoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "contpagamento",
-				"column": "entidade"
-			},
-			{
-				"table": "contordempagtoretencao",
-				"column": "entidade"
-			},
-			{
-				"table": "contordempagtodocumento",
-				"column": "entidade"
-			},
-			{
-				"table": "contordempagamentoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "contordempagamento",
-				"column": "entidade"
-			},
-			{
-				"table": "contmovimentacaofinanceira",
-				"column": "entidade"
-			},
-			{
-				"table": "contliquidacaodocumento",
-				"column": "entidade"
-			},
-			{
-				"table": "contliquidacao",
-				"column": "entidade"
-			},
-			{
-				"table": "contlei",
-				"column": "entidade"
-			},
-			{
-				"table": "contlancamentocotatrimestral",
-				"column": "entidade"
-			},
-			{
-				"table": "contlancamentocotafinanceira",
-				"column": "entidade"
-			},
-			{
-				"table": "contitemextraorcamentario",
-				"column": "entidade"
-			},
-			{
-				"table": "contitemempenho",
-				"column": "entidade"
-			},
-			{
-				"table": "contintegracaorhretencao",
-				"column": "entidade"
-			},
-			{
-				"table": "contintegracaorhplano",
-				"column": "entidade"
-			},
-			{
-				"table": "contintegracaorhpatronal",
-				"column": "entidade"
-			},
-			{
-				"table": "contintegracaorhempenho",
-				"column": "entidade"
-			},
-			{
-				"table": "contintegracaorhdespesa",
-				"column": "entidade"
-			},
-			{
-				"table": "contintegracaorh",
-				"column": "entidade"
-			},
-			{
-				"table": "contintegracaopatrimonialitem",
-				"column": "entidade"
-			},
-			{
-				"table": "contintegracaopatrimonial",
-				"column": "entidade"
-			},
-			{
-				"table": "contfornecedorplano",
-				"column": "entidadecontabil"
-			},
-			{
-				"table": "contfornecedorplano",
-				"column": "entidade"
-			},
-			{
-				"table": "contfonterecurso",
-				"column": "entidade"
-			},
-			{
-				"table": "contfichareceita",
-				"column": "entidade"
-			},
-			{
-				"table": "contfichaempenho",
-				"column": "entidade"
-			},
-			{
-				"table": "contfichadespesa",
-				"column": "entidade"
-			},
-			{
-				"table": "contextraorcamentario",
-				"column": "entidade"
-			},
-			{
-				"table": "contexerciciomes",
-				"column": "entidade"
-			},
-			{
-				"table": "conteventolancadoconta",
-				"column": "entidade"
-			},
-			{
-				"table": "conteventolancado",
-				"column": "entidade"
-			},
-			{
-				"table": "contestornorepasse",
-				"column": "entidade"
-			},
-			{
-				"table": "contestornopagtoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "contestornopagamento",
-				"column": "entidade"
-			},
-			{
-				"table": "contestornoliquidacaodocaux",
-				"column": "entidade"
-			},
-			{
-				"table": "contestornoliquidacaodoc",
-				"column": "entidade"
-			},
-			{
-				"table": "contestornoliquidacaoaux",
-				"column": "entidade"
-			},
-			{
-				"table": "contestornoliquidacao",
-				"column": "entidade"
-			},
-			{
-				"table": "contestornoextraorcamentario",
-				"column": "entidade"
-			},
-			{
-				"table": "contentidadedespesa",
-				"column": "entidade"
-			},
-			{
-				"table": "contempenhotcepr",
-				"column": "entidade"
-			},
-			{
-				"table": "contempenhoitemfinanceiro",
-				"column": "entidade"
-			},
-			{
-				"table": "contempenhoespecificacao",
-				"column": "entidade"
-			},
-			{
-				"table": "contempenho",
-				"column": "entidade"
-			},
-			{
-				"table": "contdiaria",
-				"column": "entidade"
-			},
-			{
-				"table": "contdespesa",
-				"column": "entidade"
-			},
-			{
-				"table": "contdesdobradespesa",
-				"column": "entidade"
-			},
-			{
-				"table": "contdecretoreceita",
-				"column": "entidade"
-			},
-			{
-				"table": "contdecretoitem",
-				"column": "entidade"
-			},
-			{
-				"table": "contdecreto",
-				"column": "entidade"
-			},
-			{
-				"table": "contcotafinanceira",
-				"column": "entidade"
-			},
-			{
-				"table": "contconveniosituacao",
-				"column": "entidade"
-			},
-			{
-				"table": "contconveniorepasse",
-				"column": "entidade"
-			},
-			{
-				"table": "contconvenioreceita",
-				"column": "entidade"
-			},
-			{
-				"table": "contconveniocontabanco",
-				"column": "entidade"
-			},
-			{
-				"table": "contconvenioaplicacao",
-				"column": "entidade"
-			},
-			{
-				"table": "contconvenioaditivo",
-				"column": "entidade"
-			},
-			{
-				"table": "contconvenio",
-				"column": "entidade"
-			},
-			{
-				"table": "contcheque",
-				"column": "entidade"
-			},
-			{
-				"table": "contcancelamentoresto",
-				"column": "entidade"
-			},
-			{
-				"table": "contcadastroextra",
-				"column": "entidade"
-			},
-			{
-				"table": "contbimestre",
-				"column": "entidade"
-			},
-			{
-				"table": "contassinatura",
-				"column": "entidade"
-			},
-			{
-				"table": "contanulacaoempenho",
-				"column": "entidade"
-			},
-			{
-				"table": "contabancaria",
-				"column": "entidade"
-			},
-			{
-				"table": "citramitacao",
-				"column": "entidade"
-			},
-			{
-				"table": "cisetor",
-				"column": "entidade"
-			},
-			{
-				"table": "cirespostaitem",
-				"column": "entidade"
-			},
-			{
-				"table": "ciresposta",
-				"column": "entidade"
-			},
-			{
-				"table": "ciresponsavelsetor",
-				"column": "entidade"
-			},
-			{
-				"table": "ciquestionariosetor",
-				"column": "entidade"
-			},
-			{
-				"table": "ciquestionarioitem",
-				"column": "entidade"
-			},
-			{
-				"table": "ciquestionarioenvioitem",
-				"column": "entidade"
-			},
-			{
-				"table": "ciquestionarioenvio",
-				"column": "entidade"
-			},
-			{
-				"table": "ciquestionarioagenda",
-				"column": "entidade"
-			},
-			{
-				"table": "ciquestionario",
-				"column": "entidade"
-			},
-			{
-				"table": "cipergunta",
-				"column": "entidade"
-			},
-			{
-				"table": "cipareceritem",
-				"column": "entidade"
-			},
-			{
-				"table": "ciparecer",
-				"column": "entidade"
-			},
-			{
-				"table": "cinivelmodelosetor",
-				"column": "entidade"
-			},
-			{
-				"table": "cimodelosetor",
-				"column": "entidade"
-			},
-			{
-				"table": "cicontrolador",
-				"column": "entidade"
-			},
-			{
-				"table": "ciato",
-				"column": "entidadeleiautor"
-			},
-			{
-				"table": "ciato",
-				"column": "entidade"
-			},
-			{
-				"table": "ciagendaitem",
-				"column": "entidade"
-			},
-			{
-				"table": "ciagenda",
-				"column": "entidade"
-			},
-			{
-				"table": "cgqsquestionarioresposta",
-				"column": "entidade"
-			},
-			{
-				"table": "cgatoveiculopublicacao",
-				"column": "entidade"
-			},
-			{
-				"table": "cgatorevogado",
-				"column": "entidade"
-			},
-			{
-				"table": "cgato",
-				"column": "entidadeleiautor"
-			},
-			{
-				"table": "cgato",
-				"column": "entidade"
-			},
-			{
-				"table": "cgagendavinculo",
+				"table": "bkpobraordemservico",
 				"column": "entidade"
 			},
 			{
@@ -2379,7 +240,3195 @@
 				"column": "entidade"
 			},
 			{
-				"table": "bancopessoa",
+				"table": "cgagendavinculo",
+				"column": "entidade"
+			},
+			{
+				"table": "cgato",
+				"column": "entidade"
+			},
+			{
+				"table": "cgato",
+				"column": "entidadeleiautor"
+			},
+			{
+				"table": "cgatogruporesprelatorio",
+				"column": "entidade"
+			},
+			{
+				"table": "cgatorevogado",
+				"column": "entidade"
+			},
+			{
+				"table": "cgatoveiculopublicacao",
+				"column": "entidade"
+			},
+			{
+				"table": "cggerenciadortarefa",
+				"column": "entidade"
+			},
+			{
+				"table": "cgqsquestionarioafastamento",
+				"column": "entidade"
+			},
+			{
+				"table": "cgqsquestionariocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "cgqsquestionariocomissao",
+				"column": "entidade"
+			},
+			{
+				"table": "cgqsquestionariolotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "cgqsquestionarioresposta",
+				"column": "entidade"
+			},
+			{
+				"table": "cgqsrespostasavaliacao",
+				"column": "entidade"
+			},
+			{
+				"table": "ciagenda",
+				"column": "entidade"
+			},
+			{
+				"table": "ciagendaitem",
+				"column": "entidade"
+			},
+			{
+				"table": "ciato",
+				"column": "entidade"
+			},
+			{
+				"table": "ciato",
+				"column": "entidadeleiautor"
+			},
+			{
+				"table": "cicontrolador",
+				"column": "entidade"
+			},
+			{
+				"table": "cimodelosetor",
+				"column": "entidade"
+			},
+			{
+				"table": "cinivelmodelosetor",
+				"column": "entidade"
+			},
+			{
+				"table": "ciparecer",
+				"column": "entidade"
+			},
+			{
+				"table": "cipareceritem",
+				"column": "entidade"
+			},
+			{
+				"table": "cipergunta",
+				"column": "entidade"
+			},
+			{
+				"table": "ciquestionario",
+				"column": "entidade"
+			},
+			{
+				"table": "ciquestionarioagenda",
+				"column": "entidade"
+			},
+			{
+				"table": "ciquestionarioenvio",
+				"column": "entidade"
+			},
+			{
+				"table": "ciquestionarioenvioitem",
+				"column": "entidade"
+			},
+			{
+				"table": "ciquestionarioitem",
+				"column": "entidade"
+			},
+			{
+				"table": "ciquestionariosetor",
+				"column": "entidade"
+			},
+			{
+				"table": "ciresponsavelsetor",
+				"column": "entidade"
+			},
+			{
+				"table": "ciresposta",
+				"column": "entidade"
+			},
+			{
+				"table": "cirespostaitem",
+				"column": "entidade"
+			},
+			{
+				"table": "cisetor",
+				"column": "entidade"
+			},
+			{
+				"table": "citramitacao",
+				"column": "entidade"
+			},
+			{
+				"table": "contabancaria",
+				"column": "entidade"
+			},
+			{
+				"table": "contanulacaoempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "contassinatura",
+				"column": "entidade"
+			},
+			{
+				"table": "contbimestre",
+				"column": "entidade"
+			},
+			{
+				"table": "contcadastroextra",
+				"column": "entidade"
+			},
+			{
+				"table": "contcancelamentoresto",
+				"column": "entidade"
+			},
+			{
+				"table": "contcheque",
+				"column": "entidade"
+			},
+			{
+				"table": "contconvenio",
+				"column": "entidade"
+			},
+			{
+				"table": "contconvenioaditivo",
+				"column": "entidade"
+			},
+			{
+				"table": "contconvenioaplicacao",
+				"column": "entidade"
+			},
+			{
+				"table": "contconveniocontabanco",
+				"column": "entidade"
+			},
+			{
+				"table": "contconvenioreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "contconveniorepasse",
+				"column": "entidade"
+			},
+			{
+				"table": "contconveniosituacao",
+				"column": "entidade"
+			},
+			{
+				"table": "contcotafinanceira",
+				"column": "entidade"
+			},
+			{
+				"table": "contdecreto",
+				"column": "entidade"
+			},
+			{
+				"table": "contdecretoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "contdecretoreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "contdesdobradespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "contdespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "contdiaria",
+				"column": "entidade"
+			},
+			{
+				"table": "contempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "contempenhoespecificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "contempenhoitemfinanceiro",
+				"column": "entidade"
+			},
+			{
+				"table": "contempenhotcepr",
+				"column": "entidade"
+			},
+			{
+				"table": "contentidadedespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "contestornoextraorcamentario",
+				"column": "entidade"
+			},
+			{
+				"table": "contestornoliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "contestornoliquidacaoaux",
+				"column": "entidade"
+			},
+			{
+				"table": "contestornoliquidacaodoc",
+				"column": "entidade"
+			},
+			{
+				"table": "contestornoliquidacaodocaux",
+				"column": "entidade"
+			},
+			{
+				"table": "contestornopagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "contestornopagtoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "contestornorepasse",
+				"column": "entidade"
+			},
+			{
+				"table": "conteventolancado",
+				"column": "entidade"
+			},
+			{
+				"table": "conteventolancadoconta",
+				"column": "entidade"
+			},
+			{
+				"table": "contexerciciomes",
+				"column": "entidade"
+			},
+			{
+				"table": "contextraorcamentario",
+				"column": "entidade"
+			},
+			{
+				"table": "contfichadespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "contfichaempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "contfichareceita",
+				"column": "entidade"
+			},
+			{
+				"table": "contfonterecurso",
+				"column": "entidade"
+			},
+			{
+				"table": "contfornecedorplano",
+				"column": "entidade"
+			},
+			{
+				"table": "contintegracaopatrimonial",
+				"column": "entidade"
+			},
+			{
+				"table": "contintegracaopatrimonialitem",
+				"column": "entidade"
+			},
+			{
+				"table": "contintegracaorh",
+				"column": "entidade"
+			},
+			{
+				"table": "contintegracaorhdespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "contintegracaorhempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "contintegracaorhpatronal",
+				"column": "entidade"
+			},
+			{
+				"table": "contintegracaorhplano",
+				"column": "entidade"
+			},
+			{
+				"table": "contintegracaorhretencao",
+				"column": "entidade"
+			},
+			{
+				"table": "contitemempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "contitemextraorcamentario",
+				"column": "entidade"
+			},
+			{
+				"table": "contlancamentocotafinanceira",
+				"column": "entidade"
+			},
+			{
+				"table": "contlancamentocotatrimestral",
+				"column": "entidade"
+			},
+			{
+				"table": "contlei",
+				"column": "entidade"
+			},
+			{
+				"table": "contliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "contliquidacaodocumento",
+				"column": "entidade"
+			},
+			{
+				"table": "contmovimentacaofinanceira",
+				"column": "entidade"
+			},
+			{
+				"table": "contordempagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "contordempagamentoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "contordempagtodocumento",
+				"column": "entidade"
+			},
+			{
+				"table": "contordempagtoretencao",
+				"column": "entidade"
+			},
+			{
+				"table": "contpagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "contpagamentoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "contplano",
+				"column": "entidade"
+			},
+			{
+				"table": "contplanoclassificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "contprevisaoreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "contrealizacaoreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "contreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "contreceitafonterecurso",
+				"column": "entidade"
+			},
+			{
+				"table": "contreceitalrf",
+				"column": "entidade"
+			},
+			{
+				"table": "contreservadespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "contreservaliberadespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "contreservatecnica",
+				"column": "entidade"
+			},
+			{
+				"table": "contretencao",
+				"column": "entidade"
+			},
+			{
+				"table": "contretencaoconta",
+				"column": "entidade"
+			},
+			{
+				"table": "contretencaoempenho",
+				"column": "entidade"
+			},
+			{
+				"table": "contretencaoliquidacao",
+				"column": "entidade"
+			},
+			{
+				"table": "conttabelaevento",
+				"column": "entidade"
+			},
+			{
+				"table": "conttabelaeventoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "conttipodocumentofiscal",
+				"column": "entidade"
+			},
+			{
+				"table": "cvvinculacaoquadrosalarial",
+				"column": "entidade"
+			},
+			{
+				"table": "descricaocampos",
+				"column": "entidade"
+			},
+			{
+				"table": "entidadeexerciciosistema",
+				"column": "entidade"
+			},
+			{
+				"table": "escrrubricaevento",
+				"column": "entidade"
+			},
+			{
+				"table": "espendencia1000",
+				"column": "entidade"
+			},
+			{
+				"table": "espendencia1005",
+				"column": "entidade"
+			},
+			{
+				"table": "espendencia1010",
+				"column": "entidade"
+			},
+			{
+				"table": "espendencia1020",
+				"column": "entidade"
+			},
+			{
+				"table": "espendencia1070",
+				"column": "entidade"
+			},
+			{
+				"table": "esprocessosuspensaoterceiros",
+				"column": "entidade"
+			},
+			{
+				"table": "estclassificacaocc",
+				"column": "entidade"
+			},
+			{
+				"table": "estestoque",
+				"column": "entidade"
+			},
+			{
+				"table": "estexerciciomes",
+				"column": "entidade"
+			},
+			{
+				"table": "estlocalizacao",
+				"column": "entidade"
+			},
+			{
+				"table": "estlocalizacaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "estlote",
+				"column": "entidade"
+			},
+			{
+				"table": "estmovimentacao",
+				"column": "entidade"
+			},
+			{
+				"table": "estmovimentacaodiaria",
+				"column": "entidade"
+			},
+			{
+				"table": "estmovimentacaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "estmovimentacaolote",
+				"column": "entidade"
+			},
+			{
+				"table": "estposicaoestoque",
+				"column": "entidade"
+			},
+			{
+				"table": "esttransferencia",
+				"column": "entidade"
+			},
+			{
+				"table": "esttransferenciaitem",
+				"column": "entidade"
+			},
+			{
+				"table": "exercicio",
+				"column": "entidade"
+			},
+			{
+				"table": "filtrorelatorio",
+				"column": "entidade"
+			},
+			{
+				"table": "filtrorotinaarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "finconciliacao",
+				"column": "entidade"
+			},
+			{
+				"table": "finconciliacaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "finguicheabertura",
+				"column": "entidade"
+			},
+			{
+				"table": "finguicheaberturaitem",
+				"column": "entidade"
+			},
+			{
+				"table": "finguichepagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "finintegracaosmt2000",
+				"column": "entidade"
+			},
+			{
+				"table": "finmovimentacaodia",
+				"column": "entidade"
+			},
+			{
+				"table": "finpagamentotrib",
+				"column": "entidade"
+			},
+			{
+				"table": "fintransferencia",
+				"column": "entidade"
+			},
+			{
+				"table": "frtabastecimento",
+				"column": "entidade"
+			},
+			{
+				"table": "frtabastecimentoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "frtagendamento",
+				"column": "entidade"
+			},
+			{
+				"table": "frtbateria",
+				"column": "entidade"
+			},
+			{
+				"table": "frtbombacombustivel",
+				"column": "entidade"
+			},
+			{
+				"table": "frtdebitoveiculo",
+				"column": "entidade"
+			},
+			{
+				"table": "frtentradacomb",
+				"column": "entidade"
+			},
+			{
+				"table": "frtentradacombitem",
+				"column": "entidade"
+			},
+			{
+				"table": "frtgaragem",
+				"column": "entidade"
+			},
+			{
+				"table": "frtgasto",
+				"column": "entidade"
+			},
+			{
+				"table": "frtgastoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "frtitemordemservico",
+				"column": "entidade"
+			},
+			{
+				"table": "frtitemrequisicao",
+				"column": "entidade"
+			},
+			{
+				"table": "frtitemveiculo",
+				"column": "entidade"
+			},
+			{
+				"table": "frtmovimentacaobateria",
+				"column": "entidade"
+			},
+			{
+				"table": "frtmovimentacaobateriaitem",
+				"column": "entidade"
+			},
+			{
+				"table": "frtmovimentacaoespecial",
+				"column": "entidade"
+			},
+			{
+				"table": "frtmovimentacaopneu",
+				"column": "entidade"
+			},
+			{
+				"table": "frtmovimentacaopneuitem",
+				"column": "entidade"
+			},
+			{
+				"table": "frtocorrenciamotorista",
+				"column": "entidade"
+			},
+			{
+				"table": "frtordemservico",
+				"column": "entidade"
+			},
+			{
+				"table": "frtpneu",
+				"column": "entidade"
+			},
+			{
+				"table": "frtrequisicao",
+				"column": "entidade"
+			},
+			{
+				"table": "frtressolagempneu",
+				"column": "entidade"
+			},
+			{
+				"table": "frtsetor",
+				"column": "entidade"
+			},
+			{
+				"table": "grupousuarioentidade",
+				"column": "entidade"
+			},
+			{
+				"table": "grupousuariofavorito",
+				"column": "entidade"
+			},
+			{
+				"table": "grupousuarioseletor",
+				"column": "entidade"
+			},
+			{
+				"table": "logradourohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "lrfanomovelclassificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "lrfanomovelclassificacao_aux",
+				"column": "entidade"
+			},
+			{
+				"table": "lrfanomovelcomando",
+				"column": "entidade"
+			},
+			{
+				"table": "lrfanomovelmes",
+				"column": "entidade"
+			},
+			{
+				"table": "lrfcomandosql_aux",
+				"column": "entidade"
+			},
+			{
+				"table": "lrfdespesaclassificacao_aux",
+				"column": "entidade"
+			},
+			{
+				"table": "lrfplanoclassificacao_aux",
+				"column": "entidade"
+			},
+			{
+				"table": "lrfreceitaclassificacao_aux",
+				"column": "entidade"
+			},
+			{
+				"table": "modeloarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "modeloarquivogrupo",
+				"column": "entidade"
+			},
+			{
+				"table": "modeloarquivogrupomodelo",
+				"column": "entidade"
+			},
+			{
+				"table": "modeloimpressao",
+				"column": "entidade"
+			},
+			{
+				"table": "modeloimpressaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "obraacompanhamento",
+				"column": "entidade"
+			},
+			{
+				"table": "obraacompanhamentoimagem",
+				"column": "entidade"
+			},
+			{
+				"table": "obraandamentoempresa",
+				"column": "entidade"
+			},
+			{
+				"table": "obraart",
+				"column": "entidade"
+			},
+			{
+				"table": "obraassinatura",
+				"column": "entidade"
+			},
+			{
+				"table": "obraassuntonotificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "obrabem",
+				"column": "entidade"
+			},
+			{
+				"table": "obrabempatrimonial",
+				"column": "entidade"
+			},
+			{
+				"table": "obracontroleconvenio",
+				"column": "entidade"
+			},
+			{
+				"table": "obraconvenio",
+				"column": "entidade"
+			},
+			{
+				"table": "obracoordenadas",
+				"column": "entidade"
+			},
+			{
+				"table": "obrainss",
+				"column": "entidade"
+			},
+			{
+				"table": "obralaudomedicao",
+				"column": "entidade"
+			},
+			{
+				"table": "obralicitacao",
+				"column": "entidade"
+			},
+			{
+				"table": "obramodelonotificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "obranotificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "obranotificacaoassinatura",
+				"column": "entidade"
+			},
+			{
+				"table": "obraocorrencia",
+				"column": "entidade"
+			},
+			{
+				"table": "obraocorrenciaarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "obraonotificacaoarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "obraoperacaocredito",
+				"column": "entidade"
+			},
+			{
+				"table": "obraordemassinatura",
+				"column": "entidade"
+			},
+			{
+				"table": "obraordembempatrimonial",
+				"column": "entidade"
+			},
+			{
+				"table": "obraordemplanilhaorcamento",
+				"column": "entidade"
+			},
+			{
+				"table": "obraordemservico",
+				"column": "entidade"
+			},
+			{
+				"table": "obraordemservicoacao",
+				"column": "entidade"
+			},
+			{
+				"table": "obraordemservicoarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "obraordemservicomembros",
+				"column": "entidade"
+			},
+			{
+				"table": "obraprogramacao",
+				"column": "entidade"
+			},
+			{
+				"table": "obraprogramacaohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "obraprogramacaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "obraprogramacaoocorrencia",
+				"column": "entidade"
+			},
+			{
+				"table": "obraprogramacaopessoa",
+				"column": "entidade"
+			},
+			{
+				"table": "obrarecebimentoprovisorio",
+				"column": "entidade"
+			},
+			{
+				"table": "obrasecretaria",
+				"column": "entidade"
+			},
+			{
+				"table": "orccotatrimestral",
+				"column": "entidade"
+			},
+			{
+				"table": "orcdespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "orcparametrodespesa",
+				"column": "entidade"
+			},
+			{
+				"table": "orcparametroreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "orcppa",
+				"column": "entidade"
+			},
+			{
+				"table": "orcppavalor",
+				"column": "entidade"
+			},
+			{
+				"table": "orcreceita",
+				"column": "entidade"
+			},
+			{
+				"table": "orcreceitafontetce",
+				"column": "entidade"
+			},
+			{
+				"table": "orcted",
+				"column": "entidade"
+			},
+			{
+				"table": "orcter",
+				"column": "entidade"
+			},
+			{
+				"table": "orcversaoorcamento",
+				"column": "entidade"
+			},
+			{
+				"table": "parametroentidade",
+				"column": "entidade"
+			},
+			{
+				"table": "parametroentidadeexercicio",
+				"column": "entidade"
+			},
+			{
+				"table": "patbaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "patbem",
+				"column": "entidade"
+			},
+			{
+				"table": "patcategoria",
+				"column": "entidade"
+			},
+			{
+				"table": "patcorrecao",
+				"column": "entidade"
+			},
+			{
+				"table": "patimovel",
+				"column": "entidade"
+			},
+			{
+				"table": "patlocalizacao",
+				"column": "entidade"
+			},
+			{
+				"table": "patmudancaresponsavel",
+				"column": "entidade"
+			},
+			{
+				"table": "patseguro",
+				"column": "entidade"
+			},
+			{
+				"table": "pattabcorrecao",
+				"column": "entidade"
+			},
+			{
+				"table": "pattransferencia",
+				"column": "entidade"
+			},
+			{
+				"table": "patveiculo",
+				"column": "entidade"
+			},
+			{
+				"table": "registro",
+				"column": "entidade"
+			},
+			{
+				"table": "rellog",
+				"column": "entidade"
+			},
+			{
+				"table": "rhacidentedetrabalho",
+				"column": "entidade"
+			},
+			{
+				"table": "rhadicionalcargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhadicionalfuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhadicionalhistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhadmissaopreliminar",
+				"column": "entidade"
+			},
+			{
+				"table": "rhafastamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhafastamentoevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhafastamentoeventorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhafastamentograuparentesco",
+				"column": "entidade"
+			},
+			{
+				"table": "rhafastamentograuparentescorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhafastamentorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhagenciaempregovaga",
+				"column": "entidade"
+			},
+			{
+				"table": "rhagenteintegracao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhagrupamentoevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhagrupamentoeventoevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhagrupamentoregional",
+				"column": "entidade"
+			},
+			{
+				"table": "rhagrupamentoregionalrep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhalteracaoestrutfuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhalteracaoestrutura",
+				"column": "entidade"
+			},
+			{
+				"table": "rhalteracaoestruturaassociacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhalteracaoestruturadestino",
+				"column": "entidade"
+			},
+			{
+				"table": "rhambientetrabalho",
+				"column": "entidade"
+			},
+			{
+				"table": "rhanexos",
+				"column": "entidade"
+			},
+			{
+				"table": "rhaposentadoria",
+				"column": "entidade"
+			},
+			{
+				"table": "rharqimportacaounimedretorno",
+				"column": "entidade"
+			},
+			{
+				"table": "rharquivoimportacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatrasados",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatrasadosfuncdireito",
+				"column": "entidade"
+			},
+			{
+				"table": "rhats",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatsbloqueio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatscargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatsevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatseventofuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatsfalta",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatsperiodo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatualizacaomonetaria",
+				"column": "entidade"
+			},
+			{
+				"table": "rhatualizacaomonetariareg",
+				"column": "entidade"
+			},
+			{
+				"table": "rhautonomo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhautonomointegracaocontab",
+				"column": "entidade"
+			},
+			{
+				"table": "rhautonomointegracaocontabrep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhautonomoprevidencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhautonomoprevidenciarep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhautonomorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaoconcurso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaoconcursoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaodesempenhoacoes",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaodesempenhofluxo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaodesempenhomov",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaodesempenhomov",
+				"column": "entidadechefiasuperior"
+			},
+			{
+				"table": "rhavaliacaodesempenhomov",
+				"column": "entidadeimediato"
+			},
+			{
+				"table": "rhavaliacaodesempenhomov",
+				"column": "entidadesuperior"
+			},
+			{
+				"table": "rhavaliacaofuncional",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaofuncionalitem",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaoinformacoes",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaoinstrutor",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaoinstrutoritem",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaomodelo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaomodelocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaomodelocriterio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaomodelocriterio2",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaomodelocriterioitem",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaomodelofaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaotreinamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhavaliacaotreinamentoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbancohoras",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbancohorasconvocacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculocompetencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculocompetenciarep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculoevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculoeventorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculofaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculofaixarep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculosql",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbasecalculosqlrep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbaseeventohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbbpasep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbeneficiario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbeneficiariolancamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbeneficio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbeneficiomanutencao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbeneficiomanutencaotitular",
+				"column": "entidade"
+			},
+			{
+				"table": "rhbloqueiocalculo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcadastroextra",
+				"column": "entidadecadastro"
+			},
+			{
+				"table": "rhcargahorariamensal",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargoatividade",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargoevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargofaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargofuncao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargohistoricocompetencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargolotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargoperiodoaquisitivo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargopiso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargorelacionamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcargovaga",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcarreira",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcertidaoaposentadoria",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcertidaotemposervico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcertificado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcestabasica",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcestabasicaevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcestabasicalotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcipa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclasse",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclasseafastamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclasseafastamentoagrupa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclasseafastamentofaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclassefalta",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclassehistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclassenomeacaointegcontab",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclasseprojaposentadoria",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclassevidafuncional",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclassificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclassificacaoalocador",
+				"column": "entidade"
+			},
+			{
+				"table": "rhclasssubclassificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcomarcaatovinculado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcomarcaatovinculadorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcomissao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcomissaoato",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcomissaomembro",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcomissionado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcompensacaoprevidenciaria",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcomposicaobasecalculo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcbeneficiodependente",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcbeneficiohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcbeneftitular",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcessaobeneficio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcmembroorganizador",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcurso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursoarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursocandidato",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursocandidatorecarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursocandidatorecurso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursocomissao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursoconvocacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursoconvocacaoitem",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursoconvocacaoitemdoc",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursoconvocacaoitemexame",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursocriteriodesempate",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursodata",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursodistribvagas",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursodocumento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursoedital",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursoeditalarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursofiscaisprova",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursoinscritos",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursolocaisprova",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursosubstituicao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconcursotipoprocesso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconsignadofuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconsignadosaldovale",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcontratacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcontratoprazodeterminado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcontroleholeriteportalrh",
+				"column": "entidade"
+			},
+			{
+				"table": "rhconvencaocoletiva",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcoordadminunidades",
+				"column": "entidadelotacao"
+			},
+			{
+				"table": "rhcoordadminunidadesrep",
+				"column": "entidadelotacao"
+			},
+			{
+				"table": "rhcoordenadoriaadmin",
+				"column": "entidadelotacao"
+			},
+			{
+				"table": "rhcoordenadoriaadminrep",
+				"column": "entidadelotacao"
+			},
+			{
+				"table": "rhcorreicaoinspcompesrealizado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorreicaoinspcomrealizado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorreicaoinspcomunrealizado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorreicaoinspecao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorreicaoinspecaocomarca",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorreicaoinspecaocomarcapend",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorreicaoinspecaocomarcapes",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorreicaoinspecaocomarcaunid",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorreicaoinspecaocomunidpend",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorrelacaoevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcorrelacaoevento",
+				"column": "entidade1"
+			},
+			{
+				"table": "rhcorrelacaoevento",
+				"column": "entidade2"
+			},
+			{
+				"table": "rhcracha",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcriterio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcriterioitem",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcurriculumcandidato",
+				"column": "entidade"
+			},
+			{
+				"table": "rhcursoatividades",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdeducoesrecesso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdeducoesrecessofaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdependente",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdependentebeneficio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdependenteestagiario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdescontojudicial",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdescontojudicialpagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdescontomembroeleitoral",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdesignafuncaoprocessada",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdistribuicaoservicoslotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhdistribuicaoservicoslotrep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhemissaorecibo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhempregoanterior",
+				"column": "entidade"
+			},
+			{
+				"table": "rhempregoanteriorafastamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhempregoanteriorremuneracao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhempregoanteriorsimulacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhemprestimo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhenvioalocadorcusto",
+				"column": "entidade"
+			},
+			{
+				"table": "rhenviodocumento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhescala",
+				"column": "entidade"
+			},
+			{
+				"table": "rhescalacompetencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagiario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagiarioafastamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagiariopagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagiarioperiodo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagiariorecesso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagiariovaletransporte",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagioprobatorio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagioprobatorioavaliacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagioprobatoriocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhestagioprobatoriolotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoafastamentoregra",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoafastamentoregrarep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventocalculo",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventocalculohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventocalculorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventocargomedia",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventocargomediarep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventocargoregra",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventocargoregrarep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoclasse",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoclasseintcontabrep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoclasseintegracaocontab",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoclasserep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventodefinicaointegracontab",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoeventoautomatico",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoeventoautomaticorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoeventoregra",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventoeventoregrarep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventofuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventofuncionariorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventolotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventolotacaorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventosconsignet",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventotce",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventotipofolharegra",
+				"column": "entidade"
+			},
+			{
+				"table": "rheventotipofolharegrarep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhexerciciomes",
+				"column": "entidade"
+			},
+			{
+				"table": "rhexerciciomesdata",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfaixahistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfaixaprevidencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfaixasalariofamilia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfaixavalorbeneficio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfechamentocontabil",
+				"column": "entidade"
+			},
+			{
+				"table": "rhferias",
+				"column": "entidade"
+			},
+			{
+				"table": "rhferiasprocessadas",
+				"column": "entidade"
+			},
+			{
+				"table": "rhferiasrep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfichafinanceira",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfichafinanceiraprovisao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfiltrotela",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfluxotrabalho",
+				"column": "entidade"
+			},
+			{
+				"table": "rhformacaoresponsaveis",
+				"column": "entidaderesponsavel"
+			},
+			{
+				"table": "rhformascorrecao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhformascorrecaoindcomposto",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfornecedor",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfornecedor",
+				"column": "eventoparticipacaoentidade"
+			},
+			{
+				"table": "rhfornecedorcapitalizacaofaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfornecedorcapitalizacaoplano",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfornecedorfaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfornecedorplanodesaudefaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfornecedorplanodesaudetipo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfornecedorplanosaudecompet",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfornecedorsindicato",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfornecedorvalefalta",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionarioatividade",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionariocapitalizacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionarioherdeiropagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionariohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionariohorariolocal",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionarioincidenciaevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionariointegracaocontab",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionariointegracaocontab",
+				"column": "entidadecontabil"
+			},
+			{
+				"table": "rhfuncionarioplanosaude",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionarioprevidencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionariovaletransporte",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionarioweb",
+				"column": "entidade"
+			},
+			{
+				"table": "rhfuncionarioweb",
+				"column": "entidadeestagiario"
+			},
+			{
+				"table": "rhgrupodocumento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgrupodocumentocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgrupodocumentoclasse",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgrupodocumentodocumento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgrupodocumentofuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgrupoocupacional",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgrupoocupacionalcompetencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgrupoocupacionalfaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgrupoocupacionalnivel",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgruporesponsavelrel",
+				"column": "entidade"
+			},
+			{
+				"table": "rhgruporesponsavelrelitem",
+				"column": "entidade"
+			},
+			{
+				"table": "rhhistcalcfolha",
+				"column": "entidade"
+			},
+			{
+				"table": "rhhistoricoestagiario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhhistoricofuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhhistoricovt",
+				"column": "entidade"
+			},
+			{
+				"table": "rhhorariotrabalho",
+				"column": "entidade"
+			},
+			{
+				"table": "rhhorariotrabalhojornada",
+				"column": "entidade"
+			},
+			{
+				"table": "rhimportacaoregistrosics",
+				"column": "entidade"
+			},
+			{
+				"table": "rhincidenciaevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhincidenciaeventohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhincidenciaeventorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhinciso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhincisocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhinconsistencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhindicescorrecao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhindicescorrecaovalores",
+				"column": "entidade"
+			},
+			{
+				"table": "rhinformacaoextrassefip",
+				"column": "entidade"
+			},
+			{
+				"table": "rhitemadicional",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlancamentomembroeleitoral",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlancamentomovimentacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlancamentosfuncionarios",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlicencaevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlicencaeventorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlicencapremio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlicencapremiobloqueio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlicencapremiobloqueiorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlicencapremiofalta",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlicencapremiofaltarep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlicencapremiorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlinhavaletransporteevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlogconsultaholerite",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaoalocador",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaoalocadorrep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaoatovinculado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaoatovinculadorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaoclassificacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaoclassificacaorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaoinciso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaointegracaocontab",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaointegracaocontab",
+				"column": "entidadecontabil"
+			},
+			{
+				"table": "rhlotacaointegracaocontabrep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaointegracaocontabrep",
+				"column": "entidadecontabil"
+			},
+			{
+				"table": "rhlotacaopermissao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaoresponsavel",
+				"column": "entidade"
+			},
+			{
+				"table": "rhlotacaoresponsavelrep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmanutencaoremuneracao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmateriaisservicos",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmediaevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmediaeventohistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmediaeventorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmediavariavel",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmembroscipa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmensagem",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmensagemcargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmensagemclasse",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmotivocancelamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaoafastamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaoanexos",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaoeventos",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaofalta",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaolegal",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaolegal",
+				"column": "entidadeorigem"
+			},
+			{
+				"table": "rhmovimentacaolegalevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaonomeacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaooutros",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaopessoal",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaopessoalexclusao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaopessoalmovimenta",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentacaosaude",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentoestagiario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentomanutencao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhmovimentoprovisao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhnaturezacargolotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhnivelhistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhnomeacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhobra",
+				"column": "entidade"
+			},
+			{
+				"table": "rhobragps",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpagamentobancario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpagamentobancariofuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpagamentoparcial",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpagamentoparcialfuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhparametrocalculo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhparametrocalculocompetencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhparametrocorinspcomarca",
+				"column": "entidade"
+			},
+			{
+				"table": "rhparametrocorreicaoinspecao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhparametrofaltas",
+				"column": "entidade"
+			},
+			{
+				"table": "rhparametrointegracaocontabil",
+				"column": "entidade"
+			},
+			{
+				"table": "rhparametroportalrh",
+				"column": "entidade"
+			},
+			{
+				"table": "rhparamrecadportalrh",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpcmso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpdv",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpdvevento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpdvfaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpensao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpensaobeneficiario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhplantao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhplantaocompetencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhplantaofaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhplantonista",
+				"column": "entidade"
+			},
+			{
+				"table": "rhpostotrabalhocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhppp",
+				"column": "entidade"
+			},
+			{
+				"table": "rhppra",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprevidencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprocessamentoats",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprocessojudicial",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprocessojudicialsuspensao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprodutividade",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprodutividadecompetencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprodutividadefaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogramacaofalta",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogramacaoferias",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogramacaoferias",
+				"column": "entidadeorigem"
+			},
+			{
+				"table": "rhprogramacaopremio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogramacaorescisao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogressao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogressaobloqueio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogressaocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogressaoclasse",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogressaofaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogressaorotinafuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprogrotinafuncdireito",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprotecaocargolotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprovisaomensalbackup",
+				"column": "entidade"
+			},
+			{
+				"table": "rhprovisaosaldoinicialbackup",
+				"column": "entidade"
+			},
+			{
+				"table": "rhqrcodeholerite",
+				"column": "entidade"
+			},
+			{
+				"table": "rhquadrosalarial",
+				"column": "entidade"
+			},
+			{
+				"table": "rhquadrosalarialato",
+				"column": "entidade"
+			},
+			{
+				"table": "rhquadrosalarialprovisao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrecadastroenvio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrecadastrorhpessoadependente",
+				"column": "entidade"
+			},
+			{
+				"table": "rhregistrosics",
+				"column": "entidade"
+			},
+			{
+				"table": "rhreplicatabela",
+				"column": "entidade"
+			},
+			{
+				"table": "rhreqestagiarioportalrh",
+				"column": "entidade"
+			},
+			{
+				"table": "rhreqestagiarioportalrhtramite",
+				"column": "entidade"
+			},
+			{
+				"table": "rhreqestagportalrharquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrequisicaopermissao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrequisicaoportalrh",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrequisicaoportalrharquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrequisicaoportalrhtramite",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrequisitocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrescisao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrescisaorep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhresponsavel",
+				"column": "entidade"
+			},
+			{
+				"table": "rhresponsavel_periodo_aplic",
+				"column": "entidade"
+			},
+			{
+				"table": "rhresponsavelrelatorio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotcolreenquadramento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinaarquivobancario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinacoletiva",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinacoletivaanotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinacoletivacargahor",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinacoletivaferias",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinacoletivahorario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinacoletivaintegcont",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinacoletivalocalfisico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinacoletivalotacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinacoletivarescisao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinaestagioprobatorio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinaestagioprobatoriofunc",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinalancamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrotinalancamentolog",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrpa",
+				"column": "entidade"
+			},
+			{
+				"table": "rhrparep",
+				"column": "entidade"
+			},
+			{
+				"table": "rhsalariofamilia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhsindcomissao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhsindfaseprocesso",
+				"column": "entidade"
+			},
+			{
+				"table": "rhsindicancia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhsindtestemunha",
+				"column": "entidade"
+			},
+			{
+				"table": "rhstalmoxarifado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhstequipamentoprotecao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhstlevantamentorisco",
+				"column": "entidade"
+			},
+			{
+				"table": "rhstlevantamentoriscomedida",
+				"column": "entidade"
+			},
+			{
+				"table": "rhstprofissionalsesmt",
+				"column": "entidade"
+			},
+			{
+				"table": "rhsttipoavaliacaocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhsubstituicaomembroeleitoral",
+				"column": "entidade"
+			},
+			{
+				"table": "rhsupervisorestagio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhterceiro",
+				"column": "entidade"
+			},
+			{
+				"table": "rhtipoaposentadoria",
+				"column": "entidade"
+			},
+			{
+				"table": "rhtipofolha",
+				"column": "entidade"
+			},
+			{
+				"table": "rhtiporeqestagportalrh",
+				"column": "entidade"
+			},
+			{
+				"table": "rhtiporeqestagportalrhfluxo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhtiporequisicaoclasse",
+				"column": "entidade"
+			},
+			{
+				"table": "rhtiporequisicaoportalrh",
+				"column": "entidade"
+			},
+			{
+				"table": "rhtiporequisicaoportalrhfluxo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhturmamatsserv",
+				"column": "entidade"
+			},
+			{
+				"table": "rhusuariovaletransporte",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvaga",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvagahistorico",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvalealimentacao",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvalealimentacao",
+				"column": "eventoparticipacaoentidade"
+			},
+			{
+				"table": "rhvalealimentacao",
+				"column": "percentualentidade"
+			},
+			{
+				"table": "rhvalealimentacaocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvalealimentacaoclasse",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvalealimentacaolancamento",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvaletransporte",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvaletransportecargo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvaletransportefuncionario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvalorbeneficio",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvalorprevidencia",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvalorprevidenciaaporte",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvalorprevidenciacomplementar",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvincsubordinadofunc",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvinculosubordinado",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvoluntario",
+				"column": "entidade"
+			},
+			{
+				"table": "rhvoluntarioperiodo",
+				"column": "entidade"
+			},
+			{
+				"table": "rhzonaeleitoral",
+				"column": "entidadelotacao"
+			},
+			{
+				"table": "rhzonaeleitoralrep",
+				"column": "entidadelotacao"
+			},
+			{
+				"table": "rotinaarquivo",
+				"column": "entidade"
+			},
+			{
+				"table": "rotinadocumento",
+				"column": "entidade"
+			},
+			{
+				"table": "sequenciamovimento",
+				"column": "entidade"
+			},
+			{
+				"table": "smagenterisco",
+				"column": "entidade"
+			},
+			{
+				"table": "smanexos",
+				"column": "entidade"
+			},
+			{
+				"table": "smatestadoanexo",
+				"column": "entidade"
+			},
+			{
+				"table": "smatestadoaso",
+				"column": "entidade"
+			},
+			{
+				"table": "smatestadodeclaracao",
+				"column": "entidade"
+			},
+			{
+				"table": "smatestadoexame",
+				"column": "entidade"
+			},
+			{
+				"table": "smatestadorisco",
+				"column": "entidade"
+			},
+			{
+				"table": "smcipacandidatos",
+				"column": "entidade"
+			},
+			{
+				"table": "smcipamandatos",
+				"column": "entidade"
+			},
+			{
+				"table": "smcipamembros",
+				"column": "entidade"
+			},
+			{
+				"table": "smcipareunioes",
+				"column": "entidade"
+			},
+			{
+				"table": "smcontroleexame",
+				"column": "entidade"
+			},
+			{
+				"table": "smcontroleexamecargo",
+				"column": "entidade"
+			},
+			{
+				"table": "smcontroleexamefaixa",
+				"column": "entidade"
+			},
+			{
+				"table": "smcronogramaacoes",
+				"column": "entidade"
+			},
+			{
+				"table": "smequipamentoprotecaocargo",
+				"column": "entidade"
+			},
+			{
+				"table": "smequipamentoprotecaofunc",
+				"column": "entidade"
+			},
+			{
+				"table": "smjuntamedica",
+				"column": "entidade"
+			},
+			{
+				"table": "smlaudo",
+				"column": "entidade"
+			},
+			{
+				"table": "smparecer",
+				"column": "entidade"
+			},
+			{
+				"table": "smpericia",
+				"column": "entidade"
+			},
+			{
+				"table": "smprofissionaljuntamedica",
+				"column": "entidade"
+			},
+			{
+				"table": "smrestricaomedica",
+				"column": "entidade"
+			},
+			{
+				"table": "smresultadoexamemedico",
+				"column": "entidade"
+			},
+			{
+				"table": "smtipoexameperiodicidade",
+				"column": "entidadecargo"
+			},
+			{
+				"table": "tempregistro",
+				"column": "entidade"
+			},
+			{
+				"table": "tempregistro",
+				"column": "qtdentidades"
+			},
+			{
+				"table": "tribdocumento",
+				"column": "entidade"
+			},
+			{
+				"table": "tribentcorrmulta",
+				"column": "entidade"
+			},
+			{
+				"table": "tribentcorrmultaespecial",
+				"column": "entidade"
+			},
+			{
+				"table": "tribentidadecorrecao",
+				"column": "entidade"
+			},
+			{
+				"table": "tribentidadecorrecaoguia",
+				"column": "entidade"
+			},
+			{
+				"table": "tribentidadetributacao",
+				"column": "entidade"
+			},
+			{
+				"table": "tribfundamentolegal",
+				"column": "entidade"
+			},
+			{
+				"table": "tribpagamento",
+				"column": "entidade"
+			},
+			{
+				"table": "usuarioentidade",
+				"column": "entidade"
+			},
+			{
+				"table": "usuarioseletor",
+				"column": "entidade"
+			},
+			{
+				"table": "usuarioseletorcampo",
+				"column": "entidade"
+			},
+			{
+				"table": "veiculopublicacao",
 				"column": "entidade"
 			}
 		]
@@ -2387,7 +3436,7 @@
 	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 150000,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "banco",
@@ -2406,12 +3455,20 @@
 				"column": "pessoa"
 			},
 			{
+				"table": "contabancaria",
+				"column": "responsavelbancario"
+			},
+			{
 				"table": "contatopessoa",
 				"column": "pessoa"
 			},
 			{
 				"table": "contempenho",
 				"column": "fornecedor"
+			},
+			{
+				"table": "contempenho",
+				"column": "gastopessoal"
 			},
 			{
 				"table": "contextraorcamentario",
@@ -2422,11 +3479,31 @@
 				"column": "fornecedor"
 			},
 			{
+				"table": "contintegracaorhempenho",
+				"column": "pessoa"
+			},
+			{
+				"table": "contintegracaorhretencao",
+				"column": "pessoa"
+			},
+			{
+				"table": "contordempagamentoitem",
+				"column": "pessoa"
+			},
+			{
 				"table": "empresaprofissional",
 				"column": "pessoaempresa"
 			},
 			{
+				"table": "empresaprofissional",
+				"column": "pessoaprofissional"
+			},
+			{
 				"table": "enderecopessoa",
+				"column": "pessoa"
+			},
+			{
+				"table": "enderecopessoahistorico",
 				"column": "pessoa"
 			},
 			{
@@ -2490,52 +3567,60 @@
 				"column": "pessoa"
 			},
 			{
+				"table": "grupodestinatariopessoa",
+				"column": "grupodestinatariopessoa"
+			},
+			{
+				"table": "grupodestinatariopessoa",
+				"column": "pessoa"
+			},
+			{
 				"table": "imagem",
 				"column": "pessoa"
 			},
 			{
-				"table": "issdocumentofiscal",
-				"column": "pessoagrafica"
-			},
-			{
-				"table": "issdocumentofiscal",
-				"column": "pessoasolicitante"
-			},
-			{
-				"table": "issfiscal",
-				"column": "cgcm"
-			},
-			{
-				"table": "issprecadastro",
-				"column": "pes_pessoa"
+				"table": "liberacaopessoa",
+				"column": "liberacaopessoa"
 			},
 			{
 				"table": "liberacaopessoa",
 				"column": "pessoa"
 			},
 			{
-				"table": "obraintervencao",
-				"column": "construtora"
+				"table": "obraacompanhamento",
+				"column": "pessoa"
 			},
 			{
-				"table": "obraintervencao",
-				"column": "engenheiro"
-			},
-			{
-				"table": "obraintervencao",
-				"column": "responsavel"
+				"table": "obrafiscal",
+				"column": "pessoa"
 			},
 			{
 				"table": "obranotificacao",
 				"column": "fornecedor"
 			},
 			{
+				"table": "obraocorrencia",
+				"column": "pessoa"
+			},
+			{
 				"table": "obraordemplanilhaorcamento",
 				"column": "responsavel"
 			},
 			{
+				"table": "obraprogramacao",
+				"column": "pessoaresponsavel"
+			},
+			{
+				"table": "obraprogramacaopessoa",
+				"column": "pessoa"
+			},
+			{
 				"table": "patbaixa",
 				"column": "comprador"
+			},
+			{
+				"table": "patbem",
+				"column": "pessoa"
 			},
 			{
 				"table": "patlocalizacao",
@@ -2543,11 +3628,11 @@
 			},
 			{
 				"table": "patmudancaresponsavel",
-				"column": "responsavelatual"
+				"column": "responsavelanterior"
 			},
 			{
 				"table": "patmudancaresponsavel",
-				"column": "responsavelanterior"
+				"column": "responsavelatual"
 			},
 			{
 				"table": "patseguro",
@@ -2558,19 +3643,11 @@
 				"column": "pessoa"
 			},
 			{
+				"table": "pessoadocumento",
+				"column": "pessoadocumento"
+			},
+			{
 				"table": "pessoahistorico",
-				"column": "pessoa"
-			},
-			{
-				"table": "pessoaramoatividade",
-				"column": "pessoa"
-			},
-			{
-				"table": "pjprocessoautorreu",
-				"column": "pessoa"
-			},
-			{
-				"table": "pjprocurador",
 				"column": "pessoa"
 			},
 			{
@@ -2578,7 +3655,15 @@
 				"column": "pessoa"
 			},
 			{
-				"table": "ptcprocesso",
+				"table": "profissionalprofissao",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhadmissaopreliminar",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhagenciaemprego",
 				"column": "pessoa"
 			},
 			{
@@ -2586,8 +3671,24 @@
 				"column": "pessoa"
 			},
 			{
+				"table": "rhatualizacaomonetariareg",
+				"column": "pessoapensao"
+			},
+			{
+				"table": "rhautonomo",
+				"column": "pessoa"
+			},
+			{
 				"table": "rhautonomoprevidencia",
 				"column": "pessoajuridica"
+			},
+			{
+				"table": "rhautonomoprevidenciarep",
+				"column": "pessoajuridica"
+			},
+			{
+				"table": "rhautonomorep",
+				"column": "pessoa"
 			},
 			{
 				"table": "rhavaliacaoconcurso",
@@ -2598,7 +3699,27 @@
 				"column": "pessoa"
 			},
 			{
+				"table": "rhavaliacaodesempenhotramite",
+				"column": "pessoa"
+			},
+			{
 				"table": "rhbeneficiario",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhbeneficiario",
+				"column": "tutor"
+			},
+			{
+				"table": "rhbeneficio",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhcandidato",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhconcmembroorganizador",
 				"column": "pessoa"
 			},
 			{
@@ -2608,6 +3729,50 @@
 			{
 				"table": "rhconcursocomissao",
 				"column": "pessoa"
+			},
+			{
+				"table": "rhconcursoconvocacaoitem",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhconcursoconvocacaoitemdoc",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhconcursoconvocacaoitemexame",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhcorreicaoinspcompesrealizado",
+				"column": "correicaoinspcompessoa"
+			},
+			{
+				"table": "rhcorreicaoinspcompesrealizado",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhcorreicaoinspecaocomarcapes",
+				"column": "correicaoinspcompessoa"
+			},
+			{
+				"table": "rhcorreicaoinspecaocomarcapes",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhdependente",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhdependenteestagiario",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhdescontojudicial",
+				"column": "beneficiario"
+			},
+			{
+				"table": "rhdirfbrpde",
+				"column": "relbeneficiariopessoajuridica"
 			},
 			{
 				"table": "rhempresatransportecoletivo",
@@ -2622,6 +3787,10 @@
 				"column": "pessoa"
 			},
 			{
+				"table": "rhenviodocumentotramite",
+				"column": "pessoatramite"
+			},
+			{
 				"table": "rhestagiario",
 				"column": "coordenadorcurso"
 			},
@@ -2630,7 +3799,23 @@
 				"column": "pessoa"
 			},
 			{
+				"table": "rhestagiarioperiodo",
+				"column": "supervisor"
+			},
+			{
 				"table": "rhestagiariovaletransporte",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhformacao",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhformacaofaltas",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhformacaorequisito",
 				"column": "pessoa"
 			},
 			{
@@ -2643,10 +3828,46 @@
 			},
 			{
 				"table": "rhfuncionario",
+				"column": "estcoordenadorcurso"
+			},
+			{
+				"table": "rhfuncionario",
 				"column": "pessoa"
 			},
 			{
+				"table": "rhfuncionarioherdeiros",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhfuncionariohistorico",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhfuncionarioprevidencia",
+				"column": "pessoaprevidencia"
+			},
+			{
 				"table": "rhhistoricoestagiario",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhinformacaoextrassefip",
+				"column": "prodruralpessoafisica"
+			},
+			{
+				"table": "rhinformacaoextrassefip",
+				"column": "prodruralpessoajuridica"
+			},
+			{
+				"table": "rhlistaesperapessoa",
+				"column": "listaesperapessoa"
+			},
+			{
+				"table": "rhlistaesperapessoa",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhlocaldetrabalho",
 				"column": "pessoa"
 			},
 			{
@@ -2654,12 +3875,20 @@
 				"column": "pessoa"
 			},
 			{
-				"table": "rhmovimentacaoafastamento",
+				"table": "rhlotacaorep",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhmembroscipa",
 				"column": "pessoa"
 			},
 			{
 				"table": "rhmovimentacaoafastamento",
 				"column": "medico"
+			},
+			{
+				"table": "rhmovimentacaoafastamento",
+				"column": "pessoa"
 			},
 			{
 				"table": "rhmovimentacaolegal",
@@ -2668,6 +3897,10 @@
 			{
 				"table": "rhmovimentacaolegal",
 				"column": "pessoa"
+			},
+			{
+				"table": "rhmovimentacaolegal",
+				"column": "tutorpensao"
 			},
 			{
 				"table": "rhmovimentacaooutros",
@@ -2682,6 +3915,18 @@
 				"column": "pessoamonitor"
 			},
 			{
+				"table": "rhobitosisob",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhobra",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhorcamento",
+				"column": "pessoa"
+			},
+			{
 				"table": "rhpessoa",
 				"column": "pessoa"
 			},
@@ -2690,27 +3935,87 @@
 				"column": "pessoa"
 			},
 			{
+				"table": "rhpessoahistorico",
+				"column": "pessoa"
+			},
+			{
 				"table": "rhprevidencia",
 				"column": "pessoa"
 			},
 			{
-				"table": "rhprocessojudicial",
-				"column": "autoracao"
+				"table": "rhrecadastrorhpessoa",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhreqestagiarioportalrhtramite",
+				"column": "pessoa"
 			},
 			{
 				"table": "rhrequisicaoportalrhtramite",
 				"column": "pessoa"
 			},
 			{
+				"table": "rhresponsavel_periodo_aplic",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhresponsavelrelatorio",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhstequipamentoprotecao",
+				"column": "fornecedor"
+			},
+			{
 				"table": "rhstprofissionalsesmt",
 				"column": "pessoa"
+			},
+			{
+				"table": "rhterceiro",
+				"column": "empresaterceiro"
+			},
+			{
+				"table": "rhterceiro",
+				"column": "pessoaterceiro"
 			},
 			{
 				"table": "rhvalorprevidenciaaporte",
 				"column": "credor"
 			},
 			{
-				"table": "rntreserva",
+				"table": "rhvoluntario",
+				"column": "pessoa"
+			},
+			{
+				"table": "rhvoluntarioperiodo",
+				"column": "supervisor"
+			},
+			{
+				"table": "smagendamento",
+				"column": "fornecedor"
+			},
+			{
+				"table": "smagendamento",
+				"column": "paciente"
+			},
+			{
+				"table": "smapcrrevisao",
+				"column": "responsavel"
+			},
+			{
+				"table": "smatestadodeclaracao",
+				"column": "pessoa"
+			},
+			{
+				"table": "smatestadodeclaracao",
+				"column": "profissional"
+			},
+			{
+				"table": "smatestadodeclaracao",
+				"column": "profissionalavaliador"
+			},
+			{
+				"table": "smatividadepsicologo",
 				"column": "pessoa"
 			},
 			{
@@ -2722,47 +4027,107 @@
 				"column": "pessoa"
 			},
 			{
+				"table": "smcipacandidatos",
+				"column": "pessoa"
+			},
+			{
+				"table": "smcipamembros",
+				"column": "pessoa"
+			},
+			{
+				"table": "smcipaparticipantes",
+				"column": "pessoa"
+			},
+			{
+				"table": "smcipaparticipanteseleicao",
+				"column": "pessoa"
+			},
+			{
+				"table": "smcipaparticipantesposse",
+				"column": "pessoa"
+			},
+			{
+				"table": "smextintor",
+				"column": "fabricante"
+			},
+			{
+				"table": "smfichaclinica",
+				"column": "pessoa"
+			},
+			{
+				"table": "smltcatrevisao",
+				"column": "responsavel"
+			},
+			{
+				"table": "smltiprevisao",
+				"column": "responsavel"
+			},
+			{
+				"table": "smparecer",
+				"column": "pessoa"
+			},
+			{
+				"table": "smparecer",
+				"column": "profissional"
+			},
+			{
+				"table": "smpcmsorevisao",
+				"column": "medicopcmso"
+			},
+			{
+				"table": "smpcmsorevisao",
+				"column": "responsavel"
+			},
+			{
 				"table": "smpessoavacina",
 				"column": "pessoa"
+			},
+			{
+				"table": "smpessoavacina",
+				"column": "pessoavacina"
+			},
+			{
+				"table": "smpgr",
+				"column": "responsavel"
+			},
+			{
+				"table": "smpprarevisao",
+				"column": "responsavel"
+			},
+			{
+				"table": "smprodutoquimico",
+				"column": "fabricante"
+			},
+			{
+				"table": "smprontuario",
+				"column": "enfresp"
+			},
+			{
+				"table": "smprontuario",
+				"column": "medicoresp"
 			},
 			{
 				"table": "smprontuario",
 				"column": "pessoa"
 			},
 			{
-				"table": "tribacaofiscalauditor",
+				"table": "smprontuario",
+				"column": "psicologoresp"
+			},
+			{
+				"table": "smprontuario",
+				"column": "triagemresp"
+			},
+			{
+				"table": "smrestricaomedica",
 				"column": "pessoa"
 			},
 			{
-				"table": "tribacaofiscallevcontratosoc",
+				"table": "smresultadoexamemedico",
 				"column": "pessoa"
 			},
 			{
-				"table": "tribacaofiscalparecer",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribagilizaobraslogin",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribaidf",
-				"column": "pessoasolicitante"
-			},
-			{
-				"table": "tribalienacaobenspessoa",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribatendimento",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribbloqueto",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribcadastrogeral",
+				"table": "tribcadastromobiliario",
 				"column": "pessoa"
 			},
 			{
@@ -2774,27 +4139,11 @@
 				"column": "pessoaexecucao"
 			},
 			{
-				"table": "tribcomunicadocadastro",
-				"column": "pessoa"
-			},
-			{
 				"table": "tribcontratosocialpessoa",
 				"column": "pessoa"
 			},
 			{
 				"table": "tribdocumento",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribdocumentocadastro",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribfiscal",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribimobiliaria",
 				"column": "pessoa"
 			},
 			{
@@ -2806,46 +4155,6 @@
 				"column": "pessoavendedor"
 			},
 			{
-				"table": "triblivroregistro",
-				"column": "pessoacontribuinte"
-			},
-			{
-				"table": "triblivroregistropessoa",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribloteamento",
-				"column": "loteador"
-			},
-			{
-				"table": "tribloteamento",
-				"column": "proprietario"
-			},
-			{
-				"table": "tribmovimentacao",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribnotafiscalavulsa",
-				"column": "pessoacontribuinte"
-			},
-			{
-				"table": "tribnotafiscalavulsa",
-				"column": "pessoacliente"
-			},
-			{
-				"table": "tribnotificacaofiscalauditor",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribparcelamento",
-				"column": "requerente"
-			},
-			{
-				"table": "tribparecerista",
-				"column": "pessoa"
-			},
-			{
 				"table": "tribpessoacontador",
 				"column": "pessoacontador"
 			},
@@ -2854,79 +4163,11 @@
 				"column": "pessoa"
 			},
 			{
-				"table": "tribprojeto",
-				"column": "empresaprojeto"
-			},
-			{
-				"table": "tribprojeto",
-				"column": "autorprojeto"
-			},
-			{
-				"table": "tribprojeto",
-				"column": "tecnicoresponsavel"
-			},
-			{
-				"table": "tribprojetoresponsavel",
-				"column": "pessoa"
-			},
-			{
 				"table": "tribproprietario",
 				"column": "pessoa"
 			},
 			{
-				"table": "tribproprietarioitbi",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribreparcelamentoagrupado",
-				"column": "requerente"
-			},
-			{
-				"table": "tribrepresentantelegal",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribrequerimento",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribrequerimentoitbi",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribrestricaoalvara",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribsolicitacaocontratopessoa",
-				"column": "idpessoa"
-			},
-			{
-				"table": "tribsupersimples",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribsupersimplesoficialcnpj",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribsupersimplessoliccnpj",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribsupersimplessolicsituacao",
-				"column": "pessoa"
-			},
-			{
-				"table": "tribveiculo",
-				"column": "responsavel"
-			},
-			{
 				"table": "usuario",
-				"column": "pessoa"
-			},
-			{
-				"table": "rhrecadastrorhpessoa",
 				"column": "pessoa"
 			}
 		]
@@ -2934,35 +4175,19 @@
 	{
 		"table": "rellog",
 		"column": "idlog",
-		"space": 90000,
+		"space": 0,
 		"dependencies": []
-	},
-	{
-		"table": "rhabaprojaposentadoria",
-		"column": "abaprojaposentadoria",
-		"space": 20,
-		"dependencies": [
-			{
-				"table": "rhclasseprojaposentadoria",
-				"column": "abaprojaposentadoria"
-			}
-		]
 	},
 	{
 		"table": "rhcadastroextra",
 		"column": "idfolha",
-		"space": 600,
-		"dependencies": [
-			{
-				"table": "contcadastroextra",
-				"column": "idfolha"
-			}
-		]
+		"space": 0,
+		"dependencies": []
 	},
 	{
 		"table": "rhcbo",
 		"column": "sequenciacbo",
-		"space": 25000,
+		"space": 0,
 		"dependencies": [
 			{
 				"table": "rhautonomo",
@@ -2995,22 +4220,73 @@
 		]
 	},
 	{
+		"table": "rhformula",
+		"column": "formula",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "rhbasecalculocompetencia",
+				"column": "formula"
+			},
+			{
+				"table": "rhbasecalculocompetenciarep",
+				"column": "formula"
+			},
+			{
+				"table": "rheventocalculo",
+				"column": "formula"
+			},
+			{
+				"table": "rheventocalculorep",
+				"column": "formula"
+			},
+			{
+				"table": "rhformularep",
+				"column": "formula"
+			},
+			{
+				"table": "rhpensao",
+				"column": "formula"
+			},
+			{
+				"table": "rhplantaocompetencia",
+				"column": "formula"
+			},
+			{
+				"table": "rhprodutividadecompetencia",
+				"column": "formula"
+			}
+		]
+	},
+	{
 		"table": "rhfuncionarioweb",
 		"column": "idfuncionarioweb",
-		"space": 4000,
+		"space": 0,
 		"dependencies": []
 	},
 	{
 		"table": "rhhistcalcfolha",
 		"column": "id",
-		"space": 30000,
+		"space": 0,
 		"dependencies": []
 	},
 	{
 		"table": "rhlocaldetrabalho",
 		"column": "localdetrabalho",
-		"space": 60000,
+		"space": 0,
 		"dependencies": [
+			{
+				"table": "rhagenciaempregovaga",
+				"column": "localdetrabalho"
+			},
+			{
+				"table": "rhcursoatividades",
+				"column": "localdetrabalho"
+			},
+			{
+				"table": "rhenderecolocaldetrabalho",
+				"column": "localdetrabalho"
+			},
 			{
 				"table": "rhestagiario",
 				"column": "localdetrabalho"
@@ -3020,11 +4296,23 @@
 				"column": "localdetrabalho"
 			},
 			{
+				"table": "rhfuncionariohistorico",
+				"column": "localdetrabalho"
+			},
+			{
+				"table": "rhfuncionariohorariolocal",
+				"column": "localdetrabalho"
+			},
+			{
 				"table": "rhhistoricoestagiario",
 				"column": "localdetrabalho"
 			},
 			{
 				"table": "rhhistoricofuncionario",
+				"column": "localdetrabalho"
+			},
+			{
+				"table": "rhlocaldetrabalhoalocador",
 				"column": "localdetrabalho"
 			},
 			{
@@ -3040,6 +4328,14 @@
 				"column": "localdetrabalho"
 			},
 			{
+				"table": "rhpostotrabalhocargo",
+				"column": "localdetrabalho"
+			},
+			{
+				"table": "rhpostotrabalhoghe",
+				"column": "localdetrabalho"
+			},
+			{
 				"table": "rhpostotrabalhohist",
 				"column": "localdetrabalho"
 			},
@@ -3050,6 +4346,139 @@
 			{
 				"table": "rhstlevantamentorisco",
 				"column": "localdetrabalho"
+			},
+			{
+				"table": "rhterceiro",
+				"column": "localdetrabalho"
+			},
+			{
+				"table": "smambienteequipprotecao",
+				"column": "localdetrabalho"
+			},
+			{
+				"table": "smambientefatorrisco",
+				"column": "localdetrabalho"
+			},
+			{
+				"table": "smextintor",
+				"column": "localdetrabalho"
+			}
+		]
+	},
+	{
+		"table": "rhparamrecadportalrh",
+		"column": "idparamrecadportalrh",
+		"space": 0,
+		"dependencies": []
+	},
+	{
+		"table": "rotinaarquivo",
+		"column": "rotinaarquivo",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "filtrorotinaarquivo",
+				"column": "rotinaarquivo"
+			},
+			{
+				"table": "rhbbpasep",
+				"column": "rotinaarquivo"
+			}
+		]
+	},
+	{
+		"table": "syslog",
+		"column": "idlog",
+		"space": 0,
+		"dependencies": []
+	},
+	{
+		"table": "syslogautenticausuario",
+		"column": "idlog",
+		"space": 0,
+		"dependencies": []
+	},
+	{
+		"table": "syslogseletor",
+		"column": "idlog",
+		"space": 0,
+		"dependencies": []
+	},
+	{
+		"table": "syslogseletor",
+		"column": "modulo",
+		"space": 0,
+		"dependencies": []
+	},
+	{
+		"table": "tipologradouro",
+		"column": "tipologradouro",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "esreltipologradouro",
+				"column": "tipologradouro"
+			},
+			{
+				"table": "logradouro",
+				"column": "tipologradouro"
+			},
+			{
+				"table": "logradourovinculo",
+				"column": "tipologradourocorreto"
+			},
+			{
+				"table": "logradourovinculo",
+				"column": "tipologradouroerrado"
+			},
+			{
+				"table": "obrabem",
+				"column": "tipologradouro"
+			}
+		]
+	},
+	{
+		"table": "veiculopublicacao",
+		"column": "veiculopublicacao",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "cgato",
+				"column": "veiculopublicacao"
+			},
+			{
+				"table": "cgatoveiculopublicacao",
+				"column": "veiculopublicacao"
+			},
+			{
+				"table": "rhconcurso",
+				"column": "veiculopublicacao"
+			},
+			{
+				"table": "rhconcursoedital",
+				"column": "veiculopublicacao"
+			}
+		]
+	},
+	{
+		"table": "cgagenda",
+		"column": "id",
+		"space": 0,
+		"dependencies": [
+			{
+				"table": "cgagendavinculo",
+				"column": "agenda"
+			}
+		]
+	},
+	{
+		"table": "rhabaprojaposentadoria",
+		"column": "abaprojaposentadoria",
+		"space": 20,
+		"dependencies": [
+			{
+				"table": "rhclasseprojaposentadoria",
+				"column": "abaprojaposentadoria"
 			}
 		]
 	},
@@ -3230,413 +4659,10 @@
 		]
 	},
 	{
-		"table": "rotinaarquivo",
-		"column": "rotinaarquivo",
-		"space": 500,
-		"dependencies": [
-			{
-				"table": "filtrorotinaarquivo",
-				"column": "rotinaarquivo"
-			},
-			{
-				"table": "rhbbpasep",
-				"column": "rotinaarquivo"
-			}
-		]
-	},
-	{
-		"table": "syslog",
-		"column": "idlog",
-		"space": 50000000,
-		"dependencies": []
-	},
-	{
-		"table": "syslogautenticausuario",
-		"column": "idlog",
-		"space": 50000000,
-		"dependencies": []
-	},
-	{
-		"table": "syslogseletor",
-		"column": "idlog",
-		"space": 30000000,
-		"dependencies": []
-	},
-	{
-		"table": "tipologradouro",
-		"column": "tipologradouro",
-		"space": 900,
-		"dependencies": [
-			{
-				"table": "issprecadastrologradouro",
-				"column": "log_tipologradouro"
-			},
-			{
-				"table": "logradouro",
-				"column": "tipologradouro"
-			},
-			{
-				"table": "obrabem",
-				"column": "tipologradouro"
-			}
-		]
-	},
-	{
-		"table": "bairro",
-		"column": "bairro",
-		"space": 0,
-		"dependencies": [
-			{
-				"table": "cep",
-				"column": "bairro"
-			},
-			{
-				"table": "enderecopessoa",
-				"column": "bairro"
-			},
-			{
-				"table": "issprecadastrobairro",
-				"column": "bai_idbairro"
-			},
-			{
-				"table": "rntespaco",
-				"column": "bairro"
-			},
-			{
-				"table": "tribcadastrogeral",
-				"column": "bairro"
-			},
-			{
-				"table": "tribcadastrogeralendereco",
-				"column": "bairro"
-			},
-			{
-				"table": "tribloteamento",
-				"column": "bairro"
-			},
-			{
-				"table": "tribsolicitacaocontratopessoa",
-				"column": "bairro"
-			},
-			{
-				"table": "tribvistoria",
-				"column": "bairro"
-			}
-		]
-	},
-	{
-		"table": "cgato",
-		"column": "idato",
-		"space": 0,
-		"dependencies": [
-			{
-				"table": "cgato",
-				"column": "leiautorizativa"
-			},
-			{
-				"table": "cgatorevogado",
-				"column": "idato"
-			},
-			{
-				"table": "cgatorevogado",
-				"column": "idatorevogado"
-			},
-			{
-				"table": "cgatoveiculopublicacao",
-				"column": "idato"
-			},
-			{
-				"table": "contconvenio",
-				"column": "idato"
-			},
-			{
-				"table": "contconvenioaditivo",
-				"column": "idato"
-			},
-			{
-				"table": "contdecreto",
-				"column": "idato"
-			},
-			{
-				"table": "contdiaria",
-				"column": "idato"
-			},
-			{
-				"table": "issincentivofiscal",
-				"column": "idunicoatoiss"
-			},
-			{
-				"table": "issnotafiscal",
-				"column": "idleiincentivo"
-			},
-			{
-				"table": "logradourohistorico",
-				"column": "idato"
-			},
-			{
-				"table": "obraordemplanilhaorcamento",
-				"column": "idato"
-			},
-			{
-				"table": "rhavaliacaomodelo",
-				"column": "idato"
-			},
-			{
-				"table": "rhcomissao",
-				"column": "idato"
-			},
-			{
-				"table": "rhcomissaoato",
-				"column": "idato"
-			},
-			{
-				"table": "rhconsignadofuncionario",
-				"column": "idato"
-			},
-			{
-				"table": "rhcontratoprazodeterminado",
-				"column": "idato"
-			},
-			{
-				"table": "rhcontratoprazodeterminado",
-				"column": "idatorenovacao"
-			},
-			{
-				"table": "rhempregoanterior",
-				"column": "idato"
-			},
-			{
-				"table": "rhestagiario",
-				"column": "idato"
-			},
-			{
-				"table": "rheventocalculo",
-				"column": "idato"
-			},
-			{
-				"table": "rhmovimentacaocargo",
-				"column": "idato"
-			},
-			{
-				"table": "rhmovimentacaolegal",
-				"column": "idato"
-			},
-			{
-				"table": "rhmovimentacaolegal",
-				"column": "idatoparecer"
-			},
-			{
-				"table": "rhmovimentacaopessoal",
-				"column": "idato"
-			},
-			{
-				"table": "rhplantaocompetencia",
-				"column": "idato"
-			},
-			{
-				"table": "rhprevidencia",
-				"column": "idato"
-			},
-			{
-				"table": "rhprevidencia",
-				"column": "idatoextincao"
-			},
-			{
-				"table": "rhprodutividadecompetencia",
-				"column": "idato"
-			},
-			{
-				"table": "rhprogressaorotinafuncionario",
-				"column": "idato"
-			},
-			{
-				"table": "rhquadrosalarialato",
-				"column": "idato"
-			},
-			{
-				"table": "rhrotinacoletiva",
-				"column": "idato"
-			},
-			{
-				"table": "tribacaofiscalparecerato",
-				"column": "idato"
-			},
-			{
-				"table": "tribaprovacaoprocesso",
-				"column": "idato"
-			},
-			{
-				"table": "tribartigo",
-				"column": "idlei"
-			},
-			{
-				"table": "tribcadastroimobgeminada",
-				"column": "numerolei"
-			},
-			{
-				"table": "tribcancelamentodebito",
-				"column": "idato"
-			},
-			{
-				"table": "tribcaucao",
-				"column": "idato"
-			},
-			{
-				"table": "tribcondominio",
-				"column": "idato"
-			},
-			{
-				"table": "tribcontencioso",
-				"column": "fundamentolegal"
-			},
-			{
-				"table": "tribcreditocontribuinte",
-				"column": "idato"
-			},
-			{
-				"table": "tribdebito",
-				"column": "leiparcelamento"
-			},
-			{
-				"table": "tribdesapropriacao",
-				"column": "idato"
-			},
-			{
-				"table": "tribfiscalpenalidade",
-				"column": "idato"
-			},
-			{
-				"table": "tribfundamentolegal",
-				"column": "fundamentolegal"
-			},
-			{
-				"table": "tribguiarecolhimento",
-				"column": "fundamentolegal"
-			},
-			{
-				"table": "tribisencao",
-				"column": "idato"
-			},
-			{
-				"table": "triblivroregistro",
-				"column": "fundamentolegal"
-			},
-			{
-				"table": "tribloteamento",
-				"column": "idato"
-			},
-			{
-				"table": "tribmelhoriaedital",
-				"column": "numeroedital"
-			},
-			{
-				"table": "tribmotivodesconto",
-				"column": "idato"
-			}
-		]
-	},
-	{
-		"table": "logradouro",
-		"column": "logradouro",
-		"space": 0,
-		"dependencies": [
-			{
-				"table": "cgato",
-				"column": "leiautorizativa"
-			},
-			{
-				"table": "cep",
-				"column": "logradouro"
-			},
-			{
-				"table": "entidade",
-				"column": "logradouro"
-			},
-			{
-				"table": "issprecadastrologradouro(log_cidade,log_idlogradouro"
-			},
-			{
-				"table": "logradourohistorico",
-				"column": "logradouro"
-			},
-			{
-				"table": "rntespaco",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribcadastrogeral",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribcadastrogeralendereco",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribimobiliariotestadagenerica",
-				"column": "logradouro"
-			},
-			{
-				"table": "triblogradourotestada",
-				"column": "delimitacaofinal"
-			},
-			{
-				"table": "triblogradourotestada",
-				"column": "delimitacaoinicial"
-			},
-			{
-				"table": "triblogradourotestada",
-				"column": "logradouro"
-			},
-			{
-				"table": "triblogradourotrecho",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribsolicitacaocontratopessoa",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribtrecho",
-				"column": "logradouro"
-			},
-			{
-				"table": "tribvistoria",
-				"column": "logradouro"
-			},
-			{
-				"table": "enderecopessoa",
-				"column": "logradouro"
-			}
-		]
-	},
-	{
 		"table": "rhgrupoocupacional",
 		"column": "idesocial",
 		"space": 0,
 		"dependencies": []
-	},
-	{
-		"table": "veiculopublicacao",
-		"column": "veiculopublicacao",
-		"space": 10,
-		"dependencies": [
-			{
-				"table": "cgato",
-				"column": "veiculopublicacao"
-			},
-			{
-				"table": "cgatoveiculopublicacao",
-				"column": "veiculopublicacao"
-			},
-			{
-				"table": "rhconcurso",
-				"column": "veiculopublicacao"
-			},
-			{
-				"table": "rhconcursoedital",
-				"column": "veiculopublicacao"
-			}
-		]
 	},
 	{
 		"table": "carteiraprofissional",
