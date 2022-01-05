@@ -15,6 +15,18 @@
 			{
 				"table": "roteiro_protocolo",
 				"column": "assunto"
+			},
+			{
+				"table": "processos",
+				"column": "codassunto"
+			},
+			{
+				"table": "taxasassunto",
+				"column": "codigoassunto"
+			},
+			{
+				"table": "usuario_assunto",
+				"column": "assunto"
 			}
 		]
 	},
