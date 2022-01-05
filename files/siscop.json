@@ -3666,10 +3666,6 @@
         "column": "item_geral"
       },
       {
-        "table": "est_item_aux",
-        "column": "tipoitemma"
-      },
-      {
         "table": "est_item_localizacao",
         "column": "item"
       },
@@ -4609,10 +4605,6 @@
       {
         "table": "pat_responsavel",
         "column": "codigocidade"
-      },
-      {
-        "table": "pat_veiculo",
-        "column": "capacidade"
       },
       {
         "table": "rateioconsorciado",
