@@ -2,7 +2,7 @@
   {
     "table": "arquivo",
     "column": "id",
-    "space": 0,
+    "space": 35000,
     "dependencies": [
       {
         "table": "aditivoconvenioarquivo",
@@ -157,7 +157,7 @@
   {
     "table": "bairro",
     "column": "bairro",
-    "space": 0,
+    "space": 50,
     "dependencies": [
       {
         "table": "est_centrocusto",
@@ -184,43 +184,43 @@
   {
     "table": "cronograma",
     "column": "id",
-    "space": 0,
+    "space": 25000,
     "dependencies": []
   },
   {
     "table": "diariaarquivo",
     "column": "id",
-    "space": 0,
+    "space": 100,
     "dependencies": []
   },
   {
     "table": "eloportalorcamento",
     "column": "id",
-    "space": 0,
+    "space": 15,
     "dependencies": []
   },
   {
     "table": "eloportalorganograma",
     "column": "id",
-    "space": 0,
+    "space": 15,
     "dependencies": []
   },
   {
     "table": "eloportalpublicacao",
     "column": "id",
-    "space": 0,
+    "space": 20000,
     "dependencies": []
   },
   {
     "table": "eloportalrepasses",
     "column": "id",
-    "space": 0,
+    "space": 50,
     "dependencies": []
   },
   {
     "table": "eloportalsubgrupoexercicio",
     "column": "id",
-    "space": 0,
+    "space": 2500,
     "dependencies": [
       {
         "table": "eloportalpublicacao",
@@ -235,7 +235,7 @@
   {
     "table": "eloportalsubgrupopublicacao",
     "column": "id",
-    "space": 0,
+    "space": 500,
     "dependencies": [
       {
         "table": "eloportalclassrelatorio",
@@ -250,13 +250,13 @@
   {
     "table": "eloportaltemplateexercicio",
     "column": "id",
-    "space": 0,
+    "space": 5,
     "dependencies": []
   },
   {
     "table": "entidade",
     "column": "entidade",
-    "space": 0,
+    "space": 2,
     "dependencies": [
       {
         "table": "abertura",
@@ -3603,7 +3603,7 @@
   {
     "table": "est_item",
     "column": "item",
-    "space": 0,
+    "space": 30000,
     "dependencies": [
       {
         "table": "est_balancete",
@@ -3882,7 +3882,7 @@
   {
     "table": "est_tipomovimentacao",
     "column": "codmovimentacao",
-    "space": 0,
+    "space": 20,
     "dependencies": [
       {
         "table": "est_contabilizacaomensalitem",
@@ -3905,7 +3905,7 @@
   {
     "table": "fornecedor",
     "column": "fornecedor",
-    "space": 0,
+    "space": 11000,
     "dependencies": [
       {
         "table": "acordos",
@@ -4348,13 +4348,13 @@
   {
     "table": "fornecedornegativa",
     "column": "id",
-    "space": 0,
+    "space": 9000,
     "dependencies": []
   },
   {
     "table": "leis_atos",
     "column": "id",
-    "space": 0,
+    "space": 3000,
     "dependencies": [
       {
         "table": "artigo_exclusao",
@@ -4457,19 +4457,19 @@
   {
     "table": "leis_atosarquivo",
     "column": "id",
-    "space": 0,
+    "space": 1000,
     "dependencies": []
   },
   {
     "table": "liquidacaodocumentospdf",
     "column": "id",
-    "space": 0,
+    "space": 15000,
     "dependencies": []
   },
   {
     "table": "logradouro",
     "column": "logradouro",
-    "space": 0,
+    "space": 150,
     "dependencies": [
       {
         "table": "est_centrocusto",
@@ -4504,25 +4504,19 @@
   {
     "table": "responsavelmodulo",
     "column": "codigo",
-    "space": 0,
+    "space": 50,
     "dependencies": []
   },
   {
     "table": "syslog",
     "column": "codigo",
-    "space": 0,
-    "dependencies": []
-  },
-  {
-    "table": "syslog",
-    "column": "sequencia",
-    "space": 0,
+    "space": 4000000,
     "dependencies": []
   },
   {
     "table": "tipologradouro",
     "column": "tipologradouro",
-    "space": 0,
+    "space": 10,
     "dependencies": [
       {
         "table": "logradouro",
@@ -4533,13 +4527,13 @@
   {
     "table": "usuariolog",
     "column": "codigo",
-    "space": 0,
+    "space": 150000,
     "dependencies": []
   },
   {
     "table": "versaoppa",
     "column": "codigoversao",
-    "space": 0,
+    "space": 20,
     "dependencies": [
       {
         "table": "orcppa",
@@ -4558,7 +4552,7 @@
   {
     "table": "cidade",
     "column": "cidade",
-    "space": 0,
+    "space": 110000,
     "dependencies": [
       {
         "table": "adiantamento",
