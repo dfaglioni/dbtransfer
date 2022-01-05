@@ -268,10 +268,6 @@
         "column": "item"
       },
       {
-        "table": "clrequisicaonaditemperc",
-        "column": "ordemnaditem"
-      },
-      {
         "table": "clsaldoitemandamento",
         "column": "item"
       },
