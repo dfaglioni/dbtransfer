@@ -2,7 +2,7 @@
   {
     "table": "arquivo",
     "column": "id",
-    "space": 0,
+    "space": 25000,
     "dependencies": [
       {
         "table": "arquivo_backup",
@@ -105,13 +105,13 @@
   {
     "table": "assinatura",
     "column": "id",
-    "space": 0,
+    "space": 800,
     "dependencies": []
   },
   {
     "table": "cidade",
     "column": "cidade",
-    "space": 0,
+    "space": 15000,
     "dependencies": [
       {
         "table": "bairro",
@@ -158,19 +158,19 @@
   {
     "table": "claditivopublicacao",
     "column": "id",
-    "space": 0,
+    "space": 1600,
     "dependencies": []
   },
   {
     "table": "clinteressadoedital",
     "column": "idinteressadoedital",
-    "space": 0,
+    "space": 700,
     "dependencies": []
   },
   {
     "table": "clinteressadofornecedor",
     "column": "idinteressadofornecedor",
-    "space": 0,
+    "space": 700,
     "dependencies": [
       {
         "table": "clinteressadoedital",
@@ -181,7 +181,7 @@
   {
     "table": "clitem",
     "column": "item",
-    "space": 0,
+    "space": 13000,
     "dependencies": [
       {
         "table": "claditivoitem",
@@ -304,13 +304,13 @@
   {
     "table": "cllistaarquivos",
     "column": "id",
-    "space": 0,
+    "space": 9000,
     "dependencies": []
   },
   {
     "table": "clmembro",
     "column": "membro",
-    "space": 0,
+    "space": 60,
     "dependencies": [
       {
         "table": "clcertidaoassinatura",
@@ -353,7 +353,7 @@
   {
     "table": "clorgaopublicacao",
     "column": "orgaopublicacao",
-    "space": 0,
+    "space": 20,
     "dependencies": [
       {
         "table": "clcontratopublicacao",
@@ -368,13 +368,13 @@
   {
     "table": "clsolicitacaoanulacao",
     "column": "id",
-    "space": 0,
+    "space": 3000,
     "dependencies": []
   },
   {
     "table": "clunidademedida",
     "column": "unidademedida",
-    "space": 0,
+    "space": 150,
     "dependencies": [
       {
         "table": "clitem",
@@ -385,7 +385,7 @@
   {
     "table": "entidade",
     "column": "entidade",
-    "space": 0,
+    "space": 2,
     "dependencies": [
       {
         "table": "acessodotacao",
@@ -1340,19 +1340,19 @@
   {
     "table": "log_tabelas",
     "column": "codigo",
-    "space": 0,
+    "space": 500000,
     "dependencies": []
   },
   {
     "table": "logpre",
     "column": "id",
-    "space": 0,
+    "space": 200000,
     "dependencies": []
   },
   {
     "table": "pessoa",
     "column": "pessoa",
-    "space": 0,
+    "space": 11000,
     "dependencies": [
       {
         "table": "assinatura",
@@ -1623,19 +1623,19 @@
   {
     "table": "pessoaam",
     "column": "id",
-    "space": 0,
+    "space": 5000,
     "dependencies": []
   },
   {
     "table": "situacaolicitacaoate2013",
     "column": "id",
-    "space": 0,
+    "space": 1500,
     "dependencies": []
   },
   {
     "table": "tipologradouro",
     "column": "tipologradouro",
-    "space": 0,
+    "space": 10,
     "dependencies": [
       {
         "table": "clmembro",
