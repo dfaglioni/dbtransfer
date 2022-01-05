@@ -2,7 +2,7 @@
 	{
 		"table": "arquivo",
 		"column": "id",
-		"space": 40000,
+		"space": 70000,
 		"dependencies": [
 			{
 				"table": "arquivo_content",
