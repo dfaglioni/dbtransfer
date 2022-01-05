@@ -113,14 +113,6 @@
 				"column": "cidade"
 			},
 			{
-				"table": "rhlicencapremio",
-				"column": "periodicidade"
-			},
-			{
-				"table": "rhlicencapremiorep",
-				"column": "periodicidade"
-			},
-			{
 				"table": "rhlotacao",
 				"column": "cidade"
 			},
