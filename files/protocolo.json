@@ -2,7 +2,7 @@
 	{
 		"table": "assunto",
 		"column": "codigo",
-		"space": 500,
+		"space": 600,
 		"dependencies": [
 			{
 				"table": "assunto_tipoprocesso",
@@ -21,7 +21,7 @@
 	{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 500,
+		"space": 1500,
 		"dependencies": [
 			{
 				"table": "enderecopessoa",
@@ -72,6 +72,7 @@
 		"table": "entidade",
 		"column": "entidade",
 		"space": 2,
+		"ignoreMax": true,
 		"dependencies": [
 			{
 				"table": "comprovante_entrega",
@@ -198,7 +199,7 @@
 	{
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 1000,
+		"space": 8000,
 		"dependencies": [
 			{
 				"table": "enderecopessoa",
