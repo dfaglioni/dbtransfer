@@ -3614,6 +3614,10 @@
       {
         "table": "vinculounidade",
         "column": "entidade"
+      },
+      {
+        "table": "eloportalpublicacaoparametro",
+        "column": "entidade"
       }
     ]
   },
