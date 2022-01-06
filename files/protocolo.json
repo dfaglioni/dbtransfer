@@ -2,7 +2,7 @@
 	{
 		"table": "assunto",
 		"column": "codigo",
-		"space": 600,
+		"space": 1000,
 		"dependencies": [
 			{
 				"table": "assunto_tipoprocesso",
@@ -33,7 +33,7 @@
 	{
 		"table": "bairro",
 		"column": "bairro",
-		"space": 1500,
+		"space": 2000,
 		"dependencies": [
 			{
 				"table": "enderecopessoa",
@@ -56,7 +56,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 8000,
+		"space": 10000,
 		"dependencies": [
 			{
 				"table": "bairro",
@@ -83,7 +83,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 2,
+		"space": 10,
 		"ignoreMax": true,
 		"dependencies": [
 			{
@@ -211,7 +211,7 @@
 	{
 		"table": "logradouro",
 		"column": "logradouro",
-		"space": 8000,
+		"space": 10000,
 		"dependencies": [
 			{
 				"table": "enderecopessoa",

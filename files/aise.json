@@ -201,7 +201,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 2,
+		"space": 10,
 		"dependencies": [
 			{
 				"table": "affluxoavaliacao",
@@ -4173,7 +4173,7 @@
 	{
 		"table": "rhcadastroextra",
 		"column": "idfolha",
-		"space": 300,
+		"space": 500,
 		"dependencies": []
 	},
 	{
@@ -4214,7 +4214,7 @@
 	{
 		"table": "rhformula",
 		"column": "formula",
-		"space": 5,
+		"space": 10,
 		"dependencies": [
 			{
 				"table": "rhbasecalculocompetencia",
@@ -4265,7 +4265,7 @@
 	{
 		"table": "rhlocaldetrabalho",
 		"column": "localdetrabalho",
-		"space": 100,
+		"space": 500,
 		"dependencies": [
 			{
 				"table": "rhagenciaempregovaga",
@@ -4426,7 +4426,7 @@
 	{
 		"table": "veiculopublicacao",
 		"column": "veiculopublicacao",
-		"space": 15,
+		"space": 1500,
 		"dependencies": [
 			{
 				"table": "cgato",

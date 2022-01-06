@@ -105,7 +105,7 @@
   {
     "table": "assinatura",
     "column": "id",
-    "space": 800,
+    "space": 1000,
     "dependencies": []
   },
   {
@@ -158,19 +158,19 @@
   {
     "table": "claditivopublicacao",
     "column": "id",
-    "space": 1600,
+    "space": 2000,
     "dependencies": []
   },
   {
     "table": "clinteressadoedital",
     "column": "idinteressadoedital",
-    "space": 700,
+    "space": 1000,
     "dependencies": []
   },
   {
     "table": "clinteressadofornecedor",
     "column": "idinteressadofornecedor",
-    "space": 700,
+    "space": 1000,
     "dependencies": [
       {
         "table": "clinteressadoedital",
@@ -181,7 +181,7 @@
   {
     "table": "clitem",
     "column": "item",
-    "space": 13000,
+    "space": 15000,
     "dependencies": [
       {
         "table": "claditivoitem",
@@ -300,13 +300,13 @@
   {
     "table": "cllistaarquivos",
     "column": "id",
-    "space": 9000,
+    "space": 10000,
     "dependencies": []
   },
   {
     "table": "clmembro",
     "column": "membro",
-    "space": 60,
+    "space": 100,
     "dependencies": [
       {
         "table": "clcertidaoassinatura",
@@ -364,7 +364,7 @@
   {
     "table": "clsolicitacaoanulacao",
     "column": "id",
-    "space": 3000,
+    "space": 5000,
     "dependencies": []
   },
   {
@@ -381,7 +381,7 @@
   {
     "table": "entidade",
     "column": "entidade",
-    "space": 2,
+    "space": 10,
     "dependencies": [
       {
         "table": "acessodotacao",
@@ -1342,13 +1342,13 @@
   {
     "table": "logpre",
     "column": "id",
-    "space": 200000,
+    "space": 250000,
     "dependencies": []
   },
   {
     "table": "pessoa",
     "column": "pessoa",
-    "space": 11000,
+    "space": 15000,
     "dependencies": [
       {
         "table": "assinatura",
@@ -1619,19 +1619,19 @@
   {
     "table": "pessoaam",
     "column": "id",
-    "space": 5000,
+    "space": 15000,
     "dependencies": []
   },
   {
     "table": "situacaolicitacaoate2013",
     "column": "id",
-    "space": 1500,
+    "space": 2000,
     "dependencies": []
   },
   {
     "table": "tipologradouro",
     "column": "tipologradouro",
-    "space": 10,
+    "space": 20,
     "dependencies": [
       {
         "table": "clmembro",
