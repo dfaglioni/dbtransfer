@@ -1642,5 +1642,22 @@
         "column": "tipologradouro"
       }
     ]
+  },
+  {
+    "table": "clfundo",
+    "column": "codigo",
+    "space": 0,
+    "dependencies": []
+  },
+  {
+    "table": "clramoatividade",
+    "column": "ramoatividade",
+    "space": 0,
+    "dependencies": [
+      {
+        "table": "pessoaramoatividade",
+        "column": "ramoatividade" 
+      }
+    ]
   }
 ]

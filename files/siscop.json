@@ -4628,5 +4628,77 @@
         "column": "idcidade"
       }
     ]
+  },
+  {
+    "table": "centrocusto",
+    "column": "codigo",
+    "space": 0,
+    "dependencies": [
+      {
+        "table": "empenho",
+        "column": "codigocentrocusto"
+      },
+      {
+        "table": "previsaocentrocusto",
+        "column": "codigocentrocusto"
+      }
+    ]
+  },
+  {
+    "table": "contaaplicacao",
+    "column": "id",
+    "space": 0,
+    "dependencies": []
+  },
+  {
+    "table": "empenhodocumentos",
+    "column": "id",
+    "space": 0,
+    "dependencies": []
+  },
+  {
+    "table": "grupoitem",
+    "column": "grupo",
+    "space": 0,
+    "dependencies": [
+      {
+        "table": "item",
+        "column": "grupo"
+      } 
+    ]
+  },
+  {
+    "table": "grupos_rel_transparencia",
+    "column": "id",
+    "space": 0,
+    "dependencies": [
+      {
+        "table": "relatorios_transparencia",
+        "column": "grupo_rel_transparencia"
+      } 
+    ]
+  },
+  {
+    "table": "item",
+    "column": "item",
+    "space": 0,
+    "dependencies": [
+      {
+        "table": "itemempenho",
+        "column": "item"
+      }
+    ]
+  },
+  {
+    "table": "orcppareceita_fontetce",
+    "column": "id",
+    "space": 0,
+    "dependencies": []
+  },
+  {
+    "table": "relatorios_transparencia",
+    "column": "id",
+    "space": 0,
+    "dependencies": []
   }
 ]
