@@ -182,6 +182,23 @@
     ]
   },
   {
+    "table": "cargos",
+    "column": "idcargo",
+    "space": 0,
+    "dependencies": [
+      {
+        "table": "cargos_ocupantevigencia",
+        "column": "idcargo"
+      }
+    ]
+  },
+  {
+    "table": "cargos_ocupantevigencia",
+    "column": "id",
+    "space": 0,
+    "dependencies": []
+  },
+  {
     "table": "cronograma",
     "column": "id",
     "space": 25000,
