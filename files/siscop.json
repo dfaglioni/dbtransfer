@@ -3618,6 +3618,10 @@
       {
         "table": "eloportalpublicacaoparametro",
         "column": "entidade"
+      },
+      {
+        "table": "versaoarquivo",
+        "column": "entidade"
       }
     ]
   },
