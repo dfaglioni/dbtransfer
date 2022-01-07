@@ -277,5 +277,11 @@
 		"column": "id",
 		"space": 30,
 		"dependencies": []
+	},
+	{
+		"table": "processo_integracao",
+		"column": "id",
+		"space": 0,
+		"dependencies": []
 	}
 ]
