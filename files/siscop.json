@@ -2,7 +2,7 @@
   {
     "table": "arquivo",
     "column": "id",
-    "space": 35000,
+    "space": 50000,
     "dependencies": [
       {
         "table": "aditivoconvenioarquivo",
@@ -157,7 +157,7 @@
   {
     "table": "bairro",
     "column": "bairro",
-    "space": 50,
+    "space": 100,
     "dependencies": [
       {
         "table": "est_centrocusto",
@@ -184,7 +184,7 @@
   {
     "table": "cargos",
     "column": "idcargo",
-    "space": 200,
+    "space": 400,
     "dependencies": [
       {
         "table": "cargos_ocupantevigencia",
@@ -195,49 +195,49 @@
   {
     "table": "cargos_ocupantevigencia",
     "column": "id",
-    "space": 200,
+    "space": 400,
     "dependencies": []
   },
   {
     "table": "cronograma",
     "column": "id",
-    "space": 25000,
+    "space": 50000,
     "dependencies": []
   },
   {
     "table": "diariaarquivo",
     "column": "id",
-    "space": 200,
+    "space": 600,
     "dependencies": []
   },
   {
     "table": "eloportalorcamento",
     "column": "id",
-    "space": 30,
+    "space": 60,
     "dependencies": []
   },
   {
     "table": "eloportalorganograma",
     "column": "id",
-    "space": 15,
+    "space": 50,
     "dependencies": []
   },
   {
     "table": "eloportalpublicacao",
     "column": "id",
-    "space": 20000,
+    "space": 50000,
     "dependencies": []
   },
   {
     "table": "eloportalrepasses",
     "column": "id",
-    "space": 50,
+    "space": 100,
     "dependencies": []
   },
   {
     "table": "eloportalsubgrupoexercicio",
     "column": "id",
-    "space": 2500,
+    "space": 5000,
     "dependencies": [
       {
         "table": "eloportalpublicacao",
@@ -252,7 +252,7 @@
   {
     "table": "eloportalsubgrupopublicacao",
     "column": "id",
-    "space": 500,
+    "space": 1000,
     "dependencies": [
       {
         "table": "eloportalclassrelatorio",
@@ -267,13 +267,13 @@
   {
     "table": "eloportaltemplateexercicio",
     "column": "id",
-    "space": 5,
+    "space": 10,
     "dependencies": []
   },
   {
     "table": "entidade",
     "column": "entidade",
-    "space": 10,
+    "space": 20,
     "dependencies": [
       {
         "table": "abertura",
@@ -3628,7 +3628,7 @@
   {
     "table": "est_item",
     "column": "item",
-    "space": 30000,
+    "space": 60000,
     "dependencies": [
       {
         "table": "est_balancete",
@@ -3903,7 +3903,7 @@
   {
     "table": "est_tipomovimentacao",
     "column": "codmovimentacao",
-    "space": 20,
+    "space": 100,
     "dependencies": [
       {
         "table": "est_contabilizacaomensalitem",
@@ -3926,7 +3926,7 @@
   {
     "table": "fornecedor",
     "column": "fornecedor",
-    "space": 15000,
+    "space": 20000,
     "dependencies": [
       {
         "table": "acordos",
@@ -4369,13 +4369,13 @@
   {
     "table": "fornecedornegativa",
     "column": "id",
-    "space": 15000,
+    "space": 20000,
     "dependencies": []
   },
   {
     "table": "leis_atos",
     "column": "id",
-    "space": 3000,
+    "space": 5000,
     "dependencies": [
       {
         "table": "artigo_exclusao",
@@ -4478,19 +4478,19 @@
   {
     "table": "leis_atosarquivo",
     "column": "id",
-    "space": 1000,
+    "space": 1500,
     "dependencies": []
   },
   {
     "table": "liquidacaodocumentospdf",
     "column": "id",
-    "space": 15000,
+    "space": 20000,
     "dependencies": []
   },
   {
     "table": "logradouro",
     "column": "logradouro",
-    "space": 150,
+    "space": 300,
     "dependencies": [
       {
         "table": "est_centrocusto",
@@ -4525,19 +4525,19 @@
   {
     "table": "responsavelmodulo",
     "column": "codigo",
-    "space": 50,
+    "space": 100,
     "dependencies": []
   },
   {
     "table": "syslog",
     "column": "codigo",
-    "space": 4000000,
+    "space": 8000000,
     "dependencies": []
   },
   {
     "table": "tipologradouro",
     "column": "tipologradouro",
-    "space": 15,
+    "space": 200,
     "dependencies": [
       {
         "table": "logradouro",
@@ -4548,13 +4548,13 @@
   {
     "table": "usuariolog",
     "column": "codigo",
-    "space": 150000,
+    "space": 250000,
     "dependencies": []
   },
   {
     "table": "versaoppa",
     "column": "codigoversao",
-    "space": 25,
+    "space": 50,
     "dependencies": [
       {
         "table": "orcppa",
@@ -4573,7 +4573,7 @@
   {
     "table": "cidade",
     "column": "cidade",
-    "space": 110000,
+    "space": 300000,
     "dependencies": [
       {
         "table": "adiantamento",
@@ -4640,7 +4640,7 @@
   {
     "table": "centrocusto",
     "column": "codigo",
-    "space": 0,
+    "space": 5,
     "dependencies": [
       {
         "table": "empenho",
@@ -4655,19 +4655,19 @@
   {
     "table": "contaaplicacao",
     "column": "id",
-    "space": 0,
+    "space": 15000,
     "dependencies": []
   },
   {
     "table": "empenhodocumentos",
     "column": "id",
-    "space": 0,
+    "space": 50,
     "dependencies": []
   },
   {
     "table": "grupoitem",
     "column": "grupo",
-    "space": 0,
+    "space": 20,
     "dependencies": [
       {
         "table": "item",
@@ -4678,7 +4678,7 @@
   {
     "table": "grupos_rel_transparencia",
     "column": "id",
-    "space": 0,
+    "space": 10,
     "dependencies": [
       {
         "table": "relatorios_transparencia",
@@ -4689,7 +4689,7 @@
   {
     "table": "item",
     "column": "item",
-    "space": 0,
+    "space": 60000,
     "dependencies": [
       {
         "table": "itemempenho",
@@ -4700,13 +4700,13 @@
   {
     "table": "orcppareceita_fontetce",
     "column": "id",
-    "space": 0,
+    "space": 5000,
     "dependencies": []
   },
   {
     "table": "relatorios_transparencia",
     "column": "id",
-    "space": 0,
+    "space": 50,
     "dependencies": []
   }
 ]

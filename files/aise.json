@@ -2,7 +2,7 @@
 	{
 		"table": "cidade",
 		"column": "cidade",
-		"space": 15000,
+		"space": 30000,
 		"dependencies": [
 			{
 				"table": "agencia",
@@ -201,7 +201,7 @@
 	{
 		"table": "entidade",
 		"column": "entidade",
-		"space": 10,
+		"space": 20,
 		"dependencies": [
 			{
 				"table": "affluxoavaliacao",
@@ -3428,7 +3428,7 @@
 	{
 		"table": "pessoa",
 		"column": "pessoa",
-		"space": 15000,
+		"space": 20000,
 		"dependencies": [
 			{
 				"table": "banco",
@@ -4167,19 +4167,19 @@
 	{
 		"table": "rellog",
 		"column": "idlog",
-		"space": 25000,
+		"space": 30000,
 		"dependencies": []
 	},
 	{
 		"table": "rhcadastroextra",
 		"column": "idfolha",
-		"space": 500,
+		"space": 1000,
 		"dependencies": []
 	},
 	{
 		"table": "rhcbo",
 		"column": "sequenciacbo",
-		"space": 15000,
+		"space": 20000,
 		"dependencies": [
 			{
 				"table": "rhautonomo",
@@ -4214,7 +4214,7 @@
 	{
 		"table": "rhformula",
 		"column": "formula",
-		"space": 10,
+		"space": 20,
 		"dependencies": [
 			{
 				"table": "rhbasecalculocompetencia",
@@ -4253,19 +4253,19 @@
 	{
 		"table": "rhfuncionarioweb",
 		"column": "idfuncionarioweb",
-		"space": 1000,
+		"space": 1500,
 		"dependencies": []
 	},
 	{
 		"table": "rhhistcalcfolha",
 		"column": "id",
-		"space": 5000,
+		"space": 6000,
 		"dependencies": []
 	},
 	{
 		"table": "rhlocaldetrabalho",
 		"column": "localdetrabalho",
-		"space": 500,
+		"space": 1000,
 		"dependencies": [
 			{
 				"table": "rhagenciaempregovaga",
@@ -4360,13 +4360,13 @@
 	{
 		"table": "rhparamrecadportalrh",
 		"column": "idparamrecadportalrh",
-		"space": 500,
+		"space": 1000,
 		"dependencies": []
 	},
 	{
 		"table": "rotinaarquivo",
 		"column": "rotinaarquivo",
-		"space": 500,
+		"space": 1000,
 		"dependencies": [
 			{
 				"table": "filtrorotinaarquivo",
@@ -4381,25 +4381,25 @@
 	{
 		"table": "syslog",
 		"column": "idlog",
-		"space": 9000000,
+		"space": 9500000,
 		"dependencies": []
 	},
 	{
 		"table": "syslogautenticausuario",
 		"column": "idlog",
-		"space": 9000000,
+		"space": 9500000,
 		"dependencies": []
 	},
 	{
 		"table": "syslogseletor",
 		"column": "idlog",
-		"space": 9000000,
+		"space": 9500000,
 		"dependencies": []
 	},
 	{
 		"table": "tipologradouro",
 		"column": "tipologradouro",
-		"space": 100,
+		"space": 200,
 		"dependencies": [
 			{
 				"table": "esreltipologradouro",
@@ -4426,7 +4426,7 @@
 	{
 		"table": "veiculopublicacao",
 		"column": "veiculopublicacao",
-		"space": 1500,
+		"space": 3500,
 		"dependencies": [
 			{
 				"table": "cgato",
@@ -4460,7 +4460,7 @@
 	{
 		"table": "rhabaprojaposentadoria",
 		"column": "abaprojaposentadoria",
-		"space": 20,
+		"space": 40,
 		"dependencies": [
 			{
 				"table": "rhclasseprojaposentadoria",
@@ -4647,13 +4647,13 @@
 	{
 		"table": "rhgrupoocupacional",
 		"column": "idesocial",
-		"space": 30,
+		"space": 60,
 		"dependencies": []
 	},
 	{
 		"table": "carteiraprofissional",
 		"column": "carteiraprofissional",
-		"space": 20,
+		"space": 40,
 		"dependencies": [
 			{
 				"table": "profissao",
